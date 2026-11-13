@@ -1,0 +1,10 @@
+{
+  "files_verified": 1744,
+  "measured_snapshot_mapping": [
+    "roadvision/native_patch_contrast.py",
+    "roadvision/native_patch_range.py",
+    "tests/test_native_patch_range.py",
+    "tests/test_prepared_support_mask.py"
+  ],
+  "conditional_replay_executed": false
+}

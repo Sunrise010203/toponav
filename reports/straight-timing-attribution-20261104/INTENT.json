@@ -1,0 +1,25 @@
+{
+  "scope": "Post-hoc descriptive analysis of existing benchmark-corrected only; no candidate, timing rerun, navigation execution or causal claim",
+  "cases": [
+    "known_center",
+    "known_default",
+    "known_offset_plus"
+  ],
+  "rounds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "warmup": "Retain and validate repeat -1 separately; not performance samples",
+  "delta": "after minus before; positive is slower",
+  "groups": [
+    "round",
+    "exact tick",
+    "recorded decision state and reason",
+    "four contiguous index quarters"
+  ],
+  "concentration": "Top 1/5/10 positive paired wall differences divided by sum of ALL positive differences, not signed net. No samples excluded.",
+  "preserve": "Do not alter old rejection, source, safety, thresholds, old artifacts or failures",
+  "new_files_only": true
+}

@@ -1,0 +1,156 @@
+"""Exact descriptor/selection equivalence, not a navigation acceptance test."""
+
+import cv2
+import numpy as np
+import pytest
+
+from roadvision import free_ground_path as ground
+from roadvision import reference_patch_evidence as optimized
+from roadvision import rgb_resampling_checks as original
+from roadvision.calibrated_ground_motion import GroundCalibration
+from roadvision.corridor_rgb_probe import CALIBRATION_ID
+
+
+def oracle(image, point, mask):
+    return original.appearance_evidence(image, image, point, point, mask, mask)
+
+
+def image_for(kind, seed=901):
+    rng = np.random.default_rng(seed)
+    image = rng.integers(0, 256, (128, 128), dtype=np.uint8)
+    if kind == 'blur':
+        image = cv2.GaussianBlur(image, (3, 3), .6)
+    elif kind == 'flat':
+        image[:] = 127
+    elif kind == 'repeated':
+        y, x = np.indices(image.shape)
+        image = ((x // 4 + y // 4) % 2 * 100 + 60).astype(np.uint8)
+    elif kind == 'low_contrast':
+        image = (image % 5 + 120).astype(np.uint8)
+    elif kind == 'float':
+        image = image.astype(np.float32) + rng.normal(0, .01, image.shape).astype(np.float32)
+    return image
+
+
+@pytest.mark.parametrize('kind', ['random', 'blur', 'flat', 'repeated', 'low_contrast', 'float'])
+@pytest.mark.parametrize('point', [[64., 64.], [62.125, 81.875], [6., 6.], [121., 64.], [5.999, 64.], [float('nan'), 64.]])
+def test_complete_evidence_exact_for_texture_fractional_points_and_boundaries(kind, point):
+    image = image_for(kind)
+    mask = np.ones((128, 128), np.uint8)
+    assert optimized.reference_appearance_evidence(image, point, mask) == oracle(image, point, mask)
+
+
+@pytest.mark.parametrize('kind', ['all', 'none', 'padding', 'one_footprint', 'disconnected'])
+@pytest.mark.parametrize('seed', [717, 110301, 110304])
+def test_support_mask_and_unavailable_alternatives_are_exact(kind, seed):
+    image = image_for('random', seed)
+    mask = np.ones_like(image)
+    if kind == 'none':
+        mask[:] = 0
+    elif kind == 'padding':
+        mask[:, :61] = 0
+    elif kind == 'one_footprint':
+        mask[:] = 0
+        mask[59:70, 59:70] = 1
+    elif kind == 'disconnected':
+        mask[:, 20:40] = 0
+        mask[90:, :] = 0
+    expected = oracle(image, [64., 64.], mask)
+    assert optimized.reference_appearance_evidence(image, [64., 64.], mask) == expected
+    if kind == 'one_footprint':
+        assert expected['reason'] == 'invalid_descriptor_search'
+        assert expected['alternative_search_counts'] == [0, 0, 0, 0]
+
+
+@pytest.mark.parametrize('observed,alternative', [
+    (None, .5), (.9, None), (None, None),
+    (.7, .64), (np.nextafter(.7, 0.), .5), (np.nextafter(.7, 1.), .5),
+    (.9, .84), (.9, np.nextafter(.84, 0.)), (.9, np.nextafter(.84, 1.)),
+    (1., .94), (1., np.nextafter(.94, 0.)), (1., np.nextafter(.94, 1.)),
+    (.69, .95), (.699, .1), (.9999999999999998, .6),
+])
+def test_measured_ncc_and_all_gate_boundaries_match_original(monkeypatch, observed, alternative):
+    # Inject the SAME primitive measurements into both implementations; do
+    # not assume self-NCC equals exactly 1 or round values near thresholds.
+    for module in (original, optimized):
+        monkeypatch.setattr(module, '_ncc', lambda *args: observed)
+        monkeypatch.setattr(module, '_masked_alternative', lambda *args: (alternative, 31))
+    image = image_for('random');mask = np.ones_like(image)
+    assert optimized.reference_appearance_evidence(image, [64., 64.], mask) == oracle(image, [64., 64.], mask)
+
+
+def test_one_actual_search_and_one_patch_not_four_searches_two_patches(monkeypatch):
+    image = image_for('random');mask = np.ones_like(image)
+    calls = []
+    match = cv2.matchTemplate
+    def counted(*args, **kwargs):
+        calls.append(1)
+        return match(*args, **kwargs)
+    monkeypatch.setattr(cv2, 'matchTemplate', counted)
+    expected = oracle(image, [64., 64.], mask)
+    assert len(calls) == 4
+    calls.clear()
+    patch_calls = []
+    supported = optimized._supported_patch
+    def counted_patch(*args):
+        patch_calls.append(1)
+        return supported(*args)
+    monkeypatch.setattr(optimized, '_supported_patch', counted_patch)
+    actual = optimized.reference_appearance_evidence(image, [64., 64.], mask)
+    assert actual == expected and len(calls) == len(patch_calls) == 1
+    assert len(actual['alternative_search_counts']) == 4  # logical, not executed calls
+
+
+def test_no_cache_survives_image_mask_or_point_changes():
+    image = image_for('random');mask = np.ones_like(image)
+    assert optimized.reference_appearance_evidence(image, [64., 64.], mask)['accepted']
+    mask[:, 60] = 0
+    assert optimized.reference_appearance_evidence(image, [64., 64.], mask) == oracle(image, [64., 64.], mask)
+    assert not optimized.reference_appearance_evidence(image, [64., 64.], mask)['accepted']
+    mask[:] = 1;image[:] = 128
+    assert not optimized.reference_appearance_evidence(image, [64., 64.], mask)['accepted']
+    image[:] = image_for('random', 912)
+    for point in ([75.25, 71.5], [64., 64.]):
+        assert optimized.reference_appearance_evidence(image, point, mask) == oracle(image, point, mask)
+
+
+@pytest.mark.parametrize('kind', ['random', 'flat', 'repeated', 'blur'])
+def test_all_81_candidates_and_stable_nine_selected_cells_unchanged(monkeypatch, kind):
+    image = image_for(kind);mask = np.ones_like(image);calibration = GroundCalibration()
+    actual = ground.reference_cell_candidates(image, mask, calibration)
+    chosen = ground.select_reference_cells(image, mask, calibration)
+    monkeypatch.setattr(ground, 'reference_appearance_evidence', oracle)
+    assert actual == ground.reference_cell_candidates(image, mask, calibration)
+    assert chosen == ground.select_reference_cells(image, mask, calibration)
+    assert len(actual) == 9 and all(len(c['candidates']) == 9 for c in actual)
+    if kind == 'flat':
+        assert all(c['point_latest_camera_xy_m'] == c['nominal_point_latest_camera_xy_m'] for c in chosen)
+
+
+@pytest.mark.parametrize('kind', ['ground', 'vertical', 'repeated', 'exposed_gradient'])
+def test_complete_ground_and_gradient_packets_exact(monkeypatch, kind):
+    from roadvision.gradient_ground_path import assess_gradient_free_ground
+    from tests.test_straight_gradient_transfer import exposed, synthetic_window
+    frames, motion = (exposed() if kind == 'exposed_gradient' else
+                      synthetic_window((1., 0., 0.), 1.) if kind == 'vertical' else synthetic_window())
+    if kind == 'repeated':
+        for frame in frames:
+            frame['rgb'] = np.tile(np.repeat(image_for('repeated')[:, :, None], 3, axis=2), (2, 2, 1))
+    kw = dict(now_s=frames[-1]['captured_sim_s'], calibration_id=CALIBRATION_ID)
+    before = [f(frames, motion, **kw) for f in (ground.assess_free_ground, assess_gradient_free_ground)]
+    monkeypatch.setattr(ground, 'reference_appearance_evidence', oracle)
+    assert before == [f(frames, motion, **kw) for f in (ground.assess_free_ground, assess_gradient_free_ground)]
+
+
+def test_target_comparison_still_uses_original_four_searches(monkeypatch):
+    from tests.test_straight_gradient_transfer import synthetic_window
+    frames, motion = synthetic_window()
+    calls = []
+    appearance = ground.appearance_evidence
+    def counted(a, b, p, q, ma, mb):
+        assert a is not b
+        calls.append(1)
+        return appearance(a, b, p, q, ma, mb)
+    monkeypatch.setattr(ground, 'appearance_evidence', counted)
+    ground.assess_free_ground(frames, motion, now_s=.8, calibration_id=CALIBRATION_ID)
+    assert len(calls) == 9

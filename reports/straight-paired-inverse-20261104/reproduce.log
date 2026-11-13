@@ -1,0 +1,1 @@
+{"gate": false, "cases": [{"case": "known_center", "median_gain": 0.001904352836276102, "mean_gain": 0.009597195195204522}, {"case": "known_default", "median_gain": -0.0008401971514595541, "mean_gain": 0.012632517403171506}, {"case": "known_offset_plus", "median_gain": -0.02610067723593512, "mean_gain": -0.019778283425234022}]}

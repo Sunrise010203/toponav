@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/home/sunrise/toponav_project/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--rootdir",
+    "/home/sunrise/toponav_project",
+    "-p",
+    "tools.project_test_audit",
+    "--junitxml",
+    "/home/sunrise/toponav_project/reports/straight-paired-inverse-full-current-20261104/junit.xml",
+    "tests"
+  ],
+  "cwd": "/home/sunrise/toponav_project",
+  "scope": "current",
+  "pytest_addopts": null,
+  "pytest_plugins": null,
+  "pythonpath": [
+    "/home/sunrise/toponav_project",
+    "/home/sunrise/toponav_project/ros2_ws/src/toponav_bridge",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages"
+  ],
+  "local_package_roots": [
+    "/home/sunrise/toponav_project/ros2_ws/src/toponav_bridge"
+  ],
+  "discovery_configuration_changed": false
+}

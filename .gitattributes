@@ -1,0 +1,10 @@
+# Evidence manifests contain byte-level hashes; preserve checked-in bytes on
+# every platform rather than normalizing line endings in historical snapshots.
+* -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.pt binary
+*.onnx binary
+*.npz binary

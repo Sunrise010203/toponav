@@ -1,0 +1,10 @@
+{
+  "files": {
+    "reports/straight-offset-workload-20261104/analyze.py": "39e5d857605bb27df55c314aa19f30388803e9278e47e9cfe1695c81a008e4e9",
+    "reports/straight-offset-workload-20261104/PLAN.json": "444e9f812deeab3812b072f20531894d0470d9afc95d317d7cb2d9ad749fd772",
+    "reports/straight-offset-workload-20261104/PREEXISTING_PINS.json": "ee7ef3687075c58cd85488ac6d25a8cf46b8b5a35a0595356cb86a1fc8e0f783",
+    "reports/straight-offset-workload-20261104/profile/SUMMARY.json": "05903b7522e8dde0470a09f9e3a133e7489ad74ee76730485d1025bc2d171d34",
+    "reports/straight-offset-workload-20261104/profile/rows.jsonl": "3fd463770f625c961e2d572bd64d6ca49ef19d48f0e829b57842e8899643496e",
+    "reports/straight-offset-workload-20261104/profile/CPROFILE.json": "fd5cda8babf2d006d675c28eb3116b08c30604fef0f18f8fbc22bb112f51b1d5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "candidate_promoted": true,
+  "scope": "Source-only exact projection allocation optimization",
+  "performance_gate": true,
+  "valid_comparison": "benchmark-corrected",
+  "first_comparison_valid_for_performance_acceptance": false,
+  "all_outputs_exact": true,
+  "all_samples_retained": true,
+  "original_and_corrected_samples_pooled": false,
+  "total_records_retained": 3900,
+  "valid_measured_decisions": 1560,
+  "valid_warmup_decisions": 390,
+  "declared_changed_files": [
+    "roadvision/corridor_rgb_probe.py"
+  ],
+  "preexisting_files_byte_identical": 1091,
+  "old_test_assertions_changed": false,
+  "replay_cases": 13,
+  "replay_decisions": 581,
+  "terminal_frames": 39,
+  "old_physics_errors": [],
+  "full_current_complete": false,
+  "navigation_acceptance": false,
+  "new_physics_or_actuator_execution": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

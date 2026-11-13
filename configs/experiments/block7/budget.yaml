@@ -1,0 +1,157 @@
+schema_version: block7-design-v1
+status: design_only_not_execution_authorization
+timezone: Asia/Shanghai
+authorization:
+  7A: authorized_documentation_and_read_only_checks
+  7B_to_7E: not_started_requires_next_instruction
+  block6: remains_stopped
+  continuous_and_ROS_runs: requires_explicit_resume_authorization
+layout_design:
+  validation_families: 6
+  test_families: 12
+  node_count_bands:
+  - - 6
+    - 9
+  - - 10
+    - 15
+  - - 16
+    - 24
+  validation_families_per_band: 2
+  test_families_per_band: 4
+  split_unit: layout_family_including_isomorphic_rotated_mirrored_and_appearance_variants
+  development: historical_exposed_layouts_only_no_final_test_selection
+  exact_layout_geometry: to_be_created_in_7B_before_any_final_test_rendering
+perception:
+  known_classes: 16
+  unknown_phases:
+  - turning
+  - approaching
+  - passing
+  - occluded
+  - missing_view
+  validation_packages_per_known_class_per_family: 4
+  validation_packages_per_unknown_phase_per_family: 4
+  test_packages_per_known_class_per_family: 8
+  test_packages_per_unknown_phase_per_family: 8
+  validation_packages: 504
+  test_packages: 2016
+  total_packages: 2520
+  unit: one_four_view_RGB_panel
+  local_exit_mask_variants_are_not_new_topology_families: true
+navigation:
+  method_ids:
+  - M0
+  - M1
+  - M2
+  - M3
+  distinct_tasks_per_family: 5
+  seeds_per_task: 3
+  fault_tasks_per_family: 2
+  fault_task_selection: first_two_in_predeclared_task_order_not_by_performance
+  single_factor_conditions:
+  - appearance_material_or_lighting
+  - occlusion_once
+  - drop_once
+  - confident_wrong_observation_once
+  - trusted_atomic_execution_failed_once
+  - execution_unknown
+  - wrong_map_edge
+  - temporary_closure
+  unreachable_tasks_per_family: 1
+  per_method:
+    validation:
+      normal: 90
+      single_factor: 288
+      unreachable: 18
+      total: 396
+    test:
+      normal: 180
+      single_factor: 576
+      unreachable: 36
+      total: 792
+  all_methods_validation: 1584
+  all_methods_test: 3168
+  all_methods_total: 4752
+  combination_conditions: 0
+  wrong_map_reachability: classify_by_independent_physical_world_before_running_methods_never_by_method_outcome
+  limits:
+    max_commands: 32
+    max_events: 1000
+    max_cycles: 1000
+    poll_interval_s: 0.01
+    max_frame_age_s: 1.0
+    stage_timeout_s: 5.0
+    session_timeout_s: 120.0
+    external_wall_timeout_s: 150.0
+    max_conflicts: 2
+    max_execution_failures: 1
+continuous:
+  enabled: false
+  reason: block6_remains_stopped_and_current_S2_S6_not_accepted
+  planned_new_conditions: 24
+  condition_groups:
+    normal: 8
+    camera: 8
+    feedback: 4
+    wrong_or_unknown_prior_and_texture: 4
+  planned_new_ROS_conditions: 8
+  ROS_groups:
+    normal: 2
+    message_or_process_fault: 6
+  max_simulation_s_per_case: 120
+  max_wall_s_per_case: 900
+  exact_case_suite_and_fault_anchors: must_be_declared_and_frozen_before_first_reference_or_test_rendering
+  may_run_from_this_config: false
+seeds:
+  validation_environment:
+  - 71018101
+  - 71018102
+  - 71018103
+  test_environment:
+  - 71018201
+  - 71018202
+  - 71018203
+  validation_layout_generation_base: 71018300
+  test_layout_generation_base: 71018400
+  sample_seed_rule: derive_uint64_from_SHA256(track,split,family,task_or_class,sample_index,stream,base_seed)_and_record_exact_value_in_7B_manifest
+  method_order_seed: 7101802
+  bootstrap_seed: 7101801
+statistics:
+  confidence_level: 0.95
+  bootstrap_repeats: 10000
+  unit: layout_family
+  stratified_by_node_count_band: true
+  paired_resampling: true
+  primary: normal_layout_macro_success_M1_minus_M0
+  secondary_comparisons: exploratory_no_confirmatory_multiple_significance_claims
+  power_guarantee: false
+resources:
+  device: cpu
+  threads: 2
+  parallel_episodes: 1
+  min_start_free_disk_bytes: 5368709120
+  stop_free_disk_bytes: 2147483648
+  min_start_available_memory_bytes: 2147483648
+  max_new_evidence_bytes: 21474836480
+  max_wall_hours_per_stage: 24
+  calibration: 7B_development_only_storage_and_time_measurement_before_final_test_freeze
+  on_insufficient_resources: safe_stop_preserve_all_results_mark_incomplete_no_silent_sample_reduction
+stop_stage_on:
+- user_stop
+- collision
+- false_arrival
+- uncontrolled_restart
+- speed_or_strict_braking_gate_violation
+- truth_leak
+- freeze_mismatch
+- corrupt_or_missing_audit_evidence
+final_freeze:
+  done: false
+  requires:
+  - qualified_methods_and_tools
+  - model_preprocessing_threshold_hashes
+  - full_task_and_seed_manifests
+  - layout_family_split_audit
+  - exact_continuous_cases_if_authorized
+  - one_time_first_generation_receipt
+  no_test_tuning: true

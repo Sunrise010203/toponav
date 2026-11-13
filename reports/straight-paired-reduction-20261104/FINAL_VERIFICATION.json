@@ -1,0 +1,38 @@
+{
+  "candidate_promoted": false,
+  "production_source_restored_byte_identical": true,
+  "previously_accepted_local_exclusion_retained": true,
+  "preexisting_files_byte_identical": 709,
+  "measured_freeze_files_verified_via_exact_snapshots": 309,
+  "standalone_helper_not_imported_by_production": true,
+  "standalone_helper_and_test_unchanged_from_measurement": true,
+  "analysis_reproduced_byte_identical": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "all_serialized_outputs_exact": true,
+  "original_gate_passed": false,
+  "conditional_replay_performed": false,
+  "extra_candidate_performance_or_profile_performed": false,
+  "targeted": {
+    "passed": 216,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "total": 216
+  },
+  "expanded": {
+    "passed": 1280,
+    "failed": 33,
+    "errors": 0,
+    "skipped": 0,
+    "total": 1313
+  },
+  "failed_nodes_and_messages_unchanged": true,
+  "full_current_exit_code": 2,
+  "full_current_selected": 0,
+  "verification_complete": false,
+  "source_changes_in_default": 0,
+  "physical_execution": false,
+  "navigation_acceptance": false,
+  "real_time_budget_proved": false
+}

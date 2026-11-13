@@ -1,0 +1,28 @@
+{
+  "candidate": "Finite float32 population maximum without boolean gather, zero-preserving original fallback",
+  "production_edits": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "new_helper": "roadvision/finite_population_max.py",
+  "scope": "Same full cv2 score maps and original outside & isfinite mask, count_nonzero and cache generation. For native float32 base ndarray exact same-shape 2D inputs with nonempty valid selection, numpy max(where=valid, initial=-inf) selects the same finite nonzero maximum. If zero, use original scores[valid].max() to preserve sign/order. All unsupported arrays/dtypes fallback to original gather. No scratch/1D, patch/NCC or inverse reuse, no persistent new state.",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "gate": "All 3 full-controller total-wall medians AND means strictly improve and all full serialized outputs identical. One fixed serial AB/BA comparison; all samples retained; failure restores production original bytes; no extra candidate performance/profile or conditional replay after failure.",
+  "after_gate": "Only if performance gate passes, one frozen 13-case old-recording compatibility replay and regression before default promotion.",
+  "safety_changed": false
+}

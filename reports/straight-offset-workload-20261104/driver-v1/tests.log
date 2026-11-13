@@ -1,0 +1,65 @@
+.........F.......................................                        [100%]
+=================================== FAILURES ===================================
+__________________ test_two_pass_runner_or_fail_closed[None] ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-2/test_two_pass_runner_or_fail_c0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7cb0ccc54490>
+damage = None
+
+    @pytest.mark.parametrize('damage', [None, 'output', 'input_hash'])
+    def test_two_pass_runner_or_fail_closed(tmp_path, monkeypatch, damage):
+        import tools.straight_workload_profile as driver
+        base, rows, _ = fixture_case(tmp_path, 'gradient_transfer')
+        if damage == 'output':
+            rows[-1]['decision']['reason'] = 'deliberate_mismatch'
+            (base/'decisions.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in rows))
+        monkeypatch.setattr(driver, 'bindings', lambda: ([], []))
+        pins = {str(p.relative_to(tmp_path)): hashlib.sha256(p.read_bytes()).hexdigest()
+                for p in base.rglob('*') if p.is_file()}
+        if damage == 'input_hash': pins['input/public/task.json'] = 'wrong'
+        plan = dict(case='input', expected_decisions_per_pass=3)
+        original_threads, original_pair, original_match = cv2.getNumThreads(), pd.filter_pair, cv2.matchTemplate
+        out = tmp_path/'out'
+        if damage is None:
+>           result = run(tmp_path, dict(files=pins), plan, out)
+
+tests/test_straight_workload_profile.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tools/straight_workload_profile.py:218: in run
+    pstats.Stats(aggregate, stream=stream).sort_stats(sort).print_stats(100)
+/usr/lib/python3.10/pstats.py:114: in __init__
+    self.init(arg)
+/usr/lib/python3.10/pstats.py:128: in init
+    self.load_stats(arg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <pstats.Stats object at 0x7cb0ccc9ead0>
+arg = <pstats.Stats object at 0x7cb0ccc9e770>
+
+    def load_stats(self, arg):
+        if arg is None:
+            self.stats = {}
+            return
+        elif isinstance(arg, str):
+            with open(arg, 'rb') as f:
+                self.stats = marshal.load(f)
+            try:
+                file_stats = os.stat(arg)
+                arg = time.ctime(file_stats.st_mtime) + "    " + arg
+            except:  # in case this is not unix
+                pass
+            self.files = [arg]
+        elif hasattr(arg, 'create_stats'):
+            arg.create_stats()
+            self.stats = arg.stats
+            arg.stats = {}
+        if not self.stats:
+>           raise TypeError("Cannot create or construct a %r object from %r"
+                            % (self.__class__, arg))
+E           TypeError: Cannot create or construct a <class 'pstats.Stats'> object from <pstats.Stats object at 0x7cb0ccc9e770>
+
+/usr/lib/python3.10/pstats.py:154: TypeError
+- generated xml file: /home/sunrise/toponav_project/reports/straight-offset-workload-20261104/tests.xml -
+=========================== short test summary info ============================
+FAILED tests/test_straight_workload_profile.py::test_two_pass_runner_or_fail_closed[None]
+1 failed, 48 passed in 0.70s

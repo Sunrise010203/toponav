@@ -1,0 +1,23 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:launch_testing",
+    "-p",
+    "no:launch_ros",
+    "-q",
+    "--junitxml=reports/straight-paired-range-20261104/targeted.xml",
+    "tests/test_local_exclusion_population.py",
+    "tests/test_paired_descriptor_checks.py",
+    "tests/test_paired_populations.py",
+    "tests/test_straight_workload_profile.py",
+    "tests/test_straight_pipeline_profile.py",
+    "tests/test_straight_paired_population_benchmark.py",
+    "tests/test_finite_population_max.py",
+    "tests/test_native_patch_contrast.py",
+    "tests/test_prepared_support_mask.py",
+    "tests/test_native_patch_range.py"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "files": {
+    "roadvision/paired_descriptor_checks.py": "574204e3bb00af31b5b87c478c03f5cd4c43c5392b1c9fab12e73facb8161a5e",
+    "roadvision/native_patch_contrast.py": "c97b3147fcc44095552027a6fcdc4e0b4b3931c71f244d4b8efb287f523f5bb0",
+    "tools/straight_workload_profile.py": "0038ffd1a4ea92d9833cac2370b3f894ef707e2fe0462c84c21d5757b50dbdbe",
+    "tests/test_native_patch_contrast.py": "58aeca0c6c1237ac8ea1fde4bc1e5b899e97ae236d1bb0dd06bd50b164c8a85c",
+    "docs/STRAIGHT_PAIRED_CONTRAST.md": "ae68ba01d1b06d6f334c315a4829f0f2ae6967d300175df366ee1a0f4d541fca"
+  }
+}

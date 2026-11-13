@@ -1,0 +1,82 @@
+[
+  {
+    "version": "before",
+    "functions": [
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+        "line": 27,
+        "function": "_patch",
+        "primitive_calls": 115930,
+        "calls": 115930
+      },
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+        "line": 35,
+        "function": "_ncc",
+        "primitive_calls": 59527,
+        "calls": 59527
+      },
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+        "line": 43,
+        "function": "_supported_patch",
+        "primitive_calls": 61718,
+        "calls": 61718
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<getRectSubPix>",
+        "primitive_calls": 177552,
+        "calls": 177552
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<matchTemplate>",
+        "primitive_calls": 117962,
+        "calls": 117962
+      }
+    ]
+  },
+  {
+    "version": "after",
+    "functions": [
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+        "line": 27,
+        "function": "_patch",
+        "primitive_calls": 61697,
+        "calls": 61697
+      },
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+        "line": 35,
+        "function": "_ncc",
+        "primitive_calls": 32717,
+        "calls": 32717
+      },
+      {
+        "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+        "line": 43,
+        "function": "_supported_patch",
+        "primitive_calls": 61718,
+        "calls": 61718
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<getRectSubPix>",
+        "primitive_calls": 123351,
+        "calls": 123351
+      },
+      {
+        "file": "~",
+        "line": 0,
+        "function": "<matchTemplate>",
+        "primitive_calls": 117962,
+        "calls": 117962
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "snapshot_to_frozen_source": {
+    "reports/straight-paired-exclusion-20261104/candidate/roadvision/paired_descriptor_checks.py": "roadvision/paired_descriptor_checks.py",
+    "reports/straight-paired-exclusion-20261104/candidate/roadvision/local_exclusion_population.py": "roadvision/local_exclusion_population.py",
+    "reports/straight-paired-exclusion-20261104/candidate/tests/test_local_exclusion_population.py.snapshot": "tests/test_local_exclusion_population.py"
+  },
+  "all_hashes_match": true
+}

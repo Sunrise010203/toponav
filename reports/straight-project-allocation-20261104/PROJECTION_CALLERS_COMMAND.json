@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:launch_testing",
+    "-p",
+    "no:launch_ros",
+    "-q",
+    "--junitxml=reports/straight-project-allocation-20261104/projection-callers.xml",
+    "tests/test_corridor_rgb_probe.py",
+    "tests/test_corridor_rgb_probe_run.py",
+    "tests/test_rgb_ground_rig.py",
+    "tests/test_calibrated_ground_motion.py",
+    "tests/test_paired_corridor.py"
+  ],
+  "scope": "Additional projection-caller regression, not a change to prior test assertions"
+}

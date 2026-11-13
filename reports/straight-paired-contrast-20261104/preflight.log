@@ -1,0 +1,1 @@
+preflight exact all 6; patch bytes/gates exact; native full matching and NCC counts unchanged

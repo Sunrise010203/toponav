@@ -1,0 +1,82 @@
+[
+  {
+    "name": "unknown_neighbor",
+    "expected_failed_checks": [
+      "neighbors_exist"
+    ]
+  },
+  {
+    "name": "self_connection",
+    "expected_failed_checks": [
+      "no_self_connections"
+    ]
+  },
+  {
+    "name": "asymmetric_connection",
+    "expected_failed_checks": [
+      "reciprocal_neighbors"
+    ]
+  },
+  {
+    "name": "nonphysical_connection",
+    "expected_failed_checks": [
+      "neighbors_have_physical_channel",
+      "edges_match_physical_channels"
+    ]
+  },
+  {
+    "name": "duplicate_neighbor",
+    "expected_failed_checks": [
+      "unique_neighbors"
+    ]
+  },
+  {
+    "name": "duplicate_node_id",
+    "expected_failed_checks": [
+      "unique_node_ids"
+    ]
+  },
+  {
+    "name": "unknown_edge_endpoint",
+    "expected_failed_checks": [
+      "edge_endpoints_exist"
+    ]
+  },
+  {
+    "name": "duplicate_undirected_edge",
+    "expected_failed_checks": [
+      "unique_undirected_edges"
+    ]
+  },
+  {
+    "name": "missing_map_edge",
+    "expected_failed_checks": [
+      "neighbors_have_map_edge"
+    ]
+  },
+  {
+    "name": "disconnected_goal",
+    "expected_failed_checks": [
+      "all_nodes_reachable_from_start",
+      "goal_reachable_from_start"
+    ]
+  },
+  {
+    "name": "negative_edge_length",
+    "expected_failed_checks": [
+      "edges_match_physical_channels"
+    ]
+  },
+  {
+    "name": "wrong_exit_direction",
+    "expected_failed_checks": [
+      "exit_directions_match_coordinates"
+    ]
+  },
+  {
+    "name": "invalid_start",
+    "expected_failed_checks": [
+      "start_goal_match_scene"
+    ]
+  }
+]

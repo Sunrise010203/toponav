@@ -1,0 +1,54 @@
+{
+  "candidate_promoted": true,
+  "scope": "Exact paired native contrast gate only",
+  "measured_source_and_test_match_final": true,
+  "preexisting_files": 770,
+  "preexisting_files_byte_identical": 768,
+  "declared_changed_files": [
+    "roadvision/paired_descriptor_checks.py",
+    "tools/straight_workload_profile.py"
+  ],
+  "production_source_changes": 1,
+  "observer_source_changes": 1,
+  "new_default_helper_count": 1,
+  "original_h_i_source_unchanged": true,
+  "measurement_freeze_files_verified": 313,
+  "replay_freeze_files_verified": 785,
+  "analysis_reproduced_byte_identical": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "all_serialized_outputs_exact": true,
+  "compatibility_cases": 13,
+  "compatibility_decisions": 581,
+  "compatibility_terminal_frames": 39,
+  "all_compatibility_outputs_and_results_equal": true,
+  "old_physics_errors": [],
+  "development_failures_retained": {
+    "passed": 220,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 0,
+    "total": 223
+  },
+  "targeted": {
+    "passed": 262,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "total": 262
+  },
+  "expanded": {
+    "passed": 1326,
+    "failed": 33,
+    "errors": 0,
+    "skipped": 0,
+    "total": 1359
+  },
+  "failed_nodes_and_messages_unchanged": true,
+  "full_current_exit_code": 2,
+  "full_current_selected": 0,
+  "verification_complete": false,
+  "physical_execution": false,
+  "navigation_acceptance": false,
+  "real_time_budget_proved": false
+}

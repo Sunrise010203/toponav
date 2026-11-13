@@ -1,0 +1,37 @@
+local random exact
+local flat exact
+local repeated exact
+local blur exact
+local shift_padding exact
+local rectified exact
+controller known_center before -1 exact 75
+controller known_center after -1 exact 75
+controller known_center before 0 exact 75
+controller known_center after 0 exact 75
+controller known_center after 1 exact 75
+controller known_center before 1 exact 75
+controller known_center before 2 exact 75
+controller known_center after 2 exact 75
+controller known_center after 3 exact 75
+controller known_center before 3 exact 75
+controller known_default before -1 exact 40
+controller known_default after -1 exact 40
+controller known_default before 0 exact 40
+controller known_default after 0 exact 40
+controller known_default after 1 exact 40
+controller known_default before 1 exact 40
+controller known_default before 2 exact 40
+controller known_default after 2 exact 40
+controller known_default after 3 exact 40
+controller known_default before 3 exact 40
+controller known_offset_plus before -1 exact 80
+controller known_offset_plus after -1 exact 80
+controller known_offset_plus before 0 exact 80
+controller known_offset_plus after 0 exact 80
+controller known_offset_plus after 1 exact 80
+controller known_offset_plus before 1 exact 80
+controller known_offset_plus before 2 exact 80
+controller known_offset_plus after 2 exact 80
+controller known_offset_plus after 3 exact 80
+controller known_offset_plus before 3 exact 80
+{'complete_controller_performance_gate_passed': False, 'all_outputs_exact': True, 'frozen_files_unchanged': True, 'opencv_threads_restored': True, 'measured_decisions': 1560, 'warmup_decisions': 390, 'navigation_acceptance': False, 'physical_audit_performed': False, 'real_time_budget_proved': False, 'versions': {'numpy': '1.26.4', 'opencv': '4.10.0'}}

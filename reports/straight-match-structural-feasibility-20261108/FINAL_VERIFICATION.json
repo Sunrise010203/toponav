@@ -1,0 +1,148 @@
+{
+  "scope": "Static evidence and runtime metadata, not a numerical equivalence or performance test",
+  "preexisting_files_verified": 2455,
+  "previous_final_pins_verified": 8,
+  "preexisting_files_changed": [],
+  "production_candidate_created": false,
+  "round_2_started": false,
+  "decision": "stop_current_micro_optimization_route_after_feasibility",
+  "opencv_version": "4.10.0",
+  "numpy_version": "1.26.4",
+  "opencv_package": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/cv2",
+  "opencv_binary_sha256": "72c7fe9b389ecd9549b6e9cdca35ee11940de15d13d46722b8412865cafabc78",
+  "opencv_threads_read_only": 12,
+  "optimized_read_only": true,
+  "ipp_read_only": true,
+  "match_template_signature": "matchTemplate(image, templ, method[, result[, mask]]) -> result",
+  "public_names_matching_crosscorr_or_matchtemplate": [
+    "matchTemplate"
+  ],
+  "build_details": [
+    "Built as dynamic libs?:      NO",
+    "C++ Compiler:                /opt/rh/devtoolset-10/root/usr/bin/c++  (ver 10.2.1)",
+    "C++ flags (Release):         -Wl,-strip-all   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG",
+    "Intel IPP:                   2021.11.0 [2021.11.0]"
+  ],
+  "default_pkg_config": {
+    "exit_code": 0,
+    "stdout": "4.5.4\n",
+    "stderr": ""
+  },
+  "upstream_source_sha256": "1e0c8fbde4aa87ae95f24721a6dc4746de9249b435c6c792dcc2fec5d418613a",
+  "upstream_source_is_installed_binary_provenance_proof": false,
+  "source_marker_lines": {
+    "void crossCorr(": [
+      566
+    ],
+    "static void common_matchTemplate(": [
+      906
+    ],
+    "integral(img, sum, sqsum, CV_64F);": [
+      931
+    ],
+    "static bool ipp_crossCorr(": [
+      1038
+    ],
+    "static bool ipp_matchTemplate(": [
+      1108
+    ],
+    "CV_IPP_RUN_FAST(ipp_matchTemplate(img, templ, result, method))": [
+      1189
+    ],
+    "void cv::matchTemplate(": [
+      1158
+    ]
+  },
+  "python_source_locations": {
+    "roadvision/paired_descriptor_checks.py": {
+      "_TrackScores": {
+        "start": 19,
+        "end": 64
+      },
+      "_Population": {
+        "start": 67,
+        "end": 83
+      },
+      "_ChannelSearch": {
+        "start": 86,
+        "end": 107
+      },
+      "_prepare_h": {
+        "start": 110,
+        "end": 130
+      },
+      "_prepare_i": {
+        "start": 133,
+        "end": 152
+      },
+      "_finish_h": {
+        "start": 155,
+        "end": 169
+      },
+      "filter_pair": {
+        "start": 172,
+        "end": 212
+      },
+      "__init__": {
+        "start": 87,
+        "end": 91
+      },
+      "intern_support": {
+        "start": 28,
+        "end": 36
+      },
+      "population": {
+        "start": 38,
+        "end": 50
+      },
+      "match": {
+        "start": 52,
+        "end": 60
+      },
+      "clear": {
+        "start": 62,
+        "end": 64
+      },
+      "reduce": {
+        "start": 73,
+        "end": 83
+      },
+      "at": {
+        "start": 93,
+        "end": 107
+      },
+      "search": {
+        "start": 97,
+        "end": 106
+      }
+    },
+    "roadvision/prepared_descriptor_search.py": {
+      "PreparedAlternative": {
+        "start": 12,
+        "end": 46
+      },
+      "__init__": {
+        "start": 13,
+        "end": 24
+      },
+      "at": {
+        "start": 26,
+        "end": 46
+      },
+      "search": {
+        "start": 38,
+        "end": 44
+      }
+    }
+  },
+  "match_template_executions": 0,
+  "controller_executions": 0,
+  "benchmarks": 0,
+  "replays": 0,
+  "physical_audits": 0,
+  "tests_run_this_round": 0,
+  "exactness_proved_for_new_implementation": false,
+  "performance_improvement_measured_this_round": false,
+  "navigation_acceptance": false,
+  "real_time_budget_proved": false
+}

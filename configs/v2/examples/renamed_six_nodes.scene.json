@@ -1,0 +1,76 @@
+{
+  "schema_version": "2.0",
+  "scene_id": "renamed-six",
+  "exit_direction_frame": "map_xy_east_north",
+  "description": "六节点室内二维场景；通道之外不可直接通行；示意/仿真场景，未经实地测量。",
+  "nodes": [
+    {
+      "node_id": "place-0"
+    },
+    {
+      "node_id": "place-1"
+    },
+    {
+      "node_id": "place-2"
+    },
+    {
+      "node_id": "place-3"
+    },
+    {
+      "node_id": "place-4"
+    },
+    {
+      "node_id": "place-5"
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": "C01",
+      "source": "place-0",
+      "target": "place-1",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "C02",
+      "source": "place-1",
+      "target": "place-2",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "C03",
+      "source": "place-2",
+      "target": "place-3",
+      "bidirectional": true,
+      "source_direction": "north",
+      "target_direction": "south"
+    },
+    {
+      "channel_id": "C04",
+      "source": "place-3",
+      "target": "place-4",
+      "bidirectional": true,
+      "source_direction": "west",
+      "target_direction": "east"
+    },
+    {
+      "channel_id": "C05",
+      "source": "place-4",
+      "target": "place-1",
+      "bidirectional": true,
+      "source_direction": "south",
+      "target_direction": "north"
+    },
+    {
+      "channel_id": "C06",
+      "source": "place-3",
+      "target": "place-5",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    }
+  ]
+}

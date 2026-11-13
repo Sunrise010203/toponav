@@ -1,0 +1,20 @@
+{
+  "candidate_promoted": false,
+  "performance_gate": false,
+  "restored_original_bytes": true,
+  "preexisting_files_byte_identical": 1211,
+  "all_outputs_exact": true,
+  "all_samples_retained": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "symmetric_full_controller_binding": true,
+  "old_test_assertions_changed": false,
+  "additional_candidate_timing_or_profile": false,
+  "conditional_replay_executed": false,
+  "full_current_complete": false,
+  "navigation_acceptance": false,
+  "new_physics_or_actuator_execution": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

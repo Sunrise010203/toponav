@@ -1,0 +1,15 @@
+appearance: one photometric exposure factor; no simultaneous geometry or fault changes
+execution_unknown: first atomic move executes but its public status is unknown, never
+  guessed complete
+factors:
+- appearance_material_or_lighting
+- occlusion_once
+- drop_once
+- confident_wrong_observation_once
+- trusted_atomic_execution_failed_once
+- execution_unknown
+- wrong_map_edge
+- temporary_closure
+temporary_closure: first planned edge physically closed for first 3 scheduled captures,
+  then opens
+wrong_map_edge: redundant physical edge absent from public graph, physical world unchanged

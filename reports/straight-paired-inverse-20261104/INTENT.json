@@ -1,0 +1,29 @@
+{
+  "candidate": "Lazily compute the unchanged H prealignment inverse once per native pair region, at the same first-use position; no other production change",
+  "production_file": "roadvision/paired_descriptor_checks.py",
+  "scope": "Local variable only, no cross-region/frame retention or mutable arrays in output",
+  "before_source": "reports/straight-paired-inverse-20261104/before/roadvision/paired_descriptor_checks.py",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "performance_gate": "All three full-controller total wall medians AND means strictly improve; output byte-equivalence everywhere; retain all samples. Reject and restore if any case regresses. One fixed serial AB/BA comparison only, no rerun to pass.",
+  "correctness": "Preserve first-use/empty/pre-projection/singular exception order, finally cleanup, native and fallback dispatch, source arguments and safety policies. Native actual match counts stay identical.",
+  "baseline": "Only pair source differs, H/I/primitives shared unchanged. Use unmodified loader; no cloned H/I identity remapping.",
+  "safety_changed": false,
+  "physical_execution": false,
+  "after_gate": "If fail, snapshot candidate then restore exact baseline; if pass, run bounded compatibility replay and regression before accept. No candidate retuning."
+}

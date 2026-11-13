@@ -1,0 +1,7 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "reports/straight-match-representation-20261104/check.py"
+  ],
+  "exit_code": 0
+}

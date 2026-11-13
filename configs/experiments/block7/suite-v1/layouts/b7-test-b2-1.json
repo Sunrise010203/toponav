@@ -1,0 +1,1483 @@
+{
+  "layout": {
+    "layout_id": "b7-test-b2-1",
+    "family_id": "b7-test-b2-1",
+    "split": "test",
+    "node_band": [
+      16,
+      24
+    ],
+    "cells": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        4
+      ]
+    ],
+    "edges": [
+      [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      [
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ]
+      ]
+    ],
+    "generation_seed": 11027578238921973874,
+    "pixel_generation": "not_generated"
+  },
+  "graph": {
+    "schema_version": "2.0",
+    "scene_id": "b7-test-b2-1",
+    "exit_direction_frame": "map_xy_east_north",
+    "directed": false,
+    "nodes": [
+      {
+        "node_id": "R000",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R002"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R002",
+            "channel_id": "P000",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R001",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R002"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R002",
+            "channel_id": "P001",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R002",
+        "node_type": "intersection",
+        "neighbors": [
+          "R000",
+          "R001",
+          "R005"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R000",
+            "channel_id": "P000",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R001",
+            "channel_id": "P001",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R005",
+            "channel_id": "P002",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R003",
+        "node_type": "corner",
+        "neighbors": [
+          "R004",
+          "R006"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R004",
+            "channel_id": "P003",
+            "direction": "north"
+          },
+          {
+            "neighbor_id": "R006",
+            "channel_id": "P004",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R004",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R003"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R003",
+            "channel_id": "P003",
+            "direction": "south"
+          }
+        ]
+      },
+      {
+        "node_id": "R005",
+        "node_type": "corner",
+        "neighbors": [
+          "R002",
+          "R006"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R002",
+            "channel_id": "P002",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R006",
+            "channel_id": "P005",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R006",
+        "node_type": "intersection",
+        "neighbors": [
+          "R003",
+          "R005",
+          "R009"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R003",
+            "channel_id": "P004",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R005",
+            "channel_id": "P005",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R009",
+            "channel_id": "P006",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R007",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R011"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R011",
+            "channel_id": "P007",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R008",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R013"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R013",
+            "channel_id": "P008",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R009",
+        "node_type": "corridor",
+        "neighbors": [
+          "R006",
+          "R014"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R006",
+            "channel_id": "P006",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R014",
+            "channel_id": "P009",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R010",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R011"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R011",
+            "channel_id": "P010",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R011",
+        "node_type": "intersection",
+        "neighbors": [
+          "R007",
+          "R010",
+          "R012",
+          "R018"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R007",
+            "channel_id": "P007",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R010",
+            "channel_id": "P010",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R012",
+            "channel_id": "P011",
+            "direction": "north"
+          },
+          {
+            "neighbor_id": "R018",
+            "channel_id": "P012",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R012",
+        "node_type": "intersection",
+        "neighbors": [
+          "R011",
+          "R013",
+          "R019"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R011",
+            "channel_id": "P011",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R013",
+            "channel_id": "P013",
+            "direction": "north"
+          },
+          {
+            "neighbor_id": "R019",
+            "channel_id": "P014",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R013",
+        "node_type": "intersection",
+        "neighbors": [
+          "R008",
+          "R012",
+          "R014",
+          "R020"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R008",
+            "channel_id": "P008",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R012",
+            "channel_id": "P013",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R014",
+            "channel_id": "P015",
+            "direction": "north"
+          },
+          {
+            "neighbor_id": "R020",
+            "channel_id": "P016",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R014",
+        "node_type": "intersection",
+        "neighbors": [
+          "R009",
+          "R013",
+          "R015"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R009",
+            "channel_id": "P009",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R013",
+            "channel_id": "P015",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R015",
+            "channel_id": "P017",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R015",
+        "node_type": "corner",
+        "neighbors": [
+          "R014",
+          "R021"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R014",
+            "channel_id": "P017",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R021",
+            "channel_id": "P018",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R016",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R017"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R017",
+            "channel_id": "P019",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R017",
+        "node_type": "corridor",
+        "neighbors": [
+          "R016",
+          "R018"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R016",
+            "channel_id": "P019",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R018",
+            "channel_id": "P020",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R018",
+        "node_type": "corner",
+        "neighbors": [
+          "R011",
+          "R017"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R011",
+            "channel_id": "P012",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R017",
+            "channel_id": "P020",
+            "direction": "south"
+          }
+        ]
+      },
+      {
+        "node_id": "R019",
+        "node_type": "corner",
+        "neighbors": [
+          "R012",
+          "R020"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R012",
+            "channel_id": "P014",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R020",
+            "channel_id": "P021",
+            "direction": "north"
+          }
+        ]
+      },
+      {
+        "node_id": "R020",
+        "node_type": "intersection",
+        "neighbors": [
+          "R013",
+          "R019",
+          "R022"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R013",
+            "channel_id": "P016",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R019",
+            "channel_id": "P021",
+            "direction": "south"
+          },
+          {
+            "neighbor_id": "R022",
+            "channel_id": "P022",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R021",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R015"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R015",
+            "channel_id": "P018",
+            "direction": "west"
+          }
+        ]
+      },
+      {
+        "node_id": "R022",
+        "node_type": "corridor",
+        "neighbors": [
+          "R020",
+          "R023"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R020",
+            "channel_id": "P022",
+            "direction": "west"
+          },
+          {
+            "neighbor_id": "R023",
+            "channel_id": "P023",
+            "direction": "east"
+          }
+        ]
+      },
+      {
+        "node_id": "R023",
+        "node_type": "dead_end",
+        "neighbors": [
+          "R022"
+        ],
+        "exits": [
+          {
+            "neighbor_id": "R022",
+            "channel_id": "P023",
+            "direction": "west"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "channel_id": "P000",
+        "source": "R000",
+        "target": "R002",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P001",
+        "source": "R001",
+        "target": "R002",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P002",
+        "source": "R002",
+        "target": "R005",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P003",
+        "source": "R003",
+        "target": "R004",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P004",
+        "source": "R003",
+        "target": "R006",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P005",
+        "source": "R005",
+        "target": "R006",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P006",
+        "source": "R006",
+        "target": "R009",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P007",
+        "source": "R007",
+        "target": "R011",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P008",
+        "source": "R008",
+        "target": "R013",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P009",
+        "source": "R009",
+        "target": "R014",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P010",
+        "source": "R010",
+        "target": "R011",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P011",
+        "source": "R011",
+        "target": "R012",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P012",
+        "source": "R011",
+        "target": "R018",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P013",
+        "source": "R012",
+        "target": "R013",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P014",
+        "source": "R012",
+        "target": "R019",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P015",
+        "source": "R013",
+        "target": "R014",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P016",
+        "source": "R013",
+        "target": "R020",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P017",
+        "source": "R014",
+        "target": "R015",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P018",
+        "source": "R015",
+        "target": "R021",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P019",
+        "source": "R016",
+        "target": "R017",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P020",
+        "source": "R017",
+        "target": "R018",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P021",
+        "source": "R019",
+        "target": "R020",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P022",
+        "source": "R020",
+        "target": "R022",
+        "bidirectional": true,
+        "enabled": true
+      },
+      {
+        "channel_id": "P023",
+        "source": "R022",
+        "target": "R023",
+        "bidirectional": true,
+        "enabled": true
+      }
+    ]
+  },
+  "scene": {
+    "schema_version": "2.0",
+    "scene_id": "b7-test-b2-1",
+    "exit_direction_frame": "map_xy_east_north",
+    "nodes": [
+      {
+        "node_id": "R000"
+      },
+      {
+        "node_id": "R001"
+      },
+      {
+        "node_id": "R002"
+      },
+      {
+        "node_id": "R003"
+      },
+      {
+        "node_id": "R004"
+      },
+      {
+        "node_id": "R005"
+      },
+      {
+        "node_id": "R006"
+      },
+      {
+        "node_id": "R007"
+      },
+      {
+        "node_id": "R008"
+      },
+      {
+        "node_id": "R009"
+      },
+      {
+        "node_id": "R010"
+      },
+      {
+        "node_id": "R011"
+      },
+      {
+        "node_id": "R012"
+      },
+      {
+        "node_id": "R013"
+      },
+      {
+        "node_id": "R014"
+      },
+      {
+        "node_id": "R015"
+      },
+      {
+        "node_id": "R016"
+      },
+      {
+        "node_id": "R017"
+      },
+      {
+        "node_id": "R018"
+      },
+      {
+        "node_id": "R019"
+      },
+      {
+        "node_id": "R020"
+      },
+      {
+        "node_id": "R021"
+      },
+      {
+        "node_id": "R022"
+      },
+      {
+        "node_id": "R023"
+      }
+    ],
+    "channels": [
+      {
+        "channel_id": "P000",
+        "source": "R000",
+        "target": "R002",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P001",
+        "source": "R001",
+        "target": "R002",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P002",
+        "source": "R002",
+        "target": "R005",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P003",
+        "source": "R003",
+        "target": "R004",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P004",
+        "source": "R003",
+        "target": "R006",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P005",
+        "source": "R005",
+        "target": "R006",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P006",
+        "source": "R006",
+        "target": "R009",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P007",
+        "source": "R007",
+        "target": "R011",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P008",
+        "source": "R008",
+        "target": "R013",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P009",
+        "source": "R009",
+        "target": "R014",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P010",
+        "source": "R010",
+        "target": "R011",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P011",
+        "source": "R011",
+        "target": "R012",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P012",
+        "source": "R011",
+        "target": "R018",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P013",
+        "source": "R012",
+        "target": "R013",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P014",
+        "source": "R012",
+        "target": "R019",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P015",
+        "source": "R013",
+        "target": "R014",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P016",
+        "source": "R013",
+        "target": "R020",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P017",
+        "source": "R014",
+        "target": "R015",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P018",
+        "source": "R015",
+        "target": "R021",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P019",
+        "source": "R016",
+        "target": "R017",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P020",
+        "source": "R017",
+        "target": "R018",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P021",
+        "source": "R019",
+        "target": "R020",
+        "bidirectional": true,
+        "source_direction": "north",
+        "target_direction": "south"
+      },
+      {
+        "channel_id": "P022",
+        "source": "R020",
+        "target": "R022",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      },
+      {
+        "channel_id": "P023",
+        "source": "R022",
+        "target": "R023",
+        "bidirectional": true,
+        "source_direction": "east",
+        "target_direction": "west"
+      }
+    ],
+    "geometry": {
+      "units": "metre",
+      "node_positions_m": {
+        "R000": [
+          0,
+          24
+        ],
+        "R001": [
+          6,
+          18
+        ],
+        "R002": [
+          6,
+          24
+        ],
+        "R003": [
+          6,
+          30
+        ],
+        "R004": [
+          6,
+          36
+        ],
+        "R005": [
+          12,
+          24
+        ],
+        "R006": [
+          12,
+          30
+        ],
+        "R007": [
+          18,
+          12
+        ],
+        "R008": [
+          18,
+          24
+        ],
+        "R009": [
+          18,
+          30
+        ],
+        "R010": [
+          24,
+          6
+        ],
+        "R011": [
+          24,
+          12
+        ],
+        "R012": [
+          24,
+          18
+        ],
+        "R013": [
+          24,
+          24
+        ],
+        "R014": [
+          24,
+          30
+        ],
+        "R015": [
+          24,
+          36
+        ],
+        "R016": [
+          30,
+          0
+        ],
+        "R017": [
+          30,
+          6
+        ],
+        "R018": [
+          30,
+          12
+        ],
+        "R019": [
+          30,
+          18
+        ],
+        "R020": [
+          30,
+          24
+        ],
+        "R021": [
+          30,
+          36
+        ],
+        "R022": [
+          36,
+          24
+        ],
+        "R023": [
+          42,
+          24
+        ]
+      },
+      "channel_dimensions_m": {
+        "P000": {
+          "length": 6,
+          "width": 3
+        },
+        "P001": {
+          "length": 6,
+          "width": 3
+        },
+        "P002": {
+          "length": 6,
+          "width": 3
+        },
+        "P003": {
+          "length": 6,
+          "width": 3
+        },
+        "P004": {
+          "length": 6,
+          "width": 3
+        },
+        "P005": {
+          "length": 6,
+          "width": 3
+        },
+        "P006": {
+          "length": 6,
+          "width": 3
+        },
+        "P007": {
+          "length": 6,
+          "width": 3
+        },
+        "P008": {
+          "length": 6,
+          "width": 3
+        },
+        "P009": {
+          "length": 6,
+          "width": 3
+        },
+        "P010": {
+          "length": 6,
+          "width": 3
+        },
+        "P011": {
+          "length": 6,
+          "width": 3
+        },
+        "P012": {
+          "length": 6,
+          "width": 3
+        },
+        "P013": {
+          "length": 6,
+          "width": 3
+        },
+        "P014": {
+          "length": 6,
+          "width": 3
+        },
+        "P015": {
+          "length": 6,
+          "width": 3
+        },
+        "P016": {
+          "length": 6,
+          "width": 3
+        },
+        "P017": {
+          "length": 6,
+          "width": 3
+        },
+        "P018": {
+          "length": 6,
+          "width": 3
+        },
+        "P019": {
+          "length": 6,
+          "width": 3
+        },
+        "P020": {
+          "length": 6,
+          "width": 3
+        },
+        "P021": {
+          "length": 6,
+          "width": 3
+        },
+        "P022": {
+          "length": 6,
+          "width": 3
+        },
+        "P023": {
+          "length": 6,
+          "width": 3
+        }
+      }
+    }
+  }
+}

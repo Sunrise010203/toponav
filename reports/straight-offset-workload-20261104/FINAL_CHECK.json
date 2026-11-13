@@ -1,0 +1,9 @@
+{
+  "preexisting_files_unchanged": 172,
+  "profile_freeze_files_unchanged": 139,
+  "analysis_inputs_unchanged": true,
+  "wall_and_cpu_partition_verified_all_80_stage_updates": true,
+  "driver_exit_code": 0,
+  "new_candidate": false,
+  "source_restoration_or_strategy_change_needed": false
+}

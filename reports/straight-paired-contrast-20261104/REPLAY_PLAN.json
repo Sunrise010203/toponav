@@ -1,0 +1,20 @@
+{
+  "cases": [
+    "reports/straight-evidence-recovery-20261103/comparison/fault--freeze",
+    "reports/straight-evidence-recovery-20261103/comparison/fault--missing",
+    "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_history",
+    "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer",
+    "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_history",
+    "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer",
+    "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_history",
+    "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer",
+    "reports/straight-evidence-recovery-20261103/comparison/refusal--no-permission",
+    "reports/straight-evidence-recovery-20261103/comparison/refusal--repeated",
+    "reports/straight-evidence-recovery-20261103/development/baseline",
+    "reports/straight-evidence-recovery-20261103/development/gradient_transfer",
+    "reports/straight-evidence-recovery-20261103/development/reference"
+  ],
+  "decisions": 581,
+  "terminal_frames": 39,
+  "scope": "Executed only if performance gate passes; one bounded compatibility replay, no new physics"
+}

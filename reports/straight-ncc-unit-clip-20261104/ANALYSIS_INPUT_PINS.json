@@ -1,0 +1,14 @@
+{
+  "files": {
+    "reports/straight-ncc-unit-clip-20261104/analyze.py": "47bd58512b0b586936320522caafbad6dd729101dccdfb9071d5144e53d0c35d",
+    "reports/straight-ncc-unit-clip-20261104/PLAN.json": "07587de9e57ef920b8f83c3553d2242090ab5d0d1a42829fc4e46da2fc574841",
+    "reports/straight-ncc-unit-clip-20261104/FREEZE.json": "383a60e491282611021da5ad29a712f87cc26c687d31c02ed7c8322b28c88d61",
+    "reports/straight-ncc-unit-clip-20261104/BEFORE_PINS.json": "d8091b719b4dbd7a573da5e309345c43a4ab2b67df86e0ee6e1774905fef9b1d",
+    "reports/straight-ncc-unit-clip-20261104/BENCHMARK_BASELINE_BINDING.json": "d3617f40d0d7ff5c12644bc33cce9ff536fb20eb709d6fbadf5ef130a5f6c823",
+    "reports/straight-ncc-unit-clip-20261104/benchmark/SUMMARY.json": "fcc6778b79868d448ed7db85fee9788c632807b7445224c5400e0600ebd6a2b5",
+    "reports/straight-ncc-unit-clip-20261104/benchmark/rows.jsonl": "fdecf4106dc406567c19d440959b386b9ce6ad2b59a884b74a3c1a0d12e49237",
+    "reports/straight-ncc-unit-clip-20261104/benchmark/known_center-controller.json": "ba68020c762337b7856e15995d390e6b924c88e8a0dd2e5dd91a3566ec3c348c",
+    "reports/straight-ncc-unit-clip-20261104/benchmark/known_default-controller.json": "1cb88458c35045a52f2bd5cdbbada88ca571b912e58ac4a0a5a1e37e47aef6f0",
+    "reports/straight-ncc-unit-clip-20261104/benchmark/known_offset_plus-controller.json": "4f25396a52d00bcbbd2fad96e664a327153fbff3e11314795b3d7124f2069989"
+  }
+}

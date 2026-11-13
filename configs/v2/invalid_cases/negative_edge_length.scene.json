@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0",
+  "scene_id": "six_node_indoor_v1",
+  "exit_direction_frame": "map_xy_east_north",
+  "description": "六节点室内二维场景；通道之外不可直接通行；示意/仿真场景，未经实地测量。",
+  "nodes": [
+    {
+      "node_id": "N01"
+    },
+    {
+      "node_id": "N02"
+    },
+    {
+      "node_id": "N03"
+    },
+    {
+      "node_id": "N04"
+    },
+    {
+      "node_id": "N05"
+    },
+    {
+      "node_id": "N06"
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": "C01",
+      "source": "N01",
+      "target": "N02",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "C02",
+      "source": "N02",
+      "target": "N03",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "C03",
+      "source": "N03",
+      "target": "N04",
+      "bidirectional": true,
+      "source_direction": "north",
+      "target_direction": "south"
+    },
+    {
+      "channel_id": "C04",
+      "source": "N04",
+      "target": "N05",
+      "bidirectional": true,
+      "source_direction": "west",
+      "target_direction": "east"
+    },
+    {
+      "channel_id": "C05",
+      "source": "N05",
+      "target": "N02",
+      "bidirectional": true,
+      "source_direction": "south",
+      "target_direction": "north"
+    },
+    {
+      "channel_id": "C06",
+      "source": "N04",
+      "target": "N06",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    }
+  ],
+  "geometry": {
+    "units": "metre",
+    "coordinate_system": {
+      "origin_node": "N01",
+      "x_positive": "east",
+      "y_positive": "north",
+      "heading_unit": "degree",
+      "heading_zero": "east",
+      "heading_positive": "counterclockwise"
+    },
+    "bounds_m": {
+      "x_min": -0.5,
+      "x_max": 6.5,
+      "y_min": -0.5,
+      "y_max": 2.5
+    },
+    "node_positions_m": {
+      "N01": [
+        0,
+        0
+      ],
+      "N02": [
+        2,
+        0
+      ],
+      "N03": [
+        4,
+        0
+      ],
+      "N04": [
+        4,
+        2
+      ],
+      "N05": [
+        2,
+        2
+      ],
+      "N06": [
+        6,
+        2
+      ]
+    },
+    "node_annotations": {
+      "N01": "入口",
+      "N02": "三岔路口 A",
+      "N03": "东侧转角",
+      "N04": "三岔路口 B",
+      "N05": "西侧转角",
+      "N06": "目标停靠点"
+    },
+    "channel_dimensions_m": {
+      "C01": {
+        "length": -2,
+        "width": 0.8
+      },
+      "C02": {
+        "length": 2,
+        "width": 0.8
+      },
+      "C03": {
+        "length": 2,
+        "width": 0.8
+      },
+      "C04": {
+        "length": 2,
+        "width": 0.8
+      },
+      "C05": {
+        "length": 2,
+        "width": 0.8
+      },
+      "C06": {
+        "length": 2,
+        "width": 0.8
+      }
+    },
+    "evaluation": {
+      "goal_acceptance_radius_m": 0.2,
+      "reference_task": {
+        "start_node": "N01",
+        "goal_node": "N06"
+      },
+      "reference_routes": {
+        "primary": [
+          "N01",
+          "N02",
+          "N03",
+          "N04",
+          "N06"
+        ],
+        "alternate": [
+          "N01",
+          "N02",
+          "N05",
+          "N04",
+          "N06"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,4944 @@
+{
+  "scope": "Instrumented attribution of current only; no before/after comparison or causality",
+  "full_stage": {
+    "decisions": 80,
+    "instrumented_wall_s": 43.15299718999904,
+    "instrumented_cpu_s": 146.60494244700007,
+    "uncovered_wall_s": 0.06321496400073556,
+    "stages": [
+      {
+        "stage": "template_matching",
+        "calls": 126105,
+        "cpu_exclusive_s": 67.56343627400071,
+        "cpu_inclusive_s": 67.56343627400071,
+        "wall_exclusive_s": 20.26690514595134,
+        "wall_inclusive_s": 20.26690514595134,
+        "exclusive_fraction_of_instrumented_wall": 0.46965231769922844
+      },
+      {
+        "stage": "h_patch_evidence",
+        "calls": 28732,
+        "cpu_exclusive_s": 15.657876155999446,
+        "cpu_inclusive_s": 68.28467658899993,
+        "wall_exclusive_s": 5.077352888054975,
+        "wall_inclusive_s": 22.739900905020022,
+        "exclusive_fraction_of_instrumented_wall": 0.11765933350352964
+      },
+      {
+        "stage": "i_appearance_evidence",
+        "calls": 29371,
+        "cpu_exclusive_s": 14.126763270000286,
+        "cpu_inclusive_s": 16.647415914000515,
+        "wall_exclusive_s": 4.401678691015377,
+        "wall_inclusive_s": 4.831282389002126,
+        "exclusive_fraction_of_instrumented_wall": 0.10200169113712203
+      },
+      {
+        "stage": "paired_descriptors",
+        "calls": 459,
+        "cpu_exclusive_s": 10.452274837999386,
+        "cpu_inclusive_s": 95.08886417599999,
+        "wall_exclusive_s": 3.309342464982592,
+        "wall_inclusive_s": 31.54247441500229,
+        "exclusive_fraction_of_instrumented_wall": 0.07668858898518296
+      },
+      {
+        "stage": "nonlinear_solver",
+        "calls": 710,
+        "cpu_exclusive_s": 11.051223704999984,
+        "cpu_inclusive_s": 11.051223704999984,
+        "wall_exclusive_s": 2.6278089340009956,
+        "wall_inclusive_s": 2.6278089340009956,
+        "exclusive_fraction_of_instrumented_wall": 0.060895166155689545
+      },
+      {
+        "stage": "metric_ground_fit",
+        "calls": 82,
+        "cpu_exclusive_s": 6.769458901999961,
+        "cpu_inclusive_s": 7.266589111999914,
+        "wall_exclusive_s": 2.2566680740005722,
+        "wall_inclusive_s": 2.4245796790012264,
+        "exclusive_fraction_of_instrumented_wall": 0.05229458487123504
+      },
+      {
+        "stage": "free_path",
+        "calls": 72,
+        "cpu_exclusive_s": 9.000365255000371,
+        "cpu_inclusive_s": 26.010071656000136,
+        "wall_exclusive_s": 1.5074154749988793,
+        "wall_inclusive_s": 4.420144182998911,
+        "exclusive_fraction_of_instrumented_wall": 0.03493188360386313
+      },
+      {
+        "stage": "region_models",
+        "calls": 1249,
+        "cpu_exclusive_s": 3.866341628000242,
+        "cpu_inclusive_s": 3.866341628000242,
+        "wall_exclusive_s": 1.2745141499954116,
+        "wall_inclusive_s": 1.2745141499954116,
+        "exclusive_fraction_of_instrumented_wall": 0.029534777025656694
+      },
+      {
+        "stage": "optical_flow",
+        "calls": 2896,
+        "cpu_exclusive_s": 2.3120529729998758,
+        "cpu_inclusive_s": 2.3120529729998758,
+        "wall_exclusive_s": 0.7344203750026281,
+        "wall_inclusive_s": 0.7344203750026281,
+        "exclusive_fraction_of_instrumented_wall": 0.01701898878006171
+      },
+      {
+        "stage": "roi_tracking",
+        "calls": 459,
+        "cpu_exclusive_s": 1.0772257630000546,
+        "cpu_inclusive_s": 4.811626837000097,
+        "wall_exclusive_s": 0.31755993199476507,
+        "wall_inclusive_s": 1.5190302129972224,
+        "exclusive_fraction_of_instrumented_wall": 0.007358931074858491
+      },
+      {
+        "stage": "history_preparation",
+        "calls": 72,
+        "cpu_exclusive_s": 0.964793011999995,
+        "cpu_inclusive_s": 103.43199782800002,
+        "wall_exclusive_s": 0.265208899999152,
+        "wall_inclusive_s": 34.181899847000295,
+        "exclusive_fraction_of_instrumented_wall": 0.0061457816900054325
+      },
+      {
+        "stage": "h_pair_preparation",
+        "calls": 459,
+        "cpu_exclusive_s": 0.4424682560002964,
+        "cpu_inclusive_s": 0.5460539590001727,
+        "wall_exclusive_s": 0.16179483799987793,
+        "wall_inclusive_s": 0.19566735199941832,
+        "exclusive_fraction_of_instrumented_wall": 0.0037493302559613363
+      },
+      {
+        "stage": "h_pair_finish",
+        "calls": 459,
+        "cpu_exclusive_s": 0.4315851399997954,
+        "cpu_inclusive_s": 1.7179157219999288,
+        "wall_exclusive_s": 0.14265499100019952,
+        "wall_inclusive_s": 0.5730637580013536,
+        "exclusive_fraction_of_instrumented_wall": 0.003305795664020775
+      },
+      {
+        "stage": "perspective_warp",
+        "calls": 1597,
+        "cpu_exclusive_s": 0.4953508189996736,
+        "cpu_inclusive_s": 0.4953508189996736,
+        "wall_exclusive_s": 0.1365702129969577,
+        "wall_inclusive_s": 0.1365702129969577,
+        "exclusive_fraction_of_instrumented_wall": 0.0031647909042250406
+      },
+      {
+        "stage": "joint_corridor_fit",
+        "calls": 72,
+        "cpu_exclusive_s": 0.41983783100010985,
+        "cpu_inclusive_s": 4.610608636000026,
+        "wall_exclusive_s": 0.13195584700019936,
+        "wall_inclusive_s": 1.5292492470002799,
+        "exclusive_fraction_of_instrumented_wall": 0.003057860533283674
+      },
+      {
+        "stage": "i_pair_preparation",
+        "calls": 459,
+        "cpu_exclusive_s": 0.39960021600008133,
+        "cpu_inclusive_s": 0.6310778389999134,
+        "wall_exclusive_s": 0.12523976600141395,
+        "wall_inclusive_s": 0.2001858149990312,
+        "exclusive_fraction_of_instrumented_wall": 0.0029022263610101917
+      },
+      {
+        "stage": "i_descriptor_finish",
+        "calls": 459,
+        "cpu_exclusive_s": 0.30910187900000796,
+        "cpu_inclusive_s": 1.403213373000022,
+        "wall_exclusive_s": 0.10193950300322285,
+        "wall_inclusive_s": 0.4679870670006494,
+        "exclusive_fraction_of_instrumented_wall": 0.0023622809455016935
+      },
+      {
+        "stage": "startup_texture",
+        "calls": 3,
+        "cpu_exclusive_s": 0.25434359900000203,
+        "cpu_inclusive_s": 0.4782233970000007,
+        "wall_exclusive_s": 0.08368943900063641,
+        "wall_inclusive_s": 0.1594290609998552,
+        "exclusive_fraction_of_instrumented_wall": 0.0019393656165331646
+      },
+      {
+        "stage": "ground_evidence",
+        "calls": 82,
+        "cpu_exclusive_s": 0.2564806880000341,
+        "cpu_inclusive_s": 33.06529887699993,
+        "wall_exclusive_s": 0.08364086100027635,
+        "wall_inclusive_s": 10.78542966800046,
+        "exclusive_fraction_of_instrumented_wall": 0.0019382399009740302
+      },
+      {
+        "stage": "front_fit",
+        "calls": 72,
+        "cpu_exclusive_s": 0.39451354499995883,
+        "cpu_inclusive_s": 6.757836235000074,
+        "wall_exclusive_s": 0.06355330399946979,
+        "wall_inclusive_s": 1.1261572329997307,
+        "exclusive_fraction_of_instrumented_wall": 0.0014727436826612508
+      },
+      {
+        "stage": "navigation_geometry",
+        "calls": 72,
+        "cpu_exclusive_s": 0.08964937199979595,
+        "cpu_inclusive_s": 114.89009207099993,
+        "wall_exclusive_s": 0.014987294999400547,
+        "wall_inclusive_s": 36.852293621999706,
+        "exclusive_fraction_of_instrumented_wall": 0.00034730600364588207
+      },
+      {
+        "stage": "stationary_motion",
+        "calls": 10,
+        "cpu_exclusive_s": 0.008799415999989346,
+        "cpu_inclusive_s": 4.965155412999995,
+        "wall_exclusive_s": 0.002752880999878471,
+        "wall_inclusive_s": 1.6557871019997492,
+        "exclusive_fraction_of_instrumented_wall": 6.379350634111847e-05
+      },
+      {
+        "stage": "command_computation",
+        "calls": 55,
+        "cpu_exclusive_s": 0.008238300000010135,
+        "cpu_inclusive_s": 0.008238300000010135,
+        "wall_exclusive_s": 0.0015392489997338998,
+        "wall_inclusive_s": 0.0015392489997338998,
+        "exclusive_fraction_of_instrumented_wall": 3.5669573377643156e-05
+      },
+      {
+        "stage": "history_selection",
+        "calls": 72,
+        "cpu_exclusive_s": 0.0017000479999911278,
+        "cpu_inclusive_s": 0.0017000479999911278,
+        "wall_exclusive_s": 0.0005890090003504156,
+        "wall_inclusive_s": 0.0005890090003504156,
+        "exclusive_fraction_of_instrumented_wall": 1.3649318441475992e-05
+      }
+    ],
+    "pair_regions_by_view": {
+      "front/native": {
+        "calls": 153,
+        "input_tracks": 4738,
+        "h_retained": 3411,
+        "i_retained": 3388
+      },
+      "left/native": {
+        "calls": 153,
+        "input_tracks": 11734,
+        "h_retained": 10595,
+        "i_retained": 10554
+      },
+      "right/native": {
+        "calls": 153,
+        "input_tracks": 12260,
+        "h_retained": 11659,
+        "i_retained": 11625
+      }
+    },
+    "match_calls_by_scope": {
+      "paired_descriptor": 114756,
+      "outside_pair": 11349
+    },
+    "match_footprints": [
+      {
+        "image_shape": [
+          128,
+          128,
+          3
+        ],
+        "method": 5,
+        "rectified": null,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "outside_pair",
+        "template_shape": [
+          11,
+          11,
+          3
+        ],
+        "view": null,
+        "calls": 2556,
+        "result_elements": 35589744
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "front",
+        "calls": 18804,
+        "result_elements": 261826896
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "left",
+        "calls": 46920,
+        "result_elements": 653314080
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "right",
+        "calls": 49032,
+        "result_elements": 682721568
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": null,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "outside_pair",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": null,
+        "calls": 8793,
+        "result_elements": 122433732
+      }
+    ],
+    "primitive_calls": {}
+  },
+  "full_profile_workload": {
+    "decisions": 80,
+    "instrumented_wall_s": 0.0,
+    "instrumented_cpu_s": 0.0,
+    "uncovered_wall_s": 0.0,
+    "stages": [],
+    "pair_regions_by_view": {
+      "front/native": {
+        "calls": 153,
+        "input_tracks": 4738,
+        "h_retained": 3411,
+        "i_retained": 3388
+      },
+      "left/native": {
+        "calls": 153,
+        "input_tracks": 11734,
+        "h_retained": 10595,
+        "i_retained": 10554
+      },
+      "right/native": {
+        "calls": 153,
+        "input_tracks": 12260,
+        "h_retained": 11659,
+        "i_retained": 11625
+      }
+    },
+    "match_calls_by_scope": {
+      "paired_descriptor": 114756,
+      "outside_pair": 11349
+    },
+    "match_footprints": [
+      {
+        "image_shape": [
+          128,
+          128,
+          3
+        ],
+        "method": 5,
+        "rectified": null,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "outside_pair",
+        "template_shape": [
+          11,
+          11,
+          3
+        ],
+        "view": null,
+        "calls": 2556,
+        "result_elements": 35589744
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "front",
+        "calls": 18804,
+        "result_elements": 261826896
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "left",
+        "calls": 46920,
+        "result_elements": 653314080
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": false,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "paired_descriptor",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": "right",
+        "calls": 49032,
+        "result_elements": 682721568
+      },
+      {
+        "image_shape": [
+          128,
+          128
+        ],
+        "method": 5,
+        "rectified": null,
+        "result_shape": [
+          118,
+          118
+        ],
+        "scope": "outside_pair",
+        "template_shape": [
+          11,
+          11
+        ],
+        "view": null,
+        "calls": 8793,
+        "result_elements": 122433732
+      }
+    ],
+    "primitive_calls": {
+      "calibrated_ground_motion.py:<genexpr>": 30749,
+      "calibrated_ground_motion.py:<lambda>": 918,
+      "calibrated_ground_motion.py:<listcomp>": 3184,
+      "calibrated_ground_motion.py:<setcomp>": 1163,
+      "calibrated_ground_motion.py:_base": 82,
+      "calibrated_ground_motion.py:_camera_motion": 10488,
+      "calibrated_ground_motion.py:_rotation": 38884,
+      "calibrated_ground_motion.py:corridor_from_planes": 72,
+      "calibrated_ground_motion.py:errors": 15902,
+      "calibrated_ground_motion.py:estimate_ground_motion": 82,
+      "calibrated_ground_motion.py:fit_se2": 15708,
+      "calibrated_ground_motion.py:ground_pixels": 57468,
+      "calibrated_ground_motion.py:ground_points": 11453,
+      "calibrated_ground_motion.py:pixel_predictions": 11065,
+      "calibrated_ground_motion.py:predict": 17193,
+      "calibrated_ground_motion.py:residual": 1291,
+      "calibrated_ground_motion.py:select_descriptor": 459,
+      "ground_band.py:<genexpr>": 1836,
+      "ground_band.py:<listcomp>": 918,
+      "ground_band.py:track_fixed_roi": 459,
+      "ground_band.py:track_ground_band": 246,
+      "local_exclusion_population.py:__init__": 1836,
+      "local_exclusion_population.py:_window": 84223,
+      "local_exclusion_population.py:outside": 84223,
+      "native_patch_contrast.py:<genexpr>": 342576,
+      "native_patch_contrast.py:_contrast_gate": 114842,
+      "native_patch_contrast.py:_native_h_evidence": 28732,
+      "native_patch_contrast.py:_native_i_evidence": 28732,
+      "native_patch_contrast.py:h_evidence": 28732,
+      "native_patch_contrast.py:i_evidence": 28732,
+      "native_patch_contrast.py:prepared_patch": 114928,
+      "native_patch_contrast.py:supported_patch": 57464,
+      "paired_descriptor_checks.py:<genexpr>": 5214,
+      "paired_descriptor_checks.py:<listcomp>": 2623,
+      "paired_descriptor_checks.py:__init__": 86977,
+      "paired_descriptor_checks.py:_finish_h": 459,
+      "paired_descriptor_checks.py:_prepare_h": 459,
+      "paired_descriptor_checks.py:_prepare_i": 459,
+      "paired_descriptor_checks.py:at": 114192,
+      "paired_descriptor_checks.py:clear": 114928,
+      "paired_descriptor_checks.py:filter_pair": 459,
+      "paired_descriptor_checks.py:intern_support": 1836,
+      "paired_descriptor_checks.py:match": 228384,
+      "paired_descriptor_checks.py:population": 114192,
+      "paired_descriptor_checks.py:reduce": 228384,
+      "paired_descriptor_checks.py:search": 228384,
+      "prepared_descriptor_search.py:__init__": 1910,
+      "prepared_descriptor_search.py:at": 5994,
+      "prepared_descriptor_search.py:search": 5994,
+      "rgb_motion_checks.py:<genexpr>": 37702,
+      "rgb_motion_checks.py:<lambda>": 86196,
+      "rgb_motion_checks.py:<listcomp>": 1772,
+      "rgb_motion_checks.py:_ncc": 63729,
+      "rgb_motion_checks.py:_patch": 8793,
+      "rgb_motion_checks.py:split_tracks": 2263,
+      "rgb_resampling_checks.py:<genexpr>": 6288,
+      "rgb_resampling_checks.py:<listcomp>": 868,
+      "rgb_resampling_checks.py:_finish": 459,
+      "rgb_resampling_checks.py:_masked_alternative": 5355,
+      "rgb_resampling_checks.py:_supported_patch": 8793,
+      "rgb_resampling_checks.py:appearance_evidence": 639,
+      "rgb_resampling_checks.py:prepare_canvases": 459,
+      "~:<Sobel>": 284,
+      "~:<built-in method __new__ of type object at 0x5c905153b9a0>": 16904,
+      "~:<built-in method _abc._abc_instancecheck>": 82,
+      "~:<built-in method _hashlib.openssl_sha256>": 1977,
+      "~:<built-in method _operator.index>": 52006,
+      "~:<built-in method _thread.get_ident>": 126564,
+      "~:<built-in method builtins.abs>": 25484,
+      "~:<built-in method builtins.all>": 7006,
+      "~:<built-in method builtins.any>": 60362,
+      "~:<built-in method builtins.callable>": 2130,
+      "~:<built-in method builtins.getattr>": 236335,
+      "~:<built-in method builtins.hasattr>": 401472,
+      "~:<built-in method builtins.id>": 246,
+      "~:<built-in method builtins.isinstance>": 933093,
+      "~:<built-in method builtins.issubclass>": 1275930,
+      "~:<built-in method builtins.len>": 860866,
+      "~:<built-in method builtins.max>": 469370,
+      "~:<built-in method builtins.min>": 359226,
+      "~:<built-in method builtins.next>": 155106,
+      "~:<built-in method builtins.sorted>": 31861,
+      "~:<built-in method builtins.sum>": 284,
+      "~:<built-in method math.acos>": 69,
+      "~:<built-in method math.atan2>": 15777,
+      "~:<built-in method math.cos>": 182304,
+      "~:<built-in method math.degrees>": 69,
+      "~:<built-in method math.floor>": 168446,
+      "~:<built-in method math.isfinite>": 3029,
+      "~:<built-in method math.radians>": 1493,
+      "~:<built-in method math.sin>": 181828,
+      "~:<built-in method math.sqrt>": 520,
+      "~:<built-in method numpy.arange>": 18202,
+      "~:<built-in method numpy.array>": 566400,
+      "~:<built-in method numpy.asanyarray>": 750114,
+      "~:<built-in method numpy.asarray>": 904516,
+      "~:<built-in method numpy.ascontiguousarray>": 10064,
+      "~:<built-in method numpy.core._multiarray_umath.count_nonzero>": 168446,
+      "~:<built-in method numpy.core._multiarray_umath.normalize_axis_index>": 270365,
+      "~:<built-in method numpy.empty>": 372828,
+      "~:<built-in method numpy.geterrobj>": 17748,
+      "~:<built-in method numpy.promote_types>": 13128,
+      "~:<built-in method numpy.seterrobj>": 8874,
+      "~:<built-in method numpy.zeros>": 47776,
+      "~:<calcOpticalFlowPyrLK>": 2896,
+      "~:<cvtColor>": 3500,
+      "~:<decomposeHomographyMat>": 1135,
+      "~:<erode>": 6489,
+      "~:<findHomography>": 4355,
+      "~:<function SeedSequence.generate_state at 0x76d59cf15090>": 82,
+      "~:<getRectSubPix>": 189849,
+      "~:<goodFeaturesToTrack>": 459,
+      "~:<integral2>": 114842,
+      "~:<matchTemplate>": 126105,
+      "~:<method '__array_prepare__' of 'numpy.ndarray' objects>": 66274,
+      "~:<method 'add' of 'set' objects>": 80,
+      "~:<method 'all' of 'numpy.generic' objects>": 3296,
+      "~:<method 'all' of 'numpy.ndarray' objects>": 333131,
+      "~:<method 'any' of 'numpy.generic' objects>": 29282,
+      "~:<method 'any' of 'numpy.ndarray' objects>": 14174,
+      "~:<method 'append' of 'collections.deque' objects>": 99,
+      "~:<method 'append' of 'list' objects>": 667246,
+      "~:<method 'astype' of 'numpy.generic' objects>": 16843,
+      "~:<method 'astype' of 'numpy.ndarray' objects>": 461635,
+      "~:<method 'choice' of 'numpy.random._generator.Generator' objects>": 77,
+      "~:<method 'clear' of 'collections.deque' objects>": 4,
+      "~:<method 'clear' of 'dict' objects>": 229856,
+      "~:<method 'clip' of 'numpy.generic' objects>": 64437,
+      "~:<method 'clip' of 'numpy.ndarray' objects>": 6674,
+      "~:<method 'conj' of 'numpy.ndarray' objects>": 25423,
+      "~:<method 'copy' of 'dict' objects>": 710,
+      "~:<method 'copy' of 'numpy.ndarray' objects>": 26480,
+      "~:<method 'diagonal' of 'numpy.ndarray' objects>": 69,
+      "~:<method 'disable' of '_lsprof.Profiler' objects>": 80,
+      "~:<method 'dot' of 'numpy.ndarray' objects>": 203600,
+      "~:<method 'extend' of 'list' objects>": 21953,
+      "~:<method 'flatten' of 'numpy.ndarray' objects>": 29615,
+      "~:<method 'format' of 'str' objects>": 13128,
+      "~:<method 'get' of 'dict' objects>": 656608,
+      "~:<method 'hexdigest' of '_hashlib.HASH' objects>": 1977,
+      "~:<method 'insert' of 'list' objects>": 13128,
+      "~:<method 'items' of 'dict' objects>": 488475,
+      "~:<method 'join' of 'str' objects>": 131972,
+      "~:<method 'max' of 'numpy.ndarray' objects>": 185460,
+      "~:<method 'mean' of 'numpy.ndarray' objects>": 201696,
+      "~:<method 'nonzero' of 'numpy.ndarray' objects>": 71,
+      "~:<method 'partition' of 'numpy.ndarray' objects>": 22113,
+      "~:<method 'pop' of 'list' objects>": 459,
+      "~:<method 'ravel' of 'numpy.ndarray' objects>": 405251,
+      "~:<method 'reduce' of 'numpy.ufunc' objects>": 1342080,
+      "~:<method 'reset' of '_contextvars.ContextVar' objects>": 77553,
+      "~:<method 'reshape' of 'numpy.ndarray' objects>": 74767,
+      "~:<method 'set' of '_contextvars.ContextVar' objects>": 77553,
+      "~:<method 'setdefault' of 'dict' objects>": 126321,
+      "~:<method 'sort' of 'numpy.ndarray' objects>": 7502,
+      "~:<method 'startswith' of 'str' objects>": 297,
+      "~:<method 'std' of 'numpy.ndarray' objects>": 9135,
+      "~:<method 'sum' of 'numpy.ndarray' objects>": 30624,
+      "~:<method 'take' of 'numpy.ndarray' objects>": 21175,
+      "~:<method 'tobytes' of 'numpy.ndarray' objects>": 344553,
+      "~:<method 'tolist' of 'numpy.ndarray' objects>": 122528,
+      "~:<method 'transpose' of 'numpy.ndarray' objects>": 13128,
+      "~:<method 'update' of 'dict' objects>": 125181,
+      "~:<method 'upper' of 'str' objects>": 281,
+      "~:<method 'values' of 'dict' objects>": 454,
+      "~:<method 'view' of 'numpy.ndarray' objects>": 13128,
+      "~:<numpy.random._generator.default_rng>": 82,
+      "~:<setRNGSeed>": 4355,
+      "~:<warpPerspective>": 1597
+    }
+  },
+  "by_state_before": {
+    "bootstrapping": {
+      "decisions": 6,
+      "instrumented_wall_s": 0.5946831350001958,
+      "instrumented_cpu_s": 1.9947828769999987,
+      "uncovered_wall_s": 0.002774036000346314,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 1709,
+          "cpu_exclusive_s": 0.9707911089999772,
+          "cpu_inclusive_s": 0.9707911089999772,
+          "wall_exclusive_s": 0.2886965649981903,
+          "wall_inclusive_s": 0.2886965649981903,
+          "exclusive_fraction_of_instrumented_wall": 0.48546284232206327
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 389,
+          "cpu_exclusive_s": 0.2328840590000194,
+          "cpu_inclusive_s": 0.9763020899999928,
+          "wall_exclusive_s": 0.07590777400491788,
+          "wall_inclusive_s": 0.3263485710031091,
+          "exclusive_fraction_of_instrumented_wall": 0.12764406712978818
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 398,
+          "cpu_exclusive_s": 0.20846070499998604,
+          "cpu_inclusive_s": 0.24248755699998625,
+          "wall_exclusive_s": 0.06541128299932097,
+          "wall_inclusive_s": 0.07113550099893473,
+          "exclusive_fraction_of_instrumented_wall": 0.10999350603628509
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 6,
+          "cpu_exclusive_s": 0.13707839400001998,
+          "cpu_inclusive_s": 1.3448795680000005,
+          "wall_exclusive_s": 0.044046872998933395,
+          "wall_inclusive_s": 0.44835261499997614,
+          "exclusive_fraction_of_instrumented_wall": 0.0740678025095144
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.07822665099999959,
+          "cpu_inclusive_s": 0.08454196000000014,
+          "wall_exclusive_s": 0.026072091000060027,
+          "wall_inclusive_s": 0.028187430000116365,
+          "exclusive_fraction_of_instrumented_wall": 0.043841988221259114
+        },
+        {
+          "stage": "free_path",
+          "calls": 1,
+          "cpu_exclusive_s": 0.15525575299999694,
+          "cpu_inclusive_s": 0.41362477799999997,
+          "wall_exclusive_s": 0.02556352900001002,
+          "wall_inclusive_s": 0.06894560199998523,
+          "exclusive_fraction_of_instrumented_wall": 0.042986806747095
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 3,
+          "cpu_exclusive_s": 0.06000622100000008,
+          "cpu_inclusive_s": 0.06000622100000008,
+          "wall_exclusive_s": 0.018879321000213167,
+          "wall_inclusive_s": 0.018879321000213167,
+          "exclusive_fraction_of_instrumented_wall": 0.0317468579299915
+        },
+        {
+          "stage": "region_models",
+          "calls": 16,
+          "cpu_exclusive_s": 0.05406052700000252,
+          "cpu_inclusive_s": 0.05406052700000252,
+          "wall_exclusive_s": 0.018433364000202346,
+          "wall_inclusive_s": 0.018433364000202346,
+          "exclusive_fraction_of_instrumented_wall": 0.030996951006852208
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 38,
+          "cpu_exclusive_s": 0.027845309000000817,
+          "cpu_inclusive_s": 0.027845309000000817,
+          "wall_exclusive_s": 0.009207056999457564,
+          "wall_inclusive_s": 0.009207056999457564,
+          "exclusive_fraction_of_instrumented_wall": 0.015482290412447182
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 6,
+          "cpu_exclusive_s": 0.013056251999995716,
+          "cpu_inclusive_s": 0.0673033109999972,
+          "wall_exclusive_s": 0.004265592000592733,
+          "wall_inclusive_s": 0.022788579000007303,
+          "exclusive_fraction_of_instrumented_wall": 0.007172882077093591
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 1,
+          "cpu_exclusive_s": 0.008487321000002268,
+          "cpu_inclusive_s": 1.5101471870000003,
+          "wall_exclusive_s": 0.0028222670000559447,
+          "wall_inclusive_s": 0.5037852650000332,
+          "exclusive_fraction_of_instrumented_wall": 0.004745833258000524
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 6,
+          "cpu_exclusive_s": 0.006030531999999589,
+          "cpu_inclusive_s": 0.007436170000000075,
+          "wall_exclusive_s": 0.002003412999556531,
+          "wall_inclusive_s": 0.0024844489998940844,
+          "exclusive_fraction_of_instrumented_wall": 0.003368874753032758
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.006159849999999523,
+          "cpu_inclusive_s": 0.05280135299999955,
+          "wall_exclusive_s": 0.001942808999956469,
+          "wall_inclusive_s": 0.01752983200003655,
+          "exclusive_fraction_of_instrumented_wall": 0.0032669650198770637
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 6,
+          "cpu_exclusive_s": 0.005083704999998773,
+          "cpu_inclusive_s": 0.02078364900000018,
+          "wall_exclusive_s": 0.0017659509992427047,
+          "wall_inclusive_s": 0.00701752699978897,
+          "exclusive_fraction_of_instrumented_wall": 0.0029695663039815707
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 21,
+          "cpu_exclusive_s": 0.006038976000001028,
+          "cpu_inclusive_s": 0.006038976000001028,
+          "wall_exclusive_s": 0.001735118000624425,
+          "wall_inclusive_s": 0.001735118000624425,
+          "exclusive_fraction_of_instrumented_wall": 0.0029177185268989573
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 1,
+          "cpu_exclusive_s": 0.004935027000000147,
+          "cpu_inclusive_s": 0.3367574470000001,
+          "wall_exclusive_s": 0.0016343739998774254,
+          "wall_inclusive_s": 0.1122623129999738,
+          "exclusive_fraction_of_instrumented_wall": 0.002748310661066397
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 6,
+          "cpu_exclusive_s": 0.004710617999999833,
+          "cpu_inclusive_s": 0.007503873000000105,
+          "wall_exclusive_s": 0.0015606699994350492,
+          "wall_inclusive_s": 0.0025073159997646144,
+          "exclusive_fraction_of_instrumented_wall": 0.0026243723885570345
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 6,
+          "cpu_exclusive_s": 0.004511717999999831,
+          "cpu_inclusive_s": 0.015618208000000244,
+          "wall_exclusive_s": 0.0014896069994847494,
+          "wall_inclusive_s": 0.005211026999404567,
+          "exclusive_fraction_of_instrumented_wall": 0.0025048751373859947
+        },
+        {
+          "stage": "front_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0014479070000001926,
+          "cpu_inclusive_s": 0.0084973159999997,
+          "wall_exclusive_s": 0.00024107999979605665,
+          "wall_inclusive_s": 0.001418038999872806,
+          "exclusive_fraction_of_instrumented_wall": 0.0004053923604138821
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0009906380000002102,
+          "cpu_inclusive_s": 1.5724364939999997,
+          "wall_exclusive_s": 0.00019149500008097675,
+          "wall_inclusive_s": 0.5229246310000235,
+          "exclusive_fraction_of_instrumented_wall": 0.00032201182244879654
+        },
+        {
+          "stage": "command_computation",
+          "calls": 1,
+          "cpu_exclusive_s": 0.00012251199999990803,
+          "cpu_inclusive_s": 0.00012251199999990803,
+          "wall_exclusive_s": 2.1266999965519062e-05,
+          "wall_inclusive_s": 2.1266999965519062e-05,
+          "exclusive_fraction_of_instrumented_wall": 3.57619019505439e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 1,
+          "cpu_exclusive_s": 1.0886000000098761e-05,
+          "cpu_inclusive_s": 1.0886000000098761e-05,
+          "wall_exclusive_s": 1.7598999875190202e-05,
+          "wall_inclusive_s": 1.7598999875190202e-05,
+          "exclusive_fraction_of_instrumented_wall": 2.9593911176217244e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 2,
+          "input_tracks": 55,
+          "h_retained": 29,
+          "i_retained": 29
+        },
+        "left/native": {
+          "calls": 2,
+          "input_tracks": 163,
+          "h_retained": 144,
+          "i_retained": 143
+        },
+        "right/native": {
+          "calls": 2,
+          "input_tracks": 171,
+          "h_retained": 167,
+          "i_retained": 167
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 153,
+        "paired_descriptor": 1556
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 36,
+          "result_elements": 501264
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 220,
+          "result_elements": 3063280
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 652,
+          "result_elements": 9078448
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 684,
+          "result_elements": 9524016
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 117,
+          "result_elements": 1629108
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "following": {
+      "decisions": 55,
+      "instrumented_wall_s": 31.723000201999184,
+      "instrumented_cpu_s": 108.47846998900006,
+      "uncovered_wall_s": 0.04397985800005699,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 92502,
+          "cpu_exclusive_s": 49.98972508700183,
+          "cpu_inclusive_s": 49.98972508700183,
+          "wall_exclusive_s": 14.923734344954482,
+          "wall_inclusive_s": 14.923734344954482,
+          "exclusive_fraction_of_instrumented_wall": 0.4704389323180721
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 21094,
+          "cpu_exclusive_s": 11.529948919997842,
+          "cpu_inclusive_s": 50.27992412399948,
+          "wall_exclusive_s": 3.737584799040633,
+          "wall_inclusive_s": 16.735971016015355,
+          "exclusive_fraction_of_instrumented_wall": 0.1178193983936327
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 21580,
+          "cpu_exclusive_s": 10.51047163600014,
+          "cpu_inclusive_s": 12.478086889000384,
+          "wall_exclusive_s": 3.26250762400241,
+          "wall_inclusive_s": 3.596597465991408,
+          "exclusive_fraction_of_instrumented_wall": 0.1028436025353241
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 327,
+          "cpu_exclusive_s": 7.926279137999737,
+          "cpu_inclusive_s": 70.21344236399997,
+          "wall_exclusive_s": 2.497764768997513,
+          "wall_inclusive_s": 23.269891812001333,
+          "exclusive_fraction_of_instrumented_wall": 0.07873671320785428
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 538,
+          "cpu_exclusive_s": 8.423347152999945,
+          "cpu_inclusive_s": 8.423347152999945,
+          "wall_exclusive_s": 1.99042063300044,
+          "wall_inclusive_s": 1.99042063300044,
+          "exclusive_fraction_of_instrumented_wall": 0.06274377014551744
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 55,
+          "cpu_exclusive_s": 4.582478678999971,
+          "cpu_inclusive_s": 4.918593448999925,
+          "wall_exclusive_s": 1.5271288619999268,
+          "wall_inclusive_s": 1.6395716420006465,
+          "exclusive_fraction_of_instrumented_wall": 0.048139484042360126
+        },
+        {
+          "stage": "free_path",
+          "calls": 55,
+          "cpu_exclusive_s": 6.804918779000422,
+          "cpu_inclusive_s": 19.823923200000092,
+          "wall_exclusive_s": 1.1366128480080988,
+          "wall_inclusive_s": 3.358059579999008,
+          "exclusive_fraction_of_instrumented_wall": 0.035829298640437844
+        },
+        {
+          "stage": "region_models",
+          "calls": 879,
+          "cpu_exclusive_s": 2.796798223000181,
+          "cpu_inclusive_s": 2.796798223000181,
+          "wall_exclusive_s": 0.9164336779965652,
+          "wall_inclusive_s": 0.9164336779965652,
+          "exclusive_fraction_of_instrumented_wall": 0.0288886193664246
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 2070,
+          "cpu_exclusive_s": 1.7497789149998209,
+          "cpu_inclusive_s": 1.7497789149998209,
+          "wall_exclusive_s": 0.5470480780027174,
+          "wall_inclusive_s": 0.5470480780027174,
+          "exclusive_fraction_of_instrumented_wall": 0.017244525250428314
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 327,
+          "cpu_exclusive_s": 0.8323987780000346,
+          "cpu_inclusive_s": 3.611445018999987,
+          "wall_exclusive_s": 0.2356512779933837,
+          "wall_inclusive_s": 1.1155439089975516,
+          "exclusive_fraction_of_instrumented_wall": 0.007428404517001924
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 55,
+          "cpu_exclusive_s": 0.7872514800000614,
+          "cpu_inclusive_s": 79.699007328,
+          "wall_exclusive_s": 0.20752795699854687,
+          "wall_inclusive_s": 26.287272345999327,
+          "exclusive_fraction_of_instrumented_wall": 0.006541876735399965
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 327,
+          "cpu_exclusive_s": 0.33351301200032957,
+          "cpu_inclusive_s": 0.4084806310002129,
+          "wall_exclusive_s": 0.12589903199909713,
+          "wall_inclusive_s": 0.1501899959991988,
+          "exclusive_fraction_of_instrumented_wall": 0.003968698773679135
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 327,
+          "cpu_exclusive_s": 0.30699649599996004,
+          "cpu_inclusive_s": 1.2374553440000282,
+          "wall_exclusive_s": 0.10133169100004125,
+          "wall_inclusive_s": 0.4126651689996379,
+          "exclusive_fraction_of_instrumented_wall": 0.003194265685931412
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 1145,
+          "cpu_exclusive_s": 0.36712592999963434,
+          "cpu_inclusive_s": 0.36712592999963434,
+          "wall_exclusive_s": 0.09956448899811221,
+          "wall_inclusive_s": 0.09956448899811221,
+          "exclusive_fraction_of_instrumented_wall": 0.003138558407594678
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 55,
+          "cpu_exclusive_s": 0.30434125600008155,
+          "cpu_inclusive_s": 3.473531510000014,
+          "wall_exclusive_s": 0.09571342800063576,
+          "wall_inclusive_s": 1.152415843000199,
+          "exclusive_fraction_of_instrumented_wall": 0.0030171619137903576
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 327,
+          "cpu_exclusive_s": 0.28437491100017986,
+          "cpu_inclusive_s": 0.4556433590000273,
+          "wall_exclusive_s": 0.0878667770030006,
+          "wall_inclusive_s": 0.1425119460006954,
+          "exclusive_fraction_of_instrumented_wall": 0.0027698129572707704
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 327,
+          "cpu_exclusive_s": 0.21648075799994615,
+          "cpu_inclusive_s": 1.005747807000028,
+          "wall_exclusive_s": 0.07149589300183834,
+          "wall_inclusive_s": 0.3354965329995139,
+          "exclusive_fraction_of_instrumented_wall": 0.002253755714988542
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 55,
+          "cpu_exclusive_s": 0.16827501600005057,
+          "cpu_inclusive_s": 21.948487192999927,
+          "wall_exclusive_s": 0.05473702600124852,
+          "wall_inclusive_s": 7.0930840740006715,
+          "exclusive_fraction_of_instrumented_wall": 0.0017254681351923011
+        },
+        {
+          "stage": "front_fit",
+          "calls": 55,
+          "cpu_exclusive_s": 0.2936119919999989,
+          "cpu_inclusive_s": 5.211654121000057,
+          "wall_exclusive_s": 0.047230185999751484,
+          "wall_inclusive_s": 0.8685056239999085,
+          "exclusive_fraction_of_instrumented_wall": 0.0014888309964066714
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 55,
+          "cpu_exclusive_s": 0.06485278299991304,
+          "cpu_inclusive_s": 88.44904574199998,
+          "wall_exclusive_s": 0.010811035000642732,
+          "wall_inclusive_s": 28.319004848000077,
+          "exclusive_fraction_of_instrumented_wall": 0.00034079484701328536
+        },
+        {
+          "stage": "command_computation",
+          "calls": 51,
+          "cpu_exclusive_s": 0.007782891999999819,
+          "cpu_inclusive_s": 0.007782891999999819,
+          "wall_exclusive_s": 0.0014612939996823116,
+          "wall_inclusive_s": 0.0014612939996823116,
+          "exclusive_fraction_of_instrumented_wall": 4.6064180259666004e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 55,
+          "cpu_exclusive_s": 0.0015264889999571096,
+          "cpu_inclusive_s": 0.0015264889999571096,
+          "wall_exclusive_s": 0.000494622000360323,
+          "wall_inclusive_s": 0.000494622000360323,
+          "exclusive_fraction_of_instrumented_wall": 1.5591904839100053e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 109,
+          "input_tracks": 3323,
+          "h_retained": 2347,
+          "i_retained": 2332
+        },
+        "left/native": {
+          "calls": 109,
+          "input_tracks": 8684,
+          "h_retained": 7853,
+          "i_retained": 7826
+        },
+        "right/native": {
+          "calls": 109,
+          "input_tracks": 9087,
+          "h_retained": 8637,
+          "i_retained": 8607
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 8262,
+        "paired_descriptor": 84240
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 1944,
+          "result_elements": 27068256
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 13172,
+          "result_elements": 183406928
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 34728,
+          "result_elements": 483552672
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 36340,
+          "result_elements": 505998160
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 6318,
+          "result_elements": 87971832
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "observing": {
+      "decisions": 3,
+      "instrumented_wall_s": 0.3556614340000124,
+      "instrumented_cpu_s": 1.0242925770000002,
+      "uncovered_wall_s": 0.004514952000363337,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 854,
+          "cpu_exclusive_s": 0.42850116000000105,
+          "cpu_inclusive_s": 0.42850116000000105,
+          "wall_exclusive_s": 0.14495111900055235,
+          "wall_inclusive_s": 0.14495111900055235,
+          "exclusive_fraction_of_instrumented_wall": 0.4075536595866824
+        },
+        {
+          "stage": "startup_texture",
+          "calls": 3,
+          "cpu_exclusive_s": 0.25434359900000203,
+          "cpu_inclusive_s": 0.4782233970000007,
+          "wall_exclusive_s": 0.08368943900063641,
+          "wall_inclusive_s": 0.1594290609998552,
+          "exclusive_fraction_of_instrumented_wall": 0.2353064768912603
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.09831884299999993,
+          "cpu_inclusive_s": 0.13272578700000004,
+          "wall_exclusive_s": 0.033433670000022175,
+          "wall_inclusive_s": 0.04654360099993937,
+          "exclusive_fraction_of_instrumented_wall": 0.09400420400942604
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 92,
+          "cpu_exclusive_s": 0.0718915989999993,
+          "cpu_inclusive_s": 0.27824250900000225,
+          "wall_exclusive_s": 0.023177614998076024,
+          "wall_inclusive_s": 0.09297307199926763,
+          "exclusive_fraction_of_instrumented_wall": 0.0651676363596825
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 92,
+          "cpu_exclusive_s": 0.041880375000001635,
+          "cpu_inclusive_s": 0.041880375000001635,
+          "wall_exclusive_s": 0.01423881300092944,
+          "wall_inclusive_s": 0.01423881300092944,
+          "exclusive_fraction_of_instrumented_wall": 0.040034739895158114
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 3,
+          "cpu_exclusive_s": 0.04338377999999565,
+          "cpu_inclusive_s": 0.38717338499999965,
+          "wall_exclusive_s": 0.013962406999326049,
+          "wall_inclusive_s": 0.12907540700007303,
+          "exclusive_fraction_of_instrumented_wall": 0.039257579440917297
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 1,
+          "cpu_exclusive_s": 0.034406944000000106,
+          "cpu_inclusive_s": 0.034406944000000106,
+          "wall_exclusive_s": 0.013109930999917196,
+          "wall_inclusive_s": 0.013109930999917196,
+          "exclusive_fraction_of_instrumented_wall": 0.03686070444150754
+        },
+        {
+          "stage": "region_models",
+          "calls": 9,
+          "cpu_exclusive_s": 0.02130823899999923,
+          "cpu_inclusive_s": 0.02130823899999923,
+          "wall_exclusive_s": 0.009239904000196475,
+          "wall_inclusive_s": 0.009239904000196475,
+          "exclusive_fraction_of_instrumented_wall": 0.025979493745718164
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 3,
+          "cpu_exclusive_s": 0.005555916000000494,
+          "cpu_inclusive_s": 0.019737414999999814,
+          "wall_exclusive_s": 0.00528740999970978,
+          "wall_inclusive_s": 0.014957649999814748,
+          "exclusive_fraction_of_instrumented_wall": 0.014866413657066894
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 18,
+          "cpu_exclusive_s": 0.005632562999999813,
+          "cpu_inclusive_s": 0.005632562999999813,
+          "wall_exclusive_s": 0.004750723000142898,
+          "wall_inclusive_s": 0.004750723000142898,
+          "exclusive_fraction_of_instrumented_wall": 0.013357430820409763
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 15,
+          "cpu_exclusive_s": 0.0038038189999998195,
+          "cpu_inclusive_s": 0.0038038189999998195,
+          "wall_exclusive_s": 0.0013205819998347579,
+          "wall_inclusive_s": 0.0013205819998347579,
+          "exclusive_fraction_of_instrumented_wall": 0.0037130311965022102
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 3,
+          "cpu_exclusive_s": 0.003100734000001104,
+          "cpu_inclusive_s": 0.004566182000000474,
+          "wall_exclusive_s": 0.0009478429997216153,
+          "wall_inclusive_s": 0.0014401169999018748,
+          "exclusive_fraction_of_instrumented_wall": 0.0026650148402696436
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 1,
+          "cpu_exclusive_s": 0.002646791000000537,
+          "cpu_inclusive_s": 0.542283378,
+          "wall_exclusive_s": 0.0008949860002758214,
+          "wall_inclusive_s": 0.19147164400010297,
+          "exclusive_fraction_of_instrumented_wall": 0.0025163987846818113
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 3,
+          "cpu_exclusive_s": 0.0025967289999999643,
+          "cpu_inclusive_s": 0.00964088899999993,
+          "wall_exclusive_s": 0.0008570449999751872,
+          "wall_inclusive_s": 0.0032165130000976205,
+          "exclusive_fraction_of_instrumented_wall": 0.0024097214880350435
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 3,
+          "cpu_exclusive_s": 0.001748687000000082,
+          "cpu_inclusive_s": 0.007463829999999838,
+          "wall_exclusive_s": 0.000529787000232318,
+          "wall_inclusive_s": 0.0024907060003442894,
+          "exclusive_fraction_of_instrumented_wall": 0.0014895823656615509
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 3,
+          "cpu_exclusive_s": 0.001386997000000001,
+          "cpu_inclusive_s": 0.0019958199999998705,
+          "wall_exclusive_s": 0.0005094310004096769,
+          "wall_inclusive_s": 0.0007537790002061229,
+          "exclusive_fraction_of_instrumented_wall": 0.0014323481595411303
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0003237339999997424,
+          "cpu_inclusive_s": 0.5426071119999998,
+          "wall_exclusive_s": 0.000245776999690861,
+          "wall_inclusive_s": 0.19171742099979383,
+          "exclusive_fraction_of_instrumented_wall": 0.0006910420309750323
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 1,
+          "input_tracks": 29,
+          "h_retained": 29,
+          "i_retained": 29
+        },
+        "left/native": {
+          "calls": 1,
+          "input_tracks": 29,
+          "h_retained": 29,
+          "i_retained": 29
+        },
+        "right/native": {
+          "calls": 1,
+          "input_tracks": 34,
+          "h_retained": 34,
+          "i_retained": 34
+        }
+      },
+      "match_calls_by_scope": {
+        "paired_descriptor": 368,
+        "outside_pair": 486
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 116,
+          "result_elements": 1615184
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 116,
+          "result_elements": 1615184
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 136,
+          "result_elements": 1893664
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 486,
+          "result_elements": 6767064
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "waiting_evidence": {
+      "decisions": 16,
+      "instrumented_wall_s": 10.479652418999649,
+      "instrumented_cpu_s": 35.10739700399999,
+      "uncovered_wall_s": 0.01194611799996892,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 31040,
+          "cpu_exclusive_s": 16.1744189179989,
+          "cpu_inclusive_s": 16.1744189179989,
+          "wall_exclusive_s": 4.909523116998116,
+          "wall_inclusive_s": 4.909523116998116,
+          "exclusive_fraction_of_instrumented_wall": 0.46848148399436723
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 7157,
+          "cpu_exclusive_s": 3.8231515780015854,
+          "cpu_inclusive_s": 16.75020786600045,
+          "wall_exclusive_s": 1.240682700011348,
+          "wall_inclusive_s": 5.58460824600229,
+          "exclusive_fraction_of_instrumented_wall": 0.11838968034493069
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 7301,
+          "cpu_exclusive_s": 3.3659505540001593,
+          "cpu_inclusive_s": 3.8849610930001433,
+          "wall_exclusive_s": 1.0595209710127165,
+          "wall_inclusive_s": 1.149310609010854,
+          "exclusive_fraction_of_instrumented_wall": 0.10110268247941134
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 123,
+          "cpu_exclusive_s": 2.3455335259996346,
+          "cpu_inclusive_s": 23.143368859000013,
+          "wall_exclusive_s": 0.7535684159868197,
+          "wall_inclusive_s": 7.6951545810009065,
+          "exclusive_fraction_of_instrumented_wall": 0.07190776810694574
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 25,
+          "cpu_exclusive_s": 2.010434728999991,
+          "cpu_inclusive_s": 2.130727915999989,
+          "wall_exclusive_s": 0.6700334510005632,
+          "wall_inclusive_s": 0.7102770060005241,
+          "exclusive_fraction_of_instrumented_wall": 0.06393661012895714
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 168,
+          "cpu_exclusive_s": 2.5334633870000385,
+          "cpu_inclusive_s": 2.5334633870000385,
+          "wall_exclusive_s": 0.6053990490004253,
+          "wall_inclusive_s": 0.6053990490004253,
+          "exclusive_fraction_of_instrumented_wall": 0.05776900080224365
+        },
+        {
+          "stage": "free_path",
+          "calls": 16,
+          "cpu_exclusive_s": 2.0401907229999523,
+          "cpu_inclusive_s": 5.772523678000045,
+          "wall_exclusive_s": 0.34523909799077046,
+          "wall_inclusive_s": 0.9931390009999177,
+          "exclusive_fraction_of_instrumented_wall": 0.03294375463873694
+        },
+        {
+          "stage": "region_models",
+          "calls": 345,
+          "cpu_exclusive_s": 0.9941746390000592,
+          "cpu_inclusive_s": 0.9941746390000592,
+          "wall_exclusive_s": 0.3304072039984476,
+          "wall_inclusive_s": 0.3304072039984476,
+          "exclusive_fraction_of_instrumented_wall": 0.031528450638249994
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 770,
+          "cpu_exclusive_s": 0.5287961860000543,
+          "cpu_inclusive_s": 0.5287961860000543,
+          "wall_exclusive_s": 0.1734145170003103,
+          "wall_inclusive_s": 0.1734145170003103,
+          "exclusive_fraction_of_instrumented_wall": 0.016547735560953257
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 123,
+          "cpu_exclusive_s": 0.22621481700002377,
+          "cpu_inclusive_s": 1.113141092000113,
+          "wall_exclusive_s": 0.07235565200107885,
+          "wall_inclusive_s": 0.36574007499984873,
+          "exclusive_fraction_of_instrumented_wall": 0.006904394259288389
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 16,
+          "cpu_exclusive_s": 0.16905421099993134,
+          "cpu_inclusive_s": 22.222843313000023,
+          "wall_exclusive_s": 0.05485867600054917,
+          "wall_inclusive_s": 7.390842236000935,
+          "exclusive_fraction_of_instrumented_wall": 0.005234780105978533
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 123,
+          "cpu_exclusive_s": 0.11690820999983664,
+          "cpu_inclusive_s": 0.4500358399999005,
+          "wall_exclusive_s": 0.03870030400094038,
+          "wall_inclusive_s": 0.15016454900182907,
+          "exclusive_fraction_of_instrumented_wall": 0.0036928995784990524
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 123,
+          "cpu_exclusive_s": 0.10741395299990053,
+          "cpu_inclusive_s": 0.16336442499988557,
+          "wall_exclusive_s": 0.03486447599925668,
+          "wall_inclusive_s": 0.05372643599866933,
+          "exclusive_fraction_of_instrumented_wall": 0.0033268733165278705
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 16,
+          "cpu_exclusive_s": 0.10933672500002878,
+          "cpu_inclusive_s": 1.0842757730000123,
+          "wall_exclusive_s": 0.03429960999960713,
+          "wall_inclusive_s": 0.35930357200004437,
+          "exclusive_fraction_of_instrumented_wall": 0.0032729721013859017
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 416,
+          "cpu_exclusive_s": 0.11838209400003841,
+          "cpu_inclusive_s": 0.11838209400003841,
+          "wall_exclusive_s": 0.033950023998386314,
+          "wall_inclusive_s": 0.033950023998386314,
+          "exclusive_fraction_of_instrumented_wall": 0.0032396135521474733
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 123,
+          "cpu_exclusive_s": 0.10153771499996722,
+          "cpu_inclusive_s": 0.12814133799995986,
+          "wall_exclusive_s": 0.03338296200081459,
+          "wall_inclusive_s": 0.04223912800011931,
+          "exclusive_fraction_of_instrumented_wall": 0.0031855027882691177
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 123,
+          "cpu_exclusive_s": 0.0863607160000619,
+          "cpu_inclusive_s": 0.37438352799999386,
+          "wall_exclusive_s": 0.028424216001667446,
+          "wall_inclusive_s": 0.12478880100138667,
+          "exclusive_fraction_of_instrumented_wall": 0.002712324308593884
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 25,
+          "cpu_exclusive_s": 0.08062385399998284,
+          "cpu_inclusive_s": 10.237770859,
+          "wall_exclusive_s": 0.026374474998874575,
+          "wall_inclusive_s": 3.3886116369997126,
+          "exclusive_fraction_of_instrumented_wall": 0.0025167318480007555
+        },
+        {
+          "stage": "front_fit",
+          "calls": 16,
+          "cpu_exclusive_s": 0.09945364599995976,
+          "cpu_inclusive_s": 1.5376847980000168,
+          "wall_exclusive_s": 0.01608203799992225,
+          "wall_inclusive_s": 0.2562335699999494,
+          "exclusive_fraction_of_instrumented_wall": 0.0015345965073007054
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 16,
+          "cpu_exclusive_s": 0.023805950999882697,
+          "cpu_inclusive_s": 24.868609834999937,
+          "wall_exclusive_s": 0.003984764998676837,
+          "wall_inclusive_s": 8.010364142999606,
+          "exclusive_fraction_of_instrumented_wall": 0.0003802382788433368
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 9,
+          "cpu_exclusive_s": 0.008475681999989604,
+          "cpu_inclusive_s": 4.4225483009999955,
+          "wall_exclusive_s": 0.00250710400018761,
+          "wall_inclusive_s": 1.4640696809999554,
+          "exclusive_fraction_of_instrumented_wall": 0.00023923541544586165
+        },
+        {
+          "stage": "history_selection",
+          "calls": 16,
+          "cpu_exclusive_s": 0.00016267300003391938,
+          "cpu_inclusive_s": 0.00016267300003391938,
+          "wall_exclusive_s": 7.678800011490239e-05,
+          "wall_inclusive_s": 7.678800011490239e-05,
+          "exclusive_fraction_of_instrumented_wall": 7.3273422671619775e-06
+        },
+        {
+          "stage": "command_computation",
+          "calls": 3,
+          "cpu_exclusive_s": 0.00033289600001040753,
+          "cpu_inclusive_s": 0.00033289600001040753,
+          "wall_exclusive_s": 5.6688000086069223e-05,
+          "wall_inclusive_s": 5.6688000086069223e-05,
+          "exclusive_fraction_of_instrumented_wall": 5.409339720398901e-06
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 41,
+          "input_tracks": 1331,
+          "h_retained": 1006,
+          "i_retained": 998
+        },
+        "left/native": {
+          "calls": 41,
+          "input_tracks": 2858,
+          "h_retained": 2569,
+          "i_retained": 2556
+        },
+        "right/native": {
+          "calls": 41,
+          "input_tracks": 2968,
+          "h_retained": 2821,
+          "i_retained": 2817
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 2448,
+        "paired_descriptor": 28592
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 576,
+          "result_elements": 8020224
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 5296,
+          "result_elements": 73741504
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 11424,
+          "result_elements": 159067776
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 11872,
+          "result_elements": 165305728
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 1872,
+          "result_elements": 26065728
+        }
+      ],
+      "primitive_calls": {}
+    }
+  },
+  "by_state_after_reason": {
+    "aborted/recovery_count_exhausted": {
+      "decisions": 1,
+      "instrumented_wall_s": 0.5684375209998507,
+      "instrumented_cpu_s": 1.9428923199999986,
+      "uncovered_wall_s": 0.0007029909997982031,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 1725,
+          "cpu_exclusive_s": 0.889967307999143,
+          "cpu_inclusive_s": 0.889967307999143,
+          "wall_exclusive_s": 0.26537673399866435,
+          "wall_inclusive_s": 0.26537673399866435,
+          "exclusive_fraction_of_instrumented_wall": 0.4668529507550471
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 393,
+          "cpu_exclusive_s": 0.19373739600055728,
+          "cpu_inclusive_s": 0.8810930949997271,
+          "wall_exclusive_s": 0.06318736600064767,
+          "wall_inclusive_s": 0.29441353899937894,
+          "exclusive_fraction_of_instrumented_wall": 0.11115973817052846
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 402,
+          "cpu_exclusive_s": 0.1786108279999894,
+          "cpu_inclusive_s": 0.20924828899998715,
+          "wall_exclusive_s": 0.056376806001026125,
+          "wall_inclusive_s": 0.061531387000286486,
+          "exclusive_fraction_of_instrumented_wall": 0.09917854455114503
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 11,
+          "cpu_exclusive_s": 0.1941127329999972,
+          "cpu_inclusive_s": 0.1941127329999972,
+          "wall_exclusive_s": 0.04633525899998858,
+          "wall_inclusive_s": 0.04633525899998858,
+          "exclusive_fraction_of_instrumented_wall": 0.08151337180995262
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 6,
+          "cpu_exclusive_s": 0.12215529800036506,
+          "cpu_inclusive_s": 1.2054890460000252,
+          "wall_exclusive_s": 0.03925503199980085,
+          "wall_inclusive_s": 0.4017231399998309,
+          "exclusive_fraction_of_instrumented_wall": 0.0690577777672969
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0935528620000241,
+          "cpu_inclusive_s": 0.09775550000000521,
+          "wall_exclusive_s": 0.031174704000022757,
+          "wall_inclusive_s": 0.032581651000100464,
+          "exclusive_fraction_of_instrumented_wall": 0.05484279775407533
+        },
+        {
+          "stage": "free_path",
+          "calls": 1,
+          "cpu_exclusive_s": 0.12545535800003904,
+          "cpu_inclusive_s": 0.35362401400001886,
+          "wall_exclusive_s": 0.020542401999136928,
+          "wall_inclusive_s": 0.05891598600010184,
+          "exclusive_fraction_of_instrumented_wall": 0.036138363919052986
+        },
+        {
+          "stage": "region_models",
+          "calls": 16,
+          "cpu_exclusive_s": 0.041680473000070606,
+          "cpu_inclusive_s": 0.041680473000070606,
+          "wall_exclusive_s": 0.01396076599985463,
+          "wall_inclusive_s": 0.01396076599985463,
+          "exclusive_fraction_of_instrumented_wall": 0.024559895299132262
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 38,
+          "cpu_exclusive_s": 0.030998573999966084,
+          "cpu_inclusive_s": 0.030998573999966084,
+          "wall_exclusive_s": 0.010279616000389069,
+          "wall_inclusive_s": 0.010279616000389069,
+          "exclusive_fraction_of_instrumented_wall": 0.018083985698740968
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 6,
+          "cpu_exclusive_s": 0.012212457999936532,
+          "cpu_inclusive_s": 0.05948860699996317,
+          "wall_exclusive_s": 0.003971213999648171,
+          "wall_inclusive_s": 0.019841842999767323,
+          "exclusive_fraction_of_instrumented_wall": 0.0069861925945054115
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.01118070299997953,
+          "cpu_inclusive_s": 0.09074171199998204,
+          "wall_exclusive_s": 0.003578137999966202,
+          "wall_inclusive_s": 0.030095934999962992,
+          "exclusive_fraction_of_instrumented_wall": 0.006294690036773879
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 1,
+          "cpu_exclusive_s": 0.010818505000003142,
+          "cpu_inclusive_s": 1.3769019190000051,
+          "wall_exclusive_s": 0.0035711090001768753,
+          "wall_inclusive_s": 0.4588330730000507,
+          "exclusive_fraction_of_instrumented_wall": 0.006282324562065306
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 6,
+          "cpu_exclusive_s": 0.005142137999882834,
+          "cpu_inclusive_s": 0.018989467999915632,
+          "wall_exclusive_s": 0.0017053940000550938,
+          "wall_inclusive_s": 0.006345313000110764,
+          "exclusive_fraction_of_instrumented_wall": 0.003000143264743324
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 6,
+          "cpu_exclusive_s": 0.004971061000105692,
+          "cpu_inclusive_s": 0.005872706000047856,
+          "wall_exclusive_s": 0.001656502999821896,
+          "wall_inclusive_s": 0.0019634010000117996,
+          "exclusive_fraction_of_instrumented_wall": 0.0029141338117656228
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 20,
+          "cpu_exclusive_s": 0.00579670599995552,
+          "cpu_inclusive_s": 0.00579670599995552,
+          "wall_exclusive_s": 0.0015581000004658563,
+          "wall_inclusive_s": 0.0015581000004658563,
+          "exclusive_fraction_of_instrumented_wall": 0.0027410224394147013
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 6,
+          "cpu_exclusive_s": 0.004348610999983293,
+          "cpu_inclusive_s": 0.006867595999949572,
+          "wall_exclusive_s": 0.0014438840000821074,
+          "wall_inclusive_s": 0.0022932530002890417,
+          "exclusive_fraction_of_instrumented_wall": 0.0025400927045463044
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 6,
+          "cpu_exclusive_s": 0.0035254580000128044,
+          "cpu_inclusive_s": 0.014276865999988786,
+          "wall_exclusive_s": 0.0011671520001073077,
+          "wall_inclusive_s": 0.004762485000128436,
+          "exclusive_fraction_of_instrumented_wall": 0.0020532634757367014
+        },
+        {
+          "stage": "front_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.007141185999984145,
+          "cpu_inclusive_s": 0.11749027199999773,
+          "wall_exclusive_s": 0.0011651030001758045,
+          "wall_inclusive_s": 0.01957561800008989,
+          "exclusive_fraction_of_instrumented_wall": 0.0020496588580684325
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0033502610000084587,
+          "cpu_inclusive_s": 0.3301837300000159,
+          "wall_exclusive_s": 0.0011153300001751631,
+          "wall_inclusive_s": 0.11003764700012653,
+          "exclusive_fraction_of_instrumented_wall": 0.0019620977837869645
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0018495669999936126,
+          "cpu_inclusive_s": 1.5869834699999785,
+          "wall_exclusive_s": 0.0003077019998727337,
+          "wall_inclusive_s": 0.5088123279999763,
+          "exclusive_fraction_of_instrumented_wall": 0.0005413119094100309
+        },
+        {
+          "stage": "history_selection",
+          "calls": 1,
+          "cpu_exclusive_s": 1.2117000011357959e-05,
+          "cpu_inclusive_s": 1.2117000011357959e-05,
+          "wall_exclusive_s": 6.215999974301667e-06,
+          "wall_inclusive_s": 6.215999974301667e-06,
+          "exclusive_fraction_of_instrumented_wall": 1.0935238693195447e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 2,
+          "input_tracks": 61,
+          "h_retained": 43,
+          "i_retained": 43
+        },
+        "left/native": {
+          "calls": 2,
+          "input_tracks": 166,
+          "h_retained": 153,
+          "i_retained": 150
+        },
+        "right/native": {
+          "calls": 2,
+          "input_tracks": 166,
+          "h_retained": 154,
+          "i_retained": 154
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 153,
+        "paired_descriptor": 1572
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 36,
+          "result_elements": 501264
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 244,
+          "result_elements": 3397456
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 664,
+          "result_elements": 9245536
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 664,
+          "result_elements": 9245536
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 117,
+          "result_elements": 1629108
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "bootstrapping/bounded_probe_inside_explicit_task_clearance": {
+      "decisions": 6,
+      "instrumented_wall_s": 0.35412156300026254,
+      "instrumented_cpu_s": 1.0290462169999994,
+      "uncovered_wall_s": 0.0029750810006134998,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 854,
+          "cpu_exclusive_s": 0.42850116000000105,
+          "cpu_inclusive_s": 0.42850116000000105,
+          "wall_exclusive_s": 0.14495111900055235,
+          "wall_inclusive_s": 0.14495111900055235,
+          "exclusive_fraction_of_instrumented_wall": 0.40932587604230386
+        },
+        {
+          "stage": "startup_texture",
+          "calls": 3,
+          "cpu_exclusive_s": 0.25434359900000203,
+          "cpu_inclusive_s": 0.4782233970000007,
+          "wall_exclusive_s": 0.08368943900063641,
+          "wall_inclusive_s": 0.1594290609998552,
+          "exclusive_fraction_of_instrumented_wall": 0.23632968941960297
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 1,
+          "cpu_exclusive_s": 0.09831884299999993,
+          "cpu_inclusive_s": 0.13272578700000004,
+          "wall_exclusive_s": 0.033433670000022175,
+          "wall_inclusive_s": 0.04654360099993937,
+          "exclusive_fraction_of_instrumented_wall": 0.09441297422489177
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 92,
+          "cpu_exclusive_s": 0.0718915989999993,
+          "cpu_inclusive_s": 0.27824250900000225,
+          "wall_exclusive_s": 0.023177614998076024,
+          "wall_inclusive_s": 0.09297307199926763,
+          "exclusive_fraction_of_instrumented_wall": 0.06545101292817586
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 92,
+          "cpu_exclusive_s": 0.041880375000001635,
+          "cpu_inclusive_s": 0.041880375000001635,
+          "wall_exclusive_s": 0.01423881300092944,
+          "wall_inclusive_s": 0.01423881300092944,
+          "exclusive_fraction_of_instrumented_wall": 0.04020882795244774
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 3,
+          "cpu_exclusive_s": 0.04338377999999565,
+          "cpu_inclusive_s": 0.38717338499999965,
+          "wall_exclusive_s": 0.013962406999326049,
+          "wall_inclusive_s": 0.12907540700007303,
+          "exclusive_fraction_of_instrumented_wall": 0.03942828807438562
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 1,
+          "cpu_exclusive_s": 0.034406944000000106,
+          "cpu_inclusive_s": 0.034406944000000106,
+          "wall_exclusive_s": 0.013109930999917196,
+          "wall_inclusive_s": 0.013109930999917196,
+          "exclusive_fraction_of_instrumented_wall": 0.03702099044419805
+        },
+        {
+          "stage": "region_models",
+          "calls": 9,
+          "cpu_exclusive_s": 0.02130823899999923,
+          "cpu_inclusive_s": 0.02130823899999923,
+          "wall_exclusive_s": 0.009239904000196475,
+          "wall_inclusive_s": 0.009239904000196475,
+          "exclusive_fraction_of_instrumented_wall": 0.02609246362156609
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 3,
+          "cpu_exclusive_s": 0.005555916000000494,
+          "cpu_inclusive_s": 0.019737414999999814,
+          "wall_exclusive_s": 0.00528740999970978,
+          "wall_inclusive_s": 0.014957649999814748,
+          "exclusive_fraction_of_instrumented_wall": 0.014931059139445457
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 18,
+          "cpu_exclusive_s": 0.005632562999999813,
+          "cpu_inclusive_s": 0.005632562999999813,
+          "wall_exclusive_s": 0.004750723000142898,
+          "wall_inclusive_s": 0.004750723000142898,
+          "exclusive_fraction_of_instrumented_wall": 0.0134155146043433
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 15,
+          "cpu_exclusive_s": 0.0038038189999998195,
+          "cpu_inclusive_s": 0.0038038189999998195,
+          "wall_exclusive_s": 0.0013205819998347579,
+          "wall_inclusive_s": 0.0013205819998347579,
+          "exclusive_fraction_of_instrumented_wall": 0.003729177033576402
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 3,
+          "cpu_exclusive_s": 0.003100734000001104,
+          "cpu_inclusive_s": 0.004566182000000474,
+          "wall_exclusive_s": 0.0009478429997216153,
+          "wall_inclusive_s": 0.0014401169999018748,
+          "exclusive_fraction_of_instrumented_wall": 0.0026766034569911594
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 1,
+          "cpu_exclusive_s": 0.002646791000000537,
+          "cpu_inclusive_s": 0.542283378,
+          "wall_exclusive_s": 0.0008949860002758214,
+          "wall_inclusive_s": 0.19147164400010297,
+          "exclusive_fraction_of_instrumented_wall": 0.0025273411556560816
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 3,
+          "cpu_exclusive_s": 0.0025967289999999643,
+          "cpu_inclusive_s": 0.00964088899999993,
+          "wall_exclusive_s": 0.0008570449999751872,
+          "wall_inclusive_s": 0.0032165130000976205,
+          "exclusive_fraction_of_instrumented_wall": 0.0024201999808030664
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 3,
+          "cpu_exclusive_s": 0.001748687000000082,
+          "cpu_inclusive_s": 0.007463829999999838,
+          "wall_exclusive_s": 0.000529787000232318,
+          "wall_inclusive_s": 0.0024907060003442894,
+          "exclusive_fraction_of_instrumented_wall": 0.0014960597026166553
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 3,
+          "cpu_exclusive_s": 0.001386997000000001,
+          "cpu_inclusive_s": 0.0019958199999998705,
+          "wall_exclusive_s": 0.0005094310004096769,
+          "wall_inclusive_s": 0.0007537790002061229,
+          "exclusive_fraction_of_instrumented_wall": 0.0014385766178528338
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 1,
+          "cpu_exclusive_s": 0.0003237339999997424,
+          "cpu_inclusive_s": 0.5426071119999998,
+          "wall_exclusive_s": 0.000245776999690861,
+          "wall_inclusive_s": 0.19171742099979383,
+          "exclusive_fraction_of_instrumented_wall": 0.0006940469753057053
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 1,
+          "input_tracks": 29,
+          "h_retained": 29,
+          "i_retained": 29
+        },
+        "left/native": {
+          "calls": 1,
+          "input_tracks": 29,
+          "h_retained": 29,
+          "i_retained": 29
+        },
+        "right/native": {
+          "calls": 1,
+          "input_tracks": 34,
+          "h_retained": 34,
+          "i_retained": 34
+        }
+      },
+      "match_calls_by_scope": {
+        "paired_descriptor": 368,
+        "outside_pair": 486
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 116,
+          "result_elements": 1615184
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 116,
+          "result_elements": 1615184
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 136,
+          "result_elements": 1893664
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 486,
+          "result_elements": 6767064
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "following/fresh_two_side_geometry_and_ground_transfer": {
+      "decisions": 55,
+      "instrumented_wall_s": 32.84013352099919,
+      "instrumented_cpu_s": 112.15732016200008,
+      "uncovered_wall_s": 0.04465613200045482,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 95279,
+          "cpu_exclusive_s": 51.70901443400157,
+          "cpu_inclusive_s": 51.70901443400157,
+          "wall_exclusive_s": 15.434783434948713,
+          "wall_inclusive_s": 15.434783434948713,
+          "exclusive_fraction_of_instrumented_wall": 0.4699975846650911
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 21744,
+          "cpu_exclusive_s": 12.045692474998651,
+          "cpu_inclusive_s": 52.21573201599979,
+          "wall_exclusive_s": 3.905320615048595,
+          "wall_inclusive_s": 17.38300798801606,
+          "exclusive_fraction_of_instrumented_wall": 0.11891914545814466
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 22239,
+          "cpu_exclusive_s": 10.919517771999406,
+          "cpu_inclusive_s": 12.921710907999774,
+          "wall_exclusive_s": 3.391514012997277,
+          "wall_inclusive_s": 3.7290395889860974,
+          "exclusive_fraction_of_instrumented_wall": 0.10327345383138038
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 339,
+          "cpu_exclusive_s": 8.22300730700027,
+          "cpu_inclusive_s": 72.98820050100005,
+          "wall_exclusive_s": 2.593823429002896,
+          "wall_inclusive_s": 24.19476215600139,
+          "exclusive_fraction_of_instrumented_wall": 0.078983339922912
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 552,
+          "cpu_exclusive_s": 8.473378968000025,
+          "cpu_inclusive_s": 8.473378968000025,
+          "wall_exclusive_s": 2.011079463999522,
+          "wall_inclusive_s": 2.011079463999522,
+          "exclusive_fraction_of_instrumented_wall": 0.06123846794695776
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 58,
+          "cpu_exclusive_s": 4.791675090999959,
+          "cpu_inclusive_s": 5.130949435999923,
+          "wall_exclusive_s": 1.5968931660006547,
+          "wall_inclusive_s": 1.7103432760009127,
+          "exclusive_fraction_of_instrumented_wall": 0.04862626898211429
+        },
+        {
+          "stage": "free_path",
+          "calls": 55,
+          "cpu_exclusive_s": 6.9985249600002355,
+          "cpu_inclusive_s": 20.35768138800011,
+          "wall_exclusive_s": 1.1577185270080008,
+          "wall_inclusive_s": 3.4156209249993026,
+          "exclusive_fraction_of_instrumented_wall": 0.03525316138765736
+        },
+        {
+          "stage": "region_models",
+          "calls": 917,
+          "cpu_exclusive_s": 2.9551141950001227,
+          "cpu_inclusive_s": 2.9551141950001227,
+          "wall_exclusive_s": 0.969534914997439,
+          "wall_inclusive_s": 0.969534914997439,
+          "exclusive_fraction_of_instrumented_wall": 0.029522867633211138
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 2144,
+          "cpu_exclusive_s": 1.7660430469996244,
+          "cpu_inclusive_s": 1.7660430469996244,
+          "wall_exclusive_s": 0.5530816670002423,
+          "wall_inclusive_s": 0.5530816670002423,
+          "exclusive_fraction_of_instrumented_wall": 0.016841638802917214
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 339,
+          "cpu_exclusive_s": 0.8453885180002239,
+          "cpu_inclusive_s": 3.70118116699994,
+          "wall_exclusive_s": 0.24152973999662208,
+          "wall_inclusive_s": 1.1481392369978494,
+          "exclusive_fraction_of_instrumented_wall": 0.007354712484411158
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 55,
+          "cpu_exclusive_s": 0.7574788450000378,
+          "cpu_inclusive_s": 80.84796650899999,
+          "wall_exclusive_s": 0.2037599999991926,
+          "wall_inclusive_s": 26.67899399899966,
+          "exclusive_fraction_of_instrumented_wall": 0.006204603275102427
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 339,
+          "cpu_exclusive_s": 0.34561303300030044,
+          "cpu_inclusive_s": 0.4254175060002048,
+          "wall_exclusive_s": 0.1298448850004661,
+          "wall_inclusive_s": 0.15580066099914802,
+          "exclusive_fraction_of_instrumented_wall": 0.003953847657697205
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 339,
+          "cpu_exclusive_s": 0.32361045899992025,
+          "cpu_inclusive_s": 1.3075212080000123,
+          "wall_exclusive_s": 0.10698380299959354,
+          "wall_inclusive_s": 0.4361265230002118,
+          "exclusive_fraction_of_instrumented_wall": 0.0032577152261328095
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 1188,
+          "cpu_exclusive_s": 0.38017931499967617,
+          "cpu_inclusive_s": 0.38017931499967617,
+          "wall_exclusive_s": 0.10381312399636045,
+          "wall_inclusive_s": 0.10381312399636045,
+          "exclusive_fraction_of_instrumented_wall": 0.0031611663189486886
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 55,
+          "cpu_exclusive_s": 0.3245621820000446,
+          "cpu_inclusive_s": 3.5641411229999944,
+          "wall_exclusive_s": 0.10226862000058645,
+          "wall_inclusive_s": 1.1824679280002783,
+          "exclusive_fraction_of_instrumented_wall": 0.0031141353288101628
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 339,
+          "cpu_exclusive_s": 0.304549843000097,
+          "cpu_inclusive_s": 0.4821806499999539,
+          "wall_exclusive_s": 0.09428431300193552,
+          "wall_inclusive_s": 0.15136159999951815,
+          "exclusive_fraction_of_instrumented_wall": 0.002871008820401009
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 339,
+          "cpu_exclusive_s": 0.23080769799999779,
+          "cpu_inclusive_s": 1.063888318000032,
+          "wall_exclusive_s": 0.07628985200040006,
+          "wall_inclusive_s": 0.35489647199915453,
+          "exclusive_fraction_of_instrumented_wall": 0.0023230676559709332
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 58,
+          "cpu_exclusive_s": 0.18258653100005517,
+          "cpu_inclusive_s": 23.84487324099991,
+          "wall_exclusive_s": 0.05940578000036112,
+          "wall_inclusive_s": 7.727284007000435,
+          "exclusive_fraction_of_instrumented_wall": 0.0018089384430296205
+        },
+        {
+          "stage": "front_fit",
+          "calls": 55,
+          "cpu_exclusive_s": 0.30722101199992746,
+          "cpu_inclusive_s": 5.20174669400004,
+          "wall_exclusive_s": 0.04941319999988991,
+          "wall_inclusive_s": 0.8668432459994619,
+          "exclusive_fraction_of_instrumented_wall": 0.0015046589249795008
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 55,
+          "cpu_exclusive_s": 0.06751267099994429,
+          "cpu_inclusive_s": 89.68136699699997,
+          "wall_exclusive_s": 0.011240645000725635,
+          "wall_inclusive_s": 28.739545818000124,
+          "exclusive_fraction_of_instrumented_wall": 0.00034228377888713375
+        },
+        {
+          "stage": "command_computation",
+          "calls": 55,
+          "cpu_exclusive_s": 0.008238300000010135,
+          "cpu_inclusive_s": 0.008238300000010135,
+          "wall_exclusive_s": 0.0015392489997338998,
+          "wall_inclusive_s": 0.0015392489997338998,
+          "exclusive_fraction_of_instrumented_wall": 4.687097263930573e-05
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 3,
+          "cpu_exclusive_s": 0.0025831790000054866,
+          "cpu_inclusive_s": 1.9150131500000107,
+          "wall_exclusive_s": 0.000879596999993737,
+          "wall_inclusive_s": 0.6382960470000398,
+          "exclusive_fraction_of_instrumented_wall": 2.6784209005462486e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 55,
+          "cpu_exclusive_s": 0.0014155059999509945,
+          "cpu_inclusive_s": 0.0014155059999509945,
+          "wall_exclusive_s": 0.0004753499995331367,
+          "wall_inclusive_s": 0.0004753499995331367,
+          "exclusive_fraction_of_instrumented_wall": 1.4474667078596999e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 113,
+          "input_tracks": 3493,
+          "h_retained": 2498,
+          "i_retained": 2482
+        },
+        "left/native": {
+          "calls": 113,
+          "input_tracks": 8917,
+          "h_retained": 8085,
+          "i_retained": 8058
+        },
+        "right/native": {
+          "calls": 113,
+          "input_tracks": 9334,
+          "h_retained": 8897,
+          "i_retained": 8870
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 8415,
+        "paired_descriptor": 86864
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 1980,
+          "result_elements": 27569520
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 13876,
+          "result_elements": 193209424
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 35660,
+          "result_elements": 496529840
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 37328,
+          "result_elements": 519755072
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 6435,
+          "result_elements": 89600940
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "observing/awaiting_rgb": {
+      "decisions": 2,
+      "instrumented_wall_s": 0.0038626709999789455,
+      "instrumented_cpu_s": 0.002273511999999922,
+      "uncovered_wall_s": 0.0038626709999789455,
+      "stages": [],
+      "pair_regions_by_view": {},
+      "match_calls_by_scope": {},
+      "match_footprints": [],
+      "primitive_calls": {}
+    },
+    "waiting_evidence/awaiting_stationary_and_fresh_rearm": {
+      "decisions": 11,
+      "instrumented_wall_s": 6.971394144999749,
+      "instrumented_cpu_s": 23.671570602999992,
+      "uncovered_wall_s": 0.007401466999908735,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 21163,
+          "cpu_exclusive_s": 10.960820323000105,
+          "cpu_inclusive_s": 10.960820323000105,
+          "wall_exclusive_s": 3.287682296001094,
+          "wall_inclusive_s": 3.287682296001094,
+          "exclusive_fraction_of_instrumented_wall": 0.47159610081136966
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 4879,
+          "cpu_exclusive_s": 2.4828467160003456,
+          "cpu_inclusive_s": 11.090650698000506,
+          "wall_exclusive_s": 0.805121416007978,
+          "wall_inclusive_s": 3.693831236003234,
+          "exclusive_fraction_of_instrumented_wall": 0.11548929801730598
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 4978,
+          "cpu_exclusive_s": 2.230561453000311,
+          "cpu_inclusive_s": 2.613181248000238,
+          "wall_exclusive_s": 0.6949793230121486,
+          "wall_inclusive_s": 0.7593625180109029,
+          "exclusive_fraction_of_instrumented_wall": 0.09969014928106229
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 84,
+          "cpu_exclusive_s": 1.5253193679992698,
+          "cpu_inclusive_s": 15.228559474999969,
+          "wall_exclusive_s": 0.4886099639859367,
+          "wall_inclusive_s": 5.057515104001141,
+          "exclusive_fraction_of_instrumented_wall": 0.0700878409430334
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 17,
+          "cpu_exclusive_s": 1.3331658780000009,
+          "cpu_inclusive_s": 1.416830955000007,
+          "wall_exclusive_s": 0.4443099699999493,
+          "wall_inclusive_s": 0.47234425200008445,
+          "exclusive_fraction_of_instrumented_wall": 0.06373330222888514
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 119,
+          "cpu_exclusive_s": 1.7932863929999794,
+          "cpu_inclusive_s": 1.7932863929999794,
+          "wall_exclusive_s": 0.4201693030008755,
+          "wall_inclusive_s": 0.4201693030008755,
+          "exclusive_fraction_of_instrumented_wall": 0.060270484534609634
+        },
+        {
+          "stage": "free_path",
+          "calls": 11,
+          "cpu_exclusive_s": 1.493392011999994,
+          "cpu_inclusive_s": 4.205028071000026,
+          "wall_exclusive_s": 0.2466469949920338,
+          "wall_inclusive_s": 0.7050257949997558,
+          "exclusive_fraction_of_instrumented_wall": 0.03537986661806262
+        },
+        {
+          "stage": "region_models",
+          "calls": 233,
+          "cpu_exclusive_s": 0.6240127039999894,
+          "cpu_inclusive_s": 0.6240127039999894,
+          "wall_exclusive_s": 0.2067401839995,
+          "wall_inclusive_s": 0.2067401839995,
+          "exclusive_fraction_of_instrumented_wall": 0.029655500707528485
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 526,
+          "cpu_exclusive_s": 0.37048118100006633,
+          "cpu_inclusive_s": 0.37048118100006633,
+          "wall_exclusive_s": 0.12083906300358649,
+          "wall_inclusive_s": 0.12083906300358649,
+          "exclusive_fraction_of_instrumented_wall": 0.017333557749027666
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 84,
+          "cpu_exclusive_s": 0.15465831100008742,
+          "cpu_inclusive_s": 0.7550023920001152,
+          "wall_exclusive_s": 0.04872465799780912,
+          "wall_inclusive_s": 0.24617109300015727,
+          "exclusive_fraction_of_instrumented_wall": 0.0069892272599099865
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 11,
+          "cpu_exclusive_s": 0.11642729599995505,
+          "cpu_inclusive_s": 15.06858865800002,
+          "wall_exclusive_s": 0.03736444399987704,
+          "wall_inclusive_s": 5.0067182750008214,
+          "exclusive_fraction_of_instrumented_wall": 0.005359680319707183
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 84,
+          "cpu_exclusive_s": 0.07435384000000944,
+          "cpu_inclusive_s": 0.2808450100000055,
+          "wall_exclusive_s": 0.024580894000564513,
+          "wall_inclusive_s": 0.09374337400140575,
+          "exclusive_fraction_of_instrumented_wall": 0.003525965321899813
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 282,
+          "cpu_exclusive_s": 0.0817859550000346,
+          "cpu_inclusive_s": 0.0817859550000346,
+          "wall_exclusive_s": 0.022609387999182218,
+          "wall_inclusive_s": 0.022609387999182218,
+          "exclusive_fraction_of_instrumented_wall": 0.003243165933373436
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 84,
+          "cpu_exclusive_s": 0.06735424799986234,
+          "cpu_inclusive_s": 0.08444662399989866,
+          "wall_exclusive_s": 0.022050465999882363,
+          "wall_inclusive_s": 0.027672132000134297,
+          "exclusive_fraction_of_instrumented_wall": 0.0031629922998541284
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 84,
+          "cpu_exclusive_s": 0.06764580299997469,
+          "cpu_inclusive_s": 0.10539463199994437,
+          "wall_exclusive_s": 0.021963876999734566,
+          "wall_inclusive_s": 0.03438846599874523,
+          "exclusive_fraction_of_instrumented_wall": 0.0031505716852185464
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 11,
+          "cpu_exclusive_s": 0.06607469900005292,
+          "cpu_inclusive_s": 0.7072866370000206,
+          "wall_exclusive_s": 0.020284527000058006,
+          "wall_inclusive_s": 0.23404628300022523,
+          "exclusive_fraction_of_instrumented_wall": 0.0029096801268376337
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 84,
+          "cpu_exclusive_s": 0.055358024000060624,
+          "cpu_inclusive_s": 0.23167052800006438,
+          "wall_exclusive_s": 0.018163468001603178,
+          "wall_inclusive_s": 0.07718776000160688,
+          "exclusive_fraction_of_instrumented_wall": 0.0026054283582045024
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 17,
+          "cpu_exclusive_s": 0.05341118799997524,
+          "cpu_inclusive_s": 6.424052051999988,
+          "wall_exclusive_s": 0.01746950899928379,
+          "wall_inclusive_s": 2.117595682999763,
+          "exclusive_fraction_of_instrumented_wall": 0.002505884567122609
+        },
+        {
+          "stage": "front_fit",
+          "calls": 11,
+          "cpu_exclusive_s": 0.06773049200001502,
+          "cpu_inclusive_s": 1.1361398700000205,
+          "wall_exclusive_s": 0.010965744999339222,
+          "wall_inclusive_s": 0.18933900999991238,
+          "exclusive_fraction_of_instrumented_wall": 0.0015729629929480363
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 11,
+          "cpu_exclusive_s": 0.0181645839999085,
+          "cpu_inclusive_s": 16.93017974899997,
+          "wall_exclusive_s": 0.0030352429987487994,
+          "wall_inclusive_s": 5.433138810999708,
+          "exclusive_fraction_of_instrumented_wall": 0.0004353853670611689
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 6,
+          "cpu_exclusive_s": 0.005892502999984117,
+          "cpu_inclusive_s": 2.507535150999985,
+          "wall_exclusive_s": 0.001627507000193873,
+          "wall_inclusive_s": 0.8257736339999155,
+          "exclusive_fraction_of_instrumented_wall": 0.00023345502583026475
+        },
+        {
+          "stage": "history_selection",
+          "calls": 11,
+          "cpu_exclusive_s": 0.00011730400002107899,
+          "cpu_inclusive_s": 0.00011730400002107899,
+          "wall_exclusive_s": 5.443800046123215e-05,
+          "wall_inclusive_s": 5.443800046123215e-05,
+          "exclusive_fraction_of_instrumented_wall": 7.808768135750573e-06
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 28,
+          "input_tracks": 890,
+          "h_retained": 661,
+          "i_retained": 657
+        },
+        "left/native": {
+          "calls": 28,
+          "input_tracks": 1961,
+          "h_retained": 1752,
+          "i_retained": 1743
+        },
+        "right/native": {
+          "calls": 28,
+          "input_tracks": 2028,
+          "h_retained": 1921,
+          "i_retained": 1918
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 1683,
+        "paired_descriptor": 19480
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 396,
+          "result_elements": 5513904
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 3532,
+          "result_elements": 49179568
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 7836,
+          "result_elements": 109108464
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 8112,
+          "result_elements": 112951488
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 1287,
+          "result_elements": 17920188
+        }
+      ],
+      "primitive_calls": {}
+    },
+    "waiting_evidence/geometry_or_free_path_unverified": {
+      "decisions": 5,
+      "instrumented_wall_s": 2.4150477690000116,
+      "instrumented_cpu_s": 7.801839633,
+      "uncovered_wall_s": 0.003616621999981362,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 7084,
+          "cpu_exclusive_s": 3.5751330489998896,
+          "cpu_inclusive_s": 3.5751330489998896,
+          "wall_exclusive_s": 1.1341115620023174,
+          "wall_inclusive_s": 1.1341115620023174,
+          "exclusive_fraction_of_instrumented_wall": 0.4696021240490469
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 1624,
+          "cpu_exclusive_s": 0.8637079699998935,
+          "cpu_inclusive_s": 3.8189582709998966,
+          "wall_exclusive_s": 0.2805458759996782,
+          "wall_inclusive_s": 1.2756750700020802,
+          "exclusive_fraction_of_instrumented_wall": 0.11616576682284119
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 1660,
+          "cpu_exclusive_s": 0.7561928420005799,
+          "cpu_inclusive_s": 0.861395094000514,
+          "wall_exclusive_s": 0.24456973600399579,
+          "wall_inclusive_s": 0.26711008200391007,
+          "exclusive_fraction_of_instrumented_wall": 0.10126910910141695
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 27,
+          "cpu_exclusive_s": 0.5384090849994863,
+          "cpu_inclusive_s": 5.2794417689999555,
+          "wall_exclusive_s": 0.17369163299463253,
+          "wall_inclusive_s": 1.7593986079998558,
+          "exclusive_fraction_of_instrumented_wall": 0.07192057864203336
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 5,
+          "cpu_exclusive_s": 0.45274622799997744,
+          "cpu_inclusive_s": 0.488327433999979,
+          "wall_exclusive_s": 0.1508565639999233,
+          "wall_inclusive_s": 0.16276689900018937,
+          "exclusive_fraction_of_instrumented_wall": 0.062465250557916636
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 27,
+          "cpu_exclusive_s": 0.5560386669999815,
+          "cpu_inclusive_s": 0.5560386669999815,
+          "wall_exclusive_s": 0.1371149770006923,
+          "wall_inclusive_s": 0.1371149770006923,
+          "exclusive_fraction_of_instrumented_wall": 0.05677526497021088
+        },
+        {
+          "stage": "free_path",
+          "calls": 5,
+          "cpu_exclusive_s": 0.38299292500010296,
+          "cpu_inclusive_s": 1.0937381829999833,
+          "wall_exclusive_s": 0.08250755099970775,
+          "wall_inclusive_s": 0.24058147699975052,
+          "exclusive_fraction_of_instrumented_wall": 0.034163941624173876
+        },
+        {
+          "stage": "region_models",
+          "calls": 74,
+          "cpu_exclusive_s": 0.22422601700005984,
+          "cpu_inclusive_s": 0.22422601700005984,
+          "wall_exclusive_s": 0.07503838099842142,
+          "wall_inclusive_s": 0.07503838099842142,
+          "exclusive_fraction_of_instrumented_wall": 0.031071178782311307
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 170,
+          "cpu_exclusive_s": 0.1388976080002191,
+          "cpu_inclusive_s": 0.1388976080002191,
+          "wall_exclusive_s": 0.04546930599826737,
+          "wall_inclusive_s": 0.04546930599826737,
+          "exclusive_fraction_of_instrumented_wall": 0.01882749756833781
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 5,
+          "cpu_exclusive_s": 0.080068365999999,
+          "cpu_inclusive_s": 6.138540742000007,
+          "wall_exclusive_s": 0.02051334699990548,
+          "wall_inclusive_s": 2.037354499999765,
+          "exclusive_fraction_of_instrumented_wall": 0.00849397153266221
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 27,
+          "cpu_exclusive_s": 0.05941055999980627,
+          "cpu_inclusive_s": 0.27621725600007885,
+          "wall_exclusive_s": 0.018046910000975913,
+          "wall_inclusive_s": 0.0899203899996337,
+          "exclusive_fraction_of_instrumented_wall": 0.007472692769322952
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 27,
+          "cpu_exclusive_s": 0.025881973999982932,
+          "cpu_inclusive_s": 0.10091914699999549,
+          "wall_exclusive_s": 0.008527855000011186,
+          "wall_inclusive_s": 0.033632034999527605,
+          "exclusive_fraction_of_instrumented_wall": 0.003531133052304915
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 27,
+          "cpu_exclusive_s": 0.023142917000027907,
+          "cpu_inclusive_s": 0.028321303000021558,
+          "wall_exclusive_s": 0.007733552999297899,
+          "wall_inclusive_s": 0.009477378999918074,
+          "exclusive_fraction_of_instrumented_wall": 0.003202236037964623
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 92,
+          "cpu_exclusive_s": 0.023785024000007482,
+          "cpu_inclusive_s": 0.023785024000007482,
+          "wall_exclusive_s": 0.0072690190011144296,
+          "wall_inclusive_s": 0.0072690190011144296,
+          "exclusive_fraction_of_instrumented_wall": 0.003009886220231694
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 27,
+          "cpu_exclusive_s": 0.019955225000025223,
+          "cpu_inclusive_s": 0.032068779000065106,
+          "wall_exclusive_s": 0.00659984899994015,
+          "wall_inclusive_s": 0.010702379000576911,
+          "exclusive_fraction_of_instrumented_wall": 0.00273280267357731
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 5,
+          "cpu_exclusive_s": 0.018020247000032796,
+          "cpu_inclusive_s": 0.24843916400002897,
+          "wall_exclusive_s": 0.0058245619995886955,
+          "wall_inclusive_s": 0.08263910099981331,
+          "exclusive_fraction_of_instrumented_wall": 0.0024117792096511807
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 27,
+          "cpu_exclusive_s": 0.017662011999936666,
+          "cpu_inclusive_s": 0.08591383099993699,
+          "wall_exclusive_s": 0.0057892440008799895,
+          "wall_inclusive_s": 0.028649643999415275,
+          "exclusive_fraction_of_instrumented_wall": 0.0023971550688113787
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 5,
+          "cpu_exclusive_s": 0.014485916999994686,
+          "cpu_inclusive_s": 1.9239064760000169,
+          "wall_exclusive_s": 0.004755256000180452,
+          "wall_inclusive_s": 0.6390406870000334,
+          "exclusive_fraction_of_instrumented_wall": 0.001969011156309111
+        },
+        {
+          "stage": "front_fit",
+          "calls": 5,
+          "cpu_exclusive_s": 0.012420855000032205,
+          "cpu_inclusive_s": 0.30245939900001595,
+          "wall_exclusive_s": 0.002009256000064852,
+          "wall_inclusive_s": 0.050399359000266486,
+          "exclusive_fraction_of_instrumented_wall": 0.0008319736055973816
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 5,
+          "cpu_exclusive_s": 0.002122549999949541,
+          "cpu_inclusive_s": 6.691561855000002,
+          "wall_exclusive_s": 0.00040370500005337817,
+          "wall_inclusive_s": 2.170796664999898,
+          "exclusive_fraction_of_instrumented_wall": 0.00016716232500052725
+        },
+        {
+          "stage": "history_selection",
+          "calls": 5,
+          "cpu_exclusive_s": 0.00015512100000769635,
+          "cpu_inclusive_s": 0.00015512100000769635,
+          "wall_exclusive_s": 5.300500038174505e-05,
+          "wall_inclusive_s": 5.300500038174505e-05,
+          "exclusive_fraction_of_instrumented_wall": 2.1947806193370906e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 9,
+          "input_tracks": 265,
+          "h_retained": 180,
+          "i_retained": 177
+        },
+        "left/native": {
+          "calls": 9,
+          "input_tracks": 661,
+          "h_retained": 576,
+          "i_retained": 574
+        },
+        "right/native": {
+          "calls": 9,
+          "input_tracks": 698,
+          "h_retained": 653,
+          "i_retained": 649
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 612,
+        "paired_descriptor": 6472
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 144,
+          "result_elements": 2005056
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 1036,
+          "result_elements": 14425264
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 2644,
+          "result_elements": 36815056
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 2792,
+          "result_elements": 38875808
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 468,
+          "result_elements": 6516432
+        }
+      ],
+      "primitive_calls": {}
+    }
+  },
+  "contiguous_quarters": [
+    {
+      "ticks": [
+        0,
+        19
+      ],
+      "decisions": 20,
+      "instrumented_wall_s": 7.784512825000093,
+      "instrumented_cpu_s": 25.98119507699999,
+      "uncovered_wall_s": 0.016000408001445976,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 22278,
+          "cpu_exclusive_s": 12.032087557999876,
+          "cpu_inclusive_s": 12.032087557999876,
+          "wall_exclusive_s": 3.6566249470065486,
+          "wall_inclusive_s": 3.6566249470065486,
+          "exclusive_fraction_of_instrumented_wall": 0.4697307370685082
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 5000,
+          "cpu_exclusive_s": 2.917896121999988,
+          "cpu_inclusive_s": 12.330446432999846,
+          "wall_exclusive_s": 0.9546301349942041,
+          "wall_inclusive_s": 4.114566850996198,
+          "exclusive_fraction_of_instrumented_wall": 0.12263196894330927
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 5108,
+          "cpu_exclusive_s": 2.555722168999961,
+          "cpu_inclusive_s": 2.9584933139999423,
+          "wall_exclusive_s": 0.8034186980062259,
+          "wall_inclusive_s": 0.8737787470054172,
+          "exclusive_fraction_of_instrumented_wall": 0.1032073189507805
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 84,
+          "cpu_exclusive_s": 1.785459788000236,
+          "cpu_inclusive_s": 17.126373082000015,
+          "wall_exclusive_s": 0.5602668940007334,
+          "wall_inclusive_s": 5.683255756000335,
+          "exclusive_fraction_of_instrumented_wall": 0.07197199190184733
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 16,
+          "cpu_exclusive_s": 1.240307424999998,
+          "cpu_inclusive_s": 1.344052727000002,
+          "wall_exclusive_s": 0.4140735590010536,
+          "wall_inclusive_s": 0.4504192170006718,
+          "exclusive_fraction_of_instrumented_wall": 0.05319196824639423
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 95,
+          "cpu_exclusive_s": 1.6105171079999923,
+          "cpu_inclusive_s": 1.6105171079999923,
+          "wall_exclusive_s": 0.39721133600028224,
+          "wall_inclusive_s": 0.39721133600028224,
+          "exclusive_fraction_of_instrumented_wall": 0.0510258438684347
+        },
+        {
+          "stage": "free_path",
+          "calls": 12,
+          "cpu_exclusive_s": 1.4908330339999623,
+          "cpu_inclusive_s": 4.266421655000003,
+          "wall_exclusive_s": 0.2557923699937419,
+          "wall_inclusive_s": 0.7419285469998158,
+          "exclusive_fraction_of_instrumented_wall": 0.03285913656308208
+        },
+        {
+          "stage": "region_models",
+          "calls": 229,
+          "cpu_exclusive_s": 0.734202696999986,
+          "cpu_inclusive_s": 0.734202696999986,
+          "wall_exclusive_s": 0.24456286400027238,
+          "wall_inclusive_s": 0.24456286400027238,
+          "exclusive_fraction_of_instrumented_wall": 0.031416592084588094
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 528,
+          "cpu_exclusive_s": 0.3908220670000091,
+          "cpu_inclusive_s": 0.3908220670000091,
+          "wall_exclusive_s": 0.1282345139975405,
+          "wall_inclusive_s": 0.1282345139975405,
+          "exclusive_fraction_of_instrumented_wall": 0.0164730300893992
+        },
+        {
+          "stage": "startup_texture",
+          "calls": 3,
+          "cpu_exclusive_s": 0.25434359900000203,
+          "cpu_inclusive_s": 0.4782233970000007,
+          "wall_exclusive_s": 0.08368943900063641,
+          "wall_inclusive_s": 0.1594290609998552,
+          "exclusive_fraction_of_instrumented_wall": 0.010750761272030587
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 84,
+          "cpu_exclusive_s": 0.16751783500000528,
+          "cpu_inclusive_s": 0.8294681940000066,
+          "wall_exclusive_s": 0.05571860500208459,
+          "wall_inclusive_s": 0.27526332299976275,
+          "exclusive_fraction_of_instrumented_wall": 0.007157622609746799
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 12,
+          "cpu_exclusive_s": 0.15919658299999728,
+          "cpu_inclusive_s": 17.015330655999996,
+          "wall_exclusive_s": 0.04286098400007177,
+          "wall_inclusive_s": 5.628671666000855,
+          "exclusive_fraction_of_instrumented_wall": 0.00550593016719338
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 84,
+          "cpu_exclusive_s": 0.0789166899999878,
+          "cpu_inclusive_s": 0.31782099999998703,
+          "wall_exclusive_s": 0.0262704249989838,
+          "wall_inclusive_s": 0.10609765800018067,
+          "exclusive_fraction_of_instrumented_wall": 0.003374703798369487
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 294,
+          "cpu_exclusive_s": 0.08754633600000439,
+          "cpu_inclusive_s": 0.08754633600000439,
+          "wall_exclusive_s": 0.02482836400213273,
+          "wall_inclusive_s": 0.02482836400213273,
+          "exclusive_fraction_of_instrumented_wall": 0.003189456368084593
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 84,
+          "cpu_exclusive_s": 0.07661239700001232,
+          "cpu_inclusive_s": 0.11710808200000411,
+          "wall_exclusive_s": 0.024219794996724886,
+          "wall_inclusive_s": 0.03751817299871618,
+          "exclusive_fraction_of_instrumented_wall": 0.0031112794777526233
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 84,
+          "cpu_exclusive_s": 0.06793033199998177,
+          "cpu_inclusive_s": 0.08723052199999914,
+          "wall_exclusive_s": 0.021768083999404553,
+          "wall_inclusive_s": 0.02811930300003951,
+          "exclusive_fraction_of_instrumented_wall": 0.002796332216127384
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 12,
+          "cpu_exclusive_s": 0.06754843399999988,
+          "cpu_inclusive_s": 0.7229150769999988,
+          "wall_exclusive_s": 0.021160513999802788,
+          "wall_inclusive_s": 0.23978420599996753,
+          "exclusive_fraction_of_instrumented_wall": 0.0027182836582715164
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 84,
+          "cpu_exclusive_s": 0.06059570400001224,
+          "cpu_inclusive_s": 0.27390871200000877,
+          "wall_exclusive_s": 0.019851553000535205,
+          "wall_inclusive_s": 0.09134014900018883,
+          "exclusive_fraction_of_instrumented_wall": 0.002550134279024066
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 16,
+          "cpu_exclusive_s": 0.05460275699997519,
+          "cpu_inclusive_s": 6.658282783999997,
+          "wall_exclusive_s": 0.01750291799999104,
+          "wall_inclusive_s": 2.1935571580002033,
+          "exclusive_fraction_of_instrumented_wall": 0.002248428179574723
+        },
+        {
+          "stage": "front_fit",
+          "calls": 12,
+          "cpu_exclusive_s": 0.06963932900001435,
+          "cpu_inclusive_s": 0.9210444920000036,
+          "wall_exclusive_s": 0.011310140999739815,
+          "wall_inclusive_s": 0.15355212700023912,
+          "exclusive_fraction_of_instrumented_wall": 0.0014529028667557857
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 12,
+          "cpu_exclusive_s": 0.018348901000004858,
+          "cpu_inclusive_s": 18.677639126000003,
+          "wall_exclusive_s": 0.0031025569983285095,
+          "wall_inclusive_s": 6.02511055599939,
+          "exclusive_fraction_of_instrumented_wall": 0.00039855506286335556
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 4,
+          "cpu_exclusive_s": 0.0034879119999984276,
+          "cpu_inclusive_s": 2.501850598999998,
+          "wall_exclusive_s": 0.0011127789996407955,
+          "wall_inclusive_s": 0.8417433109996182,
+          "exclusive_fraction_of_instrumented_wall": 0.00014294780221404314
+        },
+        {
+          "stage": "command_computation",
+          "calls": 7,
+          "cpu_exclusive_s": 0.000995558000000507,
+          "cpu_inclusive_s": 0.000995558000000507,
+          "wall_exclusive_s": 0.000202657999807343,
+          "wall_inclusive_s": 0.000202657999807343,
+          "exclusive_fraction_of_instrumented_wall": 2.6033485249905873e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 12,
+          "cpu_exclusive_s": 0.00029033699999736484,
+          "cpu_inclusive_s": 0.00029033699999736484,
+          "wall_exclusive_s": 9.828400015976513e-05,
+          "wall_inclusive_s": 9.828400015976513e-05,
+          "exclusive_fraction_of_instrumented_wall": 1.2625581377953983e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 28,
+          "input_tracks": 795,
+          "h_retained": 526,
+          "i_retained": 525
+        },
+        "left/native": {
+          "calls": 28,
+          "input_tracks": 2053,
+          "h_retained": 1794,
+          "i_retained": 1791
+        },
+        "right/native": {
+          "calls": 28,
+          "input_tracks": 2152,
+          "h_retained": 2058,
+          "i_retained": 2053
+        }
+      },
+      "match_calls_by_scope": {
+        "paired_descriptor": 19956,
+        "outside_pair": 2322
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 432,
+          "result_elements": 6015168
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 3136,
+          "result_elements": 43665664
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 8212,
+          "result_elements": 114343888
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 8608,
+          "result_elements": 119857792
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 1890,
+          "result_elements": 26316360
+        }
+      ],
+      "primitive_calls": {}
+    },
+    {
+      "ticks": [
+        20,
+        39
+      ],
+      "decisions": 20,
+      "instrumented_wall_s": 12.238594361999958,
+      "instrumented_cpu_s": 41.74159298600002,
+      "uncovered_wall_s": 0.019686765999949785,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 33832,
+          "cpu_exclusive_s": 18.917443237000008,
+          "cpu_inclusive_s": 18.917443237000008,
+          "wall_exclusive_s": 5.654371840989825,
+          "wall_inclusive_s": 5.654371840989825,
+          "exclusive_fraction_of_instrumented_wall": 0.46201154101048425
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 7706,
+          "cpu_exclusive_s": 4.384559102000438,
+          "cpu_inclusive_s": 18.92199484000025,
+          "wall_exclusive_s": 1.4250742050012377,
+          "wall_inclusive_s": 6.331896234999476,
+          "exclusive_fraction_of_instrumented_wall": 0.11644100317811013
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 7886,
+          "cpu_exclusive_s": 4.018218948999738,
+          "cpu_inclusive_s": 4.851759168999813,
+          "wall_exclusive_s": 1.242644714002381,
+          "wall_inclusive_s": 1.3836388619986337,
+          "exclusive_fraction_of_instrumented_wall": 0.10153492118839336
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 120,
+          "cpu_exclusive_s": 3.5775592019999394,
+          "cpu_inclusive_s": 27.061988943999967,
+          "wall_exclusive_s": 1.1254302380057197,
+          "wall_inclusive_s": 9.015802758000518,
+          "exclusive_fraction_of_instrumented_wall": 0.09195747523915881
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 196,
+          "cpu_exclusive_s": 3.0635226290000226,
+          "cpu_inclusive_s": 3.0635226290000226,
+          "wall_exclusive_s": 0.7173879730012231,
+          "wall_inclusive_s": 0.7173879730012231,
+          "exclusive_fraction_of_instrumented_wall": 0.05861686005614062
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 1.7059925889999832,
+          "cpu_inclusive_s": 1.8353060729999662,
+          "wall_exclusive_s": 0.5686213499993755,
+          "wall_inclusive_s": 0.6118878649999715,
+          "exclusive_fraction_of_instrumented_wall": 0.04646132825227936
+        },
+        {
+          "stage": "free_path",
+          "calls": 20,
+          "cpu_exclusive_s": 2.693740234999918,
+          "cpu_inclusive_s": 7.828392354000002,
+          "wall_exclusive_s": 0.44914275400378756,
+          "wall_inclusive_s": 1.3209568610000133,
+          "exclusive_fraction_of_instrumented_wall": 0.03669888393379118
+        },
+        {
+          "stage": "region_models",
+          "calls": 314,
+          "cpu_exclusive_s": 1.063994633000064,
+          "cpu_inclusive_s": 1.063994633000064,
+          "wall_exclusive_s": 0.3557071179993727,
+          "wall_inclusive_s": 0.3557071179993727,
+          "exclusive_fraction_of_instrumented_wall": 0.029064376796719422
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 760,
+          "cpu_exclusive_s": 0.661641357999887,
+          "cpu_inclusive_s": 0.661641357999887,
+          "wall_exclusive_s": 0.20580038299976877,
+          "wall_inclusive_s": 0.20580038299976877,
+          "exclusive_fraction_of_instrumented_wall": 0.01681568788967838
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 120,
+          "cpu_exclusive_s": 0.4049272690000585,
+          "cpu_inclusive_s": 1.4246221880000007,
+          "wall_exclusive_s": 0.10941961499929675,
+          "wall_inclusive_s": 0.438027418999809,
+          "exclusive_fraction_of_instrumented_wall": 0.008940537758080909
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 20,
+          "cpu_exclusive_s": 0.28987253700004345,
+          "cpu_inclusive_s": 30.67771835100002,
+          "wall_exclusive_s": 0.08057246299881626,
+          "wall_inclusive_s": 10.167823615999623,
+          "exclusive_fraction_of_instrumented_wall": 0.006583473609435781
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 120,
+          "cpu_exclusive_s": 0.15810361900002334,
+          "cpu_inclusive_s": 0.18475797000001748,
+          "wall_exclusive_s": 0.0718424079984743,
+          "wall_inclusive_s": 0.08086598799854983,
+          "exclusive_fraction_of_instrumented_wall": 0.005870151904171309
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 417,
+          "cpu_exclusive_s": 0.1424748609998865,
+          "cpu_inclusive_s": 0.1424748609998865,
+          "wall_exclusive_s": 0.039752561997829616,
+          "wall_inclusive_s": 0.039752561997829616,
+          "exclusive_fraction_of_instrumented_wall": 0.0032481313476046517
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 120,
+          "cpu_exclusive_s": 0.11013814099997532,
+          "cpu_inclusive_s": 0.4800183680000103,
+          "wall_exclusive_s": 0.0363559240001905,
+          "wall_inclusive_s": 0.1601242179995097,
+          "exclusive_fraction_of_instrumented_wall": 0.002970596371187306
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.11136900200002131,
+          "cpu_inclusive_s": 1.217024502000001,
+          "wall_exclusive_s": 0.035138861000405086,
+          "wall_inclusive_s": 0.403932350000332,
+          "exclusive_fraction_of_instrumented_wall": 0.0028711516993739877
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 120,
+          "cpu_exclusive_s": 0.1022959040000373,
+          "cpu_inclusive_s": 0.1672912129999382,
+          "wall_exclusive_s": 0.03274739200219301,
+          "wall_inclusive_s": 0.054885245999457766,
+          "exclusive_fraction_of_instrumented_wall": 0.002675747805145952
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 120,
+          "cpu_exclusive_s": 0.07990697599999663,
+          "cpu_inclusive_s": 0.3966415829999974,
+          "wall_exclusive_s": 0.026497884000264094,
+          "wall_inclusive_s": 0.13232924000067214,
+          "exclusive_fraction_of_instrumented_wall": 0.0021651084443601062
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 20,
+          "cpu_exclusive_s": 0.06592860900004283,
+          "cpu_inclusive_s": 8.765070314999981,
+          "wall_exclusive_s": 0.021533111000508143,
+          "wall_inclusive_s": 2.8784707690001596,
+          "exclusive_fraction_of_instrumented_wall": 0.0017594431487464816
+        },
+        {
+          "stage": "front_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.09777238499994567,
+          "cpu_inclusive_s": 1.9263260300000056,
+          "wall_exclusive_s": 0.01579850799930682,
+          "wall_inclusive_s": 0.32112647700000707,
+          "exclusive_fraction_of_instrumented_wall": 0.0012908760215437946
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 20,
+          "cpu_exclusive_s": 0.024966489999957986,
+          "cpu_inclusive_s": 33.846035372999985,
+          "wall_exclusive_s": 0.004128190999836079,
+          "wall_inclusive_s": 10.897010633999798,
+          "exclusive_fraction_of_instrumented_wall": 0.0003373092430168161
+        },
+        {
+          "stage": "command_computation",
+          "calls": 20,
+          "cpu_exclusive_s": 0.003964158999998801,
+          "cpu_inclusive_s": 0.003964158999998801,
+          "wall_exclusive_s": 0.0007444269997449737,
+          "wall_inclusive_s": 0.0007444269997449737,
+          "exclusive_fraction_of_instrumented_wall": 6.082618458671784e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 20,
+          "cpu_exclusive_s": 0.0004937490000003208,
+          "cpu_inclusive_s": 0.0004937490000003208,
+          "wall_exclusive_s": 0.00019567400045161776,
+          "wall_inclusive_s": 0.00019567400045161776,
+          "exclusive_fraction_of_instrumented_wall": 1.5988274034081302e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 40,
+          "input_tracks": 1168,
+          "h_retained": 771,
+          "i_retained": 771
+        },
+        "left/native": {
+          "calls": 40,
+          "input_tracks": 3190,
+          "h_retained": 2897,
+          "i_retained": 2885
+        },
+        "right/native": {
+          "calls": 40,
+          "input_tracks": 3348,
+          "h_retained": 3150,
+          "i_retained": 3136
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 3060,
+        "paired_descriptor": 30772
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 720,
+          "result_elements": 10025280
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 4628,
+          "result_elements": 64440272
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 12752,
+          "result_elements": 177558848
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 13392,
+          "result_elements": 186470208
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 2340,
+          "result_elements": 32582160
+        }
+      ],
+      "primitive_calls": {}
+    },
+    {
+      "ticks": [
+        40,
+        59
+      ],
+      "decisions": 20,
+      "instrumented_wall_s": 12.086030069999651,
+      "instrumented_cpu_s": 40.77557516899999,
+      "uncovered_wall_s": 0.0139042629996311,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 35655,
+          "cpu_exclusive_s": 18.863605712999274,
+          "cpu_inclusive_s": 18.863605712999274,
+          "wall_exclusive_s": 5.693818272973658,
+          "wall_inclusive_s": 5.693818272973658,
+          "exclusive_fraction_of_instrumented_wall": 0.4711074058227808
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 8198,
+          "cpu_exclusive_s": 4.395629778001833,
+          "cpu_inclusive_s": 19.35346438100099,
+          "wall_exclusive_s": 1.4240687220431028,
+          "wall_inclusive_s": 6.441773872017848,
+          "exclusive_fraction_of_instrumented_wall": 0.11782766663620785
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 8369,
+          "cpu_exclusive_s": 3.8962219800004334,
+          "cpu_inclusive_s": 4.51674224300038,
+          "wall_exclusive_s": 1.2222343320052005,
+          "wall_inclusive_s": 1.3290142100029243,
+          "exclusive_fraction_of_instrumented_wall": 0.10112785794229252
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 135,
+          "cpu_exclusive_s": 2.684174384998599,
+          "cpu_inclusive_s": 26.629051334999986,
+          "wall_exclusive_s": 0.8608653349779161,
+          "wall_inclusive_s": 8.836220396001181,
+          "exclusive_fraction_of_instrumented_wall": 0.07122813115572042
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 26,
+          "cpu_exclusive_s": 2.2511549609999406,
+          "cpu_inclusive_s": 2.408730919999968,
+          "wall_exclusive_s": 0.7502344000001813,
+          "wall_inclusive_s": 0.802895540000236,
+          "exclusive_fraction_of_instrumented_wall": 0.06207451046000938
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 207,
+          "cpu_exclusive_s": 3.0824378140000164,
+          "cpu_inclusive_s": 3.0824378140000164,
+          "wall_exclusive_s": 0.7361327960011295,
+          "wall_inclusive_s": 0.7361327960011295,
+          "exclusive_fraction_of_instrumented_wall": 0.060907741560926855
+        },
+        {
+          "stage": "free_path",
+          "calls": 20,
+          "cpu_exclusive_s": 2.379488742999996,
+          "cpu_inclusive_s": 6.850453048000048,
+          "wall_exclusive_s": 0.40080372800025543,
+          "wall_inclusive_s": 1.1724760609995428,
+          "exclusive_fraction_of_instrumented_wall": 0.03316256253533109
+        },
+        {
+          "stage": "region_models",
+          "calls": 384,
+          "cpu_exclusive_s": 1.095594405000142,
+          "cpu_inclusive_s": 1.095594405000142,
+          "wall_exclusive_s": 0.3597605109980577,
+          "wall_inclusive_s": 0.3597605109980577,
+          "exclusive_fraction_of_instrumented_wall": 0.029766640403375077
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 848,
+          "cpu_exclusive_s": 0.6311897540000757,
+          "cpu_inclusive_s": 0.6311897540000757,
+          "wall_exclusive_s": 0.2030035060006412,
+          "wall_inclusive_s": 0.2030035060006412,
+          "exclusive_fraction_of_instrumented_wall": 0.016796541529757014
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 135,
+          "cpu_exclusive_s": 0.27012262800000997,
+          "cpu_inclusive_s": 1.3124317630001912,
+          "wall_exclusive_s": 0.08273155499978202,
+          "wall_inclusive_s": 0.4188218789997791,
+          "exclusive_fraction_of_instrumented_wall": 0.006845221674993268
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 20,
+          "cpu_exclusive_s": 0.2459229739999671,
+          "cpu_inclusive_s": 28.21472618600005,
+          "wall_exclusive_s": 0.07006408299957911,
+          "wall_inclusive_s": 9.341002514000138,
+          "exclusive_fraction_of_instrumented_wall": 0.005797113079628565
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 135,
+          "cpu_exclusive_s": 0.12709263199991483,
+          "cpu_inclusive_s": 0.4935018700000171,
+          "wall_exclusive_s": 0.04190390600092542,
+          "wall_inclusive_s": 0.16461383300179477,
+          "exclusive_fraction_of_instrumented_wall": 0.003467135673023079
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.12342852400004745,
+          "cpu_inclusive_s": 1.2964851980000276,
+          "wall_exclusive_s": 0.03860602899976584,
+          "wall_inclusive_s": 0.42955828300023313,
+          "exclusive_fraction_of_instrumented_wall": 0.0031942688191381402
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 466,
+          "cpu_exclusive_s": 0.13189206599992076,
+          "cpu_inclusive_s": 0.13189206599992076,
+          "wall_exclusive_s": 0.03675189199771012,
+          "wall_inclusive_s": 0.03675189199771012,
+          "exclusive_fraction_of_instrumented_wall": 0.0030408572364003044
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 135,
+          "cpu_exclusive_s": 0.11374201499998549,
+          "cpu_inclusive_s": 0.14297061999998562,
+          "wall_exclusive_s": 0.03622074300164968,
+          "wall_inclusive_s": 0.045656366999992315,
+          "exclusive_fraction_of_instrumented_wall": 0.0029969098861964624
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 135,
+          "cpu_exclusive_s": 0.11381261399998266,
+          "cpu_inclusive_s": 0.17663250199994707,
+          "wall_exclusive_s": 0.03597796000008202,
+          "wall_inclusive_s": 0.05640354200022557,
+          "exclusive_fraction_of_instrumented_wall": 0.0029768219830420346
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 135,
+          "cpu_exclusive_s": 0.0893694330000585,
+          "cpu_inclusive_s": 0.3918628649999931,
+          "wall_exclusive_s": 0.029377873001521948,
+          "wall_inclusive_s": 0.13062188899993998,
+          "exclusive_fraction_of_instrumented_wall": 0.0024307297624920434
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 26,
+          "cpu_exclusive_s": 0.07658250399994415,
+          "cpu_inclusive_s": 10.392710856999983,
+          "wall_exclusive_s": 0.025404304999256055,
+          "wall_inclusive_s": 3.4071871379999266,
+          "exclusive_fraction_of_instrumented_wall": 0.002101956130517619
+        },
+        {
+          "stage": "front_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.11208274899999537,
+          "cpu_inclusive_s": 1.8638879300000042,
+          "wall_exclusive_s": 0.018003223998903195,
+          "wall_inclusive_s": 0.31052262599951064,
+          "exclusive_fraction_of_instrumented_wall": 0.001489589542193131
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 20,
+          "cpu_exclusive_s": 0.02482368999983464,
+          "cpu_inclusive_s": 31.399923003999916,
+          "wall_exclusive_s": 0.004174718000513167,
+          "wall_inclusive_s": 10.085258141000395,
+          "exclusive_fraction_of_instrumented_wall": 0.0003454168139855776
+        },
+        {
+          "stage": "stationary_motion",
+          "calls": 6,
+          "cpu_exclusive_s": 0.005311503999990919,
+          "cpu_inclusive_s": 2.463304813999997,
+          "wall_exclusive_s": 0.0016401020002376754,
+          "wall_inclusive_s": 0.814043791000131,
+          "exclusive_fraction_of_instrumented_wall": 0.00013570229353547544
+        },
+        {
+          "stage": "command_computation",
+          "calls": 10,
+          "cpu_exclusive_s": 0.001089839000030679,
+          "cpu_inclusive_s": 0.001089839000030679,
+          "wall_exclusive_s": 0.00019868599997607816,
+          "wall_inclusive_s": 0.00019868599997607816,
+          "exclusive_fraction_of_instrumented_wall": 1.6439310412545077e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 20,
+          "cpu_exclusive_s": 0.00044194699999877685,
+          "cpu_inclusive_s": 0.00044194699999877685,
+          "wall_exclusive_s": 0.00014912799997546244,
+          "wall_inclusive_s": 0.00014912799997546244,
+          "exclusive_fraction_of_instrumented_wall": 1.2338873816443082e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 45,
+          "input_tracks": 1532,
+          "h_retained": 1180,
+          "i_retained": 1162
+        },
+        "left/native": {
+          "calls": 45,
+          "input_tracks": 3270,
+          "h_retained": 3013,
+          "i_retained": 3002
+        },
+        "right/native": {
+          "calls": 45,
+          "input_tracks": 3396,
+          "h_retained": 3261,
+          "i_retained": 3253
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 2907,
+        "paired_descriptor": 32748
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 684,
+          "result_elements": 9524016
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 6092,
+          "result_elements": 84825008
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 13072,
+          "result_elements": 182014528
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 13584,
+          "result_elements": 189143616
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 2223,
+          "result_elements": 30953052
+        }
+      ],
+      "primitive_calls": {}
+    },
+    {
+      "ticks": [
+        60,
+        79
+      ],
+      "decisions": 20,
+      "instrumented_wall_s": 11.04385993299934,
+      "instrumented_cpu_s": 38.10657921500005,
+      "uncovered_wall_s": 0.013623526999708702,
+      "stages": [
+        {
+          "stage": "template_matching",
+          "calls": 34340,
+          "cpu_exclusive_s": 17.750299766001547,
+          "cpu_inclusive_s": 17.750299766001547,
+          "wall_exclusive_s": 5.26209008498131,
+          "wall_inclusive_s": 5.26209008498131,
+          "exclusive_fraction_of_instrumented_wall": 0.4764720049788071
+        },
+        {
+          "stage": "h_patch_evidence",
+          "calls": 7828,
+          "cpu_exclusive_s": 3.9597911539971875,
+          "cpu_inclusive_s": 17.678770934998838,
+          "wall_exclusive_s": 1.2735798260164302,
+          "wall_inclusive_s": 5.8516639470065,
+          "exclusive_fraction_of_instrumented_wall": 0.11532017190936483
+        },
+        {
+          "stage": "i_appearance_evidence",
+          "calls": 8008,
+          "cpu_exclusive_s": 3.6566001720001537,
+          "cpu_inclusive_s": 4.320421188000381,
+          "wall_exclusive_s": 1.1333809470015694,
+          "wall_inclusive_s": 1.244850569995151,
+          "exclusive_fraction_of_instrumented_wall": 0.10262543656634017
+        },
+        {
+          "stage": "nonlinear_solver",
+          "calls": 212,
+          "cpu_exclusive_s": 3.2947461539999523,
+          "cpu_inclusive_s": 3.2947461539999523,
+          "wall_exclusive_s": 0.7770768289983607,
+          "wall_inclusive_s": 0.7770768289983607,
+          "exclusive_fraction_of_instrumented_wall": 0.07036279287429525
+        },
+        {
+          "stage": "paired_descriptors",
+          "calls": 120,
+          "cpu_exclusive_s": 2.405081463000613,
+          "cpu_inclusive_s": 24.271450815000023,
+          "wall_exclusive_s": 0.7627799979982228,
+          "wall_inclusive_s": 8.007195505000254,
+          "exclusive_fraction_of_instrumented_wall": 0.06906824268198263
+        },
+        {
+          "stage": "metric_ground_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 1.5720039270000399,
+          "cpu_inclusive_s": 1.6784993919999778,
+          "wall_exclusive_s": 0.5237387649999619,
+          "wall_inclusive_s": 0.5593770570003471,
+          "exclusive_fraction_of_instrumented_wall": 0.04742352476193734
+        },
+        {
+          "stage": "free_path",
+          "calls": 20,
+          "cpu_exclusive_s": 2.436303243000495,
+          "cpu_inclusive_s": 7.064804599000084,
+          "wall_exclusive_s": 0.4016766230010944,
+          "wall_inclusive_s": 1.1847827139995388,
+          "exclusive_fraction_of_instrumented_wall": 0.03637103561960925
+        },
+        {
+          "stage": "region_models",
+          "calls": 322,
+          "cpu_exclusive_s": 0.9725498930000498,
+          "cpu_inclusive_s": 0.9725498930000498,
+          "wall_exclusive_s": 0.31448365699770875,
+          "wall_inclusive_s": 0.31448365699770875,
+          "exclusive_fraction_of_instrumented_wall": 0.028475882427485652
+        },
+        {
+          "stage": "optical_flow",
+          "calls": 760,
+          "cpu_exclusive_s": 0.628399793999904,
+          "cpu_inclusive_s": 0.628399793999904,
+          "wall_exclusive_s": 0.19738197200467766,
+          "wall_inclusive_s": 0.19738197200467766,
+          "exclusive_fraction_of_instrumented_wall": 0.017872553002496457
+        },
+        {
+          "stage": "history_preparation",
+          "calls": 20,
+          "cpu_exclusive_s": 0.2698009179999872,
+          "cpu_inclusive_s": 27.52422263499996,
+          "wall_exclusive_s": 0.07171137000068484,
+          "wall_inclusive_s": 9.044402050999679,
+          "exclusive_fraction_of_instrumented_wall": 0.006493324837125959
+        },
+        {
+          "stage": "roi_tracking",
+          "calls": 120,
+          "cpu_exclusive_s": 0.23465803099998084,
+          "cpu_inclusive_s": 1.2451046919998987,
+          "wall_exclusive_s": 0.0696901569936017,
+          "wall_inclusive_s": 0.38691759199787157,
+          "exclusive_fraction_of_instrumented_wall": 0.006310307937296969
+        },
+        {
+          "stage": "h_pair_finish",
+          "calls": 120,
+          "cpu_exclusive_s": 0.11543767699991747,
+          "cpu_inclusive_s": 0.4265744839999144,
+          "wall_exclusive_s": 0.0381247360000998,
+          "wall_inclusive_s": 0.1422280489998684,
+          "exclusive_fraction_of_instrumented_wall": 0.003452120565761804
+        },
+        {
+          "stage": "joint_corridor_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.11749187100004121,
+          "cpu_inclusive_s": 1.3741838589999986,
+          "wall_exclusive_s": 0.03705044300022564,
+          "wall_inclusive_s": 0.4559744079997472,
+          "exclusive_fraction_of_instrumented_wall": 0.0033548454276858364
+        },
+        {
+          "stage": "perspective_warp",
+          "calls": 420,
+          "cpu_exclusive_s": 0.13343755599986196,
+          "cpu_inclusive_s": 0.13343755599986196,
+          "wall_exclusive_s": 0.03523739499928524,
+          "wall_inclusive_s": 0.03523739499928524,
+          "exclusive_fraction_of_instrumented_wall": 0.0031906774635917824
+        },
+        {
+          "stage": "i_pair_preparation",
+          "calls": 120,
+          "cpu_exclusive_s": 0.10687930100004905,
+          "cpu_inclusive_s": 0.17004604200002404,
+          "wall_exclusive_s": 0.03229461900241404,
+          "wall_inclusive_s": 0.05137885400063169,
+          "exclusive_fraction_of_instrumented_wall": 0.0029242148305337412
+        },
+        {
+          "stage": "h_pair_preparation",
+          "calls": 120,
+          "cpu_exclusive_s": 0.10269229000030577,
+          "cpu_inclusive_s": 0.1310948470001705,
+          "wall_exclusive_s": 0.031963603000349394,
+          "wall_inclusive_s": 0.041025694000836666,
+          "exclusive_fraction_of_instrumented_wall": 0.002894241976470683
+        },
+        {
+          "stage": "i_descriptor_finish",
+          "calls": 120,
+          "cpu_exclusive_s": 0.07922976599994058,
+          "cpu_inclusive_s": 0.3408002130000227,
+          "wall_exclusive_s": 0.026212193000901607,
+          "wall_inclusive_s": 0.11369578899984845,
+          "exclusive_fraction_of_instrumented_wall": 0.0023734630065869356
+        },
+        {
+          "stage": "ground_evidence",
+          "calls": 20,
+          "cpu_exclusive_s": 0.05936681800007193,
+          "cpu_inclusive_s": 7.249234920999967,
+          "wall_exclusive_s": 0.019200527000521106,
+          "wall_inclusive_s": 2.3062146030001713,
+          "exclusive_fraction_of_instrumented_wall": 0.0017385703111961275
+        },
+        {
+          "stage": "front_fit",
+          "calls": 20,
+          "cpu_exclusive_s": 0.11501908200000344,
+          "cpu_inclusive_s": 2.0465777830000604,
+          "wall_exclusive_s": 0.01844143100151996,
+          "wall_inclusive_s": 0.34095600299997386,
+          "exclusive_fraction_of_instrumented_wall": 0.0016698356474457346
+        },
+        {
+          "stage": "navigation_geometry",
+          "calls": 20,
+          "cpu_exclusive_s": 0.02151029099999846,
+          "cpu_inclusive_s": 30.966494568000016,
+          "wall_exclusive_s": 0.0035818290007227915,
+          "wall_inclusive_s": 9.844914291000123,
+          "exclusive_fraction_of_instrumented_wall": 0.0003243276374793738
+        },
+        {
+          "stage": "command_computation",
+          "calls": 18,
+          "cpu_exclusive_s": 0.0021887439999801472,
+          "cpu_inclusive_s": 0.0021887439999801472,
+          "wall_exclusive_s": 0.00039347800020550494,
+          "wall_inclusive_s": 0.00039347800020550494,
+          "exclusive_fraction_of_instrumented_wall": 3.5628666298979625e-05
+        },
+        {
+          "stage": "history_selection",
+          "calls": 20,
+          "cpu_exclusive_s": 0.00047401499999466523,
+          "cpu_inclusive_s": 0.00047401499999466523,
+          "wall_exclusive_s": 0.00014592299976357026,
+          "wall_inclusive_s": 0.00014592299976357026,
+          "exclusive_fraction_of_instrumented_wall": 1.3213043324422158e-05
+        }
+      ],
+      "pair_regions_by_view": {
+        "front/native": {
+          "calls": 40,
+          "input_tracks": 1243,
+          "h_retained": 934,
+          "i_retained": 930
+        },
+        "left/native": {
+          "calls": 40,
+          "input_tracks": 3221,
+          "h_retained": 2891,
+          "i_retained": 2876
+        },
+        "right/native": {
+          "calls": 40,
+          "input_tracks": 3364,
+          "h_retained": 3190,
+          "i_retained": 3183
+        }
+      },
+      "match_calls_by_scope": {
+        "outside_pair": 3060,
+        "paired_descriptor": 31280
+      },
+      "match_footprints": [
+        {
+          "image_shape": [
+            128,
+            128,
+            3
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11,
+            3
+          ],
+          "view": null,
+          "calls": 720,
+          "result_elements": 10025280
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "front",
+          "calls": 4948,
+          "result_elements": 68895952
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "left",
+          "calls": 12884,
+          "result_elements": 179396816
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": false,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "paired_descriptor",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": "right",
+          "calls": 13448,
+          "result_elements": 187249952
+        },
+        {
+          "image_shape": [
+            128,
+            128
+          ],
+          "method": 5,
+          "rectified": null,
+          "result_shape": [
+            118,
+            118
+          ],
+          "scope": "outside_pair",
+          "template_shape": [
+            11,
+            11
+          ],
+          "view": null,
+          "calls": 2340,
+          "result_elements": 32582160
+        }
+      ],
+      "primitive_calls": {}
+    }
+  ],
+  "focus_ticks": []
+}

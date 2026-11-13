@@ -1,0 +1,28 @@
+{
+  "before_source": "reports/straight-ncc-unit-clip-20261104/before/roadvision/rgb_motion_checks.py",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "frozen_file_sha256": "383a60e491282611021da5ad29a712f87cc26c687d31c02ed7c8322b28c88d61",
+  "aliases": [
+    "roadvision.paired_descriptor_checks.filter_pair",
+    "roadvision.ground_history.filter_pair",
+    "roadvision.straight_history_support.filter_pair"
+  ],
+  "scope": "in-memory controller calls only; no decode, transport or physics",
+  "opencv_threads": 1
+}

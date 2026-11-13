@@ -1,0 +1,153 @@
+{
+  "cases": [
+    {
+      "case": "candidates--synthetic_random",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "d9f2beb3a5c75a94389c48304f86dadee6e90d83011d22ec7e302869ffbe2a57",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--synthetic_blur",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "00ab4f521c6f622289b6a024c21e7a5f86276375b2f0c530afdf6ce798090057",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--synthetic_flat",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "727bc2ef92e6aad906112db84d107bf9ca834e93fe7ae0b2b6dbbb5afd73b57a",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--synthetic_repeated",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "3741716cc11bb9d030a545106b01f51fb289ddf17246bc8d9a47deb91d1e4708",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--synthetic_padding",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "d9f2beb3a5c75a94389c48304f86dadee6e90d83011d22ec7e302869ffbe2a57",
+        "mask_sha256": "76f4de868fa6c1b8e66a7e929340a7daae819fe94b78513ee83b50945c966857"
+      }
+    },
+    {
+      "case": "candidates--center_a",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "5511d527fb45952f3d3776bec9c4af5ff0fa29e7dc61fec131bc4c6b1cc895d7",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--repeated",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "f4e4c4348ea170c7d0379794f808203ab6d468150aaa5c904384b42f7803010c",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--floor_paint",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "e2035563ced0a2bdbc3cdc835a5960a8627f5c6367619ede4afd9f74c7ddcd96",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "candidates--default_start",
+      "family": "81_reference_candidates",
+      "input": {
+        "gray_sha256": "417348886595da88156383e324591d5ced0afe1d6bafec05954d22005c88e1b1",
+        "mask_sha256": "111ce3c2a38d83a2e4706bde4abddd509d7f8248116c6832b06745bdc349e09f"
+      }
+    },
+    {
+      "case": "startup--center_a",
+      "family": "startup",
+      "input": {
+        "rgb_sha256": "d51092d73523826637b1089d1844aa9e26f0082ac8eeac312e6da5e4307619bc"
+      }
+    },
+    {
+      "case": "joint_startup--center_a",
+      "family": "joint_startup",
+      "input": {
+        "rgb_sha256": "d51092d73523826637b1089d1844aa9e26f0082ac8eeac312e6da5e4307619bc"
+      }
+    },
+    {
+      "case": "startup--repeated",
+      "family": "startup",
+      "input": {
+        "rgb_sha256": "1521f2dced1343442f601f447d8909be28c600f7756a6859f61ed556fe6b34ed"
+      }
+    },
+    {
+      "case": "joint_startup--repeated",
+      "family": "joint_startup",
+      "input": {
+        "rgb_sha256": "1521f2dced1343442f601f447d8909be28c600f7756a6859f61ed556fe6b34ed"
+      }
+    },
+    {
+      "case": "startup--floor_paint",
+      "family": "startup",
+      "input": {
+        "rgb_sha256": "40d05950c4bcaeb91d4f734270a6e6de940aa7adbcec649247cd9b0d2fc91ad6"
+      }
+    },
+    {
+      "case": "joint_startup--floor_paint",
+      "family": "joint_startup",
+      "input": {
+        "rgb_sha256": "40d05950c4bcaeb91d4f734270a6e6de940aa7adbcec649247cd9b0d2fc91ad6"
+      }
+    },
+    {
+      "case": "startup--default_start",
+      "family": "startup",
+      "input": {
+        "rgb_sha256": "f951d400d5c1231b675cf58dad0a13f11de9c53109c9e7b37e30ee2286c0e428"
+      }
+    },
+    {
+      "case": "joint_startup--default_start",
+      "family": "joint_startup",
+      "input": {
+        "rgb_sha256": "f951d400d5c1231b675cf58dad0a13f11de9c53109c9e7b37e30ee2286c0e428"
+      }
+    },
+    {
+      "case": "free_ground--exposed_gradient",
+      "family": "full_free_ground_packet",
+      "input": {
+        "frame_rgb_sha256": [
+          "58d3a5d1c300685c93b3f0af5af0e093fd87e4c497bc3bb87da87af67fb388c4",
+          "f5ae80ea3d387d4b5c95d6a1734b78bf1bbf4ca6e66bd17bff543829660242d5",
+          "cc09afaee5f4f839f0ac90af83d9d7c80148291ed0bf64bfd69f2f572987ff31"
+        ]
+      }
+    }
+  ],
+  "rounds": 8,
+  "samples_per_round": 3,
+  "warmups_per_implementation": 1,
+  "pin_file_sha256": "86ad89a7a4e565ef85ea35e4815731031722f64943a1df301204f555bd4d2e09",
+  "old_dir": "/home/sunrise/toponav_project/reports/straight-reference-preparation-20261103/before",
+  "opencv_threads": 1,
+  "timed_scope": "in-memory function call only; output equality/JSON outside timer",
+  "alternating_order": true,
+  "independent_acceptance": false,
+  "controller_latency_measured": false
+}

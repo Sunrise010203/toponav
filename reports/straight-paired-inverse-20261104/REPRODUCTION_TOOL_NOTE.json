@@ -1,0 +1,10 @@
+{
+  "scope": "Analysis output-path adapter only, not benchmark or runtime",
+  "first_attempt_error": "AttributeError: 'dict' object has no attribute 'open'",
+  "cause": "Output Path parameter shadowed by analysis payload dict",
+  "no_result_written_on_failed_attempt": true,
+  "first_shell_echo_not_validation": true,
+  "fix": "Use output_path parameter, preserve failed adapter snapshot, rerun only arithmetic with set -e and cmp",
+  "final_cmp_byte_identical": true,
+  "performance_or_navigation_rerun": false
+}

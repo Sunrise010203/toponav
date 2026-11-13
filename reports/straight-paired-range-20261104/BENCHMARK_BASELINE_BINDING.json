@@ -1,0 +1,8 @@
+{
+  "original_pair_source": "reports/straight-paired-range-20261104/before/roadvision/paired_descriptor_checks.py",
+  "original_helper_source": "reports/straight-paired-range-20261104/before/roadvision/native_patch_contrast.py",
+  "same_original_filter_identities": true,
+  "same_h_i_namespaces": true,
+  "original_benchmark_unmodified": true,
+  "scope": "Original helper must not accidentally use new range gate"
+}

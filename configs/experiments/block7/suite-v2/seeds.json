@@ -1,0 +1,23 @@
+{
+  "rule": {
+    "validation_environment": [
+      71018101,
+      71018102,
+      71018103
+    ],
+    "test_environment": [
+      71018201,
+      71018202,
+      71018203
+    ],
+    "validation_layout_generation_base": 71018300,
+    "test_layout_generation_base": 71018400,
+    "sample_seed_rule": "derive_uint64_from_SHA256(track,split,family,task_or_class,sample_index,stream,base_seed)_and_record_exact_value_in_7B_manifest",
+    "method_order_seed": 7101802,
+    "bootstrap_seed": 7101801
+  },
+  "all_exact_values": [
+    "tasks.jsonl",
+    "perception_samples.jsonl"
+  ]
+}

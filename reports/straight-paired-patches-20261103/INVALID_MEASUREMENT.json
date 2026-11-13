@@ -1,0 +1,16 @@
+{
+  "directory": "benchmark",
+  "valid": false,
+  "interrupted_exit_code": 130,
+  "reason": "Baseline wrapper identity mismatch: history callers explicitly pass current (filter_h,filter_i); cloned baseline defaults reject these identities and use independent filters instead of paired path. Thus reported speed differences are invalid.",
+  "completed_cases": [
+    "known_center",
+    "known_default"
+  ],
+  "incomplete_case": "known_offset_plus",
+  "candidate_changes_after_measurement": false,
+  "correction": "Translate ONLY the exact original filter tuple to old cloned filters before calling baseline; retain custom filter dispatch. Add explicit/native call-count preflight and unit test.",
+  "do_not_use_for_performance_claim": true,
+  "original_tool_snapshot": "measurement-v1/tools/straight_paired_patch_benchmark.py",
+  "original_test_snapshot": "measurement-v1/tests/test_straight_paired_patch_benchmark.py.snapshot"
+}

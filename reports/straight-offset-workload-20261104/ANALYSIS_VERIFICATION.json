@@ -1,0 +1,12 @@
+{
+  "measured_rows": 160,
+  "decisions_each_pass": 80,
+  "entire_ordered_sequences": true,
+  "all_exact_recorded": true,
+  "cross_pass_workload_equal": true,
+  "exclusive_partition_verified": true,
+  "primitive_match_counts_equal_stage_and_workload_every_tick": true,
+  "preexisting_files_unchanged": 172,
+  "new_candidate": false,
+  "performance_improvement_claim": false
+}

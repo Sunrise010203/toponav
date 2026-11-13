@@ -1,0 +1,33 @@
+{
+  "pin_counts_verified": {
+    "PREEXISTING_PINS.json": 861,
+    "FREEZE.json": 221,
+    "FREEZE-v2.json": 228,
+    "ANALYSIS_INPUT_PINS.json": 13
+  },
+  "latest_accepted_final_pins_verified": 5,
+  "default_source_unchanged": true,
+  "native_contrast_calls": {
+    "h_evidence": 28732,
+    "i_evidence": 28732,
+    "_native_h_evidence": 28732,
+    "_native_i_evidence": 28732,
+    "_contrast_gate": 114842
+  },
+  "native_local_exclusion_calls": 84223,
+  "targeted_passed": 262,
+  "targeted_skipped": 0,
+  "initial_collection_failure_retained": true,
+  "profile_exit_code": 0,
+  "diagnostic_passes": 2,
+  "decisions_each_pass": 80,
+  "candidate_executed": false,
+  "ordinary_timing_runs": 0,
+  "replay_runs": 0,
+  "performance_improvement_claim": false,
+  "full_current_reverified": false,
+  "verification_complete": false,
+  "navigation_acceptance": false,
+  "physical_execution": false,
+  "real_time_budget_proved": false
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "variant": "baseline",
+    "replay": {
+      "decisions": 66,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 33,
+          "latency_s": 0.15833333333333366,
+          "distance_m": 0.01183603554085457
+        },
+        {
+          "tick": 47,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011790047499156716
+        },
+        {
+          "tick": 55,
+          "latency_s": 0.1416666666666666,
+          "distance_m": 0.009010467273907658
+        }
+      ],
+      "maximum_speed_m_s": 0.15002153049426312,
+      "maximum_yaw_rate_rad_s": 0.036877303136405776
+    }
+  },
+  {
+    "variant": "reference",
+    "replay": {
+      "decisions": 66,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 33,
+          "latency_s": 0.15833333333333366,
+          "distance_m": 0.01183603554085457
+        },
+        {
+          "tick": 47,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011790047499156716
+        },
+        {
+          "tick": 55,
+          "latency_s": 0.1416666666666666,
+          "distance_m": 0.009010467273907658
+        }
+      ],
+      "maximum_speed_m_s": 0.15002153049426312,
+      "maximum_yaw_rate_rad_s": 0.036877303136405776
+    }
+  },
+  {
+    "variant": "gradient_transfer",
+    "replay": {
+      "decisions": 75,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 42,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011748341622376096
+        },
+        {
+          "tick": 54,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011577349685413253
+        },
+        {
+          "tick": 64,
+          "latency_s": 0.15000000000000036,
+          "distance_m": 0.009636217114858025
+        }
+      ],
+      "maximum_speed_m_s": 0.1502755842142573,
+      "maximum_yaw_rate_rad_s": 0.04853741536219307
+    }
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "version": "straight_motion_permission_v1",
+  "motion_permission": "bounded_probe",
+  "initial_clearance": {
+    "confirmed": true,
+    "swept_forward_clearance_m": 0.3,
+    "source": "task_operator_initial_swept_path_confirmation"
+  },
+  "calibration_id": "corridor_panel_128_f64_c64_level_v1",
+  "straight_variant": "reference"
+}

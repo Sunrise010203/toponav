@@ -1,0 +1,7 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "reports/straight-paired-range-20261104/run_benchmark.py"
+  ],
+  "exit_code": 0
+}

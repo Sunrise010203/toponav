@@ -1,0 +1,12 @@
+{
+  "version": "rgb_probe_sequence_v1",
+  "calibration_id": "corridor_panel_128_f64_c64_level_v1",
+  "frames": [
+    {
+      "frame_id": "physics-frame-60",
+      "captured_sim_s": 0.5,
+      "rgb_path": "frames/0000.png",
+      "rgb_sha256": "d2968437dec42db605c2961e07a260a819bea0b76342fd52e684eac480e4fd0b"
+    }
+  ]
+}

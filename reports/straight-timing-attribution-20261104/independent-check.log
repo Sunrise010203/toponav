@@ -1,0 +1,1 @@
+{"measured_pairs_independently_checked": 780, "measured_rows": 1560, "warmup_rows_retained": 390, "preexisting_files_byte_identical": 154, "old_gate_still_failed": true, "analysis_byte_reproduced": true, "scope": "Arithmetic/provenance only; no runtime or performance rerun"}

@@ -1,0 +1,114 @@
+{
+  "scope": "Read-only numerical feasibility of float32 -> uint8 full-canvas TM_CCOEFF_NORMED substitution; NOT performance or production candidate",
+  "records": 1106,
+  "eligible_maps": 1106,
+  "ineligible_maps": 0,
+  "different_maps": 0,
+  "different_elements": 0,
+  "compared_elements": 15399944,
+  "dtype_substitution_rejected": false,
+  "production_changes": false,
+  "alternate_maps_used_by_filters": false,
+  "all_local_outputs_exact": true,
+  "local_cases": [
+    {
+      "case": "random",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "0969daebedac19e824b1a6e21a8cbe0a6e144be583a6a4a7f33e29945d4f618d"
+    },
+    {
+      "case": "random",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "0969daebedac19e824b1a6e21a8cbe0a6e144be583a6a4a7f33e29945d4f618d"
+    },
+    {
+      "case": "flat",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 0,
+      "output_sha256": "afd52df8635b8ed4e1b041f9cf8c80316bf809eb4219037190258b0db6613510"
+    },
+    {
+      "case": "flat",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 0,
+      "output_sha256": "afd52df8635b8ed4e1b041f9cf8c80316bf809eb4219037190258b0db6613510"
+    },
+    {
+      "case": "repeated",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "c33d0c26cfcbe8ded4d520608c02e9fb03d81d16e650e0280ea43856f32aa0ba"
+    },
+    {
+      "case": "repeated",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "c33d0c26cfcbe8ded4d520608c02e9fb03d81d16e650e0280ea43856f32aa0ba"
+    },
+    {
+      "case": "blur",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "10007748498746bf84bc2455281c8e9291b456236e1f8f83ca956489cc794794"
+    },
+    {
+      "case": "blur",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "10007748498746bf84bc2455281c8e9291b456236e1f8f83ca956489cc794794"
+    },
+    {
+      "case": "shift_padding",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "89cc2b34a5051667c9ff95278fd038eb458b4fdc991231c7c41583a15fd2c29e"
+    },
+    {
+      "case": "shift_padding",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 100,
+      "output_sha256": "89cc2b34a5051667c9ff95278fd038eb458b4fdc991231c7c41583a15fd2c29e"
+    },
+    {
+      "case": "rectified",
+      "dispatch": "implicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 148,
+      "output_sha256": "00c1bd3743ed070695358aff3cc046bb38ca30fd50696f3b893b61d102f112b9"
+    },
+    {
+      "case": "rectified",
+      "dispatch": "explicit",
+      "full_serialized_output_exact": true,
+      "match_calls": 148,
+      "output_sha256": "00c1bd3743ed070695358aff3cc046bb38ca30fd50696f3b893b61d102f112b9"
+    }
+  ],
+  "aliases_restored": true,
+  "opencv_threads_restored": true,
+  "input_arrays_unchanged": true,
+  "freeze_unchanged": true,
+  "ordinary_timing_runs": 0,
+  "controller_sequences": 0,
+  "performance_claim": false,
+  "physical_execution": false,
+  "versions": {
+    "numpy": "1.26.4",
+    "opencv": "4.10.0"
+  },
+  "opencv_threads": 1,
+  "opencv_optimized": true,
+  "opencv_ipp": true
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Current restored implementation only, offline full exposed offset sequence; diagnostic stage/workload and cProfile, not performance comparison",
+  "case": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer",
+  "passes": [
+    "stage_and_workload",
+    "cprofile_and_workload"
+  ],
+  "passes_per_mode": 1,
+  "ordinary_timing_passes": 0,
+  "warmup_passes": 0,
+  "expected_decisions_per_pass": 80,
+  "expected_total_decisions": 160,
+  "opencv_threads": 1,
+  "other_thread_settings": "Unchanged and recorded; no tuning",
+  "focus_ticks": [
+    49,
+    52,
+    53,
+    56,
+    62,
+    70
+  ],
+  "acceptance": "Full serialized outputs exactly match originals; aliases/threads restored, input arrays unchanged, source pins unchanged; cross-pass workload equal",
+  "limitations": "Instrumented times not ordinary latency; no before/after effect or proof of old regression cause, no navigation/physical acceptance",
+  "production_changes": false
+}

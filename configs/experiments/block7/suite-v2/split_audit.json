@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "new_families": 18,
+  "exact_isomorphism_comparisons": true,
+  "historical_graphs_checked": 89,
+  "historical_sources": [
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/continuous_straight_s2_v1.json",
+      "sha256": "cb49c59752b4cb9745942338279c2f835f43464142c3dc9979b7aadaf32d4721"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/corridor_validation_v1.json",
+      "sha256": "be57bdb5d066a55f13e9169731efe4cbc4cc01dfce093ffaebecbbff4c8210b1"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/ground_history_s1_v1.json",
+      "sha256": "0109f46ffab64c77b2fc05fdb748fd44e401e55b21a2e6a2d9ae9ea8abd7ace7"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/rgb_ground_rig_v1.json",
+      "sha256": "ea0506811663f371394dda9d4ffb64b26a0e13855a1d9f7538a652b2a402cc8d"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/rgb_motion_checks_v1.json",
+      "sha256": "e4e9b35800b6e558de467d613c2067b239932f9103e75d1366e4258a9c552c5a"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/rgb_observability_v1.json",
+      "sha256": "c3aaaa71f96a07b97927207f34fce110cc3c0d4527aeb29919e42254cd84c961"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/evaluation/rgb_resampling_checks_v1.json",
+      "sha256": "526028c69269dde168fb3865b4948491b5d7578ae9dd5629e258a8faf26a5385"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/graph.json",
+      "sha256": "92732bdd67d799bdc62d2fcbd4340a9ee41d613196ab904bb6cc5c66aec4027f"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/graph_blocked_C02.json",
+      "sha256": "3d43082bd1563d469cf49aa7ce20f5a49329b608343f19c633c5abf308448bd6"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/legacy/graph.json",
+      "sha256": "9c7d1fe9d086c55653912dfc560380c3269c10ac95529402b08ed78036d52f50"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/legacy/graph_blocked_C02.json",
+      "sha256": "e1757ee5febc8733000f481548a9a3309293e784ffa9c57d2816c94ed3f86fbd"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/legacy/scene.json",
+      "sha256": "fd4902df9760ff832836ff5ee6a066ecb79e67e181cd1746f61c77d42b8731a9"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/scene.json",
+      "sha256": "625e84a034aaac67ec10b086b594516b9c4006bf4818795dbf8fe72497194767"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/closed_goal_channel.graph.json",
+      "sha256": "aba95bb9fcabff70ca86352de00900e54c3c36d05043b277b3eeb5f5a0092baf"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/closed_goal_channel.scene.json",
+      "sha256": "625e84a034aaac67ec10b086b594516b9c4006bf4818795dbf8fe72497194767"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/four_nodes.graph.json",
+      "sha256": "c22a9d9010d1c50a6a4a5aadb22bc5529107fa86fd14ea03089add5a687c5d95"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/four_nodes.scene.json",
+      "sha256": "b17b53f345a3a057e1f46fe994f04dd1699b3df589f2272f0294cb4f737ed430"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/layout_changed.graph.json",
+      "sha256": "92732bdd67d799bdc62d2fcbd4340a9ee41d613196ab904bb6cc5c66aec4027f"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/layout_changed.scene.json",
+      "sha256": "f7e2176184056bc9a5668c6555ef24ddd1cdaa7227e9c40be2f0b59605ffe1d8"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/manifest.json",
+      "sha256": "ff264c11575cd009ec3d43e57496ce683cccae3f46254ab0ab8c0ed6ed8274f8"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/no_task_no_geometry_no_photos.graph.json",
+      "sha256": "e96bfa1899c6f34a18f302659489e1bbb5849770062b0ae3d3b46e84aa63c34f"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/no_task_no_geometry_no_photos.scene.json",
+      "sha256": "66b4624e6e710ddd1a78abac46f570900a56f19c2de363b86c52d5720a3bcc83"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/renamed_six_nodes.graph.json",
+      "sha256": "79e35a05fecf07b1089b958366f1f7215c27d0adf718c3d923b0995a1a9e0aa9"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/renamed_six_nodes.scene.json",
+      "sha256": "71c77e9148c0777fcf4b43ceb4aa847e107ed51e42799efe982154782c12e7e9"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/same_map_different_task.graph.json",
+      "sha256": "a955cf294126e27416b04a76987ccc22d9c90d410655f38240390799f25bd322"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/same_map_different_task.scene.json",
+      "sha256": "625e84a034aaac67ec10b086b594516b9c4006bf4818795dbf8fe72497194767"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/seven_nodes.graph.json",
+      "sha256": "5307f227bec324e9f171b84c6369e980b1f9294b7d12f7703ebb82877cb1499b"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/examples/seven_nodes.scene.json",
+      "sha256": "307159ea00be92723adcefce059ff772bf4afeb26ad3f3e7f9acc61e74ee92b4"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/graph.json",
+      "sha256": "92732bdd67d799bdc62d2fcbd4340a9ee41d613196ab904bb6cc5c66aec4027f"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/graph_blocked_C02.json",
+      "sha256": "3d43082bd1563d469cf49aa7ce20f5a49329b608343f19c633c5abf308448bd6"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/configs/v2/scene.json",
+      "sha256": "625e84a034aaac67ec10b086b594516b9c4006bf4818795dbf8fe72497194767"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/block6-acceptance-20261018/s2-suite.json",
+      "sha256": "61deb22f33d77f19ffabb6557a00fb24d3368638758ce44d5a75f66696713dbe"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/block6-acceptance-20261018/s6-suite.json",
+      "sha256": "a2216e7eb1bd6f2d2b167e5b29820ff9b4578762f1af1c78b90b91f43d801e46"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/block6-goal-20261015-3tth93x5/s1-development/camera-dev-suite.json",
+      "sha256": "4ae6c1433bdf1002c57773c397a4bdc05170967073fd0c59ab8159898124724e"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json",
+      "sha256": "a2216e7eb1bd6f2d2b167e5b29820ff9b4578762f1af1c78b90b91f43d801e46"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/corridor-validation-20261015-fR5B4u/bad-suite-for-cli-test.json",
+      "sha256": "e4943a1237d557df502721fbe9c59f9ca6ebc3b52073f5f4d3cdbc83f3330e30"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/corridor-validation-20261015-fR5B4u/suite-frozen.json",
+      "sha256": "be57bdb5d066a55f13e9169731efe4cbc4cc01dfce093ffaebecbbff4c8210b1"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json",
+      "sha256": "ea278f33d239f5e55a7e7f651fe754b63c7419413d496a3672a2529fc5435a2a"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/ros2-integration-20261018/suite.json",
+      "sha256": "36bebbe64822fba05277bce582f288849d2a8d29f713b20ce2257fe4d9e6cc18"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/single-corner-20261015/suite.json",
+      "sha256": "f98dfee5cb3aa4a700363b6d9ad9f41918ab54720242584a250735ea7b873653"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/single-corner-20261016-v2/suite.json",
+      "sha256": "5fd82d16efe182ea048d860dd29db79a94e0848991bed8ae97106dd7271eef3c"
+    },
+    {
+      "path": "/home/sunrise/toponav_project/reports/t-junction-20261016/suite.json",
+      "sha256": "03125be26e64ad481e2c5526871f1c32e559c030febba07438e9b3ef25d810a4"
+    }
+  ],
+  "historical_source_scope": "four image LAYOUTS plus valid graph objects in configs and historical *suite*.json; not an exhaustive parse of every archived report",
+  "new_vs_historical_isomorphic": 0,
+  "cross_split_isomorphic": 0,
+  "rejected_candidates": {
+    "tree_without_redundant_wrong_map_edge": 20,
+    "isomorphic_to_historical_or_selected": 3
+  },
+  "pixels_generated": 0,
+  "criterion": "exact unlabelled graph nonisomorphism, stronger than rotation/mirror/renaming rejection"
+}

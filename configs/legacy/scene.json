@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "six_node_indoor_v1",
+  "description": "六节点室内二维场景；通道之外不可直接通行；示意/仿真场景，未经实地测量。",
+  "units": "metre",
+  "coordinate_system": {
+    "origin": "N01",
+    "x_positive": "east",
+    "y_positive": "north",
+    "heading_unit": "degree",
+    "heading_zero": "east",
+    "heading_positive": "counterclockwise"
+  },
+  "bounds_m": {
+    "x_min": -0.5,
+    "x_max": 6.5,
+    "y_min": -0.5,
+    "y_max": 2.5
+  },
+  "channel_width_m": 0.8,
+  "nodes": [
+    {
+      "node_id": "N01",
+      "label": "入口",
+      "node_type": "entrance",
+      "position_m": [
+        0,
+        0
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N01",
+        "installed": false
+      }
+    },
+    {
+      "node_id": "N02",
+      "label": "三岔路口 A",
+      "node_type": "intersection",
+      "position_m": [
+        2,
+        0
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N02",
+        "installed": false
+      }
+    },
+    {
+      "node_id": "N03",
+      "label": "东侧转角",
+      "node_type": "corner",
+      "position_m": [
+        4,
+        0
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N03",
+        "installed": false
+      }
+    },
+    {
+      "node_id": "N04",
+      "label": "三岔路口 B",
+      "node_type": "intersection",
+      "position_m": [
+        4,
+        2
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N04",
+        "installed": false
+      }
+    },
+    {
+      "node_id": "N05",
+      "label": "西侧转角",
+      "node_type": "corner",
+      "position_m": [
+        2,
+        2
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N05",
+        "installed": false
+      }
+    },
+    {
+      "node_id": "N06",
+      "label": "目标停靠点",
+      "node_type": "goal",
+      "position_m": [
+        6,
+        2
+      ],
+      "visual_cue": {
+        "kind": "planned_label",
+        "text": "N06",
+        "installed": false
+      }
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": "C01",
+      "source": "N01",
+      "target": "N02",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    },
+    {
+      "channel_id": "C02",
+      "source": "N02",
+      "target": "N03",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    },
+    {
+      "channel_id": "C03",
+      "source": "N03",
+      "target": "N04",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    },
+    {
+      "channel_id": "C04",
+      "source": "N04",
+      "target": "N05",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    },
+    {
+      "channel_id": "C05",
+      "source": "N05",
+      "target": "N02",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    },
+    {
+      "channel_id": "C06",
+      "source": "N04",
+      "target": "N06",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true
+    }
+  ],
+  "start": {
+    "node_id": "N01",
+    "heading_deg": 0
+  },
+  "goal": {
+    "node_id": "N06",
+    "acceptance_radius_m": 0.2
+  },
+  "routes": {
+    "primary": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N06"
+    ],
+    "alternate": [
+      "N01",
+      "N02",
+      "N05",
+      "N04",
+      "N06"
+    ]
+  },
+  "navigation_constraints": {
+    "bidirectional": true,
+    "allowed_direct_connections": "only the listed physical channels",
+    "outside_channels": "not traversable",
+    "self_connection_allowed": false
+  },
+  "scope_note": "仅建立二维场景配置和拓扑地图；不等同于 Gazebo 世界、视觉训练数据或实车闭环。"
+}

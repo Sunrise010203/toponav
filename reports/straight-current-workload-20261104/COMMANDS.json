@@ -1,0 +1,36 @@
+{
+  "tests": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_finite_population_max.py",
+    "tests/test_local_exclusion_population.py",
+    "tests/test_native_patch_contrast.py",
+    "tests/test_paired_descriptor_checks.py",
+    "tests/test_paired_populations.py",
+    "tests/test_straight_paired_population_benchmark.py",
+    "tests/test_straight_pipeline_profile.py",
+    "tests/test_straight_workload_profile.py",
+    "--junitxml=reports/straight-current-workload-20261104/tests.xml"
+  ],
+  "profile": [
+    ".venv/bin/python",
+    "-m",
+    "tools.straight_workload_profile",
+    "--plan",
+    "reports/straight-current-workload-20261104/PLAN.json",
+    "--freeze",
+    "reports/straight-current-workload-20261104/FREEZE.json",
+    "--output",
+    "reports/straight-current-workload-20261104/profile"
+  ],
+  "analyze": [
+    ".venv/bin/python",
+    "reports/straight-current-workload-20261104/analyze.py"
+  ],
+  "independent_check": [
+    ".venv/bin/python",
+    "reports/straight-current-workload-20261104/independent_check.py"
+  ]
+}

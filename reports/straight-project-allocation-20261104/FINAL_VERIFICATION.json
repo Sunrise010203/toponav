@@ -1,0 +1,128 @@
+{
+  "candidate_promoted": true,
+  "acceptance_scope": "Exact source optimization only, not navigation or physical acceptance",
+  "performance_gate": true,
+  "independent_integer_nanosecond_gate": [
+    {
+      "case": "known_center",
+      "totals_ns": {
+        "before": [
+          36443269841,
+          33427989847,
+          33391854785,
+          33470286361
+        ],
+        "after": [
+          33283439845,
+          33202384038,
+          32069650442,
+          31606241832
+        ]
+      },
+      "median_improved": true,
+      "mean_improved": true
+    },
+    {
+      "case": "known_default",
+      "totals_ns": {
+        "before": [
+          16891003534,
+          17105768702,
+          17751692211,
+          17042794895
+        ],
+        "after": [
+          16671924509,
+          16771512903,
+          17720533180,
+          16494302600
+        ]
+      },
+      "median_improved": true,
+      "mean_improved": true
+    },
+    {
+      "case": "known_offset_plus",
+      "totals_ns": {
+        "before": [
+          35443342128,
+          35354162407,
+          35208757385,
+          35976442913
+        ],
+        "after": [
+          34931320962,
+          34327966267,
+          34991744100,
+          35940342288
+        ]
+      },
+      "median_improved": true,
+      "mean_improved": true
+    }
+  ],
+  "preexisting_files_byte_identical": 1091,
+  "declared_changed_files": [
+    "roadvision/corridor_rgb_probe.py"
+  ],
+  "old_test_files_unchanged": true,
+  "original_other_function_asts_and_projection_checks_unchanged": true,
+  "freeze_files_verified": {
+    "FREEZE": 646,
+    "FREEZE-v2": 681,
+    "REPLAY_FREEZE": 1911,
+    "REPLAY_FREEZE-v2": 1946
+  },
+  "full_controller_projection_aliases": 11,
+  "first_comparison_retained_but_invalid_for_performance_acceptance": true,
+  "corrected_comparisons": 1,
+  "original_and_corrected_samples_pooled": false,
+  "total_controller_records_retained": 3900,
+  "valid_measured_decisions": 1560,
+  "valid_warmup_decisions": 390,
+  "all_serialized_outputs_exact": true,
+  "initial_targeted": {
+    "total": 357,
+    "passed": 357,
+    "failed": 0,
+    "skipped": 0
+  },
+  "corrected_targeted": {
+    "total": 368,
+    "passed": 368,
+    "failed": 0,
+    "skipped": 0
+  },
+  "projection_callers": {
+    "total": 107,
+    "passed": 107,
+    "failed": 0,
+    "skipped": 0
+  },
+  "final_targeted": {
+    "total": 368,
+    "passed": 368,
+    "failed": 0,
+    "skipped": 0
+  },
+  "expanded": {
+    "total": 1572,
+    "passed": 1539,
+    "failed": 33,
+    "skipped": 0
+  },
+  "old_failures_unchanged": true,
+  "old_recording_replay_cases": 13,
+  "old_recording_replay_decisions": 581,
+  "terminal_frames": 39,
+  "old_physics_errors": [],
+  "new_physics_or_actuator_execution": false,
+  "full_current_exit": 2,
+  "full_current_selected": 0,
+  "verification_complete": false,
+  "analyses_reproduced_byte_identical": true,
+  "navigation_acceptance": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

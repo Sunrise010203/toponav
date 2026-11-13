@@ -1,0 +1,119 @@
+{
+  "records": [
+    {
+      "case": "random",
+      "tracks": 0,
+      "variants": {
+        "before_implicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 0
+        },
+        "before_explicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 0
+        },
+        "after_implicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 0
+        },
+        "after_explicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 0
+        }
+      }
+    },
+    {
+      "case": "random",
+      "tracks": 1,
+      "variants": {
+        "before_implicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 4
+        },
+        "before_explicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 4
+        },
+        "after_implicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 4
+        },
+        "after_explicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 4
+        }
+      }
+    },
+    {
+      "case": "random",
+      "tracks": 16,
+      "variants": {
+        "before_implicit": {
+          "aligned_inverses": 16,
+          "actual_match_template": 64
+        },
+        "before_explicit": {
+          "aligned_inverses": 16,
+          "actual_match_template": 64
+        },
+        "after_implicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 64
+        },
+        "after_explicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 64
+        }
+      }
+    },
+    {
+      "case": "shift_padding",
+      "tracks": 16,
+      "variants": {
+        "before_implicit": {
+          "aligned_inverses": 16,
+          "actual_match_template": 64
+        },
+        "before_explicit": {
+          "aligned_inverses": 16,
+          "actual_match_template": 64
+        },
+        "after_implicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 64
+        },
+        "after_explicit": {
+          "aligned_inverses": 1,
+          "actual_match_template": 64
+        }
+      }
+    },
+    {
+      "case": "rectified",
+      "tracks": 1,
+      "variants": {
+        "before_implicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 4
+        },
+        "before_explicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 4
+        },
+        "after_implicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 4
+        },
+        "after_explicit": {
+          "aligned_inverses": 0,
+          "actual_match_template": 4
+        }
+      }
+    }
+  ],
+  "full_outputs_exact": true,
+  "unchanged_shared_h_i": true,
+  "explicit_filters_keep_native_pair_path": true,
+  "custom_filters_unchanged": true,
+  "no_clone_identity_remapping": true
+}

@@ -1,0 +1,11 @@
+{
+  "initial_exit_code": 4,
+  "initial_log": "tests.log",
+  "cause": "Initial launcher omitted the two ROS plugin isolation switches already used in prior explicit regression command; launch_testing imported unrelated tests and hit the known missing historical manifest",
+  "test_assertions_failed": 0,
+  "controller_diagnostic_started": false,
+  "correction": "Reuse prior -p no:launch_testing -p no:launch_ros for the identical eight explicit files, no changed source/threshold/assertion/skip",
+  "scope": "Explicit regression subset only; this does not repair or certify full/current collection",
+  "prior_command": "reports/straight-paired-contrast-20261104/FINAL_TARGETED_COMMAND.json",
+  "failed_artifacts_preserved": true
+}

@@ -1,0 +1,7 @@
+pybullet build time: Jan 29 2025 23:16:28
+fault--freeze exact {'decisions': 15, 'terminal_frames': 3, 'feedback_deliveries': 0}
+fault--missing exact {'decisions': 13, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_center--gradient_history exact {'decisions': 39, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_center--gradient_transfer exact {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_default--gradient_history exact {'decisions': 25, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_default--gradient_transfer exact {'decisions': 40, 'terminal_frames': 3, 'feedback_deliveries': 0}

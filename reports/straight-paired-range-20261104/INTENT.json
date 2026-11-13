@@ -1,0 +1,29 @@
+{
+  "candidate": "Exact uint8 range sufficient contrast gate before current integral moments; no patch/NCC/mask cache",
+  "production_edits": [
+    "roadvision/native_patch_contrast.py"
+  ],
+  "new_helper": "roadvision/native_patch_range.py",
+  "proof": "For N=121, V>=range**2/(2*N); integer range>=47 implies V>=2209/242>9. Range<=1 implies V<=range**2/4<=0.25<1. Both enter already proved far bands: original float32 variance error<0.27 cannot cross threshold4. Remaining ranges keep current integral2 and original-std band, not a new acceptance threshold.",
+  "scope": "Only original native 11x11 uint8 contrast bool; getRectSubPix, float32 patch bytes, H/I NCC, all logical/actual match calls, support sampling, geometry and all control policy unchanged",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "gate": "All three complete-sequence total-wall medians AND means strictly improve, all outputs exactly equal; one frozen serial AB/BA comparison, retain all rows. Failure restores original helper bytes, no extra candidate timing/profile or conditional replay.",
+  "after_gate": "Only if gate passes, once fixed13 old recordings replay plus regression before promotion",
+  "safety_changed": false
+}

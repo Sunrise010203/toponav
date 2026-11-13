@@ -1,0 +1,28 @@
+........................................................................ [ 23%]
+........................................................................ [ 46%]
+........................................................................ [ 69%]
+......................................................................F. [ 92%]
+.......................                                                  [100%]
+=================================== FAILURES ===================================
+_____________ test_default_pair_and_contrast_remain_original_bytes _____________
+
+    def test_default_pair_and_contrast_remain_original_bytes():
+        for module, name in ((default_pair, 'paired_descriptor_checks.py'),
+                             (default_fast, 'native_patch_contrast.py')):
+>           assert Path(module.__file__).read_bytes() == (ARCHIVE/'before/roadvision'/name).read_bytes()
+E           assert b'"""Experime..., **kwargs)\n' == b'"""Experime..., **kwargs)\n'
+E             
+E             At index 415 diff: b'f' != b'\n'
+E             Use -v to get more diff
+
+tests/test_prepared_support_mask.py:152: AssertionError
+=============================== warnings summary ===============================
+tests/test_paired_descriptor_checks.py::test_boundary_and_nonfinite_endpoints_exact[point5]
+  /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:32: RuntimeWarning: invalid value encountered in matmul
+    homogeneous = np.column_stack((points, np.ones(len(points)))) @ matrix.T
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/sunrise/toponav_project/reports/straight-paired-range-20261104/targeted.xml -
+=========================== short test summary info ============================
+FAILED tests/test_prepared_support_mask.py::test_default_pair_and_contrast_remain_original_bytes
+1 failed, 310 passed, 1 warning in 3.22s

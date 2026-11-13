@@ -1,0 +1,188 @@
+{
+  "name": "gradient_history",
+  "experimental": true,
+  "promoted": false,
+  "history": "reuse existing training-only 5/9/13/17 selector; one final wide-side fit",
+  "parent": "gradient_transfer",
+  "changed_safety_limits": false,
+  "cases": [
+    {
+      "name": "known_center",
+      "length_m": 4.0,
+      "seed": 31013
+    },
+    {
+      "name": "known_default",
+      "length_m": 6.0,
+      "seed": 313
+    },
+    {
+      "name": "known_offset_plus",
+      "length_m": 4.0,
+      "offset_m": 0.06,
+      "seed": 31013
+    }
+  ],
+  "control": "gradient_transfer",
+  "candidate": "gradient_history",
+  "max_ticks": 180,
+  "terminal_check_ticks": 3,
+  "developer_conditions_not_independent_acceptance": true,
+  "runs": [
+    {
+      "name": "known_center--gradient_transfer",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0,
+          "initial_offset_m": 0.0
+        },
+        "seed": 31013,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_transfer"
+      }
+    },
+    {
+      "name": "known_center--gradient_history",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0,
+          "initial_offset_m": 0.0
+        },
+        "seed": 31013,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history"
+      }
+    },
+    {
+      "name": "known_default--gradient_transfer",
+      "arguments": {
+        "scene": {
+          "length_m": 6.0,
+          "initial_offset_m": 0.0
+        },
+        "seed": 313,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_transfer"
+      }
+    },
+    {
+      "name": "known_default--gradient_history",
+      "arguments": {
+        "scene": {
+          "length_m": 6.0,
+          "initial_offset_m": 0.0
+        },
+        "seed": 313,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history"
+      }
+    },
+    {
+      "name": "known_offset_plus--gradient_transfer",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0,
+          "initial_offset_m": 0.06
+        },
+        "seed": 31013,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_transfer"
+      }
+    },
+    {
+      "name": "known_offset_plus--gradient_history",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0,
+          "initial_offset_m": 0.06
+        },
+        "seed": 31013,
+        "max_ticks": 180,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history"
+      }
+    },
+    {
+      "name": "fault--missing",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0
+        },
+        "seed": 31013,
+        "max_ticks": 40,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history",
+        "fault": {
+          "kind": "missing",
+          "tick": 12
+        }
+      }
+    },
+    {
+      "name": "fault--freeze",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0
+        },
+        "seed": 31013,
+        "max_ticks": 40,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history",
+        "fault": {
+          "kind": "freeze",
+          "tick": 12
+        }
+      }
+    },
+    {
+      "name": "refusal--no-permission",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0
+        },
+        "seed": 31013,
+        "max_ticks": 40,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "no_motion",
+        "straight_variant": "gradient_history"
+      }
+    },
+    {
+      "name": "refusal--repeated",
+      "arguments": {
+        "scene": {
+          "length_m": 4.0
+        },
+        "seed": 31013,
+        "max_ticks": 40,
+        "terminal_check_ticks": 3,
+        "operator_confirmed": true,
+        "motion_permission": "bounded_probe",
+        "straight_variant": "gradient_history",
+        "pattern": "repeated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "README.md": "189028929905c53e9f3c36266828f6559850f09ac4a70001488449c44d27f357",
+  "docs/STRAIGHT_PAIRED_PATCHES.md": "20fc1dd20ff9c397e2b613a4fa2dd25cdaeaee07f712a49fb05ec2fc8ad1de5d",
+  "roadvision/paired_descriptor_checks.py": "bdbc3f683c950366013ade4aa33c763db29f252ae491befab18280514605ecf4",
+  "roadvision/rgb_motion_checks.py": "ea578ac45661b17d4265eb701dd94896656f58513601b635e361a06da365f6f1",
+  "roadvision/rgb_resampling_checks.py": "ef1b3d8f7287c67e2182ea834bdb55d3ffb69b4855d15b2ae709975ce1ff4f53",
+  "roadvision/paired_patch_preparation.py": "f72c7bf955e1cb7c04457b66fb4c4d491a7ce4863eb47576cb5f33c266e98ab9",
+  "tools/straight_paired_patch_benchmark.py": "670ce185f8064a18962eee808fd54a133c56823768f30d3b9f6b203298374381",
+  "tests/test_paired_patch_preparation.py": "23132e676bd688904298f464a4a8f43a650b644c40b27ed6596e1e49a38d765e",
+  "tests/test_straight_paired_patch_benchmark.py": "590493949ce5cb6b2a693d3a8ed9a58d1f4f75310a46045282f97920dfaea5ca"
+}

@@ -1,0 +1,120 @@
+--- reports/straight-paired-populations-20261103/before/roadvision/paired_descriptor_checks.py	2026-11-03 21:16:12.137272262 +0800
++++ roadvision/paired_descriptor_checks.py	2026-11-03 21:19:01.075548792 +0800
+@@ -1,9 +1,10 @@
+ """Native H/I work sharing, NOT a shared descriptor acceptance decision.
+ 
+ Only identical raw score maps for the same logical role can be shared between
+-channels in ONE track. Each original evidence function still applies its own
+-patch support, exclusion, finite population, scores, counts and gates. Models
+-are fitted separately. Rectified inputs keep the old independent path.
++channels in ONE track. Identical endpoint/support populations may also reuse
++their exact reductions. Each original evidence function still applies its own
++patch support and gates. Models are fitted separately. Rectified inputs keep
++the old independent path.
+ """
+ import cv2
+ import numpy as np
+@@ -14,10 +15,38 @@
+ 
+ 
+ class _TrackScores:
+-    """At most two role maps per canvas; cleared at every track boundary."""
++    """Two role maps and two populations per canvas, cleared after each track."""
+     def __init__(self, target):
+         self.target = target.astype(np.float32)
+         self.entries = {}
++        self.populations = {}
++        # Static support interning is region-local; not descriptor evidence.
++        self.supports = []
++
++    def intern_support(self, support):
++        # An all-true eroded support selects precisely H's unmasked population.
++        if support is None or support.all():
++            return None, None
++        for index, previous in enumerate(self.supports):
++            if np.array_equal(previous, support):
++                return index, previous
++        self.supports.append(support)
++        return len(self.supports) - 1, support
++
++    def population(self, expected, search):
++        point = np.asarray(expected)
++        key = (point.dtype.str, point.shape, point.tobytes(), search.x.shape,
++               search.radius_squared, search.support_key)
++        if key not in self.populations:
++            outside = ((search.x - expected[0]) ** 2 +
++                       (search.y - expected[1]) ** 2 > search.radius_squared)
++            if search.population_support is not None:
++                outside = outside & search.population_support
++            # Bounded even for interleaved private searches with many endpoints.
++            if len(self.populations) == 2:
++                del self.populations[next(iter(self.populations))]
++            self.populations[key] = _Population(outside)
++        return self.populations[key]
+ 
+     def match(self, role, template):
+         key = (template.dtype.str, template.shape, template.tobytes())
+@@ -25,34 +54,54 @@
+             return self.entries[role][1]
+         scores = cv2.matchTemplate(self.target, template, cv2.TM_CCOEFF_NORMED)
+         if role < 2:
+-            self.entries[role] = (key, scores)
++            # A unique generation also guards reused/mutated OpenCV buffers.
++            self.entries[role] = (key, scores, object())
+         return scores
+ 
+     def clear(self):
+         self.entries.clear()
++        self.populations.clear()
++
++
++class _Population:
++    """Original finite max/count over ONE exact endpoint/support footprint."""
++    def __init__(self, outside):
++        self.outside = outside
++        self.reductions = {}
++
++    def reduce(self, role, scores, generation):
++        entry = self.reductions.get(role)
++        if generation is not None and entry is not None and entry[0] is generation:
++            return entry[1]
++        valid = self.outside & np.isfinite(scores)
++        count = int(np.count_nonzero(valid))
++        result = (float(scores[valid].max()) if count else None, count)
++        if role < 2 and generation is not None:
++            # Keep only a generation token, not a reference to a replaced map.
++            self.reductions[role] = (generation, result)
++        return result
+ 
+ 
+ class _ChannelSearch(PreparedAlternative):
+     def __init__(self, target, provider, *, mask=None):
+         super().__init__(target, patch_px=11, half=5, exclude_radius=11., mask=mask)
+         self.provider = provider
++        self.support_key, self.population_support = provider.intern_support(self.support)
+ 
+     def at(self, expected):
+-        outside = ((self.x - expected[0]) ** 2 +
+-                   (self.y - expected[1]) ** 2 > self.radius_squared)
+-        if self.support is not None:
+-            outside = outside & self.support
++        population = self.provider.population(expected, self)
+         role = 0
+ 
+         def search(template):
+             nonlocal role
+             scores = self.provider.match(role, template)
++            entry = self.provider.entries.get(role)
++            generation = entry[2] if entry is not None and entry[1] is scores else None
++            result = population.reduce(role, scores, generation)
+             role += 1
+-            valid = outside & np.isfinite(scores)
+             if self.support is not None:
+-                return (float(scores[valid].max()) if valid.any() else None,
+-                        int(valid.sum()))
+-            return float(np.max(scores[valid])) if valid.any() else None
++                return result
++            return result[0]
+         return search
+ 
+ 

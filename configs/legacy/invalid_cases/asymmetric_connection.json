@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "six_node_indoor_v1",
+  "directed": false,
+  "start_node": "N01",
+  "goal_node": "N06",
+  "action_semantics": "absolute_exit_direction",
+  "nodes": [
+    {
+      "node_id": "N01",
+      "label": "入口",
+      "node_type": "entrance",
+      "position_m": [
+        0,
+        0
+      ],
+      "neighbors": [
+        "N02"
+      ],
+      "actions": [
+        "east"
+      ],
+      "reference_images": []
+    },
+    {
+      "node_id": "N02",
+      "label": "三岔路口 A",
+      "node_type": "intersection",
+      "position_m": [
+        2,
+        0
+      ],
+      "neighbors": [
+        "N01",
+        "N03",
+        "N05"
+      ],
+      "actions": [
+        "west",
+        "east",
+        "north"
+      ],
+      "reference_images": []
+    },
+    {
+      "node_id": "N03",
+      "label": "东侧转角",
+      "node_type": "corner",
+      "position_m": [
+        4,
+        0
+      ],
+      "neighbors": [
+        "N02",
+        "N04"
+      ],
+      "actions": [
+        "west",
+        "north"
+      ],
+      "reference_images": []
+    },
+    {
+      "node_id": "N04",
+      "label": "三岔路口 B",
+      "node_type": "intersection",
+      "position_m": [
+        4,
+        2
+      ],
+      "neighbors": [
+        "N03",
+        "N06"
+      ],
+      "actions": [
+        "south",
+        "east"
+      ],
+      "reference_images": []
+    },
+    {
+      "node_id": "N05",
+      "label": "西侧转角",
+      "node_type": "corner",
+      "position_m": [
+        2,
+        2
+      ],
+      "neighbors": [
+        "N02",
+        "N04"
+      ],
+      "actions": [
+        "south",
+        "east"
+      ],
+      "reference_images": []
+    },
+    {
+      "node_id": "N06",
+      "label": "目标停靠点",
+      "node_type": "goal",
+      "position_m": [
+        6,
+        2
+      ],
+      "neighbors": [
+        "N04"
+      ],
+      "actions": [
+        "west"
+      ],
+      "reference_images": []
+    }
+  ],
+  "edges": [
+    {
+      "channel_id": "C01",
+      "source": "N01",
+      "target": "N02",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "C02",
+      "source": "N02",
+      "target": "N03",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "C03",
+      "source": "N03",
+      "target": "N04",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "C04",
+      "source": "N04",
+      "target": "N05",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "C05",
+      "source": "N05",
+      "target": "N02",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "C06",
+      "source": "N04",
+      "target": "N06",
+      "length_m": 2,
+      "width_m": 0.8,
+      "bidirectional": true,
+      "enabled": true
+    }
+  ]
+}

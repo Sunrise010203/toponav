@@ -1,0 +1,594 @@
+{
+  "version": 1,
+  "scope": "all",
+  "project_root": "/home/sunrise/toponav_project",
+  "status": "not_passed",
+  "verification_complete": false,
+  "pytest_exit_code": 2,
+  "exit_code": 2,
+  "groups": {
+    "current": {
+      "selected": 0,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 0
+    },
+    "historical": {
+      "selected": 96,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 96
+    },
+    "other": {
+      "selected": 0,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 0
+    }
+  },
+  "selected": 96,
+  "deselected": 0,
+  "failures": [
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_every_uint8_value_roundtrips",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[0.25]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-0.0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-1.0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[256.0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[nan]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[inf]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-inf]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[float64]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[uint8]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[int32]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_noncontiguous_exact_conversion",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_identical_maps",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_one_ulp_is_rejected_without_tolerance",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_signed_zero_is_rejected",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_nan_payload_is_not_hidden",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other1]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_alternate_never_returned_and_one_witness_per_group",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_ineligible_calls_only_baseline",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_freeze_detects_changed_bytes",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[100]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[247]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[C]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[F]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[reverse]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[strided]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_opencv_integer_moments_are_exact_for_every_constant_level",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[0-False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[11-False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[12-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[22-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[23-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[33-True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[34-False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[float]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[wrong_shape]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[subclass]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point0]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point1]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point2]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point3]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point4]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point5]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point6]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point7]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point8]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point9]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point10]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[float32]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[shape]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[subclass]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[policy]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[callback]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-uint8]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-float32]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-uint8]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-float32]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_evidence_source_is_original_except_patch_reader_and_namespace",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[patch]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[supported_patch]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[ncc]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[h_evidence]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[i_evidence]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_no_patch_or_input_references_retained_across_calls",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-C]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-F]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-reverse]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-strided]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-C]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-F]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-reverse]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-strided]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-C]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-F]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-reverse]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-strided]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[float32]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[shape]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[subclass]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[boundary]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[flat]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_support_callback_receives_original_mask",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[True]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_no_searches_unwrap_before_original_alternative_path",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_region_and_masks_release_without_global_retention",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[False]",
+      "group": "historical",
+      "outcome": "not_run"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[True]",
+      "group": "historical",
+      "outcome": "not_run"
+    }
+  ],
+  "collection_errors": [
+    {
+      "nodeid": "reports/straight-ncc-unit-clip-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:20: in <module>\n    old = load(HERE/'before/roadvision/rgb_motion_checks.py', '_old_ncc_clip')\nreports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:16: in load\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-ncc-unit-clip-20261104/candidate/reports/straight-ncc-unit-clip-20261104/before/roadvision/rgb_motion_checks.py'"
+    },
+    {
+      "nodeid": "reports/straight-offset-workload-20261104/driver-v1",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-offset-workload-20261104/driver-v1/test_straight_workload_profile.py:16: in <module>\n    from test_paired_descriptor_checks import inputs\nE   ModuleNotFoundError: No module named 'test_paired_descriptor_checks'"
+    },
+    {
+      "nodeid": "reports/straight-paired-range-20261104/before/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:25: in <module>\n    fast = archived('_support_candidate_contrast', ARCHIVE/'candidate/roadvision/native_patch_contrast.py')\nreports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:20: in archived\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/before/reports/straight-paired-support-20261104/candidate/roadvision/native_patch_contrast.py'"
+    },
+    {
+      "nodeid": "reports/straight-paired-range-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-paired-range-20261104/candidate/tests/test_native_patch_range.py:15: in <module>\n    spec.loader.exec_module(fast)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/candidate/reports/straight-paired-range-20261104/candidate/roadvision/native_patch_contrast.py'"
+    },
+    {
+      "nodeid": "reports/straight-project-allocation-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:20: in <module>\n    old = load(HERE/'before/roadvision/corridor_rgb_probe.py', '_project_old')\nreports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:16: in load\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-project-allocation-20261104/candidate/reports/straight-project-allocation-20261104/before/roadvision/corridor_rgb_probe.py'"
+    },
+    {
+      "nodeid": "tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:610: in import_path\n    raise ImportPathMismatchError(module_name, module_file, path)\nE   _pytest.pathlib.ImportPathMismatchError: ('test_native_patch_contrast', '/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py', PosixPath('/home/sunrise/toponav_project/tests/test_native_patch_contrast.py'))"
+    }
+  ],
+  "internal_errors": [],
+  "collection_skips": [],
+  "collection_accounting_complete": true,
+  "interrupted": true,
+  "discovery": {
+    "python_files": [
+      "test_*.py",
+      "*_test.py"
+    ],
+    "python_classes": [
+      "Test"
+    ],
+    "python_functions": [
+      "test"
+    ],
+    "norecursedirs": [
+      "*.egg",
+      ".*",
+      "_darcs",
+      "build",
+      "CVS",
+      "dist",
+      "node_modules",
+      "venv",
+      "{arch}"
+    ],
+    "testpaths": [],
+    "config_file": null
+  },
+  "discovery_restrictions": [],
+  "ignored_test_paths": [],
+  "all_scopes_passed": false,
+  "unselected_groups": [],
+  "formal_navigation_acceptance": false,
+  "scope_notice": "Only this explicit scope is evaluated; no historical failure is whitelisted or reclassified.",
+  "output_directory": "/home/sunrise/toponav_project/reports/project整理-20261113-all",
+  "artifacts_sha256": {
+    "collection.json": "fd4bfb60e67f78d0a8b79f445c84694d685038bc2ae33602b6b348029ddff086",
+    "command.json": "2d1598fb8cc1038cf1e4790e5fb6176761ac2fafa5facc776c777bb5e0266558",
+    "junit.xml": "284d3e30ebd42c4b1f191245cbf5c37113a80b1ca5e60fe1d742a751ceb22a1a",
+    "pytest-audit.json": "610d130fbc2f56e98478efa043740a358c267d1c5075ccc8635b76d64becdb6e",
+    "pytest.log": "4d7f7ccc1a4f6f719e826c158990d52cff5b6ba48be96039fa2ffbddabe62c5d"
+  }
+}

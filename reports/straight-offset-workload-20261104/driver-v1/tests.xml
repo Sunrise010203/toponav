@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="49" time="0.702" timestamp="2026-11-04T12:37:35.664063+08:00" hostname="sunrise"><testcase classname="tests.test_straight_workload_profile" name="test_native_pair_four_matches_no_identity_fallback[False-False]" time="0.023" /><testcase classname="tests.test_straight_workload_profile" name="test_native_pair_four_matches_no_identity_fallback[False-True]" time="0.007" /><testcase classname="tests.test_straight_workload_profile" name="test_native_pair_four_matches_no_identity_fallback[True-False]" time="0.008" /><testcase classname="tests.test_straight_workload_profile" name="test_native_pair_four_matches_no_identity_fallback[True-True]" time="0.008" /><testcase classname="tests.test_straight_workload_profile" name="test_custom_filters_preserved_and_no_native_matches" time="0.003" /><testcase classname="tests.test_straight_workload_profile" name="test_real_rectified_fallback_still_exact" time="0.007" /><testcase classname="tests.test_straight_workload_profile" name="test_outside_pair_return_identity_reset_and_no_inactive_observation" time="0.000" /><testcase classname="tests.test_straight_workload_profile" name="test_exception_restores_aliases_and_nested_pair_stack" time="0.001" /><testcase classname="tests.test_straight_workload_profile" name="test_reentry_and_incomplete_binding_rejected" time="0.000" /><testcase classname="tests.test_straight_workload_profile" name="test_two_pass_runner_or_fail_closed[None]" time="0.026"><failure message="TypeError: Cannot create or construct a &lt;class 'pstats.Stats'&gt; object from &lt;pstats.Stats object at 0x7cb0ccc9e770&gt;">tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-2/test_two_pass_runner_or_fail_c0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x7cb0ccc54490&gt;
+damage = None
+
+    @pytest.mark.parametrize('damage', [None, 'output', 'input_hash'])
+    def test_two_pass_runner_or_fail_closed(tmp_path, monkeypatch, damage):
+        import tools.straight_workload_profile as driver
+        base, rows, _ = fixture_case(tmp_path, 'gradient_transfer')
+        if damage == 'output':
+            rows[-1]['decision']['reason'] = 'deliberate_mismatch'
+            (base/'decisions.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in rows))
+        monkeypatch.setattr(driver, 'bindings', lambda: ([], []))
+        pins = {str(p.relative_to(tmp_path)): hashlib.sha256(p.read_bytes()).hexdigest()
+                for p in base.rglob('*') if p.is_file()}
+        if damage == 'input_hash': pins['input/public/task.json'] = 'wrong'
+        plan = dict(case='input', expected_decisions_per_pass=3)
+        original_threads, original_pair, original_match = cv2.getNumThreads(), pd.filter_pair, cv2.matchTemplate
+        out = tmp_path/'out'
+        if damage is None:
+&gt;           result = run(tmp_path, dict(files=pins), plan, out)
+
+tests/test_straight_workload_profile.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tools/straight_workload_profile.py:218: in run
+    pstats.Stats(aggregate, stream=stream).sort_stats(sort).print_stats(100)
+/usr/lib/python3.10/pstats.py:114: in __init__
+    self.init(arg)
+/usr/lib/python3.10/pstats.py:128: in init
+    self.load_stats(arg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;pstats.Stats object at 0x7cb0ccc9ead0&gt;
+arg = &lt;pstats.Stats object at 0x7cb0ccc9e770&gt;
+
+    def load_stats(self, arg):
+        if arg is None:
+            self.stats = {}
+            return
+        elif isinstance(arg, str):
+            with open(arg, 'rb') as f:
+                self.stats = marshal.load(f)
+            try:
+                file_stats = os.stat(arg)
+                arg = time.ctime(file_stats.st_mtime) + "    " + arg
+            except:  # in case this is not unix
+                pass
+            self.files = [arg]
+        elif hasattr(arg, 'create_stats'):
+            arg.create_stats()
+            self.stats = arg.stats
+            arg.stats = {}
+        if not self.stats:
+&gt;           raise TypeError("Cannot create or construct a %r object from %r"
+                            % (self.__class__, arg))
+E           TypeError: Cannot create or construct a &lt;class 'pstats.Stats'&gt; object from &lt;pstats.Stats object at 0x7cb0ccc9e770&gt;
+
+/usr/lib/python3.10/pstats.py:154: TypeError</failure></testcase><testcase classname="tests.test_straight_workload_profile" name="test_two_pass_runner_or_fail_closed[output]" time="0.017" /><testcase classname="tests.test_straight_workload_profile" name="test_two_pass_runner_or_fail_closed[input_hash]" time="0.012" /><testcase classname="tests.test_straight_pipeline_profile" name="test_nested_aliases_partition_and_original_return_identity" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_recursion_same_label_subtracts_children_without_double_counting" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_uncovered_time_and_each_update_stats_reset" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_exception_cleanup_and_unmeasured_calls_are_unchanged" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_class_method_and_imported_alias_discovery" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_attach_and_measure_reject_reentry_and_other_probe" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_partial_attach_rolls_back" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_invalid_bindings_fail_without_patches[duplicate_label]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_invalid_bindings_fail_without_patches[same_fn_label]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_invalid_bindings_fail_without_patches[not_callable]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_public_task_only_controls_factory_and_permission[baseline]" time="0.001" /><testcase classname="tests.test_straight_pipeline_profile" name="test_public_task_only_controls_factory_and_permission[reference]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_public_task_only_controls_factory_and_permission[wide_reference]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_public_task_only_controls_factory_and_permission[gradient_transfer]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_extra_or_changed_task_fields_rejected[change0]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_extra_or_changed_task_fields_rejected[change1]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_extra_or_changed_task_fields_rejected[change2]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_extra_or_changed_task_fields_rejected[change3]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_extra_or_changed_task_fields_rejected[change4]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_input_loading_does_not_read_result_or_audit" time="0.013" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[pixels]" time="0.013" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[manifest]" time="0.011" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[escape]" time="0.012" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[absolute]" time="0.014" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[extra_ref]" time="0.012" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[event]" time="0.012" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[calibration]" time="0.014" /><testcase classname="tests.test_straight_pipeline_profile" name="test_corrupt_or_nonpublic_inputs_rejected[empty]" time="0.012" /><testcase classname="tests.test_straight_pipeline_profile" name="test_summary_percentiles_denominators_and_empty_group" time="0.001" /><testcase classname="tests.test_straight_pipeline_profile" name="test_bad_durations_not_silently_discarded[bad0]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_bad_durations_not_silently_discarded[bad1]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_bad_durations_not_silently_discarded[bad2]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_bad_durations_not_silently_discarded[bad3]" time="0.000" /><testcase classname="tests.test_straight_pipeline_profile" name="test_freeze_mutation_and_escape_fail_closed" time="0.002" /><testcase classname="tests.test_straight_pipeline_profile" name="test_pipeline_aliases_and_opencv_restore_exactly" time="0.001" /><testcase classname="tests.test_straight_pipeline_profile" name="test_end_to_end_all_modes_exact_no_motion_no_image_mutation" time="0.025" /><testcase classname="tests.test_straight_pipeline_profile" name="test_changed_decision_aborts_without_producing_success" time="0.014" /></testsuite></testsuites>

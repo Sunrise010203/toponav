@@ -1,0 +1,75 @@
+--- before/roadvision/free_ground_path.py
++++ after/roadvision/free_ground_path.py
+@@ -10,6 +10,7 @@
+ from roadvision.rgb_ground_rig import rig_basis
+ from roadvision.rgb_resampling_checks import appearance_evidence
+ from roadvision.reference_patch_evidence import reference_appearance_evidence
++from roadvision.prepared_descriptor_search import PreparedAlternative
+ from roadvision.ground_history import validate_history
+ from roadvision.corridor_rgb_probe import _lk
+ 
+@@ -23,13 +24,22 @@
+ def reference_cell_candidates(aligned,mask,calibration):
+     """Nine fixed placements per cell, evaluated on the reference RGB only."""
+     offsets=[(0.,0.),(-.01,-.01),(-.01,0.),(-.01,.01),(0.,-.01),(0.,.01),(.01,-.01),(.01,0.),(.01,.01)]
++    # Reuse only canvas conversion, coordinates and support erosion. Lazy
++    # construction preserves the no-search path for flat/padded patches.
++    # The context dies with this call; every valid candidate still matches.
++    prepared=None
++    def search(patch,point):
++        nonlocal prepared
++        if prepared is None:
++            prepared=PreparedAlternative(aligned,patch_px=11,half=5,exclude_radius=11.,mask=mask)
++        return prepared.at(point)(patch)
+     cells=[]
+     for x in FREE_PATH_POLICY['forward_samples_m']:
+         for y in FREE_PATH_POLICY['lateral_samples_m']:
+             candidates=[]
+             for dx,dy in offsets:
+                 xy=[x+dx,y+dy];pixel=ground_pixels(np.array([xy]),'front',calibration)[0]
+-                e=reference_appearance_evidence(aligned,pixel,mask)
++                e=reference_appearance_evidence(aligned,pixel,mask,_search=search)
+                 score=e.get('self_alternative_ncc')
+                 candidates.append(dict(point_latest_camera_xy_m=xy,pixel_latest=pixel.tolist(),
+                     reference_accepted=e['accepted'],reference_self_alternative_ncc=score))
+--- before/roadvision/reference_patch_evidence.py
++++ after/roadvision/reference_patch_evidence.py
+@@ -9,12 +9,14 @@
+ from roadvision.rgb_resampling_checks import _supported_patch, _masked_alternative
+ 
+ 
+-def reference_appearance_evidence(image, point, mask):
++def reference_appearance_evidence(image, point, mask, *, _search=None):
+     """Exactly ``appearance_evidence(image,image,point,point,mask,mask)``.
+ 
+     Preserve the original diagnostic schema, including four logical search
+     counts and the all-None scores on unavailable/invalid descriptors.
+     This is only a necessary reference-texture check, not clearance evidence.
++    The private search hook may reuse preparation for this image/mask within
++    one candidate-list call; it must still compute every patch's full search.
+     """
+     patch = _supported_patch(image, point, mask)
+     result = dict(accepted=False, observed_ncc=None, alternative_ncc=None,
+@@ -22,7 +24,8 @@
+     if patch is None:
+         return dict(result, reason='patch_boundary_flat_or_padding')
+     observed = _ncc(patch, patch)
+-    alternative, count = _masked_alternative(patch, image, point, mask)
++    alternative, count = (_masked_alternative(patch, image, point, mask)
++                          if _search is None else _search(patch, point))
+     result['alternative_search_counts'] = [count, count, count, count]
+     if observed is None or alternative is None:
+         return dict(result, reason='invalid_descriptor_search')
+--- before/tests/test_reference_patch_equivalence.py
++++ after/tests/test_reference_patch_equivalence.py
+@@ -11,7 +11,9 @@
+ from roadvision.corridor_rgb_probe import CALIBRATION_ID
+ 
+ 
+-def oracle(image, point, mask):
++def oracle(image, point, mask, **_):
++    # Deliberately ignore the candidate's private prepared-search hook: the
++    # oracle must independently execute the original four full searches.
+     return original.appearance_evidence(image, image, point, point, mask, mask)
+ 
+ 

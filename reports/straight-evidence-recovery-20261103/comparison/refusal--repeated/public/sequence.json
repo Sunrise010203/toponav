@@ -1,0 +1,24 @@
+{
+  "version": "rgb_probe_sequence_v1",
+  "calibration_id": "corridor_panel_128_f64_c64_level_v1",
+  "frames": [
+    {
+      "frame_id": "physics-frame-60",
+      "captured_sim_s": 0.5,
+      "rgb_path": "frames/0000.png",
+      "rgb_sha256": "f834e9f3cffda8d1e2ade71b4803061fe7062c99f814f643498b0ffa44738adc"
+    },
+    {
+      "frame_id": "physics-frame-72",
+      "captured_sim_s": 0.6,
+      "rgb_path": "frames/0001.png",
+      "rgb_sha256": "40c2f5c6b51d31998a922fd24b33340853a86d7c523e16c99021bbb5460af284"
+    },
+    {
+      "frame_id": "physics-frame-84",
+      "captured_sim_s": 0.7,
+      "rgb_path": "frames/0002.png",
+      "rgb_sha256": "1521f2dced1343442f601f447d8909be28c600f7756a6859f61ed556fe6b34ed"
+    }
+  ]
+}

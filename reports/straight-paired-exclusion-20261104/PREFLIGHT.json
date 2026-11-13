@@ -1,0 +1,207 @@
+{
+  "records": [
+    {
+      "case": "random",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        },
+        "after_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        }
+      }
+    },
+    {
+      "case": "flat",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 0,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 0,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 0,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_explicit": {
+          "actual_match_template": 0,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        }
+      }
+    },
+    {
+      "case": "repeated",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        },
+        "after_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        }
+      }
+    },
+    {
+      "case": "blur",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        },
+        "after_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 50,
+          "full_distance_positions": 696200,
+          "local_window_calls": 50,
+          "local_distance_positions": 30258
+        }
+      }
+    },
+    {
+      "case": "shift_padding",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 75,
+          "full_distance_positions": 1044300,
+          "local_window_calls": 75,
+          "local_distance_positions": 45387
+        },
+        "after_explicit": {
+          "actual_match_template": 100,
+          "checked_full_bitmaps": 75,
+          "full_distance_positions": 1044300,
+          "local_window_calls": 75,
+          "local_distance_positions": 45387
+        }
+      }
+    },
+    {
+      "case": "rectified",
+      "variants": {
+        "before_implicit": {
+          "actual_match_template": 148,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "before_explicit": {
+          "actual_match_template": 148,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_implicit": {
+          "actual_match_template": 148,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        },
+        "after_explicit": {
+          "actual_match_template": 148,
+          "checked_full_bitmaps": 0,
+          "full_distance_positions": 0,
+          "local_window_calls": 0,
+          "local_distance_positions": 0
+        }
+      }
+    }
+  ],
+  "all_full_outputs_exact": true,
+  "all_evaluated_full_exclusion_bitmaps_exact": true,
+  "raw_template_matches_unchanged": true,
+  "explicit_filters_keep_native_pair_path": true,
+  "h_i_modules_shared_unchanged": true
+}

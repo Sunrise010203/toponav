@@ -1,0 +1,68 @@
+{
+  "format": "pending_common_boundary_audit_v1",
+  "scope": "offline_fixed_observations_only",
+  "profile": "toponav_pending_common_domain_v1",
+  "seed": 2026110330,
+  "fault_order": [
+    "oversize",
+    "bad_magic",
+    "controls_null",
+    "message_null",
+    "reserve_over",
+    "seal_over",
+    "reply_over",
+    "trailing",
+    "controls_invalid",
+    "reply_null",
+    "packet_utf8"
+  ],
+  "fault_errors": {
+    "oversize": "domain_byte_bound",
+    "bad_magic": "domain_magic",
+    "controls_null": "domain_required_field",
+    "message_null": "domain_required_field",
+    "reserve_over": "domain_field_bound",
+    "seal_over": "domain_field_bound",
+    "reply_over": "domain_field_bound",
+    "trailing": "domain_trailing",
+    "controls_invalid": "domain_controls",
+    "reply_null": "domain_reply_required",
+    "packet_utf8": "message_utf8"
+  },
+  "incompatible_fault_pairs": [
+    [
+      "controls_invalid",
+      "controls_null"
+    ],
+    [
+      "message_null",
+      "packet_utf8"
+    ],
+    [
+      "reply_null",
+      "reply_over"
+    ]
+  ],
+  "variants": 2,
+  "sampled_triples": 24,
+  "all_compatible_singles_and_pairs": true,
+  "case_count": 532,
+  "families": {
+    "controls_padding": 3,
+    "field_length": 35,
+    "ignored_context": 36,
+    "message_padding": 8,
+    "prefix_cut": 30,
+    "priority": 174,
+    "sealed_2T": 243,
+    "total_length": 3
+  },
+  "repeated_calls_per_language": 2,
+  "old_source_changes": false,
+  "new_cpp_implementations": 0,
+  "universal_equivalence_proved": false,
+  "runtime_owner_implemented": false,
+  "trusted_poll_implemented": false,
+  "production_guard_fixed": false,
+  "movement_authorized": false
+}

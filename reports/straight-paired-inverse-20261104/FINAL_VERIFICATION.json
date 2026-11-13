@@ -1,0 +1,17 @@
+{
+  "preexisting_files_byte_identical": 205,
+  "measured_freeze_files_verified_via_exact_snapshots": 304,
+  "candidate_promoted": false,
+  "analysis_reproduced_byte_identical": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "all_serialized_outputs_exact_recorded": true,
+  "final_targeted_passed": 159,
+  "final_expanded_passed": 1207,
+  "final_expanded_failed": 33,
+  "failed_nodes_and_messages_unchanged": true,
+  "full_current_exit_code": 2,
+  "verification_complete": false,
+  "source_changes_in_default": 0,
+  "physical_execution": false
+}

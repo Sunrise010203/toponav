@@ -1,0 +1,15 @@
+pybullet build time: Jan 29 2025 23:16:28
+fault--freeze exact {'decisions': 15, 'terminal_frames': 3, 'feedback_deliveries': 0}
+fault--missing exact {'decisions': 13, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_center--gradient_history exact {'decisions': 39, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_center--gradient_transfer exact {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_default--gradient_history exact {'decisions': 25, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_default--gradient_transfer exact {'decisions': 40, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_offset_plus--gradient_history exact {'decisions': 83, 'terminal_frames': 3, 'feedback_deliveries': 0}
+known_offset_plus--gradient_transfer exact {'decisions': 80, 'terminal_frames': 3, 'feedback_deliveries': 0}
+refusal--no-permission exact {'decisions': 1, 'terminal_frames': 3, 'feedback_deliveries': 0}
+refusal--repeated exact {'decisions': 3, 'terminal_frames': 3, 'feedback_deliveries': 0}
+baseline exact {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0}
+gradient_transfer exact {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reference exact {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0}
+{'decisions': 581, 'terminal_frames': 39, 'all_public_outputs_exact': True, 'physics_errors': [], 'scope': 'existing recordings replay and independent recomputation of old 120Hz traces, NOT new closed-loop physics', 'opencv_threads_restored': True, 'frozen_files_unchanged': True}

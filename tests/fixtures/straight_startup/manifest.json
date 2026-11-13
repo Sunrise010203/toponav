@@ -1,0 +1,20 @@
+[
+  {
+    "file": "center_a.png",
+    "source": "reports/straight-improvement-20261028-task1/runs/center_a/public/frames/0002.png",
+    "rgb_sha256": "d51092d73523826637b1089d1844aa9e26f0082ac8eeac312e6da5e4307619bc",
+    "previously_exposed": true
+  },
+  {
+    "file": "repeated.png",
+    "source": "reports/straight-improvement-20261028-task1/runs/repeated/public/frames/0002.png",
+    "rgb_sha256": "1521f2dced1343442f601f447d8909be28c600f7756a6859f61ed556fe6b34ed",
+    "previously_exposed": true
+  },
+  {
+    "file": "floor_paint.png",
+    "source": "reports/straight-improvement-20261028-task1/runs/floor_paint/public/frames/0002.png",
+    "rgb_sha256": "40d05950c4bcaeb91d4f734270a6e6de940aa7adbcec649247cd9b0d2fc91ad6",
+    "previously_exposed": true
+  }
+]

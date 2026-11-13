@@ -1,0 +1,10 @@
+{
+  "candidate_bytes_verified_before_restoration": true,
+  "restored_files": [
+    "roadvision/rgb_motion_checks.py"
+  ],
+  "preexisting_files_byte_identical": 1211,
+  "candidate_promoted": false,
+  "performance_gate": false,
+  "conditional_replay_executed": false
+}

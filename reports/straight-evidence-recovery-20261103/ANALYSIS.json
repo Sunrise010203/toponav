@@ -1,0 +1,37 @@
+{
+  "comparison_cases": 10,
+  "public_replayed_decisions": 374,
+  "terminal_good_frames": 30,
+  "normal_conditions_per_implementation": 3,
+  "normal_geometric_completions": {
+    "gradient_transfer": 0,
+    "gradient_history": 0
+  },
+  "all_physics_audit_errors_empty": true,
+  "all_contacts_zero": true,
+  "all_safe_final_stop": true,
+  "maximum_brake_delay_s": 0.16666666666666652,
+  "maximum_brake_distance_m": 0.012182722636944894,
+  "offline_probe": {
+    "windows": 20,
+    "original_joint_and_free_supported": 12,
+    "selected_joint_and_free_supported": 14,
+    "counterfactual_not_closed_loop": true
+  },
+  "regression": {
+    "explicit_files": 34,
+    "passed": 1038,
+    "failed": 33,
+    "new_tests": 25,
+    "failed_nodeids_and_messages_same_as_previous_round": true,
+    "full_suite_passed": false
+  },
+  "all_candidate_pins_unchanged": true,
+  "preexisting_files_changed": [
+    "simulation/continuous_straight_acceptance.py",
+    "simulation/continuous_straight_run.py",
+    "tools/straight_pipeline_profile.py"
+  ],
+  "promoted": false,
+  "formal_navigation_acceptance": false
+}

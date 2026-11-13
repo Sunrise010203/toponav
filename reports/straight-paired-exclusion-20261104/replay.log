@@ -1,0 +1,15 @@
+pybullet build time: Jan 29 2025 23:16:28
+reports/straight-evidence-recovery-20261103/comparison/fault--freeze exact {'decisions': 15, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/fault--missing exact {'decisions': 13, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_history exact {'decisions': 39, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer exact {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_history exact {'decisions': 25, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer exact {'decisions': 40, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_history exact {'decisions': 83, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer exact {'decisions': 80, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/refusal--no-permission exact {'decisions': 1, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/comparison/refusal--repeated exact {'decisions': 3, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/development/baseline exact {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/development/gradient_transfer exact {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0}
+reports/straight-evidence-recovery-20261103/development/reference exact {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0}
+complete 13 581 39

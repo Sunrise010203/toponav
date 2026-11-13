@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/sunrise/toponav_project/reports/straight-project-allocation-20261104/replay_existing_v2.py", line 5, in <module>
+    from tools.straight_pipeline_profile import verify_freeze
+ModuleNotFoundError: No module named 'tools'

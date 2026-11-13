@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {
+      "name": "gradient_transfer",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "gradient_history",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_history"
+    }
+  ],
+  "ordinary_repeats": 1,
+  "ordinary_warmups": 0
+}

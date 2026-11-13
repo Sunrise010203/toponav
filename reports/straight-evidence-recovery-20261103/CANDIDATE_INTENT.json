@@ -1,0 +1,31 @@
+{
+  "name": "gradient_history",
+  "experimental": true,
+  "promoted": false,
+  "history": "reuse existing training-only 5/9/13/17 selector; one final wide-side fit",
+  "parent": "gradient_transfer",
+  "changed_safety_limits": false,
+  "cases": [
+    {
+      "name": "known_center",
+      "length_m": 4.0,
+      "seed": 31013
+    },
+    {
+      "name": "known_default",
+      "length_m": 6.0,
+      "seed": 313
+    },
+    {
+      "name": "known_offset_plus",
+      "length_m": 4.0,
+      "offset_m": 0.06,
+      "seed": 31013
+    }
+  ],
+  "control": "gradient_transfer",
+  "candidate": "gradient_history",
+  "max_ticks": 180,
+  "terminal_check_ticks": 3,
+  "developer_conditions_not_independent_acceptance": true
+}

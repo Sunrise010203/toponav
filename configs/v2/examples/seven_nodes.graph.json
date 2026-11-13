@@ -1,0 +1,185 @@
+{
+  "schema_version": "2.0",
+  "scene_id": "seven-node-cross",
+  "directed": false,
+  "exit_direction_frame": "map_xy_east_north",
+  "task": {
+    "start_node": "entry",
+    "goal_node": "north-end",
+    "initial_heading_deg": 0
+  },
+  "nodes": [
+    {
+      "node_id": "entry",
+      "node_type": "dead_end",
+      "neighbors": [
+        "hub"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "hub",
+          "channel_id": "road-1",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "node_id": "hub",
+      "node_type": "intersection",
+      "neighbors": [
+        "entry",
+        "east",
+        "north",
+        "south"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "entry",
+          "channel_id": "road-1",
+          "direction": "west"
+        },
+        {
+          "neighbor_id": "east",
+          "channel_id": "road-2",
+          "direction": "east"
+        },
+        {
+          "neighbor_id": "north",
+          "channel_id": "road-3",
+          "direction": "north"
+        },
+        {
+          "neighbor_id": "south",
+          "channel_id": "road-4",
+          "direction": "south"
+        }
+      ]
+    },
+    {
+      "node_id": "east",
+      "node_type": "corridor",
+      "neighbors": [
+        "hub",
+        "east-end"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "hub",
+          "channel_id": "road-2",
+          "direction": "west"
+        },
+        {
+          "neighbor_id": "east-end",
+          "channel_id": "road-5",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "node_id": "north",
+      "node_type": "corridor",
+      "neighbors": [
+        "hub",
+        "north-end"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "hub",
+          "channel_id": "road-3",
+          "direction": "south"
+        },
+        {
+          "neighbor_id": "north-end",
+          "channel_id": "road-6",
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "node_id": "south",
+      "node_type": "dead_end",
+      "neighbors": [
+        "hub"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "hub",
+          "channel_id": "road-4",
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "node_id": "east-end",
+      "node_type": "dead_end",
+      "neighbors": [
+        "east"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "east",
+          "channel_id": "road-5",
+          "direction": "west"
+        }
+      ]
+    },
+    {
+      "node_id": "north-end",
+      "node_type": "dead_end",
+      "neighbors": [
+        "north"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "north",
+          "channel_id": "road-6",
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "channel_id": "road-1",
+      "source": "entry",
+      "target": "hub",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-2",
+      "source": "hub",
+      "target": "east",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-3",
+      "source": "hub",
+      "target": "north",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-4",
+      "source": "hub",
+      "target": "south",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-5",
+      "source": "east",
+      "target": "east-end",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-6",
+      "source": "north",
+      "target": "north-end",
+      "bidirectional": true,
+      "enabled": true
+    }
+  ]
+}

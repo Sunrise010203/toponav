@@ -1,0 +1,10 @@
+{
+  "files_verified": 1973,
+  "measured_snapshot_mapping": [
+    "roadvision/rgb_motion_checks.py",
+    "tests/test_ncc_unit_clip.py",
+    "tools/straight_function_benchmark.py",
+    "tests/test_straight_function_benchmark.py"
+  ],
+  "conditional_replay_executed": false
+}

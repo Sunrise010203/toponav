@@ -1,0 +1,8 @@
+{
+  "performance_gate_passed": false,
+  "gate_assertion_failed": true,
+  "following_shell_commands_executed": true,
+  "explanation": "Shell command did not use set -e after the failed gate assertion; subsequent candidate profile and public-replay diagnostics ran anyway. They do not authorize promotion. Default source restored in RESTORATION.json.",
+  "candidate_profile_complete": true,
+  "candidate_replay_complete": false
+}

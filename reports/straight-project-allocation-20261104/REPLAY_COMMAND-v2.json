@@ -1,0 +1,11 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "reports/straight-project-allocation-20261104/replay_existing_v2.py"
+  ],
+  "environment_override": {
+    "PYTHONPATH": "/home/sunrise/toponav_project:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages"
+  },
+  "source_unmodified": true,
+  "earlier_startup_failed_before_any_controller_calls": true
+}

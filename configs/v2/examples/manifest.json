@@ -1,0 +1,37 @@
+[
+  {
+    "name": "four_nodes",
+    "graph_file": "four_nodes.graph.json",
+    "scene_file": "four_nodes.scene.json"
+  },
+  {
+    "name": "seven_nodes",
+    "graph_file": "seven_nodes.graph.json",
+    "scene_file": "seven_nodes.scene.json"
+  },
+  {
+    "name": "renamed_six_nodes",
+    "graph_file": "renamed_six_nodes.graph.json",
+    "scene_file": "renamed_six_nodes.scene.json"
+  },
+  {
+    "name": "no_task_no_geometry_no_photos",
+    "graph_file": "no_task_no_geometry_no_photos.graph.json",
+    "scene_file": "no_task_no_geometry_no_photos.scene.json"
+  },
+  {
+    "name": "layout_changed",
+    "graph_file": "layout_changed.graph.json",
+    "scene_file": "layout_changed.scene.json"
+  },
+  {
+    "name": "closed_goal_channel",
+    "graph_file": "closed_goal_channel.graph.json",
+    "scene_file": "closed_goal_channel.scene.json"
+  },
+  {
+    "name": "same_map_different_task",
+    "graph_file": "same_map_different_task.graph.json",
+    "scene_file": "same_map_different_task.scene.json"
+  }
+]

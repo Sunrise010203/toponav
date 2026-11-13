@@ -1,0 +1,8 @@
+{
+  "files": {
+    "roadvision/paired_descriptor_checks.py": "158afddb6ee2b9b058f2c77f2ac9438c3bfbd9ddce9ed6b9535fa45d30e204a5",
+    "roadvision/local_exclusion_population.py": "83ec1577ed2fad816ed27514620dae7ebd5b44bf57c52d020e3ce0004e913ce9",
+    "tests/test_local_exclusion_population.py": "2446bc826135843e063303ee5b02569a233ffaf6ebb93c427a479c775bc643aa",
+    "docs/STRAIGHT_PAIRED_EXCLUSION.md": "a7ea109d28a99f3f9e3b2b15d02e1086f20b759afef0ef8042a0f59b34ad68ee"
+  }
+}

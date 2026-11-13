@@ -1,0 +1,48 @@
+"""The old/new harness must execute old evidence bodies, not only an old pair."""
+import pytest
+from tools import straight_paired_patch_benchmark as bench
+
+
+@pytest.mark.parametrize('raises',[False,True])
+def test_harness_loader_restored_on_all_exits(raises):
+    previous=bench.harness.load_before
+    def run():
+        with bench.baseline_loader():
+            assert bench.harness.load_before is bench.load_baseline
+            if raises: raise RuntimeError('stop')
+    if raises:
+        with pytest.raises(RuntimeError,match='stop'): run()
+    else: run()
+    assert bench.harness.load_before is previous
+
+
+def test_old_native_and_fallback_filters_use_old_h_i_bodies(tmp_path):
+    path=tmp_path/'paired_descriptor_checks.py'
+    path.write_text('''from roadvision.prepared_descriptor_checks import filter_h,filter_i
+
+def filter_pair(images,region,*,filters=(filter_h,filter_i)):
+    if filters != (filter_h,filter_i) or region.get('rectified',False):
+        return dict(H=filters[0](images,region),I=filters[1](images,region))
+    return dict(H=('paired_oldH',True),I=('paired_oldI',True))
+''')
+    (tmp_path/'rgb_motion_checks.py').write_text('''CHECK_POLICY={'old':True}
+
+def filter_region(images,region,*,_prepared_search=False):
+    return ('oldH',_prepared_search)
+''')
+    (tmp_path/'rgb_resampling_checks.py').write_text('''from roadvision.rgb_motion_checks import CHECK_POLICY
+
+def filter_region(images,region,*,_prepared_search=False):
+    return ('oldI',_prepared_search)
+''')
+    before=bench.load_baseline(path)
+    assert before.i.CHECK_POLICY is before.h.CHECK_POLICY
+    expected=dict(H=('paired_oldH',True),I=('paired_oldI',True))
+    assert before.filter_pair([], {})==expected
+    from roadvision.prepared_descriptor_checks import filter_h,filter_i
+    assert before.filter_pair([], {},filters=(filter_h,filter_i))==expected
+    assert before.filter_pair([], {},filters=(before.filter_h,before.filter_i))==expected
+    assert before.filter_pair([], {'rectified':True})==dict(H=('oldH',True),I=('oldI',True))
+    assert before.filter_pair([], {},filters=(lambda *args:'customH',lambda *args:'customI'))==dict(H='customH',I='customI')
+    assert before.filter_h([], {})==('oldH',True)
+    assert before.filter_i([], {})==('oldI',True)

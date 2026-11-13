@@ -1,0 +1,24 @@
+{
+  "validation": [
+    "b7-validation-b0-0",
+    "b7-validation-b0-1",
+    "b7-validation-b1-0",
+    "b7-validation-b1-1",
+    "b7-validation-b2-0",
+    "b7-validation-b2-1"
+  ],
+  "test": [
+    "b7-test-b0-0",
+    "b7-test-b0-1",
+    "b7-test-b0-2",
+    "b7-test-b0-3",
+    "b7-test-b1-0",
+    "b7-test-b1-1",
+    "b7-test-b1-2",
+    "b7-test-b1-3",
+    "b7-test-b2-0",
+    "b7-test-b2-1",
+    "b7-test-b2-2",
+    "b7-test-b2-3"
+  ]
+}

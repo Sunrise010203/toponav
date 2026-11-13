@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:launch_testing",
+    "-p",
+    "no:launch_ros",
+    "-q",
+    "reports/straight-match-representation-20261104/test_fallback_check.py",
+    "--junitxml=reports/straight-match-representation-20261104/fallback-tests.xml"
+  ],
+  "exit_code": 0
+}

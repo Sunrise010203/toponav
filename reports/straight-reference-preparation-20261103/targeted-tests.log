@@ -1,0 +1,34 @@
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/main.py", line 289, in wrap_session
+INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/main.py", line 342, in _main
+INTERNALERROR>     config.hook.pytest_collection(session=session)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_hooks.py", line 512, in __call__
+INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_manager.py", line 120, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_callers.py", line 167, in _multicall
+INTERNALERROR>     raise exception
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/logging.py", line 788, in pytest_collection
+INTERNALERROR>     return (yield)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/warnings.py", line 99, in pytest_collection
+INTERNALERROR>     return (yield)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 1450, in pytest_collection
+INTERNALERROR>     return (yield)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_callers.py", line 121, in _multicall
+INTERNALERROR>     res = hook_impl.function(*args)
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/main.py", line 353, in pytest_collection
+INTERNALERROR>     session.perform_collect()
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/_pytest/main.py", line 815, in perform_collect
+INTERNALERROR>     self.config.pluginmanager.check_pending()
+INTERNALERROR>   File "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/pluggy/_manager.py", line 387, in check_pending
+INTERNALERROR>     raise PluginValidationError(
+INTERNALERROR> pluggy._manager.PluginValidationError: unknown hook 'pytest_launch_collect_makemodule' in plugin <module 'launch_testing_ros_pytest_entrypoint' from '/opt/ros/humble/lib/python3.10/site-packages/launch_testing_ros_pytest_entrypoint.py'>
+
+no tests ran in 0.41s

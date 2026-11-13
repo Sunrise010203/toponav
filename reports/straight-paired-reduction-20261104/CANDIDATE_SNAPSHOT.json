@@ -1,0 +1,8 @@
+{
+  "snapshot_to_frozen_source": {
+    "reports/straight-paired-reduction-20261104/candidate/roadvision/paired_descriptor_checks.py": "roadvision/paired_descriptor_checks.py",
+    "reports/straight-paired-reduction-20261104/candidate/roadvision/finite_population_max.py": "roadvision/finite_population_max.py",
+    "reports/straight-paired-reduction-20261104/candidate/tests/test_finite_population_max.py.snapshot": "tests/test_finite_population_max.py"
+  },
+  "all_hashes_match": true
+}

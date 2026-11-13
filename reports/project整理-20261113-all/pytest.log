@@ -1,0 +1,233 @@
+pybullet build time: Jan 29 2025 23:16:28
+
+==================================== ERRORS ====================================
+___ ERROR collecting reports/straight-ncc-unit-clip-20261104/candidate/tests ___
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+reports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:20: in <module>
+    old = load(HERE/'before/roadvision/rgb_motion_checks.py', '_old_ncc_clip')
+reports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:16: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:879: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1016: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1073: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-ncc-unit-clip-20261104/candidate/reports/straight-ncc-unit-clip-20261104/before/roadvision/rgb_motion_checks.py'
+_____ ERROR collecting reports/straight-offset-workload-20261104/driver-v1 _____
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+reports/straight-offset-workload-20261104/driver-v1/test_straight_workload_profile.py:16: in <module>
+    from test_paired_descriptor_checks import inputs
+E   ModuleNotFoundError: No module named 'test_paired_descriptor_checks'
+_____ ERROR collecting reports/straight-paired-range-20261104/before/tests _____
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+reports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:25: in <module>
+    fast = archived('_support_candidate_contrast', ARCHIVE/'candidate/roadvision/native_patch_contrast.py')
+reports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:20: in archived
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:879: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1016: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1073: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/before/reports/straight-paired-support-20261104/candidate/roadvision/native_patch_contrast.py'
+___ ERROR collecting reports/straight-paired-range-20261104/candidate/tests ____
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+reports/straight-paired-range-20261104/candidate/tests/test_native_patch_range.py:15: in <module>
+    spec.loader.exec_module(fast)
+<frozen importlib._bootstrap_external>:879: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1016: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1073: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/candidate/reports/straight-paired-range-20261104/candidate/roadvision/native_patch_contrast.py'
+_ ERROR collecting reports/straight-project-allocation-20261104/candidate/tests _
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+reports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:20: in <module>
+    old = load(HERE/'before/roadvision/corridor_rgb_probe.py', '_project_old')
+reports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:16: in load
+    spec.loader.exec_module(module)
+<frozen importlib._bootstrap_external>:879: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1016: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1073: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-project-allocation-20261104/candidate/reports/straight-project-allocation-20261104/before/roadvision/corridor_rgb_probe.py'
+____________________________ ERROR collecting tests ____________________________
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file
+    module: Module = ihook.pytest_pycollect_makemodule(
+.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook
+    return hook(**kw)
+.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint
+    module = import_path(path, root=None, consider_namespace_packages=False)
+.venv/lib/python3.10/site-packages/_pytest/pathlib.py:610: in import_path
+    raise ImportPathMismatchError(module_name, module_file, path)
+E   _pytest.pathlib.ImportPathMismatchError: ('test_native_patch_contrast', '/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py', PosixPath('/home/sunrise/toponav_project/tests/test_native_patch_contrast.py'))
+- generated xml file: /home/sunrise/toponav_project/reports/project整理-20261113-all/junit.xml -
+=========================== short test summary info ============================
+ERROR reports/straight-ncc-unit-clip-20261104/candidate/tests - FileNotFoundE...
+ERROR reports/straight-offset-workload-20261104/driver-v1 - ModuleNotFoundErr...
+ERROR reports/straight-paired-range-20261104/before/tests - FileNotFoundError...
+ERROR reports/straight-paired-range-20261104/candidate/tests - FileNotFoundEr...
+ERROR reports/straight-project-allocation-20261104/candidate/tests - FileNotF...
+ERROR tests - _pytest.pathlib.ImportPathMismatchError: ('test_native_patch_co...
+!!!!!!!!!!!!!!!!!!! Interrupted: 6 errors during collection !!!!!!!!!!!!!!!!!!!!
+6 errors in 1.07s

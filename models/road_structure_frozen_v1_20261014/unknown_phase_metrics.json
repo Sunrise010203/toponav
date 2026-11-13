@@ -1,0 +1,27 @@
+{
+  "missing_view": {
+    "support": 8,
+    "raw_correct": 2,
+    "false_accept": 0
+  },
+  "approaching": {
+    "support": 3,
+    "raw_correct": 3,
+    "false_accept": 0
+  },
+  "occluded": {
+    "support": 5,
+    "raw_correct": 0,
+    "false_accept": 5
+  },
+  "passing": {
+    "support": 5,
+    "raw_correct": 2,
+    "false_accept": 2
+  },
+  "turning": {
+    "support": 3,
+    "raw_correct": 2,
+    "false_accept": 1
+  }
+}

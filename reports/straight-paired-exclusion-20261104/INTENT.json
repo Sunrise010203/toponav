@@ -1,0 +1,30 @@
+{
+  "candidate": "Exact local evaluation of exclusion-radius bitmap only, NOT a restricted template search, scratch buffer, patch/NCC reuse or inverse reuse",
+  "production_edits": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "new_helper": "roadvision/local_exclusion_population.py",
+  "scope": "Validate static integer regular grids once per search. For finite bounded float64 endpoints and radius_squared=121, fill full bitmap true then evaluate original arithmetic only in a conservative 25x25 window; otherwise original full-grid arithmetic. Apply original support/finite/role/generation/count/max unchanged. No persistent bitmap or score buffer.",
+  "before_source": "reports/straight-paired-exclusion-20261104/before/roadvision/paired_descriptor_checks.py",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "gate": "All full-controller total-wall medians AND means improve in all 3 cases; all serialized outputs identical. Keep all samples, one fixed serial AB/BA comparison; failure restores old source and preserves standalone helper/candidate evidence.",
+  "safety_changed": false,
+  "template_match_calls_and_full_search_unchanged": true,
+  "after_gate": "Only if gate passes: bounded compatibility replay and regression before default acceptance. If fail: restore, regression only, no extra candidate performance/replay."
+}

@@ -1,0 +1,1010 @@
+[
+  {
+    "name": "known_center--gradient_transfer",
+    "variant": "gradient_transfer",
+    "decisions": 75,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 52,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_transfer",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true
+      }
+    },
+    "displacement_m": 0.7706989107471622,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 42,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011748341622376096
+        },
+        {
+          "tick": 54,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011577349685413253
+        },
+        {
+          "tick": 64,
+          "latency_s": 0.15000000000000036,
+          "distance_m": 0.009636217114858025
+        }
+      ],
+      "maximum_speed_m_s": 0.1502755842142573,
+      "maximum_yaw_rate_rad_s": 0.04853741536219307
+    },
+    "replay": {
+      "decisions": 75,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 46,
+    "selection_sizes": []
+  },
+  {
+    "name": "known_center--gradient_history",
+    "variant": "gradient_history",
+    "decisions": 39,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 14,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 0.2049605298467279,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 14,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.012001022903216845
+        },
+        {
+          "tick": 22,
+          "latency_s": 0.11666666666666625,
+          "distance_m": 0.006424361383493835
+        },
+        {
+          "tick": 28,
+          "latency_s": 0.1166666666666667,
+          "distance_m": 0.006445556284732251
+        }
+      ],
+      "maximum_speed_m_s": 0.15002153049426312,
+      "maximum_yaw_rate_rad_s": 0.022980070236126048
+    },
+    "replay": {
+      "decisions": 39,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 8,
+    "selection_sizes": [
+      9,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      9,
+      9,
+      9,
+      9,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      null,
+      null,
+      null,
+      null,
+      17,
+      17,
+      17
+    ]
+  },
+  {
+    "name": "known_default--gradient_transfer",
+    "variant": "gradient_transfer",
+    "decisions": 40,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 15,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_transfer",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true
+      }
+    },
+    "displacement_m": 0.22434549246178198,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 8,
+          "latency_s": 0.16666666666666652,
+          "distance_m": 0.012182722636944894
+        },
+        {
+          "tick": 21,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011816765140897174
+        },
+        {
+          "tick": 29,
+          "latency_s": 0.1166666666666667,
+          "distance_m": 0.006609561510631307
+        }
+      ],
+      "maximum_speed_m_s": 0.15002160174556653,
+      "maximum_yaw_rate_rad_s": 0.018116712290285258
+    },
+    "replay": {
+      "decisions": 40,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 9,
+    "selection_sizes": []
+  },
+  {
+    "name": "known_default--gradient_history",
+    "variant": "gradient_history",
+    "decisions": 25,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 7,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 0.10512855540531603,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 8,
+          "latency_s": 0.16666666666666652,
+          "distance_m": 0.012182722636944894
+        },
+        {
+          "tick": 14,
+          "latency_s": 0.1166666666666667,
+          "distance_m": 0.006468499140854924
+        }
+      ],
+      "maximum_speed_m_s": 0.15002160174556653,
+      "maximum_yaw_rate_rad_s": 8.911266575680724e-05
+    },
+    "replay": {
+      "decisions": 25,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 1,
+    "selection_sizes": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ]
+  },
+  {
+    "name": "known_offset_plus--gradient_transfer",
+    "variant": "gradient_transfer",
+    "decisions": 80,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "recovery_count_exhausted",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 61,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_transfer",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true
+      }
+    },
+    "displacement_m": 0.8879884601418994,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 12,
+          "latency_s": 0.15833333333333344,
+          "distance_m": 0.011413159970914943
+        },
+        {
+          "tick": 43,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011068403115342499
+        },
+        {
+          "tick": 54,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.012041271137286326
+        },
+        {
+          "tick": 78,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.010961321653813966
+        }
+      ],
+      "maximum_speed_m_s": 0.15016801132828675,
+      "maximum_yaw_rate_rad_s": 0.03682227053337379
+    },
+    "replay": {
+      "decisions": 80,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 55,
+    "selection_sizes": []
+  },
+  {
+    "name": "known_offset_plus--gradient_history",
+    "variant": "gradient_history",
+    "decisions": 83,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 58,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 0.8442402767915634,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 11,
+          "latency_s": 0.16666666666666652,
+          "distance_m": 0.011666719872536434
+        },
+        {
+          "tick": 21,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.012041619957513554
+        },
+        {
+          "tick": 72,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011293258594437068
+        }
+      ],
+      "maximum_speed_m_s": 0.15002156957639742,
+      "maximum_yaw_rate_rad_s": 0.03682227053337379
+    },
+    "replay": {
+      "decisions": 83,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 52,
+    "selection_sizes": [
+      9,
+      9,
+      5,
+      5,
+      5,
+      9,
+      9,
+      9,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      9,
+      9,
+      17,
+      17,
+      13,
+      13,
+      13,
+      5,
+      5,
+      9,
+      9,
+      9,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      9,
+      5,
+      5,
+      9,
+      9,
+      9,
+      9,
+      13,
+      13,
+      13,
+      13,
+      13
+    ]
+  },
+  {
+    "name": "fault--missing",
+    "variant": "gradient_history",
+    "decisions": 13,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "missing_frame",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 10,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 0.1498843651925656,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 12,
+          "latency_s": 0.15833333333333344,
+          "distance_m": 0.011449942569389415
+        }
+      ],
+      "maximum_speed_m_s": 0.15002153049426312,
+      "maximum_yaw_rate_rad_s": 0.022980070236126048
+    },
+    "replay": {
+      "decisions": 13,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 4,
+    "selection_sizes": [
+      9,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "name": "fault--freeze",
+    "variant": "gradient_history",
+    "decisions": 15,
+    "result": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "commanded_motion_without_rgb_response",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 12,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 0.17994337272710406,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [
+        {
+          "tick": 14,
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011816460095669877
+        }
+      ],
+      "maximum_speed_m_s": 0.15002153049426312,
+      "maximum_yaw_rate_rad_s": 0.022980070236126048
+    },
+    "replay": {
+      "decisions": 15,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 6,
+    "selection_sizes": [
+      9,
+      5,
+      5,
+      5,
+      9,
+      9,
+      9
+    ]
+  },
+  {
+    "name": "refusal--no-permission",
+    "variant": "gradient_history",
+    "decisions": 1,
+    "result": {
+      "result_type": "rejected_no_motion",
+      "state": "aborted",
+      "reason": "motion_not_authorized",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 0,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "no_motion",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 3.1829924632246585e-05,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [],
+      "maximum_speed_m_s": 2.2760974933032694e-05,
+      "maximum_yaw_rate_rad_s": 1.9490710989584793e-06
+    },
+    "replay": {
+      "decisions": 1,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 0,
+    "selection_sizes": []
+  },
+  {
+    "name": "refusal--repeated",
+    "variant": "gradient_history",
+    "decisions": 3,
+    "result": {
+      "result_type": "rejected_no_motion",
+      "state": "aborted",
+      "reason": "startup_texture_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 0,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_history",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true,
+        "history_selection_policy": {
+          "sizes": [
+            5,
+            9,
+            13,
+            17
+          ],
+          "horizon_s": 1.61,
+          "max_capture_gap_s": 0.250001,
+          "max_keyframe_gap_s": 0.81,
+          "min_training_tracks": 6,
+          "min_training_grid_cells": 3,
+          "min_views": 2,
+          "min_translation_m": 0.025,
+          "max_translation_m": 0.3,
+          "preferred_translation_m": 0.08,
+          "max_abs_yaw_rad": 0.12,
+          "max_training_median_px": 0.75
+        },
+        "history_selection_scope": "training_only_before_one_final_fit"
+      }
+    },
+    "displacement_m": 3.638285142177906e-05,
+    "geometric_completed": false,
+    "safe_final_stop": true,
+    "contacts": 0,
+    "exception": null,
+    "physics": {
+      "errors": [],
+      "braking": [],
+      "maximum_speed_m_s": 2.2767973345987046e-05,
+      "maximum_yaw_rate_rad_s": 1.953483549688527e-06
+    },
+    "replay": {
+      "decisions": 3,
+      "terminal_frames": 3,
+      "feedback_deliveries": 0
+    },
+    "following_commands": 0,
+    "selection_sizes": []
+  }
+]

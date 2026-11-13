@@ -1,0 +1,33 @@
+{
+  "candidate": "Native uint8 patch contrast gate using exact integer moments with conservative original-std fallback; no patch/NCC cache",
+  "production_edits": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "new_helper": "roadvision/native_patch_contrast.py",
+  "scope": "Only paired native descriptor path; H/I source untouched. Original point validation, extraction, float32 patch, NCC, full matching and all evidence/model gates. For 121 uint8 samples exact cv2.integral2 (CV_32S sum, CV_64F square sum) integer D=121*sum(x*x)-sum(x)**2; if D<121**2 reject, D>9*121**2 accept, else original float32 std>=2. Conservative bound on original variance error <0.27 proves both far decisions equal; integer moment thresholds are NOT new descriptor thresholds. No cached patch or NCC, no reduction/inverse/scratch reuse.",
+  "proof": "Integer input sums <=30855, squared sums <=7868025 are exact even in float32. Mean rounding <=2^-17, each subtract error <=2^-17, squared-value error <0.00974, at most120 nonnegative sum additions each error<=0.25, division error<=2^-9: total variance error <0.27. Final sqrt rounding <=2^-17 cannot change the decision when exact variance<1 or>9. Remaining exact variance interval [1,9] uses original std.",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "gate": "All 3 complete-controller total-wall medians AND means strictly improve, every serialized output exact; one frozen serial AB/BA comparison, retain all samples. Failure restores old production bytes, no extra candidate performance/profile or conditional replay.",
+  "after_gate": "Only after passed performance gate: one frozen 13-case old-recording compatibility replay and regression before promotion.",
+  "safety_changed": false,
+  "observer_edits": [
+    "tools/straight_workload_profile.py"
+  ],
+  "development_note": "Before any performance run: v1 failed integer-norm exactness and two unchanged observer assertions; norm was not exact, so replaced by integral2, and observer extended to new native evidence wrappers. Original failing source/tests/log/XML/intent retained. No acceptance gate or assertion weakened."
+}

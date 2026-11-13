@@ -1,0 +1,246 @@
+{
+  "version": "rgb_probe_sequence_v1",
+  "calibration_id": "corridor_panel_128_f64_c64_level_v1",
+  "frames": [
+    {
+      "frame_id": "physics-frame-60",
+      "captured_sim_s": 0.5,
+      "rgb_path": "frames/0000.png",
+      "rgb_sha256": "f951d400d5c1231b675cf58dad0a13f11de9c53109c9e7b37e30ee2286c0e428"
+    },
+    {
+      "frame_id": "physics-frame-72",
+      "captured_sim_s": 0.6,
+      "rgb_path": "frames/0001.png",
+      "rgb_sha256": "0df981e9d4abdfd692b3ba70e42a04f0b8dcde0acb8553d702060088ac8d4925"
+    },
+    {
+      "frame_id": "physics-frame-84",
+      "captured_sim_s": 0.7,
+      "rgb_path": "frames/0002.png",
+      "rgb_sha256": "5409f0757582adea5764e067c13aad84bc843c0744428746a9692cf6f788ed1d"
+    },
+    {
+      "frame_id": "physics-frame-96",
+      "captured_sim_s": 0.8,
+      "rgb_path": "frames/0003.png",
+      "rgb_sha256": "0182722a71cce05384251fa0acf2f4c3e9031939cec0ccee0d88b49b620633a3"
+    },
+    {
+      "frame_id": "physics-frame-108",
+      "captured_sim_s": 0.9,
+      "rgb_path": "frames/0004.png",
+      "rgb_sha256": "09e1a938b4f3dc0d890051f57070cf2b95a89cec5b669e7cbe0b1f26d1901e84"
+    },
+    {
+      "frame_id": "physics-frame-120",
+      "captured_sim_s": 1.0,
+      "rgb_path": "frames/0005.png",
+      "rgb_sha256": "1b2c5053cbd3ab1bbe7b35607f923efa96b4edceab5fc5f44b83af9ef1c10cbd"
+    },
+    {
+      "frame_id": "physics-frame-132",
+      "captured_sim_s": 1.1,
+      "rgb_path": "frames/0006.png",
+      "rgb_sha256": "c9206f8dacc6406c76d64d8fd3c5251a4e613b4124360e00643f6ddd040b82d7"
+    },
+    {
+      "frame_id": "physics-frame-144",
+      "captured_sim_s": 1.2,
+      "rgb_path": "frames/0007.png",
+      "rgb_sha256": "7946a51c6d2b29a21a1f6a2c733ff0d03e9690ebc37cad081ccea28c24d8c462"
+    },
+    {
+      "frame_id": "physics-frame-156",
+      "captured_sim_s": 1.3,
+      "rgb_path": "frames/0008.png",
+      "rgb_sha256": "4fc71597617c07c56646a846202b26690c170e64fe1d358bb171091e3fc32574"
+    },
+    {
+      "frame_id": "physics-frame-168",
+      "captured_sim_s": 1.4,
+      "rgb_path": "frames/0009.png",
+      "rgb_sha256": "747a5294aba93a5ddf7eb4fd1d60f62cc4a6c83ae6c697398652136dae03067b"
+    },
+    {
+      "frame_id": "physics-frame-180",
+      "captured_sim_s": 1.5,
+      "rgb_path": "frames/0010.png",
+      "rgb_sha256": "a57ad4410503fa45ad3cb30db6301ddfd30cd17faa9bcc5c4f7eb58ed77e02f3"
+    },
+    {
+      "frame_id": "physics-frame-192",
+      "captured_sim_s": 1.6,
+      "rgb_path": "frames/0011.png",
+      "rgb_sha256": "6a98af0a2a030ce56d10a4de49e9f7d92b35f218564b55b343d0f890030af2de"
+    },
+    {
+      "frame_id": "physics-frame-204",
+      "captured_sim_s": 1.7,
+      "rgb_path": "frames/0012.png",
+      "rgb_sha256": "3fcd12e9318f88208852bc63fd7d9194b0a13ae9056d51f1777903c097e78f82"
+    },
+    {
+      "frame_id": "physics-frame-216",
+      "captured_sim_s": 1.8,
+      "rgb_path": "frames/0013.png",
+      "rgb_sha256": "558f7f1a7300f717311120156f62a6d9a4ef94efd7ec6f07d685b7babe8f0e8d"
+    },
+    {
+      "frame_id": "physics-frame-228",
+      "captured_sim_s": 1.9,
+      "rgb_path": "frames/0014.png",
+      "rgb_sha256": "fa00c4d27dc59cb4559b8ea75eb8c76c2c2f64749cc5f622ff9ff8aa183fcbdd"
+    },
+    {
+      "frame_id": "physics-frame-240",
+      "captured_sim_s": 2.0,
+      "rgb_path": "frames/0015.png",
+      "rgb_sha256": "28b87643a0579bd97209e3b2be946d34af0ca7eb55550d7008d3ad5a0e1a82e7"
+    },
+    {
+      "frame_id": "physics-frame-252",
+      "captured_sim_s": 2.1,
+      "rgb_path": "frames/0016.png",
+      "rgb_sha256": "9f02f8b305cd7fce89b4da3605a6603c627a62c6de51ab7cdbed78011c960f4b"
+    },
+    {
+      "frame_id": "physics-frame-264",
+      "captured_sim_s": 2.2,
+      "rgb_path": "frames/0017.png",
+      "rgb_sha256": "c8eb453e03e17c4677528a0b210c312f4401885581e1a53dbc99d2975af56b4b"
+    },
+    {
+      "frame_id": "physics-frame-276",
+      "captured_sim_s": 2.3,
+      "rgb_path": "frames/0018.png",
+      "rgb_sha256": "227b425ddf8e22738b2381b25ad4ffcc47bcd12c5d8eaf7daebaf152beee6811"
+    },
+    {
+      "frame_id": "physics-frame-288",
+      "captured_sim_s": 2.4,
+      "rgb_path": "frames/0019.png",
+      "rgb_sha256": "e0da8f4a77bf98f727c1310ffe3e24d7f320e84aa2e0508f6b6443715da6b3ee"
+    },
+    {
+      "frame_id": "physics-frame-300",
+      "captured_sim_s": 2.5,
+      "rgb_path": "frames/0020.png",
+      "rgb_sha256": "183d86bd7cfcc9fc9584cb22d0fb15433680d99a84c58f439c78861c367265c0"
+    },
+    {
+      "frame_id": "physics-frame-312",
+      "captured_sim_s": 2.6,
+      "rgb_path": "frames/0021.png",
+      "rgb_sha256": "ddcfef061962700599944067abcb6f80d366c326885d5b5563a406caa69ab192"
+    },
+    {
+      "frame_id": "physics-frame-324",
+      "captured_sim_s": 2.7,
+      "rgb_path": "frames/0022.png",
+      "rgb_sha256": "2631b70fc77c82195fa814986d9a27cffb30355e7e18a6e9fd97e518572318bc"
+    },
+    {
+      "frame_id": "physics-frame-336",
+      "captured_sim_s": 2.8,
+      "rgb_path": "frames/0023.png",
+      "rgb_sha256": "3de6dbc25d7a664474d18ced6b86dec5b92ee229066cf030d1ccb0cb022b14c2"
+    },
+    {
+      "frame_id": "physics-frame-348",
+      "captured_sim_s": 2.9,
+      "rgb_path": "frames/0024.png",
+      "rgb_sha256": "a5adc8b54776435b1c428d053d3c0706920eb1a1828bbe25445f862233fb80c0"
+    },
+    {
+      "frame_id": "physics-frame-360",
+      "captured_sim_s": 3.0,
+      "rgb_path": "frames/0025.png",
+      "rgb_sha256": "12c639f3966a0b74ba09919af1909c15fa3956cdad060c6b752b78b90beb79e3"
+    },
+    {
+      "frame_id": "physics-frame-372",
+      "captured_sim_s": 3.1,
+      "rgb_path": "frames/0026.png",
+      "rgb_sha256": "34e993ca7d4b42d6302a1dc8f9d5a407487a23a9877ccb03e497394b1cc9c31a"
+    },
+    {
+      "frame_id": "physics-frame-384",
+      "captured_sim_s": 3.2,
+      "rgb_path": "frames/0027.png",
+      "rgb_sha256": "d2258d08471cfd96ef08e80aa2e3ab6f61b90a40dd1458554dbc54aacb4608f7"
+    },
+    {
+      "frame_id": "physics-frame-396",
+      "captured_sim_s": 3.3,
+      "rgb_path": "frames/0028.png",
+      "rgb_sha256": "32966925d20795dc728a216961caea1ed0f2b8c7667c88f29f1b92ea438a340b"
+    },
+    {
+      "frame_id": "physics-frame-408",
+      "captured_sim_s": 3.4,
+      "rgb_path": "frames/0029.png",
+      "rgb_sha256": "805ebe96c5add88bf8a603077ac6d53385a8a14cabc119ef881bbfd8c0bd25d3"
+    },
+    {
+      "frame_id": "physics-frame-420",
+      "captured_sim_s": 3.5,
+      "rgb_path": "frames/0030.png",
+      "rgb_sha256": "b09afcdedca2430c6acf118c11bfe2a542a0f2ee1a498a40e6c0b8e3b8147ac9"
+    },
+    {
+      "frame_id": "physics-frame-432",
+      "captured_sim_s": 3.6,
+      "rgb_path": "frames/0031.png",
+      "rgb_sha256": "91d7982957b99eb0937f391e6e4f153c76dd16eabf7d4db7f38f2f804fb57518"
+    },
+    {
+      "frame_id": "physics-frame-444",
+      "captured_sim_s": 3.6999999999999997,
+      "rgb_path": "frames/0032.png",
+      "rgb_sha256": "396c357cf793095543e4edd6c171619eda3f93b761000d8390627a369d2144c4"
+    },
+    {
+      "frame_id": "physics-frame-456",
+      "captured_sim_s": 3.8,
+      "rgb_path": "frames/0033.png",
+      "rgb_sha256": "bd342b407d92eabaee98df2180f41d7514515883db53168dd2dc4d0fd48e1f3e"
+    },
+    {
+      "frame_id": "physics-frame-468",
+      "captured_sim_s": 3.9,
+      "rgb_path": "frames/0034.png",
+      "rgb_sha256": "03c5f6cdb12b77e5640a02fa46d7e89d419c00193c1c9831e009769785673963"
+    },
+    {
+      "frame_id": "physics-frame-480",
+      "captured_sim_s": 4.0,
+      "rgb_path": "frames/0035.png",
+      "rgb_sha256": "96346cea8f94fee5da0abc991df0a9bed0c50d89fec41f0b4c6a8c654bd4d167"
+    },
+    {
+      "frame_id": "physics-frame-492",
+      "captured_sim_s": 4.1,
+      "rgb_path": "frames/0036.png",
+      "rgb_sha256": "d6508fbb137ca316917d9fb3334c69fd2278cc8c02319419769e8fdb947b100f"
+    },
+    {
+      "frame_id": "physics-frame-504",
+      "captured_sim_s": 4.2,
+      "rgb_path": "frames/0037.png",
+      "rgb_sha256": "4fc519fec48b521e722b9b8d39906ea3c81b216bd09b11dc2b0aa4712eb359d5"
+    },
+    {
+      "frame_id": "physics-frame-516",
+      "captured_sim_s": 4.3,
+      "rgb_path": "frames/0038.png",
+      "rgb_sha256": "c08b420478965dfcb05f8af40dd710e20eee331d2f4ae544fe0de45c8177d6e9"
+    },
+    {
+      "frame_id": "physics-frame-528",
+      "captured_sim_s": 4.4,
+      "rgb_path": "frames/0039.png",
+      "rgb_sha256": "535e1c74cfe00ba3c17232faa4628a64e60ac828c2c8d6d5bee49b8100c4adae"
+    }
+  ]
+}

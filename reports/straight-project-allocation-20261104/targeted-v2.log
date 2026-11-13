@@ -1,0 +1,14 @@
+........................................................................ [ 19%]
+........................................................................ [ 39%]
+........................................................................ [ 58%]
+........................................................................ [ 78%]
+........................................................................ [ 97%]
+........                                                                 [100%]
+=============================== warnings summary ===============================
+tests/test_paired_descriptor_checks.py::test_boundary_and_nonfinite_endpoints_exact[point5]
+  /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:40: RuntimeWarning: invalid value encountered in matmul
+    homogeneous = homogeneous @ matrix.T
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/sunrise/toponav_project/reports/straight-project-allocation-20261104/targeted-v2.xml -
+368 passed, 1 warning in 3.24s

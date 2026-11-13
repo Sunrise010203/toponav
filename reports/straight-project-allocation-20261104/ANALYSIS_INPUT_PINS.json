@@ -1,0 +1,24 @@
+{
+  "files": {
+    "reports/straight-project-allocation-20261104/analyze.py": "b4679169ed9a54998b249af44b9a9636c8235bf4f22b3bf77bad263e97a107bc",
+    "reports/straight-project-allocation-20261104/analyze_corrected.py": "c9335bd67b196d602a0f91bd4763c1a9e86136bbb96fe60d26c3d0b771b43b02",
+    "reports/straight-project-allocation-20261104/PLAN.json": "34f409103771153f594638f30d11925a25dba36ae6e51b86dc3fce840f0bfc73",
+    "reports/straight-project-allocation-20261104/PLAN-v2.json": "34f409103771153f594638f30d11925a25dba36ae6e51b86dc3fce840f0bfc73",
+    "reports/straight-project-allocation-20261104/BEFORE_PINS.json": "b4f2c15508579c84ac08d9b325010e7d425e7c22d7ad31795f11951a313e2699",
+    "reports/straight-project-allocation-20261104/FREEZE.json": "9d2e5f176774f06494cb1fc40744dca385f5d02d2084838809527d2b4a9640b3",
+    "reports/straight-project-allocation-20261104/FREEZE-v2.json": "adfa1d1ef2fa9888642861d3183d7f36ca87565208dc62a98a27ce9aef8cc896",
+    "reports/straight-project-allocation-20261104/BENCHMARK_BASELINE_BINDING.json": "29f805379f7a45d344bbcf450e2d13454356180f6c6b2a079624864a1a65ba5a",
+    "reports/straight-project-allocation-20261104/BENCHMARK_BASELINE_BINDING-v2.json": "ddf6535e97ff54a11e8b4484a6506d0953db0949ef111529f4069f0a5db8a080",
+    "reports/straight-project-allocation-20261104/MEASUREMENT_CORRECTION.json": "f2c900263153d1295b5ce76daef75506381f24afe126c197ebbc83ad79ffe64e",
+    "reports/straight-project-allocation-20261104/benchmark/rows.jsonl": "7c0e9f95f4c762d1a1770f4271dcef5ae1def4a886e908638f05ddf80eea7fd5",
+    "reports/straight-project-allocation-20261104/benchmark/SUMMARY.json": "85e60dd6319619fb9ac217d572ca1e156994a1063367d4b6de6194fd0cd59416",
+    "reports/straight-project-allocation-20261104/benchmark/known_center-controller.json": "0b01c16e00aff765f0914ee361e58d7c65890b3bfd7e8c65864c14d27b8f5c96",
+    "reports/straight-project-allocation-20261104/benchmark/known_default-controller.json": "9a6cbebf9b59ec1bb91c876401380878045f679f018a1cfce68a6fde13e22d0d",
+    "reports/straight-project-allocation-20261104/benchmark/known_offset_plus-controller.json": "b21d5c68bcfcea0bdd1f429b5c1e861c1eea4f7460afc08847e0476d4a2b36a2",
+    "reports/straight-project-allocation-20261104/benchmark-corrected/rows.jsonl": "e8a76ab4940bc553b24442876e09a820962db7bc2fa0b3360c5807cfa93df755",
+    "reports/straight-project-allocation-20261104/benchmark-corrected/SUMMARY.json": "72edd04def4f24a860b0fb7de9d25eb072a9612c36ddb8dbdcc097503526f4f6",
+    "reports/straight-project-allocation-20261104/benchmark-corrected/known_center-controller.json": "14abf12b2cfb1534691fe0a568956c21e8af33e8df3471452cbd3776b48f5600",
+    "reports/straight-project-allocation-20261104/benchmark-corrected/known_default-controller.json": "f3e80cbd8d46c532068737af97d32545eb8c9b72f981a9c61b5851638a4760c1",
+    "reports/straight-project-allocation-20261104/benchmark-corrected/known_offset_plus-controller.json": "b518d07846b4e90a091ee40f5ced893369a474af8671d3420f711abf5102e3bb"
+  }
+}

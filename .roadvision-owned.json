@@ -1,0 +1,19 @@
+{
+  "roadvision/contract.py": "34b8d5b8fe52a3a6bfcdaaf78859f5a3e4aaf15c5669ae17d301679ca3900fe7",
+  "roadvision/data.py": "ce87f6e87c1e0f945afc00facd1ad1e062add2f759d37203f61b37946b52e247",
+  "roadvision/scene.py": "8efb6c4e082944e01838bc434ff243b5f9d07fa4b9f4cb7ff844515a620bbc34",
+  "roadvision/__init__.py": "9fa0ad3d1abef46eebed75609f0d6850c2ee4fcdf48101e375d7493a10d915ac",
+  "tests/test_roadvision.py": "2d3a78c309acc458900fe278ae3d166f9582fbbba515661d0516fd6db6af9657",
+  "roadvision/learn.py": "a0511b4b5dfdc5e3ee4c9738d015e938ce42e25ea73e2ea5c99515593523967b",
+  "roadvision/navigation.py": "01f121e4c8716f5d70bed91f7c2fadf5d0713aa55a440dba360def63b9017acd",
+  "docs/ROAD_STRUCTURE_V1_RESULTS.md": "a7ec82a05c3c877081dc68cec1740ccaae527259445f12c839e43da31b6466c7",
+  "docs/plans/2026-10-14-road-structure-implementation-plan.md": "23254c3dfde011bb5bbd7d55ca2de4af141c05ca2dea15dabd131ef5312145e7",
+  "requirements-simulator.txt": "7142435c3078341909c1b0f7163f7ed8732e2b36e8e99dd2a16c5f41526a6b66",
+  "models/road_structure_frozen_v1_20261014/confusion_matrix.csv": "c6ea8f7b44d4e4fc83793d3992e0c6a34627c128e41b93e5e00e865f69c95b74",
+  "models/road_structure_frozen_v1_20261014/per_class_metrics.csv": "108aa9802b63808375cab30afaf9770ca7012fd0d3815c5850615e61a7e8d13e",
+  "models/road_structure_frozen_v1_20261014/unknown_phase_metrics.json": "97ed1eb4f8d3e1b7227582666a20536d46eb0ced07554301b7c6420b7a674bd0",
+  "models/road_structure_frozen_v1_20261014/example_prediction.json": "875bb383e723185ec7d5489317fb28e94658d47d1172997867af38121b3a8de7",
+  "models/road_structure_frozen_v1_20261014/cpu_cuda_comparison.json": "f1479c1f6999596809be6d698f58b01dd793ca51af3b0c9971045674e1582056",
+  "models/road_structure_frozen_v1_20261014/backbone_and_acceptance_audit.json": "483f90552de14950b4333b7bd95024225db521371cee664a3e48f4d1d4682d79",
+  "models/road_structure_frozen_v1_20261014/source_snapshot_sha256.json": "cb07138adb766e3096855afbe03b59e62cf7479b802c4830f724e60b2aeb4f2a"
+}

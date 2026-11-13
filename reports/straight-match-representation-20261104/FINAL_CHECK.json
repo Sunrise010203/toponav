@@ -1,0 +1,23 @@
+{
+  "default_source_unchanged": true,
+  "preexisting_files_unchanged": 897,
+  "initial_frozen_files_unchanged": 903,
+  "fallback_frozen_files_unchanged": 920,
+  "initial_numerical_maps": 1106,
+  "initial_different_maps": 0,
+  "fallback_numerical_maps": 10,
+  "fallback_different_maps": 6,
+  "fallback_different_scores": 34424,
+  "unconditional_dtype_substitution_rejected": true,
+  "ipp_only_equivalence_not_proved": true,
+  "candidate_promoted": false,
+  "ordinary_timing_runs": 0,
+  "controller_sequences": 0,
+  "replay_runs": 0,
+  "targeted_passed": 202,
+  "new_checker_tests": 27,
+  "skipped": 0,
+  "verification_complete": false,
+  "physical_execution": false,
+  "real_time_budget_proved": false
+}

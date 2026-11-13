@@ -1,0 +1,17 @@
+{
+  "files": {
+    "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer/decisions.jsonl": "f5a83657f95b2c77b73745751f0ff5a6918fe081ff4061f32ff1a9aaa8964848",
+    "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer/decisions.jsonl": "2cfc32cdc62a4ac65a7146af688e2a991a92d86cb2a56effe75ff59ab3547aa6",
+    "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer/decisions.jsonl": "1bdcdb7ed59daf5a82859742e99c1dd9a43b8c8d571400837553d6e99ee17e7e",
+    "reports/straight-paired-patches-20261103/FREEZE_CORRECTED.json": "b0aa171aabeaa0f9641268173c18fc86eb0ecb874f531f5ebcc12a29fdd5e3ea",
+    "reports/straight-paired-patches-20261103/PLAN_CORRECTED.json": "20ecda35272a554b86223bb2a0536a8acbc50ff28d8a8608fdd9fc4fd7777215",
+    "reports/straight-paired-patches-20261103/benchmark-corrected/SUMMARY.json": "9a5d9bb7b09a70fb8043eb9ca3470db3d69403bb19ed8b6a60aa2f6549f83bf4",
+    "reports/straight-paired-patches-20261103/benchmark-corrected/known_center-controller.json": "56c9d8b03a239ad238a5cee2f684ef712eb2ebad4a0b1c7e77894a0577f91be0",
+    "reports/straight-paired-patches-20261103/benchmark-corrected/known_default-controller.json": "97b47c0493d0828663f7b45520da5f9ffd68b49ac33ea6dfeeae6c2f2dbe274b",
+    "reports/straight-paired-patches-20261103/benchmark-corrected/known_offset_plus-controller.json": "f22dbb02eec5355f6c43ffa116a10b6b0268621c884bad84d3d3e1a84a6d98c1",
+    "reports/straight-paired-patches-20261103/benchmark-corrected/rows.jsonl": "8d025fca491b8050ca0329c84c959cfc497552ca8a0115e01e64a7258ed4bccf",
+    "reports/straight-timing-attribution-20261104/INTENT.json": "8637c217131dbb76e521e685d6e3baada2cbd574c8994a9495fb0e1b8a9c752a",
+    "tests/test_straight_timing_attribution.py": "706666bdc84bfb2183108d0dd19e563faffa4e2ead4cde334fc183ec7fe6cd5b",
+    "tools/straight_timing_attribution.py": "1d79c048cc22d1581bf1ac796c41a0c553d203f46f9decd57d6cdd00e7d3ff56"
+  }
+}

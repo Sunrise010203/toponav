@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0",
+  "scene_id": "seven-node-cross",
+  "exit_direction_frame": "map_xy_east_north",
+  "nodes": [
+    {
+      "node_id": "entry"
+    },
+    {
+      "node_id": "hub"
+    },
+    {
+      "node_id": "east"
+    },
+    {
+      "node_id": "north"
+    },
+    {
+      "node_id": "south"
+    },
+    {
+      "node_id": "east-end"
+    },
+    {
+      "node_id": "north-end"
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": "road-1",
+      "source": "entry",
+      "target": "hub",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "road-2",
+      "source": "hub",
+      "target": "east",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "road-3",
+      "source": "hub",
+      "target": "north",
+      "bidirectional": true,
+      "source_direction": "north",
+      "target_direction": "south"
+    },
+    {
+      "channel_id": "road-4",
+      "source": "hub",
+      "target": "south",
+      "bidirectional": true,
+      "source_direction": "south",
+      "target_direction": "north"
+    },
+    {
+      "channel_id": "road-5",
+      "source": "east",
+      "target": "east-end",
+      "bidirectional": true,
+      "source_direction": "east",
+      "target_direction": "west"
+    },
+    {
+      "channel_id": "road-6",
+      "source": "north",
+      "target": "north-end",
+      "bidirectional": true,
+      "source_direction": "north",
+      "target_direction": "south"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "original_three_case_wall_gate_passed": false,
+  "candidate_promoted": false,
+  "restored_original_bytes": true,
+  "all_outputs_exact": true,
+  "all_samples_retained": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "preexisting_files_byte_identical": 1013,
+  "old_test_restored": true,
+  "additional_candidate_timing_or_profile": false,
+  "conditional_replay_executed": false,
+  "full_current_complete": false,
+  "navigation_acceptance": false,
+  "physical_audit_performed": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

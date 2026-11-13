@@ -1,0 +1,60 @@
+{
+  "max_probability_difference": 4.76837158203125e-07,
+  "prediction": {
+    "frame_id": "cpu-consistency",
+    "class_id": "exits_1111",
+    "class_ids": [
+      "exits_0000",
+      "exits_0001",
+      "exits_0010",
+      "exits_0011",
+      "exits_0100",
+      "exits_0101",
+      "exits_0110",
+      "exits_0111",
+      "exits_1000",
+      "exits_1001",
+      "exits_1010",
+      "exits_1011",
+      "exits_1100",
+      "exits_1101",
+      "exits_1110",
+      "exits_1111",
+      "unobservable"
+    ],
+    "probabilities": [
+      5.403015188032434e-11,
+      2.2425160395300736e-08,
+      1.0315691412188244e-07,
+      2.561324436101131e-06,
+      5.790495194446521e-09,
+      2.2086092599238327e-07,
+      1.2362997040327173e-05,
+      0.003854988841339946,
+      3.5702998335551683e-09,
+      1.6125410411405028e-06,
+      7.084971002768725e-06,
+      0.0020132530480623245,
+      5.657750534737715e-07,
+      0.0014331156853586435,
+      0.0013717773836106062,
+      0.972804605960846,
+      0.018497655168175697
+    ],
+    "captured_at_ns": 1791986190078831562,
+    "predicted_at_ns": 1791986190110603287,
+    "inference_ms": 31.851386000198545,
+    "frame_age_s": 0.031771725,
+    "rejection_reason": null,
+    "accepted": true,
+    "observation": {
+      "relative_open": {
+        "front": true,
+        "left": true,
+        "right": true,
+        "back": true
+      },
+      "confidence": 0.972804605960846
+    }
+  }
+}

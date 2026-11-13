@@ -1,0 +1,59 @@
+........................................................................ [ 13%]
+........................................................................ [ 27%]
+........................................................................ [ 40%]
+........................................................................ [ 54%]
+........................................................................ [ 68%]
+........................................................................ [ 81%]
+........................................................................ [ 95%]
+.........................                                                [100%]
+=============================== warnings summary ===============================
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._family)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:70: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._size)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:74: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._name)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:78: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._value)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._families)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:92: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._point_sizes)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:102: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+    ).setParseAction(self._property)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    self._parser.parseString(pattern)
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    self._parser.resetCache()
+
+tests/test_system_integration.py::test_plot_with_coordinates_but_no_lengths_does_not_fabricate_metres
+  /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/matplotlib/_mathtext.py:30: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+529 passed, 18 warnings in 19.68s

@@ -1,0 +1,11 @@
+{
+  "candidate_promoted": false,
+  "reason": "Default median and offset median/mean wall gate failed",
+  "restored": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "preexisting_files_byte_identical": 205,
+  "candidate_snapshot_matches_measured_freeze": true,
+  "optimized_tests_snapshot_preserved": true,
+  "no_additional_candidate_replay_or_measurement": true
+}

@@ -1,0 +1,12 @@
+{
+  "candidate_promoted": false,
+  "reason": "Original full-controller wall median AND mean gate failed",
+  "production_restored_byte_identical": true,
+  "preexisting_files_byte_identical": 709,
+  "changed_files": [],
+  "standalone_experimental_helper": "roadvision/finite_population_max.py",
+  "standalone_helper_not_imported_by_default": true,
+  "candidate_source_and_tests_archived": true,
+  "conditional_replay_performed": false,
+  "extra_candidate_performance_or_profile_performed": false
+}

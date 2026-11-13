@@ -1,0 +1,14 @@
+{
+  "change": "Reuse exclusion/population reductions only for exact same endpoint, static support, raw score identity and logical role within one track. Separate gates and complete full-canvas matching preserved.",
+  "gate": "All output equality tests; alternating warmed local and 3 same complete controller sequences, 4 rounds per implementation; require wall median and mean improvement on every complete case, otherwise restore default and retain rejected candidate.",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups_per_implementation_per_case": 1,
+  "controller_cases": [
+    "known_center--gradient_transfer",
+    "known_default--gradient_transfer",
+    "known_offset_plus--gradient_transfer"
+  ],
+  "navigation_acceptance": false,
+  "safety_limits_changed": false
+}

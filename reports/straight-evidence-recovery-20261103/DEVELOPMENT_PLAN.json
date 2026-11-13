@@ -1,0 +1,16 @@
+{
+  "scope": "known development reconstruction; not independent acceptance",
+  "seed": 31013,
+  "length_m": 4.0,
+  "max_ticks": 120,
+  "terminal_check_ticks": 3,
+  "variants": [
+    "baseline",
+    "reference",
+    "gradient_transfer"
+  ],
+  "operator_confirmed": true,
+  "motion_permission": "bounded_probe",
+  "purpose": "record complete chronological public RGB for rejection/recovery diagnosis",
+  "production_changes": false
+}

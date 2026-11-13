@@ -1,0 +1,7 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "reports/straight-match-representation-20261104/fallback_check.py"
+  ],
+  "exit_code": 0
+}

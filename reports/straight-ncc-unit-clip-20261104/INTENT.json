@@ -1,0 +1,11 @@
+{
+  "candidate": "Identity fast path for exact numpy.float64 NCC result already in [-1,1]",
+  "production_edits": [
+    "roadvision/rgb_motion_checks.py"
+  ],
+  "proof": "np.clip(x,-1,1) returns the identical float64 bits for finite x inside the closed interval, including signed zero; other values/types retain original np.clip. Mean, centering, norms, tiny-denominator rejection, dot/division and H/I independent evidence remain unchanged.",
+  "not_ncc_or_patch_cache": true,
+  "gate": "All three complete total-wall medians AND means strictly improve, all outputs exact; one fixed serial AB/BA comparison with 4 repeats and 1 warmup; failure restores old source, no further candidate timing/profile/replay.",
+  "baseline": "Symmetric same-class dispatch for both versions; all NCC aliases bound for entire controller pass OUTSIDE timer; no nested alias switch in timer.",
+  "safety_changed": false
+}

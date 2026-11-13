@@ -1,0 +1,75 @@
+Image-driven task 1/60: reached
+Image-driven task 2/60: reached
+Image-driven task 3/60: reached
+Image-driven task 4/60: reached
+Image-driven task 5/60: reached
+Image-driven task 6/60: reached
+Image-driven task 7/60: reached
+Image-driven task 8/60: reached
+Image-driven task 9/60: reached
+Image-driven task 10/60: reached
+Image-driven task 11/60: reached
+Image-driven task 12/60: reached
+Image-driven task 13/60: reached
+Image-driven task 14/60: reached
+Image-driven task 15/60: reached
+Image-driven task 16/60: reached
+Image-driven task 17/60: reached
+Image-driven task 18/60: reached
+Image-driven task 19/60: reached
+Image-driven task 20/60: reached
+Image-driven task 21/60: reached
+Image-driven task 22/60: reached
+Image-driven task 23/60: reached
+Image-driven task 24/60: reached
+Image-driven task 25/60: reached
+Image-driven task 26/60: reached
+Image-driven task 27/60: reached
+Image-driven task 28/60: reached
+Image-driven task 29/60: reached
+Image-driven task 30/60: reached
+Image-driven task 31/60: reached
+Image-driven task 32/60: reached
+Image-driven task 33/60: reached
+Image-driven task 34/60: reached
+Image-driven task 35/60: reached
+Image-driven task 36/60: reached
+Image-driven task 37/60: reached
+Image-driven task 38/60: reached
+Image-driven task 39/60: reached
+Image-driven task 40/60: reached
+Image-driven task 41/60: reached
+Image-driven task 42/60: reached
+Image-driven task 43/60: reached
+Image-driven task 44/60: reached
+Image-driven task 45/60: reached
+Image-driven task 46/60: reached
+Image-driven task 47/60: reached
+Image-driven task 48/60: reached
+Image-driven task 49/60: reached
+Image-driven task 50/60: reached
+Image-driven task 51/60: reached
+Image-driven task 52/60: reached
+Image-driven task 53/60: reached
+Image-driven task 54/60: reached
+Image-driven task 55/60: reached
+Image-driven task 56/60: reached
+Image-driven task 57/60: reached
+Image-driven task 58/60: reached
+Image-driven task 59/60: reached
+Image-driven task 60/60: reached
+{
+  "model_sha256": "1188f35dd20d0773b780b73f2000daa25fede9b2db098b02dc0746ad0de6b03b",
+  "layout_id": "test_locked",
+  "node_count": 15,
+  "classification_dimension": 17,
+  "task_count": 60,
+  "verified_successes": 60,
+  "success_rate": 1.0,
+  "status_counts": {
+    "reached": 60
+  },
+  "observation_acceptance_rate": 1.0,
+  "elapsed_s": 11.010192541999459,
+  "scope": "Known task start/heading prior, atomic topological execution, simplified simulator only; no continuous control or geometry estimation"
+}

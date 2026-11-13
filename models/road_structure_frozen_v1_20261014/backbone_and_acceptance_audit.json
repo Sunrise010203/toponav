@@ -1,0 +1,6 @@
+{
+  "backbone_tensors_identical_to_official_pretrained": true,
+  "includes_batchnorm_running_statistics": true,
+  "cpu_cuda_accepted_flags_identical": true,
+  "test_sample_count": 408
+}

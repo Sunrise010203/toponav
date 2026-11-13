@@ -1,0 +1,41 @@
+# Local environments, downloaded simulators and caches (never delete on publish).
+.venv/
+venv/
+.cache/
+.simulators/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+
+# Local secrets and editor/OS files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Rebuildable Python/ROS outputs, including previous build attempts.
+*.egg-info/
+/build/
+/dist/
+/log/
+/ros2_ws/build*/
+/ros2_ws/install*/
+/ros2_ws/log/
+
+# Unpublished raw/processed inputs and future model-training outputs.
+data_raw/*
+data_processed/*
+models/*
+
+# The existing frozen model is part of the reproducible project snapshot.
+!models/road_structure_frozen_v1_20261014/
+
+# Keep reports/, datasets/ and tests/fixtures/: they contain evidence and inputs,
+# not disposable caches. Do not hide historical tests or their failures.

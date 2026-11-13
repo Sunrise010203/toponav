@@ -1,0 +1,9 @@
+{
+  "snapshot_to_frozen_source": {
+    "reports/straight-paired-contrast-20261104/candidate/roadvision/paired_descriptor_checks.py": "roadvision/paired_descriptor_checks.py",
+    "reports/straight-paired-contrast-20261104/candidate/roadvision/native_patch_contrast.py": "roadvision/native_patch_contrast.py",
+    "reports/straight-paired-contrast-20261104/candidate/tools/straight_workload_profile.py": "tools/straight_workload_profile.py",
+    "reports/straight-paired-contrast-20261104/candidate/tests/test_native_patch_contrast.py.snapshot": "tests/test_native_patch_contrast.py"
+  },
+  "all_hashes_match": true
+}

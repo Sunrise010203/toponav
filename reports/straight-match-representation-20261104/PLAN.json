@@ -1,0 +1,36 @@
+{
+  "scope": "Read-only numerical feasibility of float32 -> uint8 full-canvas TM_CCOEFF_NORMED substitution; NOT performance or production candidate",
+  "dtype_change": "Both target and template only when original float32 values roundtrip to uint8 exactly",
+  "synthetic_seed": 98417,
+  "synthetic_cases": [
+    "constant_0",
+    "constant_70",
+    "constant_255",
+    "random_full",
+    "random_low",
+    "ramp_x",
+    "ramp_xy",
+    "checker",
+    "periodic",
+    "fractional_extraction"
+  ],
+  "local_cases": [
+    "random",
+    "flat",
+    "repeated",
+    "blur",
+    "shift_padding",
+    "rectified"
+  ],
+  "local_implementation": "Current accepted paired filter; implicit and explicit original filters",
+  "local_passes_per_dispatch": 1,
+  "ordinary_timing_runs": 0,
+  "controller_sequences": 0,
+  "physical_execution": false,
+  "opencv_threads": 1,
+  "comparison": "Every output float32 bit, not tolerance; include signed-zero and NaN payload distinctions",
+  "failure_rule": "Any different score bit rejects wholesale dtype substitution; no performance or replay for this hypothesis. Retain entire fixed numerical corpus, no searching for passing seeds or retry.",
+  "success_rule": "Finite corpus exactness alone is not a universal proof or promotion; no performance in this plan",
+  "safety": "Alternate score maps are compared only, never returned to filters; actual pipeline receives original float32 maps unchanged",
+  "production_changes": false
+}

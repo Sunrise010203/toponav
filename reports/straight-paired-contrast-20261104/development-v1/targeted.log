@@ -1,0 +1,89 @@
+.......F................................................................ [ 32%]
+........................................................................ [ 64%]
+.....................F.F................................................ [ 96%]
+.......                                                                  [100%]
+=================================== FAILURES ===================================
+________ test_opencv_integer_moments_are_exact_for_every_constant_level ________
+
+    def test_opencv_integer_moments_are_exact_for_every_constant_level():
+        for level in range(256):
+            raw = np.full((11, 11), level, np.uint8)
+            assert cv2.sumElems(raw)[0] == 121*level
+            assert cv2.norm(raw, cv2.NORM_L2SQR) == 121*level*level
+        rng = np.random.default_rng(406)
+        for _ in range(500):
+            raw = rng.integers(0, 256, (11, 11), dtype=np.uint8)
+            exact = raw.astype(np.int64)
+            assert cv2.sumElems(raw)[0] == int(exact.sum())
+>           assert cv2.norm(raw, cv2.NORM_L2SQR) == int((exact*exact).sum())
+E           assert 2856292.9999999995 == 2856293
+E            +  where 2856292.9999999995 = <built-in function norm>(array([[227, 226, 245,  27, 129,  85, 164, 102,  29, 109, 180],\n       [161, 133, 182, 157, 101, 227, 209, 156,  13,  ...248, 160, 181, 173,  48,  76,  30],\n       [234, 186, 197,  53,  36, 175, 217,  64,  31, 244,  87]],\n      dtype=uint8), 5)
+E            +    where <built-in function norm> = cv2.norm
+E            +    and   5 = cv2.NORM_L2SQR
+E            +  and   2856293 = int(2856293)
+E            +    where 2856293 = <built-in method sum of numpy.ndarray object at 0x7226db89af70>()
+E            +      where <built-in method sum of numpy.ndarray object at 0x7226db89af70> = (array([[227, 226, 245,  27, 129,  85, 164, 102,  29, 109, 180],\n       [161, 133, 182, 157, 101, 227, 209, 156,  13,  ...38,  96,  39, 247, 248, 160, 181, 173,  48,  76,  30],\n       [234, 186, 197,  53,  36, 175, 217,  64,  31, 244,  87]]) * array([[227, 226, 245,  27, 129,  85, 164, 102,  29, 109, 180],\n       [161, 133, 182, 157, 101, 227, 209, 156,  13,  ...38,  96,  39, 247, 248, 160, 181, 173,  48,  76,  30],\n       [234, 186, 197,  53,  36, 175, 217,  64,  31, 244,  87]])).sum
+
+tests/test_native_patch_contrast.py:56: AssertionError
+________ test_native_pair_four_matches_no_identity_fallback[False-True] ________
+
+staged = True, explicit = False
+
+    @pytest.mark.parametrize('staged', [False, True])
+    @pytest.mark.parametrize('explicit', [False, True])
+    def test_native_pair_four_matches_no_identity_fallback(staged, explicit):
+        images, region = inputs(count=1)
+        before_images = [im.copy() for im in images]
+        expected = pd.filter_pair(images, region)
+        original = cv2.matchTemplate
+        original_filters = (filter_h, filter_i)
+        stage_bindings, workload_bindings = bindings()
+        probe, stage = WorkloadProbe(), StageProbe()
+        with probe.attach(workload_bindings):
+            with stage.attach(stage_bindings) if staged else nullcontext():
+                with probe.capture():
+                    kwargs = dict(filters=original_filters) if explicit else {}
+                    if staged:
+                        actual, timing = stage.measure(gh.filter_pair, images, region, **kwargs)
+                        assert timing['stages']['template_matching']['calls'] == 4
+>                       assert timing['stages']['h_patch_evidence']['calls'] == 1
+E                       KeyError: 'h_patch_evidence'
+
+tests/test_straight_workload_profile.py:37: KeyError
+________ test_native_pair_four_matches_no_identity_fallback[True-True] _________
+
+staged = True, explicit = True
+
+    @pytest.mark.parametrize('staged', [False, True])
+    @pytest.mark.parametrize('explicit', [False, True])
+    def test_native_pair_four_matches_no_identity_fallback(staged, explicit):
+        images, region = inputs(count=1)
+        before_images = [im.copy() for im in images]
+        expected = pd.filter_pair(images, region)
+        original = cv2.matchTemplate
+        original_filters = (filter_h, filter_i)
+        stage_bindings, workload_bindings = bindings()
+        probe, stage = WorkloadProbe(), StageProbe()
+        with probe.attach(workload_bindings):
+            with stage.attach(stage_bindings) if staged else nullcontext():
+                with probe.capture():
+                    kwargs = dict(filters=original_filters) if explicit else {}
+                    if staged:
+                        actual, timing = stage.measure(gh.filter_pair, images, region, **kwargs)
+                        assert timing['stages']['template_matching']['calls'] == 4
+>                       assert timing['stages']['h_patch_evidence']['calls'] == 1
+E                       KeyError: 'h_patch_evidence'
+
+tests/test_straight_workload_profile.py:37: KeyError
+=============================== warnings summary ===============================
+tests/test_paired_descriptor_checks.py::test_boundary_and_nonfinite_endpoints_exact[point5]
+  /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:32: RuntimeWarning: invalid value encountered in matmul
+    homogeneous = np.column_stack((points, np.ones(len(points)))) @ matrix.T
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/targeted.xml -
+=========================== short test summary info ============================
+FAILED tests/test_native_patch_contrast.py::test_opencv_integer_moments_are_exact_for_every_constant_level
+FAILED tests/test_straight_workload_profile.py::test_native_pair_four_matches_no_identity_fallback[False-True]
+FAILED tests/test_straight_workload_profile.py::test_native_pair_four_matches_no_identity_fallback[True-True]
+3 failed, 220 passed, 1 warning in 2.77s

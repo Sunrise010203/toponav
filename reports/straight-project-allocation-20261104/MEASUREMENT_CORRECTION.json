@@ -1,0 +1,16 @@
+{
+  "first_gate_reported": true,
+  "first_comparison_valid_for_performance_acceptance": false,
+  "first_comparison": "benchmark",
+  "first_analysis": "TIMING_ANALYSIS.json",
+  "cause": "before local wrapper re-entered projection alias context for each pair even while controller-pass aliases were already bound; only before paid this context cost inside controller timers",
+  "correction": "same Variant.__call__ for before/after; both only forward while controller-pass active; alias switch outside timer for both; symmetric contexts for local cases",
+  "production_candidate_changed": false,
+  "safety_or_acceptance_gate_changed": false,
+  "corrected_comparisons_planned": 1,
+  "rounds_per_case_per_version": 4,
+  "all_original_rows_retained": true,
+  "original_and_corrected_samples_pooled": false,
+  "not_rerunning_to_seek_green": "First raw gate was already true; correction removes a known pro-candidate harness bias, not a numerical/output failure",
+  "failure_restores_default_and_stops": true
+}

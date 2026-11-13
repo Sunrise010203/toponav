@@ -1,0 +1,35 @@
+{
+  "pins_verified": {
+    "PREEXISTING_PINS.json": 897,
+    "FREEZE.json": 903,
+    "FALLBACK_FREEZE.json": 920,
+    "ANALYSIS_INPUT_PINS.json": 39
+  },
+  "mode_totals": {
+    "numerical": {
+      "maps": 1106,
+      "elements": 15399944,
+      "different_elements": 0
+    },
+    "fallback-numerical": {
+      "maps": 10,
+      "elements": 139240,
+      "different_elements": 34424,
+      "different_maps": 6
+    }
+  },
+  "all_six_raw_counterexamples_verified": true,
+  "raw_witnesses": 6,
+  "tests_passed": {
+    "tests.xml": 198,
+    "fallback-tests.xml": 4
+  },
+  "local_full_outputs_exact": 12,
+  "no_cv2_match_or_controller_reexecution_in_audit": true,
+  "unconditional_substitution_rejected": true,
+  "ipp_enabled_universal_equivalence_proved": false,
+  "production_changes": false,
+  "performance_gate_run": false,
+  "verification_complete": false,
+  "physical_execution": false
+}

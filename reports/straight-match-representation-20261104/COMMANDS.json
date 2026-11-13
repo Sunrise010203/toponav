@@ -1,0 +1,23 @@
+{
+  "tests": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "no:launch_testing",
+    "-p",
+    "no:launch_ros",
+    "-q",
+    "reports/straight-match-representation-20261104/test_check.py",
+    "tests/test_native_patch_contrast.py",
+    "tests/test_local_exclusion_population.py",
+    "tests/test_paired_descriptor_checks.py",
+    "tests/test_paired_populations.py",
+    "tests/test_straight_paired_population_benchmark.py",
+    "--junitxml=reports/straight-match-representation-20261104/tests.xml"
+  ],
+  "check": [
+    ".venv/bin/python",
+    "reports/straight-match-representation-20261104/check.py"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "candidate_promoted": false,
+  "performance_gate": false,
+  "preexisting_files_byte_identical": 1013,
+  "restored_production_files": [
+    "roadvision/native_patch_contrast.py"
+  ],
+  "restored_test_files": [
+    "tests/test_prepared_support_mask.py"
+  ],
+  "no_old_test_assertion_permanently_changed": true,
+  "measured_freeze_verified_via_snapshots": 346,
+  "replay_freeze_verified_via_snapshots": 1744,
+  "default_does_not_import_new_helper": true,
+  "independent_experimental_helper_retained": true,
+  "new_tests_explicitly_bind_archived_candidate": true,
+  "initial_targeted": {
+    "total": 311,
+    "passed": 310,
+    "failed": 1,
+    "skipped": 0
+  },
+  "corrected_targeted": {
+    "total": 311,
+    "passed": 311,
+    "failed": 0,
+    "skipped": 0
+  },
+  "final_targeted": {
+    "total": 311,
+    "passed": 311,
+    "failed": 0,
+    "skipped": 0
+  },
+  "expanded": {
+    "total": 1408,
+    "passed": 1375,
+    "failed": 33,
+    "skipped": 0
+  },
+  "old_failures_unchanged": true,
+  "full_current_exit": 2,
+  "full_current_selected": 0,
+  "verification_complete": false,
+  "analysis_reproduced_byte_identical": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "all_samples_retained": true,
+  "all_serialized_outputs_exact": true,
+  "additional_candidate_timing_or_profile": false,
+  "conditional_replay_executed": false,
+  "physical_execution": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

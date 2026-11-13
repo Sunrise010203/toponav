@@ -1,0 +1,6 @@
+gradient_transfer ordinary 0 exact 75
+gradient_history ordinary 0 exact 39
+gradient_transfer stage 0 exact 75
+gradient_history stage 0 exact 39
+gradient_transfer cprofile 0 exact 75
+gradient_history cprofile 0 exact 39

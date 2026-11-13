@@ -1,0 +1,4 @@
+pybullet build time: Jan 29 2025 23:16:28
+baseline {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0} []
+reference {'decisions': 66, 'terminal_frames': 3, 'feedback_deliveries': 0} []
+gradient_transfer {'decisions': 75, 'terminal_frames': 3, 'feedback_deliveries': 0} []

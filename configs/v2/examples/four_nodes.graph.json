@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0",
+  "scene_id": "four-node-T",
+  "directed": false,
+  "exit_direction_frame": "map_xy_east_north",
+  "task": {
+    "start_node": "入口-A",
+    "goal_node": "branch-D",
+    "initial_heading_deg": 0
+  },
+  "nodes": [
+    {
+      "node_id": "入口-A",
+      "node_type": "dead_end",
+      "neighbors": [
+        "junction-B"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "junction-B",
+          "channel_id": "road-1",
+          "direction": "east"
+        }
+      ]
+    },
+    {
+      "node_id": "junction-B",
+      "node_type": "intersection",
+      "neighbors": [
+        "入口-A",
+        "end-C",
+        "branch-D"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "入口-A",
+          "channel_id": "road-1",
+          "direction": "west"
+        },
+        {
+          "neighbor_id": "end-C",
+          "channel_id": "road-2",
+          "direction": "east"
+        },
+        {
+          "neighbor_id": "branch-D",
+          "channel_id": "road-3",
+          "direction": "north"
+        }
+      ]
+    },
+    {
+      "node_id": "end-C",
+      "node_type": "dead_end",
+      "neighbors": [
+        "junction-B"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "junction-B",
+          "channel_id": "road-2",
+          "direction": "west"
+        }
+      ]
+    },
+    {
+      "node_id": "branch-D",
+      "node_type": "dead_end",
+      "neighbors": [
+        "junction-B"
+      ],
+      "exits": [
+        {
+          "neighbor_id": "junction-B",
+          "channel_id": "road-3",
+          "direction": "south"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "channel_id": "road-1",
+      "source": "入口-A",
+      "target": "junction-B",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-2",
+      "source": "junction-B",
+      "target": "end-C",
+      "bidirectional": true,
+      "enabled": true
+    },
+    {
+      "channel_id": "road-3",
+      "source": "junction-B",
+      "target": "branch-D",
+      "bidirectional": true,
+      "enabled": true
+    }
+  ]
+}

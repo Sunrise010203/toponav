@@ -1,0 +1,12 @@
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 82%]
+..............................................                           [100%]
+=============================== warnings summary ===============================
+tests/test_paired_descriptor_checks.py::test_boundary_and_nonfinite_endpoints_exact[point5]
+  /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:32: RuntimeWarning: invalid value encountered in matmul
+    homogeneous = np.column_stack((points, np.ones(len(points)))) @ matrix.T
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/final-targeted.xml -
+262 passed, 1 warning in 2.82s

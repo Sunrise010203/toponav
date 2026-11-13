@@ -1,0 +1,25 @@
+{
+  "targeted": {
+    "passed": 231,
+    "failed": 0,
+    "new_tests": 72
+  },
+  "expanded": {
+    "files": 33,
+    "passed": 1013,
+    "failed": 33,
+    "all_failures_missing_history": true,
+    "baseline_same_failed_nodes_and_messages": true
+  },
+  "full_current": {
+    "exit_code": 2,
+    "verification_complete": false,
+    "selected": 0
+  },
+  "measurement": {
+    "cases": 18,
+    "all_outputs_exact": true,
+    "pins_unchanged": true
+  },
+  "formal_navigation_acceptance": false
+}

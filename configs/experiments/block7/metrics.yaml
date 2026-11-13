@@ -1,0 +1,240 @@
+schema_version: block7-design-v1
+status: design_only_not_execution_authorization
+timezone: Asia/Shanghai
+aggregation:
+  independent_cluster: layout_family
+  report:
+  - counts_and_denominators
+  - per_family
+  - macro_over_families
+  - pooled_descriptive
+  - 95_percent_cluster_CI
+  four_views_one_observation: true
+  no_independent_frame_claim: true
+  incomplete_batch: phase_only_not_final
+metrics:
+- id: navigation_success_rate
+  tracks:
+  - N
+  - C_route
+  unit: ratio
+  numerator_or_value: budget 内正式 reached/完整路线 且独立审计真实到达并满足该轨安全条件的任务数
+  denominator: 全部预定义真实可达导航任务
+  zero_or_missing: 分母0为null；error/not_run贡献0并单列；缺失时仅保守阶段结果
+  primary: true
+- id: false_arrival_rate
+  tracks:
+  - N
+  - C_route
+  unit: ratio
+  numerator_or_value: 宣称到达但独立节点/几何/静止审计不满足的任务数
+  denominator: 全部预定义任务
+  zero_or_missing: 缺审计不可记0；覆盖不完整则null并报告可观察下界
+  supplement: 另报除以全部宣称到达任务数；该分母0时null
+- id: known_accuracy
+  tracks:
+  - P
+  unit: ratio
+  numerator_or_value: 有效已知结构包中argmax预测为正确已知类的包数
+  denominator: 全部输入有效且真标签为已知类的包数
+  zero_or_missing: 分母0为null；无效输入另计，不能当正确分类
+  includes_rejected_predictions: true
+- id: macro_f1
+  tracks:
+  - P
+  unit: ratio
+  numerator_or_value: 17类各自2TP/(2TP+FP+FN)之和
+  denominator: 固定17类
+  zero_or_missing: 单类2TP+FP+FN为0记0；同时列支持数；整批无有效样本则null
+  population: 输入有效观测包；分类argmax，不把拒识改写成正确unobservable
+- id: unknown_false_acceptance_rate
+  tracks:
+  - P
+  unit: ratio
+  numerator_or_value: unknown包被作为可信已知结构接受的数量
+  denominator: 全部预定义unknown包
+  zero_or_missing: 缺测不可当拒识；整批不完整则不发布最终值
+  input_guard_contribution: missing_view可由输入有效性守卫拒绝，必须分阶段报告，不冒充网络识别成功
+- id: observation_coverage
+  tracks:
+  - P
+  - N
+  unit: ratio
+  numerator_or_value: 被接受的观测包数
+  denominator: 全部应处理观测包/预定采样槽位数
+  zero_or_missing: 分母0为null；缺帧/缺视图记不接受，故障和基础设施缺失另计
+  scope: P按样本；N按观测槽位，不能跨轨直接排名
+- id: accepted_accuracy
+  tracks:
+  - P
+  unit: ratio
+  numerator_or_value: 被接受且预测真标签正确的包数
+  denominator: 全部被接受包数
+  zero_or_missing: 全拒绝时null而非1
+- id: invalid_input_rate
+  tracks:
+  - P
+  - N
+  unit: ratio
+  numerator_or_value: 输入缺视图/时间非法/图像契约不满足的槽位数
+  denominator: 全部应处理槽位数
+  zero_or_missing: 分母0为null；逐原因计数；不和模型分类错误混为一类
+- id: ambiguity_rate
+  tracks:
+  - N
+  unit: ratio
+  numerator_or_value: 完整有效证据处理后候选不唯一的定位检查数
+  denominator: 全部完整有效证据定位检查数
+  zero_or_missing: 分母0为null；同时按任务报告至少一次歧义的任务数
+- id: wrong_unique_localization_rate
+  tracks:
+  - N
+  - C_route
+  unit: ratio
+  numerator_or_value: 宣称唯一节点/朝向但与单向审计不符的检查数
+  denominator: 全部宣称唯一的定位检查数
+  zero_or_missing: 没有唯一确认时null；无审计则不可估计
+- id: mislocalized_command_rate
+  tracks:
+  - N
+  - C_route
+  unit: ratio
+  numerator_or_value: 从错误节点/朝向估计发出的运动命令数
+  denominator: 全部运动命令数
+  zero_or_missing: 无运动命令时null，另报任务完成/拒绝防止全拒绝假安全
+- id: recovery_success_rate
+  tracks:
+  - N
+  unit: ratio
+  numerator_or_value: 预定义故障事件后预算内恢复正确可靠状态并重新确认的事件数
+  denominator: 全部预定义恢复事件数，包含未检测/超时/未触发
+  zero_or_missing: 分母0为null；未触发不算成功且触发覆盖不足不能完成该故障验收
+  not_denominator: controller.recoveries_started
+- id: fault_trigger_coverage
+  tracks:
+  - N
+  - C
+  unit: ratio
+  numerator_or_value: 实际到达锚点并有输入/物理证据的故障事件数
+  denominator: 全部预定义故障事件数
+  zero_or_missing: 分母0为null；提前拒绝不得算运动中故障覆盖
+- id: recovery_duration_from_onset
+  tracks:
+  - N
+  unit: seconds
+  numerator_or_value: 正确恢复确认时间减预定义故障开始时间
+  denominator: 每个预定义恢复事件；分布及删失数
+  zero_or_missing: 未恢复按min(5秒,剩余任务预算)右删失；起点未触发为null并保留计数
+  aggregates:
+  - success_only_median_P95_with_count
+  - censor_count_and_censor_horizon
+  - all_event_coverage
+- id: recovery_duration_from_detection
+  tracks:
+  - N
+  unit: seconds
+  numerator_or_value: 正确恢复确认时间减故障检测时间
+  denominator: 每个已检测事件
+  zero_or_missing: 未检测为null并计数；已检测未恢复按预算右删失，不能只报成功耗时
+- id: hop_cost_ratio
+  tracks:
+  - N
+  - C_route
+  unit: ratio
+  numerator_or_value: 成功任务实际完成的拓扑跳数
+  denominator: 相同可通行状态下可复现的最少跳数
+  zero_or_missing: 起终点相同/不可达/基准0为null；只对静态或预声明时间扩展可解条件计算
+  limits: 临时封路/错误地图无等价最优基准时null；同时报告成功率，不能只挑成功样本
+- id: distance_m
+  tracks:
+  - N
+  - C
+  unit: metres
+  numerator_or_value: 独立几何/物理审计累计路程
+  denominator: 每个已执行任务
+  zero_or_missing: 无几何依据为null，不能用hops代米；N只能称离散几何累计，不能称轮驱实测
+- id: collision_task_rate
+  tracks:
+  - C
+  unit: ratio
+  numerator_or_value: 独立接触审计显示有墙/障碍接触的任务数
+  denominator: 全部已执行物理任务
+  zero_or_missing: N不适用为null；缺审计不得记0；另报未执行数及覆盖
+  contact_definition: 非轮/底盘正常地面支持接触；墙/障碍接触按120Hz原始轨迹计
+- id: audit_coverage
+  tracks:
+  - N
+  - C
+  unit: ratio
+  numerator_or_value: 具有完整可验证到达/轨迹/接触所需审计的任务数
+  denominator: 全部已执行任务数
+  zero_or_missing: 分母0为null；不完整不能形成最终安全结论
+- id: braking_time
+  tracks:
+  - C
+  unit: simulation_seconds
+  numerator_or_value: 从每次停车请求到线速<0.01m/s且角速<0.02rad/s的独立物理时间差
+  denominator: 每次非零到零停车请求，不合并成最终停车
+  zero_or_missing: 无请求为null；被新运动打断或未停稳记未完成/失败，不能只取最终停稳
+  gate_max: 0.3
+  hold_rule: 须在该停车片段剩余零速保持期间保持停稳，首个偶然低速点不够
+- id: braking_distance
+  tracks:
+  - C
+  unit: metres
+  numerator_or_value: 与braking_time相同停车片段沿120Hz轨迹积分的平移路程
+  denominator: 每次停车请求
+  zero_or_missing: 未完成停车记失败/不可估计；不能删掉；无请求为null
+  gate_max: 0.05
+- id: restart_after_terminal_rate
+  tracks:
+  - C
+  unit: ratio
+  numerator_or_value: 终止后3张实际好帧/消息恢复导致任何非零轮控或结果重写的任务数
+  denominator: 全部按协议完成终止后好帧检查的任务数
+  zero_or_missing: 未检查为null并报告应检查任务覆盖；N另做逻辑终止锁存检查
+- id: latency
+  tracks:
+  - P
+  - N
+  - C
+  unit: wall_milliseconds
+  numerator_or_value: 前向、预处理+前向、完整感知决策链路分别实测耗时
+  denominator: 对应阶段实测次数
+  zero_or_missing: 没有样本为null；超时/错误另计，不能从总体消失
+  aggregates:
+  - median
+  - P95
+  - count
+  warmup: 5
+  benchmark_repeats: 50
+  record:
+  - device
+  - threads
+  - batch_size
+  - model_loading_time_separate
+  - wall_or_simulation_clock
+- id: refusal_timeout_error_notrun_rates
+  tracks:
+  - N
+  - C
+  unit: ratio
+  numerator_or_value: 各状态任务数分别计数，不合并为成功
+  denominator: 全部预定义相应任务数
+  zero_or_missing: 分母0为null；error/not_run不等于安全拒绝
+- id: observation_cost
+  tracks:
+  - N
+  unit: packages_per_task
+  numerator_or_value: 每任务应处理采样槽位/实际RGB包/接受包各自计数
+  denominator: 每个任务
+  zero_or_missing: 未执行为null并单列，不填0冒充高效
+- id: ros_lease_expiry_lateness
+  tracks:
+  - C_ROS
+  unit: wall_seconds
+  numerator_or_value: 轮控实际检测到租约过期时间减命令最后合法接收时间减0.8秒
+  denominator: 实际租约故障事件
+  zero_or_missing: 未实际触发为null，不能由Topic数量推断
+  gate_max: 0.2
+  simulation_braking_separate: true

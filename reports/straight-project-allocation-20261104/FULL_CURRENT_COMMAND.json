@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "tools.run_project_tests",
+    "--scope",
+    "current",
+    "--output",
+    "reports/straight-project-allocation-full-current-20261104"
+  ],
+  "discovery_and_configuration_unchanged": true
+}

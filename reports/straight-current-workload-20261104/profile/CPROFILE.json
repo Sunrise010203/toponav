@@ -1,0 +1,4766 @@
+{
+  "functions": [
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_internal.py",
+      "line": 436,
+      "function": "_promote_fields",
+      "calls": 6564,
+      "primitive_calls": 6564,
+      "self_s": 0.02955609900000001,
+      "cumulative_s": 0.033465306
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_internal.py",
+      "line": 525,
+      "function": "_view_is_safe",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.008423735,
+      "cumulative_s": 0.008423735
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 39,
+      "function": "_amax",
+      "calls": 185460,
+      "primitive_calls": 185460,
+      "self_s": 0.061761050000000005,
+      "cumulative_s": 0.5778015590000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 47,
+      "function": "_sum",
+      "calls": 30624,
+      "primitive_calls": 30624,
+      "self_s": 0.010330652000000001,
+      "cumulative_s": 0.10904197399999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 55,
+      "function": "_any",
+      "calls": 43456,
+      "primitive_calls": 43456,
+      "self_s": 0.014986050000000002,
+      "cumulative_s": 0.08256472199999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 61,
+      "function": "_all",
+      "calls": 336427,
+      "primitive_calls": 336427,
+      "self_s": 0.09817749500000003,
+      "cumulative_s": 0.46786262
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 67,
+      "function": "_count_reduce_items",
+      "calls": 233156,
+      "primitive_calls": 233156,
+      "self_s": 0.3355924780000001,
+      "cumulative_s": 0.384236818
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 90,
+      "function": "_clip",
+      "calls": 71111,
+      "primitive_calls": 71111,
+      "self_s": 0.17725831299999992,
+      "cumulative_s": 0.17725831299999992
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 101,
+      "function": "_mean",
+      "calls": 224021,
+      "primitive_calls": 224021,
+      "self_s": 0.6208648170000003,
+      "cumulative_s": 1.5576050810000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 135,
+      "function": "_var",
+      "calls": 9135,
+      "primitive_calls": 9135,
+      "self_s": 0.153964329,
+      "cumulative_s": 0.286523021
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py",
+      "line": 204,
+      "function": "_std",
+      "calls": 9135,
+      "primitive_calls": 9135,
+      "self_s": 0.023430917000000016,
+      "cumulative_s": 0.312105979
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 33,
+      "function": "seterr",
+      "calls": 8874,
+      "primitive_calls": 8874,
+      "self_s": 0.013369655000000008,
+      "cumulative_s": 0.029476286999999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 132,
+      "function": "geterr",
+      "calls": 8874,
+      "primitive_calls": 8874,
+      "self_s": 0.009744912,
+      "cumulative_s": 0.010265446999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 426,
+      "function": "__init__",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.002230230000000001,
+      "cumulative_s": 0.002230230000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 430,
+      "function": "__enter__",
+      "calls": 4437,
+      "primitive_calls": 4437,
+      "self_s": 0.004835678,
+      "cumulative_s": 0.024521961999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 435,
+      "function": "__exit__",
+      "calls": 4437,
+      "primitive_calls": 4437,
+      "self_s": 0.0037373450000000004,
+      "cumulative_s": 0.013527347999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py",
+      "line": 452,
+      "function": "_no_nep50_warning",
+      "calls": 155106,
+      "primitive_calls": 155106,
+      "self_s": 0.04412208500000001,
+      "cumulative_s": 0.07465849499999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 40,
+      "function": "_wrapit",
+      "calls": 110,
+      "primitive_calls": 110,
+      "self_s": 0.00034742,
+      "cumulative_s": 0.0007153620000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 53,
+      "function": "_wrapfunc",
+      "calls": 81092,
+      "primitive_calls": 81092,
+      "self_s": 0.05843808700000001,
+      "cumulative_s": 0.35316991400000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 71,
+      "function": "_wrapreduction",
+      "calls": 482174,
+      "primitive_calls": 482174,
+      "self_s": 0.43299037099999993,
+      "cumulative_s": 1.0881511310000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 72,
+      "function": "<dictcomp>",
+      "calls": 482174,
+      "primitive_calls": 482174,
+      "self_s": 0.13058664000000003,
+      "cumulative_s": 0.13058664000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 195,
+      "function": "_reshape_dispatcher",
+      "calls": 9910,
+      "primitive_calls": 9910,
+      "self_s": 0.0010602530000000002,
+      "cumulative_s": 0.0010602530000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 200,
+      "function": "reshape",
+      "calls": 9910,
+      "primitive_calls": 9910,
+      "self_s": 0.005518447000000004,
+      "cumulative_s": 0.019449107
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 658,
+      "function": "_partition_dispatcher",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.0024982620000000007,
+      "cumulative_s": 0.0024982620000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 662,
+      "function": "partition",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.017384888,
+      "cumulative_s": 0.079872949
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1403,
+      "function": "_resize_dispatcher",
+      "calls": 9910,
+      "primitive_calls": 9910,
+      "self_s": 0.0012387980000000002,
+      "cumulative_s": 0.0012387980000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1407,
+      "function": "resize",
+      "calls": 9910,
+      "primitive_calls": 9910,
+      "self_s": 0.033726504,
+      "cumulative_s": 0.06973615000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1561,
+      "function": "_diagonal_dispatcher",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 1.0706e-05,
+      "cumulative_s": 1.0706e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1565,
+      "function": "diagonal",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 0.00031803700000000007,
+      "cumulative_s": 0.0004646100000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1764,
+      "function": "_ravel_dispatcher",
+      "calls": 9981,
+      "primitive_calls": 9981,
+      "self_s": 0.0011770620000000004,
+      "cumulative_s": 0.0011770620000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1768,
+      "function": "ravel",
+      "calls": 9981,
+      "primitive_calls": 9981,
+      "self_s": 0.006897683999999999,
+      "cumulative_s": 0.011146763000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1877,
+      "function": "_nonzero_dispatcher",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 7.947999999999997e-06,
+      "cumulative_s": 7.947999999999997e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 1881,
+      "function": "nonzero",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 5.001400000000001e-05,
+      "cumulative_s": 0.0003285929999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2096,
+      "function": "_clip_dispatcher",
+      "calls": 71111,
+      "primitive_calls": 71111,
+      "self_s": 0.009556968000000004,
+      "cumulative_s": 0.009556968000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2100,
+      "function": "clip",
+      "calls": 71111,
+      "primitive_calls": 71111,
+      "self_s": 0.058774283999999996,
+      "cumulative_s": 0.3977349589999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2172,
+      "function": "_sum_dispatcher",
+      "calls": 8459,
+      "primitive_calls": 8459,
+      "self_s": 0.0013027829999999998,
+      "cumulative_s": 0.0013027829999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2177,
+      "function": "sum",
+      "calls": 8459,
+      "primitive_calls": 8459,
+      "self_s": 0.008850482,
+      "cumulative_s": 0.032691539
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2317,
+      "function": "_any_dispatcher",
+      "calls": 378861,
+      "primitive_calls": 378861,
+      "self_s": 0.044427101000000004,
+      "cumulative_s": 0.044427101000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2322,
+      "function": "any",
+      "calls": 378861,
+      "primitive_calls": 378861,
+      "self_s": 0.21730598100000006,
+      "cumulative_s": 1.0314888770000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2416,
+      "function": "_all_dispatcher",
+      "calls": 88213,
+      "primitive_calls": 88213,
+      "self_s": 0.011148879,
+      "cumulative_s": 0.011148879
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2421,
+      "function": "all",
+      "calls": 88213,
+      "primitive_calls": 88213,
+      "self_s": 0.052559579,
+      "cumulative_s": 0.26782927099999987
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2974,
+      "function": "_prod_dispatcher",
+      "calls": 6641,
+      "primitive_calls": 6641,
+      "self_s": 0.0010356350000000002,
+      "cumulative_s": 0.0010356350000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 2979,
+      "function": "prod",
+      "calls": 6641,
+      "primitive_calls": 6641,
+      "self_s": 0.005799864,
+      "cumulative_s": 0.04198130000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 3172,
+      "function": "_ndim_dispatcher",
+      "calls": 27014,
+      "primitive_calls": 27014,
+      "self_s": 0.003499703,
+      "cumulative_s": 0.003499703
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 3176,
+      "function": "ndim",
+      "calls": 27014,
+      "primitive_calls": 27014,
+      "self_s": 0.017119026000000006,
+      "cumulative_s": 0.022025313000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 3380,
+      "function": "_mean_dispatcher",
+      "calls": 22325,
+      "primitive_calls": 22325,
+      "self_s": 0.0026509689999999995,
+      "cumulative_s": 0.0026509689999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py",
+      "line": 3385,
+      "function": "mean",
+      "calls": 22325,
+      "primitive_calls": 22325,
+      "self_s": 0.025281533,
+      "cumulative_s": 0.17076371
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/getlimits.py",
+      "line": 484,
+      "function": "__new__",
+      "calls": 37663,
+      "primitive_calls": 37663,
+      "self_s": 0.016581410000000005,
+      "cumulative_s": 0.022191956999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/getlimits.py",
+      "line": 685,
+      "function": "__init__",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.010178164000000002,
+      "cumulative_s": 0.010178164000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/getlimits.py",
+      "line": 709,
+      "function": "max",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.002936283000000001,
+      "cumulative_s": 0.002936283000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/multiarray.py",
+      "line": 85,
+      "function": "empty_like",
+      "calls": 20096,
+      "primitive_calls": 20096,
+      "self_s": 0.0019457660000000002,
+      "cumulative_s": 0.0019457660000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/multiarray.py",
+      "line": 153,
+      "function": "concatenate",
+      "calls": 222998,
+      "primitive_calls": 222998,
+      "self_s": 0.029589797999999994,
+      "cumulative_s": 0.029589797999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/multiarray.py",
+      "line": 669,
+      "function": "result_type",
+      "calls": 27014,
+      "primitive_calls": 27014,
+      "self_s": 0.002847900999999999,
+      "cumulative_s": 0.002847900999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/multiarray.py",
+      "line": 741,
+      "function": "dot",
+      "calls": 12417,
+      "primitive_calls": 12417,
+      "self_s": 0.0011427559999999998,
+      "cumulative_s": 0.0011427559999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/multiarray.py",
+      "line": 1080,
+      "function": "copyto",
+      "calls": 467539,
+      "primitive_calls": 467539,
+      "self_s": 0.047371192,
+      "cumulative_s": 0.047371192
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 63,
+      "function": "_zeros_like_dispatcher",
+      "calls": 10505,
+      "primitive_calls": 10505,
+      "self_s": 0.0012443440000000005,
+      "cumulative_s": 0.0012443440000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 67,
+      "function": "zeros_like",
+      "calls": 10505,
+      "primitive_calls": 10505,
+      "self_s": 0.020974038,
+      "cumulative_s": 0.027271117
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 136,
+      "function": "ones",
+      "calls": 219823,
+      "primitive_calls": 219823,
+      "self_s": 0.46518400700000023,
+      "cumulative_s": 0.5998650500000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 199,
+      "function": "_ones_like_dispatcher",
+      "calls": 9591,
+      "primitive_calls": 9591,
+      "self_s": 0.001341054,
+      "cumulative_s": 0.001341054
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 203,
+      "function": "ones_like",
+      "calls": 9591,
+      "primitive_calls": 9591,
+      "self_s": 0.024623476,
+      "cumulative_s": 0.026651929
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 274,
+      "function": "full",
+      "calls": 115084,
+      "primitive_calls": 115084,
+      "self_s": 0.12744661799999998,
+      "cumulative_s": 0.18949963800000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 411,
+      "function": "_count_nonzero_dispatcher",
+      "calls": 168597,
+      "primitive_calls": 168597,
+      "self_s": 0.022585952,
+      "cumulative_s": 0.022585952
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 415,
+      "function": "count_nonzero",
+      "calls": 168597,
+      "primitive_calls": 168597,
+      "self_s": 0.064589024,
+      "cumulative_s": 0.183070342
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 611,
+      "function": "_flatnonzero_dispatcher",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 1.9373999999999994e-05,
+      "cumulative_s": 1.9373999999999994e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 615,
+      "function": "flatnonzero",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 0.00023697599999999996,
+      "cumulative_s": 0.000809019
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 837,
+      "function": "_outer_dispatcher",
+      "calls": 17496,
+      "primitive_calls": 17496,
+      "self_s": 0.0027544480000000005,
+      "cumulative_s": 0.0027544480000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 841,
+      "function": "outer",
+      "calls": 17496,
+      "primitive_calls": 17496,
+      "self_s": 0.05563736600000001,
+      "cumulative_s": 0.06340293200000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1330,
+      "function": "normalize_axis_tuple",
+      "calls": 26256,
+      "primitive_calls": 26256,
+      "self_s": 0.030391183999999998,
+      "cumulative_s": 0.04726236900000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1380,
+      "function": "<listcomp>",
+      "calls": 26256,
+      "primitive_calls": 26256,
+      "self_s": 0.007512942,
+      "cumulative_s": 0.010762161000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1389,
+      "function": "_moveaxis_dispatcher",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.0015784610000000002,
+      "cumulative_s": 0.0015784610000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1393,
+      "function": "moveaxis",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.03679117700000001,
+      "cumulative_s": 0.10230424300000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1455,
+      "function": "<listcomp>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.0037153539999999997,
+      "cumulative_s": 0.0037153539999999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 1673,
+      "function": "indices",
+      "calls": 7265,
+      "primitive_calls": 7265,
+      "self_s": 0.07540246400000002,
+      "cumulative_s": 0.09682047800000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 2374,
+      "function": "_array_equal_dispatcher",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.00017387500000000007,
+      "cumulative_s": 0.00017387500000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py",
+      "line": 2378,
+      "function": "array_equal",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.0030339060000000007,
+      "cumulative_s": 0.005667776999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numerictypes.py",
+      "line": 283,
+      "function": "issubclass_",
+      "calls": 74676,
+      "primitive_calls": 74676,
+      "self_s": 0.029302906999999986,
+      "cumulative_s": 0.042855981000000015
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numerictypes.py",
+      "line": 357,
+      "function": "issubdtype",
+      "calls": 37338,
+      "primitive_calls": 37338,
+      "self_s": 0.03480259399999999,
+      "cumulative_s": 0.07989077800000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 19,
+      "function": "_atleast_1d_dispatcher",
+      "calls": 18839,
+      "primitive_calls": 18839,
+      "self_s": 0.0023199819999999995,
+      "cumulative_s": 0.0023199819999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 23,
+      "function": "atleast_1d",
+      "calls": 18839,
+      "primitive_calls": 18839,
+      "self_s": 0.019220010000000006,
+      "cumulative_s": 0.024975258000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 207,
+      "function": "_arrays_for_stack_dispatcher",
+      "calls": 185054,
+      "primitive_calls": 185054,
+      "self_s": 0.060063516000000004,
+      "cumulative_s": 0.10019950900000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 362,
+      "function": "_stack_dispatcher",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.00013404700000000004,
+      "cumulative_s": 0.00034776800000000014
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 372,
+      "function": "stack",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.004210979000000002,
+      "cumulative_s": 0.004865850999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 443,
+      "function": "<listcomp>",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.00012015200000000002,
+      "cumulative_s": 0.00015821600000000009
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 447,
+      "function": "<setcomp>",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.00017564099999999998,
+      "cumulative_s": 0.00017564099999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py",
+      "line": 455,
+      "function": "<listcomp>",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.000235088,
+      "cumulative_s": 0.000235088
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 125,
+      "function": "_unpack_tuple",
+      "calls": 7502,
+      "primitive_calls": 7502,
+      "self_s": 0.002819646000000001,
+      "cumulative_s": 0.003269098000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 133,
+      "function": "_unique_dispatcher",
+      "calls": 7502,
+      "primitive_calls": 7502,
+      "self_s": 0.0011539950000000003,
+      "cumulative_s": 0.0011539950000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 138,
+      "function": "unique",
+      "calls": 7502,
+      "primitive_calls": 7502,
+      "self_s": 0.04398485600000001,
+      "cumulative_s": 0.4170467460000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 289,
+      "function": "<listcomp>",
+      "calls": 6564,
+      "primitive_calls": 6564,
+      "self_s": 0.005630524999999998,
+      "cumulative_s": 0.011935686999999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 310,
+      "function": "reshape_uniq",
+      "calls": 6564,
+      "primitive_calls": 6564,
+      "self_s": 0.012832230999999996,
+      "cumulative_s": 0.06805569799999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py",
+      "line": 323,
+      "function": "_unique1d",
+      "calls": 7502,
+      "primitive_calls": 7502,
+      "self_s": 0.062460634,
+      "cumulative_s": 0.16561646200000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 110,
+      "function": "<lambda>",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.0014146819999999996,
+      "cumulative_s": 0.0014146819999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 111,
+      "function": "<lambda>",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.000281827,
+      "cumulative_s": 0.000281827
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 564,
+      "function": "asarray_chkfinite",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.008681866,
+      "cumulative_s": 0.021578310000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 3763,
+      "function": "_ureduce",
+      "calls": 22113,
+      "primitive_calls": 22113,
+      "self_s": 0.036881364000000014,
+      "cumulative_s": 0.6154570350000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 3840,
+      "function": "_median_dispatcher",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.002964974000000001,
+      "cumulative_s": 0.002964974000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 3845,
+      "function": "median",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.017373918999999995,
+      "cumulative_s": 0.5735702890000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 3931,
+      "function": "_median",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.104182448,
+      "cumulative_s": 0.5155198459999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4287,
+      "function": "_quantile_dispatcher",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.00010610600000000002,
+      "cumulative_s": 0.00010610600000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4292,
+      "function": "quantile",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.0014985019999999999,
+      "cumulative_s": 0.075505597
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4547,
+      "function": "_quantile_unchecked",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.000943646,
+      "cumulative_s": 0.06020431100000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4565,
+      "function": "_quantile_is_valid",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.004947318000000002,
+      "cumulative_s": 0.013492892000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4619,
+      "function": "_get_gamma",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.0015463760000000006,
+      "cumulative_s": 0.0021263810000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4641,
+      "function": "_lerp",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.007572833,
+      "cumulative_s": 0.0076969249999999986
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4697,
+      "function": "_quantile_ureduce_func",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.001475382,
+      "cumulative_s": 0.05741913999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4730,
+      "function": "_get_indexes",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.005918838,
+      "cumulative_s": 0.012413927999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py",
+      "line": 4765,
+      "function": "_quantile",
+      "calls": 938,
+      "primitive_calls": 938,
+      "self_s": 0.011314724000000005,
+      "cumulative_s": 0.05555728499999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/index_tricks.py",
+      "line": 326,
+      "function": "__getitem__",
+      "calls": 27014,
+      "primitive_calls": 27014,
+      "self_s": 0.21564022699999993,
+      "cumulative_s": 0.309412052
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/index_tricks.py",
+      "line": 415,
+      "function": "<listcomp>",
+      "calls": 27014,
+      "primitive_calls": 27014,
+      "self_s": 0.016394978000000004,
+      "cumulative_s": 0.03209094500000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/shape_base.py",
+      "line": 608,
+      "function": "_column_stack_dispatcher",
+      "calls": 184912,
+      "primitive_calls": 184912,
+      "self_s": 0.05894900800000002,
+      "cumulative_s": 0.15893479599999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/shape_base.py",
+      "line": 612,
+      "function": "column_stack",
+      "calls": 184912,
+      "primitive_calls": 184912,
+      "self_s": 0.6143383170000003,
+      "cumulative_s": 0.7696712269999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/twodim_base.py",
+      "line": 158,
+      "function": "eye",
+      "calls": 12875,
+      "primitive_calls": 12875,
+      "self_s": 0.035224028000000004,
+      "cumulative_s": 0.04450757299999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/twodim_base.py",
+      "line": 230,
+      "function": "_diag_dispatcher",
+      "calls": 20624,
+      "primitive_calls": 20624,
+      "self_s": 0.002352209,
+      "cumulative_s": 0.002352209
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/twodim_base.py",
+      "line": 234,
+      "function": "diag",
+      "calls": 20624,
+      "primitive_calls": 20624,
+      "self_s": 0.05070391500000001,
+      "cumulative_s": 0.07581133300000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py",
+      "line": 205,
+      "function": "_is_type_dispatcher",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.00013822600000000006,
+      "cumulative_s": 0.00013822600000000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py",
+      "line": 302,
+      "function": "iscomplexobj",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.0015499509999999997,
+      "cumulative_s": 0.0018711300000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py",
+      "line": 393,
+      "function": "_getmaxmin",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.049610022000000004,
+      "cumulative_s": 0.10190649000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py",
+      "line": 399,
+      "function": "_nan_to_num_dispatcher",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.0048656839999999995,
+      "cumulative_s": 0.0048656839999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py",
+      "line": 403,
+      "function": "nan_to_num",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.207999557,
+      "cumulative_s": 0.44263462499999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/ufunclike.py",
+      "line": 14,
+      "function": "_dispatcher",
+      "calls": 75024,
+      "primitive_calls": 75024,
+      "self_s": 0.007028872000000002,
+      "cumulative_s": 0.007028872000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/ufunclike.py",
+      "line": 71,
+      "function": "isposinf",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.059262625000000006,
+      "cumulative_s": 0.059262625000000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/ufunclike.py",
+      "line": 142,
+      "function": "isneginf",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.03244463200000001,
+      "cumulative_s": 0.03244463200000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/utils.py",
+      "line": 1081,
+      "function": "_median_nancheck",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.045616821,
+      "cumulative_s": 0.119342236
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 130,
+      "function": "get_linalg_error_extobj",
+      "calls": 58465,
+      "primitive_calls": 58465,
+      "self_s": 0.023886321999999998,
+      "cumulative_s": 0.023886321999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 135,
+      "function": "_makearray",
+      "calls": 58465,
+      "primitive_calls": 58465,
+      "self_s": 0.036261188999999985,
+      "cumulative_s": 0.050757761
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 140,
+      "function": "isComplexType",
+      "calls": 336570,
+      "primitive_calls": 336570,
+      "self_s": 0.06400272300000001,
+      "cumulative_s": 0.08442641099999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 153,
+      "function": "_realType",
+      "calls": 101246,
+      "primitive_calls": 101246,
+      "self_s": 0.028780182000000005,
+      "cumulative_s": 0.040139407
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 159,
+      "function": "_commonType",
+      "calls": 75308,
+      "primitive_calls": 75308,
+      "self_s": 0.07338918000000005,
+      "cumulative_s": 0.13180966500000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 203,
+      "function": "_assert_stacked_2d",
+      "calls": 75308,
+      "primitive_calls": 75308,
+      "self_s": 0.02437148700000001,
+      "cumulative_s": 0.02437148700000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 209,
+      "function": "_assert_stacked_square",
+      "calls": 49651,
+      "primitive_calls": 49651,
+      "self_s": 0.023485315000000003,
+      "cumulative_s": 0.023485315000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 220,
+      "function": "_is_empty_2d",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.0019844189999999994,
+      "cumulative_s": 0.0019844189999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 488,
+      "function": "_unary_dispatcher",
+      "calls": 49370,
+      "primitive_calls": 49370,
+      "self_s": 0.006131044,
+      "cumulative_s": 0.006131044
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 492,
+      "function": "inv",
+      "calls": 32527,
+      "primitive_calls": 32527,
+      "self_s": 1.2868279470000008,
+      "cumulative_s": 1.4628485010000012
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1086,
+      "function": "_eigvalsh_dispatcher",
+      "calls": 281,
+      "primitive_calls": 281,
+      "self_s": 4.3892999999999995e-05,
+      "cumulative_s": 4.3892999999999995e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1090,
+      "function": "eigvalsh",
+      "calls": 220,
+      "primitive_calls": 220,
+      "self_s": 0.0025865280000000007,
+      "cumulative_s": 0.0038455390000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1348,
+      "function": "eigh",
+      "calls": 61,
+      "primitive_calls": 61,
+      "self_s": 0.0020487019999999995,
+      "cumulative_s": 0.002629297
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1495,
+      "function": "_svd_dispatcher",
+      "calls": 25657,
+      "primitive_calls": 25657,
+      "self_s": 0.0029204969999999993,
+      "cumulative_s": 0.0029204969999999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1499,
+      "function": "svd",
+      "calls": 25657,
+      "primitive_calls": 25657,
+      "self_s": 0.23845152800000002,
+      "cumulative_s": 0.35471924600000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1698,
+      "function": "_cond_dispatcher",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.0006093760000000002,
+      "cumulative_s": 0.0006093760000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1702,
+      "function": "cond",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.034213661000000006,
+      "cumulative_s": 0.16497401299999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1821,
+      "function": "_matrix_rank_dispatcher",
+      "calls": 151,
+      "primitive_calls": 151,
+      "self_s": 2.7029999999999994e-05,
+      "cumulative_s": 2.7029999999999994e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 1825,
+      "function": "matrix_rank",
+      "calls": 151,
+      "primitive_calls": 151,
+      "self_s": 0.0019130140000000006,
+      "cumulative_s": 0.011254225
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 2126,
+      "function": "det",
+      "calls": 16843,
+      "primitive_calls": 16843,
+      "self_s": 0.050017446,
+      "cumulative_s": 0.09874738800000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 2379,
+      "function": "_norm_dispatcher",
+      "calls": 216671,
+      "primitive_calls": 216671,
+      "self_s": 0.026380108,
+      "cumulative_s": 0.026380108
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py",
+      "line": 2383,
+      "function": "norm",
+      "calls": 216671,
+      "primitive_calls": 216671,
+      "self_s": 0.4481852679999999,
+      "cumulative_s": 0.773554627
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/ma/core.py",
+      "line": 6485,
+      "function": "isMaskedArray",
+      "calls": 25131,
+      "primitive_calls": 25131,
+      "self_s": 0.007221383000000004,
+      "cumulative_s": 0.010410253000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/_array_api.py",
+      "line": 114,
+      "function": "array_namespace",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.0018409140000000004,
+      "cumulative_s": 0.0018409140000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/_util.py",
+      "line": 491,
+      "function": "_asarray_validated",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.016276239999999994,
+      "cumulative_s": 0.04113332200000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/_util.py",
+      "line": 1089,
+      "function": "__getattr__",
+      "calls": 4118,
+      "primitive_calls": 4118,
+      "self_s": 0.0011688779999999995,
+      "cumulative_s": 0.0011688779999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/array_api_compat/_internal.py",
+      "line": 26,
+      "function": "wrapped_f",
+      "calls": 13198,
+      "primitive_calls": 13198,
+      "self_s": 0.010793934000000003,
+      "cumulative_s": 0.059421973000000024
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/array_api_compat/common/_aliases.py",
+      "line": 236,
+      "function": "astype",
+      "calls": 13198,
+      "primitive_calls": 13198,
+      "self_s": 0.005430293,
+      "cumulative_s": 0.013915168000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/array_api_compat/common/_aliases.py",
+      "line": 487,
+      "function": "isdtype",
+      "calls": 13198,
+      "primitive_calls": 13198,
+      "self_s": 0.014223515999999999,
+      "cumulative_s": 0.04862803900000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/array_api_compat/numpy/_aliases.py",
+      "line": 78,
+      "function": "asarray",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.008209824000000001,
+      "cumulative_s": 0.021539738000000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/_lib/array_api_extra/_funcs.py",
+      "line": 12,
+      "function": "atleast_nd",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.001468353,
+      "cumulative_s": 0.001468353
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/linalg/_decomp_svd.py",
+      "line": 13,
+      "function": "svd",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.07058452600000001,
+      "cumulative_s": 0.17100618300000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/linalg/_misc.py",
+      "line": 181,
+      "function": "_datacopied",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.001109992,
+      "cumulative_s": 0.001109992
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/linalg/blas.py",
+      "line": 384,
+      "function": "getter",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.007359323000000002,
+      "cumulative_s": 0.010381024000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/linalg/lapack.py",
+      "line": 1004,
+      "function": "_compute_lwork",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.021718878999999993,
+      "cumulative_s": 0.031720214999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/linalg/lapack.py",
+      "line": 1039,
+      "function": "_check_work_float",
+      "calls": 3956,
+      "primitive_calls": 3956,
+      "self_s": 0.006249853,
+      "cumulative_s": 0.006249853
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 57,
+      "function": "solve_lsq_trust_region",
+      "calls": 4221,
+      "primitive_calls": 4221,
+      "self_s": 0.025398175,
+      "cumulative_s": 0.07275624300000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 106,
+      "function": "phi_and_derivative",
+      "calls": 2179,
+      "primitive_calls": 2179,
+      "self_s": 0.010089859000000001,
+      "cumulative_s": 0.023255245999999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 222,
+      "function": "update_tr_radius",
+      "calls": 4221,
+      "primitive_calls": 4221,
+      "self_s": 0.002884994,
+      "cumulative_s": 0.002884994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 325,
+      "function": "evaluate_quadratic",
+      "calls": 4221,
+      "primitive_calls": 4221,
+      "self_s": 0.015993575,
+      "cumulative_s": 0.02051920199999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 367,
+      "function": "in_bounds",
+      "calls": 4685,
+      "primitive_calls": 4685,
+      "self_s": 0.011225386000000002,
+      "cumulative_s": 0.030505104999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 401,
+      "function": "find_active_constraints",
+      "calls": 5313,
+      "primitive_calls": 5313,
+      "self_s": 0.024800900000000004,
+      "cumulative_s": 0.040612393999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 440,
+      "function": "make_strictly_feasible",
+      "calls": 4685,
+      "primitive_calls": 4685,
+      "self_s": 0.035672213,
+      "cumulative_s": 0.070736917
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 467,
+      "function": "CL_scaling_vector",
+      "calls": 4968,
+      "primitive_calls": 4968,
+      "self_s": 0.04548289900000002,
+      "cumulative_s": 0.07055373999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 590,
+      "function": "compute_grad",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.004436141,
+      "cumulative_s": 0.010654360000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 687,
+      "function": "left_multiply",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.012504011000000006,
+      "cumulative_s": 0.015431453999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 705,
+      "function": "check_termination",
+      "calls": 4221,
+      "primitive_calls": 4221,
+      "self_s": 0.0034149059999999997,
+      "cumulative_s": 0.0034149059999999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/common.py",
+      "line": 720,
+      "function": "scale_for_robust_loss_function",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.03183784799999999,
+      "cumulative_s": 0.047269302
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 95,
+      "function": "prepare_bounds",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.002329362,
+      "cumulative_s": 0.013009023000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 96,
+      "function": "<genexpr>",
+      "calls": 2130,
+      "primitive_calls": 2130,
+      "self_s": 0.0007656970000000001,
+      "cumulative_s": 0.0011755229999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 106,
+      "function": "check_tolerance",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.0009684700000000002,
+      "cumulative_s": 0.001539527
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 107,
+      "function": "check",
+      "calls": 2130,
+      "primitive_calls": 2130,
+      "self_s": 0.0005710570000000001,
+      "cumulative_s": 0.0005710570000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 130,
+      "function": "check_x_scale",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.005353819000000001,
+      "cumulative_s": 0.017976303000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 153,
+      "function": "check_jac_sparsity",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.00014584100000000002,
+      "cumulative_s": 0.00014584100000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 181,
+      "function": "soft_l1",
+      "calls": 9554,
+      "primitive_calls": 9554,
+      "self_s": 0.07449470899999998,
+      "cumulative_s": 0.07449470899999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 212,
+      "function": "construct_loss_function",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.001155059,
+      "cumulative_s": 0.0016550690000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 220,
+      "function": "loss_function",
+      "calls": 9554,
+      "primitive_calls": 9554,
+      "self_s": 0.047035182999999973,
+      "cumulative_s": 0.14189125899999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 241,
+      "function": "least_squares",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.018649524999999997,
+      "cumulative_s": 3.6349797000000015
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 835,
+      "function": "fun_wrapped",
+      "calls": 4931,
+      "primitive_calls": 4931,
+      "self_s": 0.009480534999999998,
+      "cumulative_s": 0.5346238630000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/least_squares.py",
+      "line": 903,
+      "function": "jac_wrapped",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.009500334,
+      "cumulative_s": 2.114149333
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/trf.py",
+      "line": 112,
+      "function": "trf",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.0034900900000000004,
+      "cumulative_s": 3.1863198100000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/trf.py",
+      "line": 128,
+      "function": "select_step",
+      "calls": 3975,
+      "primitive_calls": 3975,
+      "self_s": 0.006325784000000001,
+      "cumulative_s": 0.05227986800000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/trf.py",
+      "line": 205,
+      "function": "trf_bounds",
+      "calls": 628,
+      "primitive_calls": 628,
+      "self_s": 0.125408221,
+      "cumulative_s": 3.0335271680000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/trf.py",
+      "line": 401,
+      "function": "trf_no_bounds",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.005516004000000002,
+      "cumulative_s": 0.14661892599999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 13,
+      "function": "_adjust_scheme_to_bounds",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.07592321000000002,
+      "cumulative_s": 0.107242054
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 146,
+      "function": "_compute_absolute_step",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.037774721000000004,
+      "cumulative_s": 0.04109689999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 195,
+      "function": "_prepare_bounds",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.012636822999999998,
+      "cumulative_s": 0.07695062400000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 206,
+      "function": "<genexpr>",
+      "calls": 13869,
+      "primitive_calls": 13869,
+      "self_s": 0.004251407,
+      "cumulative_s": 0.007755555
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 277,
+      "function": "approx_derivative",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.05417670199999998,
+      "cumulative_s": 2.1046489990000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 468,
+      "function": "fun_wrapped",
+      "calls": 8575,
+      "primitive_calls": 8575,
+      "self_s": 0.027966803000000005,
+      "cumulative_s": 1.6883330829999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py",
+      "line": 584,
+      "function": "_dense_difference",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.051506723,
+      "cumulative_s": 1.7478727710000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/sparse/_base.py",
+      "line": 1388,
+      "function": "issparse",
+      "calls": 8579,
+      "primitive_calls": 8579,
+      "self_s": 0.0028532209999999995,
+      "cumulative_s": 0.004343074
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 43,
+      "function": "ground_points",
+      "calls": 11453,
+      "primitive_calls": 11453,
+      "self_s": 0.146288384,
+      "cumulative_s": 0.30981313600000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 53,
+      "function": "ground_pixels",
+      "calls": 57468,
+      "primitive_calls": 57468,
+      "self_s": 0.661837664,
+      "cumulative_s": 1.2451863860000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 62,
+      "function": "_rotation",
+      "calls": 38884,
+      "primitive_calls": 38884,
+      "self_s": 0.04054474899999999,
+      "cumulative_s": 0.08485330299999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 66,
+      "function": "fit_se2",
+      "calls": 15708,
+      "primitive_calls": 15708,
+      "self_s": 0.2533632360000001,
+      "cumulative_s": 1.4468379789999992
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 78,
+      "function": "pixel_predictions",
+      "calls": 11065,
+      "primitive_calls": 11065,
+      "self_s": 0.041217988000000004,
+      "cumulative_s": 0.5971701340000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 83,
+      "function": "select_descriptor",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0043040890000000005,
+      "cumulative_s": 0.219290813
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 87,
+      "function": "<setcomp>",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.012455580999999999,
+      "cumulative_s": 0.012455580999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 88,
+      "function": "<listcomp>",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.0012373030000000004,
+      "cumulative_s": 0.0012373030000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 90,
+      "function": "<genexpr>",
+      "calls": 2742,
+      "primitive_calls": 2742,
+      "self_s": 0.003221286000000001,
+      "cumulative_s": 0.17574583400000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 90,
+      "function": "<listcomp>",
+      "calls": 1828,
+      "primitive_calls": 1828,
+      "self_s": 0.003389157999999999,
+      "cumulative_s": 0.003389157999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 94,
+      "function": "<lambda>",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.0002517909999999999,
+      "cumulative_s": 0.0002517909999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 99,
+      "function": "_base",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 8.351600000000005e-05,
+      "cumulative_s": 8.351600000000005e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 106,
+      "function": "estimate_ground_motion",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.06913676700000002,
+      "cumulative_s": 3.8753065520000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 114,
+      "function": "<listcomp>",
+      "calls": 197,
+      "primitive_calls": 197,
+      "self_s": 0.000333065,
+      "cumulative_s": 0.0031502399999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 116,
+      "function": "<genexpr>",
+      "calls": 591,
+      "primitive_calls": 591,
+      "self_s": 0.000388565,
+      "cumulative_s": 0.03228809
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 117,
+      "function": "<genexpr>",
+      "calls": 591,
+      "primitive_calls": 591,
+      "self_s": 0.00023010300000000006,
+      "cumulative_s": 0.012639056000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 124,
+      "function": "<setcomp>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 6.641599999999998e-05,
+      "cumulative_s": 6.641599999999998e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 128,
+      "function": "<genexpr>",
+      "calls": 5080,
+      "primitive_calls": 5080,
+      "self_s": 0.000779526,
+      "cumulative_s": 0.000779526
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 129,
+      "function": "<genexpr>",
+      "calls": 5274,
+      "primitive_calls": 5274,
+      "self_s": 0.00032563499999999995,
+      "cumulative_s": 0.00032563499999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 132,
+      "function": "predict",
+      "calls": 17193,
+      "primitive_calls": 17193,
+      "self_s": 0.3322756730000001,
+      "cumulative_s": 1.1964182110000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 138,
+      "function": "errors",
+      "calls": 15902,
+      "primitive_calls": 15902,
+      "self_s": 0.086393411,
+      "cumulative_s": 1.521085246
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 145,
+      "function": "<listcomp>",
+      "calls": 77,
+      "primitive_calls": 77,
+      "self_s": 0.001135202,
+      "cumulative_s": 0.001135202
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 147,
+      "function": "<genexpr>",
+      "calls": 15708,
+      "primitive_calls": 15708,
+      "self_s": 0.07129206000000002,
+      "cumulative_s": 1.5037489689999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 160,
+      "function": "<setcomp>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.00043973500000000007,
+      "cumulative_s": 0.00043973500000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 168,
+      "function": "<genexpr>",
+      "calls": 276,
+      "primitive_calls": 276,
+      "self_s": 5.439600000000002e-05,
+      "cumulative_s": 5.439600000000002e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 169,
+      "function": "residual",
+      "calls": 1291,
+      "primitive_calls": 1291,
+      "self_s": 0.004065020000000002,
+      "cumulative_s": 0.10884086099999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 173,
+      "function": "<listcomp>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.0005348220000000001,
+      "cumulative_s": 0.0005348220000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 174,
+      "function": "<listcomp>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.0003379829999999999,
+      "cumulative_s": 0.0003379829999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 196,
+      "function": "<genexpr>",
+      "calls": 274,
+      "primitive_calls": 274,
+      "self_s": 4.680400000000001e-05,
+      "cumulative_s": 4.680400000000001e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 200,
+      "function": "<setcomp>",
+      "calls": 81,
+      "primitive_calls": 81,
+      "self_s": 4.721699999999999e-05,
+      "cumulative_s": 4.721699999999999e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 204,
+      "function": "_camera_motion",
+      "calls": 10488,
+      "primitive_calls": 10488,
+      "self_s": 0.08243392000000004,
+      "cumulative_s": 0.28846184500000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 280,
+      "function": "corridor_from_planes",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.0020812789999999992,
+      "cumulative_s": 0.004251861
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py",
+      "line": 283,
+      "function": "<genexpr>",
+      "calls": 213,
+      "primitive_calls": 213,
+      "self_s": 0.00010246900000000001,
+      "cumulative_s": 0.00015901299999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 65,
+      "function": "_finite_vector",
+      "calls": 10,
+      "primitive_calls": 10,
+      "self_s": 4.9047e-05,
+      "cumulative_s": 0.000175686
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 70,
+      "function": "<genexpr>",
+      "calls": 30,
+      "primitive_calls": 30,
+      "self_s": 6.018600000000001e-05,
+      "cumulative_s": 6.495800000000001e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 74,
+      "function": "_valid_ground_motion",
+      "calls": 10,
+      "primitive_calls": 10,
+      "self_s": 2.9768000000000004e-05,
+      "cumulative_s": 0.00020963900000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 95,
+      "function": "_output",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00043791,
+      "cumulative_s": 0.000488794
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 106,
+      "function": "_abort",
+      "calls": 1,
+      "primitive_calls": 1,
+      "self_s": 1.187e-06,
+      "cumulative_s": 1.6187e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 108,
+      "function": "_clock",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00044756700000000006,
+      "cumulative_s": 0.00047543999999999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 125,
+      "function": "_stopping_reserve",
+      "calls": 150,
+      "primitive_calls": 150,
+      "self_s": 0.00026907800000000007,
+      "cumulative_s": 0.00026907800000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 130,
+      "function": "_wait",
+      "calls": 16,
+      "primitive_calls": 16,
+      "self_s": 5.6811000000000016e-05,
+      "cumulative_s": 0.000313317
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 138,
+      "function": "_confirm_stationary",
+      "calls": 16,
+      "primitive_calls": 16,
+      "self_s": 0.00019436000000000003,
+      "cumulative_s": 1.5222085439999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 153,
+      "function": "_current_evidence",
+      "calls": 139,
+      "primitive_calls": 139,
+      "self_s": 0.000176393,
+      "cumulative_s": 0.00024433199999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 157,
+      "function": "_local_stationary_motion",
+      "calls": 10,
+      "primitive_calls": 10,
+      "self_s": 0.0015488880000000004,
+      "cumulative_s": 1.69312731
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 163,
+      "function": "update",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00019681899999999996,
+      "cumulative_s": 48.61746756499999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 169,
+      "function": "_update",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.016180754999999995,
+      "cumulative_s": 48.617270745999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 185,
+      "function": "<genexpr>",
+      "calls": 320,
+      "primitive_calls": 320,
+      "self_s": 0.000913494,
+      "cumulative_s": 0.029978859000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 223,
+      "function": "<listcomp>",
+      "calls": 1,
+      "primitive_calls": 1,
+      "self_s": 6.15e-06,
+      "cumulative_s": 0.19978999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 224,
+      "function": "<genexpr>",
+      "calls": 4,
+      "primitive_calls": 4,
+      "self_s": 7.170000000000001e-07,
+      "cumulative_s": 7.170000000000001e-07
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 224,
+      "function": "<listcomp>",
+      "calls": 1,
+      "primitive_calls": 1,
+      "self_s": 1.2682000000000002e-05,
+      "cumulative_s": 0.000203489
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 244,
+      "function": "<genexpr>",
+      "calls": 207,
+      "primitive_calls": 207,
+      "self_s": 0.00016462099999999997,
+      "cumulative_s": 0.00020271600000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 291,
+      "function": "_following_guard",
+      "calls": 67,
+      "primitive_calls": 67,
+      "self_s": 4.0500999999999984e-05,
+      "cumulative_s": 4.0500999999999984e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 295,
+      "function": "_navigation_history",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.000129835,
+      "cumulative_s": 0.000129835
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/continuous_straight.py",
+      "line": 299,
+      "function": "_following_command",
+      "calls": 55,
+      "primitive_calls": 55,
+      "self_s": 0.000421177,
+      "cumulative_s": 0.001619461
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 31,
+      "function": "_project",
+      "calls": 113579,
+      "primitive_calls": 113579,
+      "self_s": 1.293690704,
+      "cumulative_s": 2.9397470570000013
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 39,
+      "function": "plane_hypotheses",
+      "calls": 1135,
+      "primitive_calls": 1135,
+      "self_s": 0.021809356999999994,
+      "cumulative_s": 0.093594322
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 57,
+      "function": "<genexpr>",
+      "calls": 17404,
+      "primitive_calls": 17404,
+      "self_s": 0.008128787,
+      "cumulative_s": 0.022003023000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 95,
+      "function": "_lk",
+      "calls": 2896,
+      "primitive_calls": 2896,
+      "self_s": 0.04285284599999998,
+      "cumulative_s": 0.7855160950000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 113,
+      "function": "_grid_count",
+      "calls": 6564,
+      "primitive_calls": 6564,
+      "self_s": 0.03205371000000001,
+      "cumulative_s": 0.47798637200000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 118,
+      "function": "_spread_ratio",
+      "calls": 4308,
+      "primitive_calls": 4308,
+      "self_s": 0.02039598400000001,
+      "cumulative_s": 0.155548455
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 123,
+      "function": "_homography",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.024654749000000004,
+      "cumulative_s": 0.7343141110000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py",
+      "line": 132,
+      "function": "_rotation_residual",
+      "calls": 1135,
+      "primitive_calls": 1135,
+      "self_s": 0.036017399000000005,
+      "cumulative_s": 0.19615676499999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 24,
+      "function": "reference_cell_candidates",
+      "calls": 74,
+      "primitive_calls": 74,
+      "self_s": 0.023514103000000005,
+      "cumulative_s": 2.2673918449999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 31,
+      "function": "search",
+      "calls": 5994,
+      "primitive_calls": 5994,
+      "self_s": 0.008871498,
+      "cumulative_s": 1.3805457180000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 50,
+      "function": "select_reference_cells",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 0.0024756390000000004,
+      "cumulative_s": 2.1653213709999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 58,
+      "function": "<lambda>",
+      "calls": 5751,
+      "primitive_calls": 5751,
+      "self_s": 0.0019714010000000002,
+      "cumulative_s": 0.0019714010000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 64,
+      "function": "assess_free_ground",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.010131634999999998,
+      "cumulative_s": 3.0360483319999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 79,
+      "function": "<listcomp>",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 0.000492111,
+      "cumulative_s": 0.0032882310000000013
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 85,
+      "function": "<listcomp>",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 6.051000000000001e-05,
+      "cumulative_s": 6.051000000000001e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/free_ground_path.py",
+      "line": 108,
+      "function": "<genexpr>",
+      "calls": 696,
+      "primitive_calls": 696,
+      "self_s": 0.00020012000000000008,
+      "cumulative_s": 0.00020012000000000008
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 16,
+      "function": "estimate_perpendicular_front",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.011216468,
+      "cumulative_s": 1.5367045360000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 20,
+      "function": "<genexpr>",
+      "calls": 211,
+      "primitive_calls": 211,
+      "self_s": 0.00010106200000000002,
+      "cumulative_s": 0.00011987
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 22,
+      "function": "<genexpr>",
+      "calls": 168,
+      "primitive_calls": 168,
+      "self_s": 5.1810999999999975e-05,
+      "cumulative_s": 5.1810999999999975e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 26,
+      "function": "<listcomp>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 0.00015446400000000004,
+      "cumulative_s": 0.0024001490000000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 29,
+      "function": "fit",
+      "calls": 557,
+      "primitive_calls": 557,
+      "self_s": 0.0036507550000000008,
+      "cumulative_s": 1.4809161400000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 31,
+      "function": "predict",
+      "calls": 7565,
+      "primitive_calls": 7565,
+      "self_s": 0.09363974300000004,
+      "cumulative_s": 0.32825787200000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 32,
+      "function": "residual",
+      "calls": 7427,
+      "primitive_calls": 7427,
+      "self_s": 0.03237352699999999,
+      "cumulative_s": 0.35618363200000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 47,
+      "function": "<genexpr>",
+      "calls": 205,
+      "primitive_calls": 205,
+      "self_s": 6.5727e-05,
+      "cumulative_s": 6.5727e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/front_support.py",
+      "line": 60,
+      "function": "<genexpr>",
+      "calls": 183,
+      "primitive_calls": 183,
+      "self_s": 0.00015175700000000006,
+      "cumulative_s": 0.00015175700000000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 16,
+      "function": "gradient_canvas",
+      "calls": 142,
+      "primitive_calls": 142,
+      "self_s": 0.0012941069999999999,
+      "cumulative_s": 0.012922874000000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 25,
+      "function": "gradient_ncc",
+      "calls": 639,
+      "primitive_calls": 639,
+      "self_s": 0.008019405000000002,
+      "cumulative_s": 0.040500171000000015
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 34,
+      "function": "gradient_appearance",
+      "calls": 639,
+      "primitive_calls": 639,
+      "self_s": 0.006925341000000001,
+      "cumulative_s": 1.4684336950000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 45,
+      "function": "<genexpr>",
+      "calls": 3834,
+      "primitive_calls": 3834,
+      "self_s": 0.002292355000000001,
+      "cumulative_s": 0.002292355000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 57,
+      "function": "assess_gradient_free_ground",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.0062656510000000006,
+      "cumulative_s": 4.540954266000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 65,
+      "function": "<dictcomp>",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 8.660599999999998e-05,
+      "cumulative_s": 8.660599999999998e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 68,
+      "function": "<listcomp>",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 0.000402722,
+      "cumulative_s": 0.002134611
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_ground_path.py",
+      "line": 88,
+      "function": "<genexpr>",
+      "calls": 696,
+      "primitive_calls": 696,
+      "self_s": 0.00018847900000000005,
+      "cumulative_s": 0.00018847900000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_straight.py",
+      "line": 13,
+      "function": "experiment_contract",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 9.726499999999997e-05,
+      "cumulative_s": 0.000126075
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_straight.py",
+      "line": 20,
+      "function": "_assess_navigation_free_ground",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.00033361700000000003,
+      "cumulative_s": 4.541287882999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/gradient_straight.py",
+      "line": 24,
+      "function": "_output",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00020333299999999996,
+      "cumulative_s": 0.001176743
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_band.py",
+      "line": 16,
+      "function": "track_ground_band",
+      "calls": 246,
+      "primitive_calls": 246,
+      "self_s": 0.000977449,
+      "cumulative_s": 0.591618003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_band.py",
+      "line": 20,
+      "function": "track_fixed_roi",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.031655665,
+      "cumulative_s": 1.679695828
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_band.py",
+      "line": 23,
+      "function": "<genexpr>",
+      "calls": 1836,
+      "primitive_calls": 1836,
+      "self_s": 0.0009292979999999997,
+      "cumulative_s": 0.0009292979999999997
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_band.py",
+      "line": 24,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0021362749999999995,
+      "cumulative_s": 0.019607852
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_band.py",
+      "line": 50,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.11877352300000003,
+      "cumulative_s": 0.148831758
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 29,
+      "function": "validate_history",
+      "calls": 658,
+      "primitive_calls": 658,
+      "self_s": 0.009783374999999999,
+      "cumulative_s": 0.123922313
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 41,
+      "function": "<listcomp>",
+      "calls": 658,
+      "primitive_calls": 658,
+      "self_s": 0.00030441800000000004,
+      "cumulative_s": 0.00030441800000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 42,
+      "function": "<setcomp>",
+      "calls": 658,
+      "primitive_calls": 658,
+      "self_s": 0.00020809299999999996,
+      "cumulative_s": 0.00020809299999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 43,
+      "function": "<genexpr>",
+      "calls": 1974,
+      "primitive_calls": 1974,
+      "self_s": 0.0006126370000000001,
+      "cumulative_s": 0.0006126370000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 49,
+      "function": "transform_plane_to_latest",
+      "calls": 216,
+      "primitive_calls": 216,
+      "self_s": 0.002701574,
+      "cumulative_s": 0.008653496
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 84,
+      "function": "_ground_evidence",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.011807953000000005,
+      "cumulative_s": 13.326816126999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 87,
+      "function": "<listcomp>",
+      "calls": 246,
+      "primitive_calls": 246,
+      "self_s": 0.0008397759999999999,
+      "cumulative_s": 0.0008397759999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 117,
+      "function": "_packet",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.0008913170000000003,
+      "cumulative_s": 0.005498662
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 120,
+      "function": "<listcomp>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 5.048600000000003e-05,
+      "cumulative_s": 5.048600000000003e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 121,
+      "function": "<genexpr>",
+      "calls": 207,
+      "primitive_calls": 207,
+      "self_s": 6.283e-05,
+      "cumulative_s": 6.283e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 123,
+      "function": "<genexpr>",
+      "calls": 207,
+      "primitive_calls": 207,
+      "self_s": 3.009e-05,
+      "cumulative_s": 3.009e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 208,
+      "function": "choose_history_model",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.001461281,
+      "cumulative_s": 0.048836443
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 214,
+      "function": "<listcomp>",
+      "calls": 214,
+      "primitive_calls": 214,
+      "self_s": 0.000319069,
+      "cumulative_s": 0.002262520000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 215,
+      "function": "<genexpr>",
+      "calls": 642,
+      "primitive_calls": 642,
+      "self_s": 0.0004999500000000001,
+      "cumulative_s": 0.039554911000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/ground_history.py",
+      "line": 219,
+      "function": "<genexpr>",
+      "calls": 288,
+      "primitive_calls": 288,
+      "self_s": 5.767500000000001e-05,
+      "cumulative_s": 5.767500000000001e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 18,
+      "function": "estimate_joint_corridor",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.017151641999999998,
+      "cumulative_s": 2.160046693
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 28,
+      "function": "<genexpr>",
+      "calls": 221,
+      "primitive_calls": 221,
+      "self_s": 0.00010406200000000002,
+      "cumulative_s": 0.00010406200000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 31,
+      "function": "<setcomp>",
+      "calls": 213,
+      "primitive_calls": 213,
+      "self_s": 0.00017413499999999999,
+      "cumulative_s": 0.00017413499999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 35,
+      "function": "<listcomp>",
+      "calls": 161,
+      "primitive_calls": 161,
+      "self_s": 0.00039610599999999996,
+      "cumulative_s": 0.00039610599999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 40,
+      "function": "<listcomp>",
+      "calls": 303,
+      "primitive_calls": 303,
+      "self_s": 0.00046115300000000006,
+      "cumulative_s": 0.013133302
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 43,
+      "function": "<genexpr>",
+      "calls": 374,
+      "primitive_calls": 374,
+      "self_s": 4.8256e-05,
+      "cumulative_s": 4.8256e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 44,
+      "function": "prediction",
+      "calls": 20925,
+      "primitive_calls": 20925,
+      "self_s": 0.16489425100000002,
+      "cumulative_s": 1.286388957
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 51,
+      "function": "residual",
+      "calls": 4788,
+      "primitive_calls": 4788,
+      "self_s": 0.10243970500000002,
+      "cumulative_s": 1.6556342750000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 76,
+      "function": "<genexpr>",
+      "calls": 891,
+      "primitive_calls": 891,
+      "self_s": 0.00021072300000000004,
+      "cumulative_s": 0.00021072300000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/joint_straight_model.py",
+      "line": 85,
+      "function": "<dictcomp>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 7.811200000000004e-05,
+      "cumulative_s": 7.811200000000004e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/local_exclusion_population.py",
+      "line": 14,
+      "function": "__init__",
+      "calls": 1836,
+      "primitive_calls": 1836,
+      "self_s": 0.038838415,
+      "cumulative_s": 0.055431575999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/local_exclusion_population.py",
+      "line": 30,
+      "function": "_window",
+      "calls": 84223,
+      "primitive_calls": 84223,
+      "self_s": 0.157537929,
+      "cumulative_s": 0.27219553300000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/local_exclusion_population.py",
+      "line": 39,
+      "function": "outside",
+      "calls": 84223,
+      "primitive_calls": 84223,
+      "self_s": 1.0751413690000002,
+      "cumulative_s": 1.5839607500000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 18,
+      "function": "_contrast_gate",
+      "calls": 114842,
+      "primitive_calls": 114842,
+      "self_s": 0.19837778600000003,
+      "cumulative_s": 0.43365269300000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 36,
+      "function": "prepared_patch",
+      "calls": 114928,
+      "primitive_calls": 114928,
+      "self_s": 0.93443834,
+      "cumulative_s": 2.3478328439999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 50,
+      "function": "supported_patch",
+      "calls": 57464,
+      "primitive_calls": 57464,
+      "self_s": 0.228991061,
+      "cumulative_s": 1.8017264139999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 59,
+      "function": "_native_h_evidence",
+      "calls": 28732,
+      "primitive_calls": 28732,
+      "self_s": 0.1950824630000001,
+      "cumulative_s": 22.912278113000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 78,
+      "function": "<genexpr>",
+      "calls": 172134,
+      "primitive_calls": 172134,
+      "self_s": 0.021610772999999993,
+      "cumulative_s": 0.021610772999999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 92,
+      "function": "_native_i_evidence",
+      "calls": 28732,
+      "primitive_calls": 28732,
+      "self_s": 0.17965628500000008,
+      "cumulative_s": 4.994901933
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 110,
+      "function": "<genexpr>",
+      "calls": 170442,
+      "primitive_calls": 170442,
+      "self_s": 0.019308903,
+      "cumulative_s": 0.019308903
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 123,
+      "function": "h_evidence",
+      "calls": 28732,
+      "primitive_calls": 28732,
+      "self_s": 0.04092922200000001,
+      "cumulative_s": 22.953207334999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/native_patch_contrast.py",
+      "line": 129,
+      "function": "i_evidence",
+      "calls": 28732,
+      "primitive_calls": 28732,
+      "self_s": 0.037516012,
+      "cumulative_s": 5.032417945000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 21,
+      "function": "__init__",
+      "calls": 918,
+      "primitive_calls": 918,
+      "self_s": 0.001152853,
+      "cumulative_s": 0.0031830119999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 28,
+      "function": "intern_support",
+      "calls": 1836,
+      "primitive_calls": 1836,
+      "self_s": 0.0013171189999999998,
+      "cumulative_s": 0.0037685909999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 38,
+      "function": "population",
+      "calls": 114192,
+      "primitive_calls": 114192,
+      "self_s": 0.354268909,
+      "cumulative_s": 2.0076310139999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 52,
+      "function": "match",
+      "calls": 228384,
+      "primitive_calls": 228384,
+      "self_s": 0.33880167099999997,
+      "cumulative_s": 17.485797395999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 62,
+      "function": "clear",
+      "calls": 114928,
+      "primitive_calls": 114928,
+      "self_s": 0.035980604000000006,
+      "cumulative_s": 0.113112511
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 69,
+      "function": "__init__",
+      "calls": 84223,
+      "primitive_calls": 84223,
+      "self_s": 0.024634490000000005,
+      "cumulative_s": 0.024634490000000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 73,
+      "function": "reduce",
+      "calls": 228384,
+      "primitive_calls": 228384,
+      "self_s": 1.7880663820000007,
+      "cumulative_s": 2.6072959609999993
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 87,
+      "function": "__init__",
+      "calls": 1836,
+      "primitive_calls": 1836,
+      "self_s": 0.005568469999999998,
+      "cumulative_s": 0.15533387
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 93,
+      "function": "at",
+      "calls": 114192,
+      "primitive_calls": 114192,
+      "self_s": 0.07105016400000004,
+      "cumulative_s": 2.0786811780000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 97,
+      "function": "search",
+      "calls": 228384,
+      "primitive_calls": 228384,
+      "self_s": 0.2509171399999999,
+      "cumulative_s": 20.365822520000005
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 110,
+      "function": "_prepare_h",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.008396062,
+      "cumulative_s": 0.17704870100000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 113,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0013859259999999998,
+      "cumulative_s": 0.011953823
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 121,
+      "function": "<listcomp>",
+      "calls": 418,
+      "primitive_calls": 418,
+      "self_s": 0.000809751,
+      "cumulative_s": 0.0065694490000000015
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 133,
+      "function": "_prepare_i",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.008043525000000001,
+      "cumulative_s": 0.20770916500000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 141,
+      "function": "<listcomp>",
+      "calls": 418,
+      "primitive_calls": 418,
+      "self_s": 0.0008019560000000003,
+      "cumulative_s": 0.0050706499999999995
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 155,
+      "function": "_finish_h",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.005009995000000001,
+      "cumulative_s": 0.6870230250000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 163,
+      "function": "<listcomp>",
+      "calls": 410,
+      "primitive_calls": 410,
+      "self_s": 0.0012041329999999998,
+      "cumulative_s": 0.031202284999999996
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 164,
+      "function": "<genexpr>",
+      "calls": 1230,
+      "primitive_calls": 1230,
+      "self_s": 0.0021269310000000016,
+      "cumulative_s": 0.10547793600000006
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 165,
+      "function": "<genexpr>",
+      "calls": 1230,
+      "primitive_calls": 1230,
+      "self_s": 0.0008385169999999999,
+      "cumulative_s": 0.04166148300000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 172,
+      "function": "filter_pair",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.370401497,
+      "cumulative_s": 34.113142359
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 184,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0009843520000000002,
+      "cumulative_s": 0.004167364000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 185,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.002046797,
+      "cumulative_s": 0.007888449
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 188,
+      "function": "<genexpr>",
+      "calls": 1377,
+      "primitive_calls": 1377,
+      "self_s": 0.0012982460000000007,
+      "cumulative_s": 0.07635659600000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py",
+      "line": 189,
+      "function": "<genexpr>",
+      "calls": 1377,
+      "primitive_calls": 1377,
+      "self_s": 0.0010815509999999998,
+      "cumulative_s": 0.08135707099999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/prepared_descriptor_search.py",
+      "line": 13,
+      "function": "__init__",
+      "calls": 1910,
+      "primitive_calls": 1910,
+      "self_s": 0.04690607500000001,
+      "cumulative_s": 0.09713194800000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/prepared_descriptor_search.py",
+      "line": 26,
+      "function": "at",
+      "calls": 5994,
+      "primitive_calls": 5994,
+      "self_s": 0.20670178400000003,
+      "cumulative_s": 0.20670178400000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/prepared_descriptor_search.py",
+      "line": 38,
+      "function": "search",
+      "calls": 5994,
+      "primitive_calls": 5994,
+      "self_s": 0.08114749599999999,
+      "cumulative_s": 1.1584057209999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_patch_evidence.py",
+      "line": 12,
+      "function": "reference_appearance_evidence",
+      "calls": 5994,
+      "primitive_calls": 5994,
+      "self_s": 0.02196023900000001,
+      "cumulative_s": 2.023471214
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 19,
+      "function": "assess_joint_startup_texture",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 0.002575692,
+      "cumulative_s": 0.19977048400000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 38,
+      "function": "<lambda>",
+      "calls": 243,
+      "primitive_calls": 243,
+      "self_s": 7.1216e-05,
+      "cumulative_s": 7.1216e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 43,
+      "function": "<listcomp>",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 4.9950000000000005e-06,
+      "cumulative_s": 4.9950000000000005e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 47,
+      "function": "<genexpr>",
+      "calls": 30,
+      "primitive_calls": 30,
+      "self_s": 3.1150000000000002e-06,
+      "cumulative_s": 3.1150000000000002e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 48,
+      "function": "<genexpr>",
+      "calls": 30,
+      "primitive_calls": 30,
+      "self_s": 2.082e-06,
+      "cumulative_s": 2.082e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 50,
+      "function": "<setcomp>",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 8.357e-06,
+      "cumulative_s": 8.357e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 51,
+      "function": "<setcomp>",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 2.091e-06,
+      "cumulative_s": 2.091e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 55,
+      "function": "<listcomp>",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 1.446e-06,
+      "cumulative_s": 1.446e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 64,
+      "function": "_assess_startup_texture",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 1.3356e-05,
+      "cumulative_s": 0.19978384000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/reference_straight.py",
+      "line": 67,
+      "function": "_output",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00014299799999999995,
+      "cumulative_s": 0.0006317920000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_ground_rig.py",
+      "line": 23,
+      "function": "ground_map",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 4.013e-06,
+      "cumulative_s": 5.8020000000000005e-06
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_ground_rig.py",
+      "line": 31,
+      "function": "_rectification",
+      "calls": 3,
+      "primitive_calls": 3,
+      "self_s": 2.4571000000000002e-05,
+      "cumulative_s": 3.4779e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_ground_rig.py",
+      "line": 36,
+      "function": "rig_basis",
+      "calls": 89551,
+      "primitive_calls": 89551,
+      "self_s": 0.12120226300000002,
+      "cumulative_s": 0.22308826100000007
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_ground_rig.py",
+      "line": 43,
+      "function": "_advance",
+      "calls": 2754,
+      "primitive_calls": 2754,
+      "self_s": 0.021049496000000008,
+      "cumulative_s": 0.803390528
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_ground_rig.py",
+      "line": 68,
+      "function": "_region_models",
+      "calls": 1249,
+      "primitive_calls": 1249,
+      "self_s": 0.064298322,
+      "cumulative_s": 1.5267717250000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 27,
+      "function": "_patch",
+      "calls": 8793,
+      "primitive_calls": 8793,
+      "self_s": 0.09800312499999997,
+      "cumulative_s": 0.494406747
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 35,
+      "function": "_ncc",
+      "calls": 63729,
+      "primitive_calls": 63729,
+      "self_s": 0.5582278830000001,
+      "cumulative_s": 2.2386064279999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 128,
+      "function": "split_tracks",
+      "calls": 2263,
+      "primitive_calls": 2263,
+      "self_s": 0.007000518,
+      "cumulative_s": 0.06869953999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 133,
+      "function": "<genexpr>",
+      "calls": 37702,
+      "primitive_calls": 37702,
+      "self_s": 0.009346565000000001,
+      "cumulative_s": 0.009346565000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 134,
+      "function": "<listcomp>",
+      "calls": 886,
+      "primitive_calls": 886,
+      "self_s": 0.0017290010000000004,
+      "cumulative_s": 0.0017290010000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 135,
+      "function": "<listcomp>",
+      "calls": 886,
+      "primitive_calls": 886,
+      "self_s": 0.0013709899999999999,
+      "cumulative_s": 0.0013709899999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py",
+      "line": 136,
+      "function": "<lambda>",
+      "calls": 86196,
+      "primitive_calls": 86196,
+      "self_s": 0.030640355,
+      "cumulative_s": 0.030640355
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 28,
+      "function": "prepare_canvases",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.007457165999999999,
+      "cumulative_s": 0.09677981899999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 35,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0010048520000000003,
+      "cumulative_s": 0.008025717
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 43,
+      "function": "_supported_patch",
+      "calls": 8793,
+      "primitive_calls": 8793,
+      "self_s": 0.044303271000000005,
+      "cumulative_s": 0.6072232720000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 50,
+      "function": "_masked_alternative",
+      "calls": 5355,
+      "primitive_calls": 5355,
+      "self_s": 0.323828934,
+      "cumulative_s": 2.07057293
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 60,
+      "function": "appearance_evidence",
+      "calls": 639,
+      "primitive_calls": 639,
+      "self_s": 0.005982065000000002,
+      "cumulative_s": 0.7974442590000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 78,
+      "function": "<genexpr>",
+      "calls": 3834,
+      "primitive_calls": 3834,
+      "self_s": 0.000498189,
+      "cumulative_s": 0.000498189
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 105,
+      "function": "_finish",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.004008051000000001,
+      "cumulative_s": 0.587360519
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 112,
+      "function": "<listcomp>",
+      "calls": 409,
+      "primitive_calls": 409,
+      "self_s": 0.0011661799999999997,
+      "cumulative_s": 0.022169325000000004
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 113,
+      "function": "<genexpr>",
+      "calls": 1227,
+      "primitive_calls": 1227,
+      "self_s": 0.0009365400000000002,
+      "cumulative_s": 0.08161414200000003
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py",
+      "line": 114,
+      "function": "<genexpr>",
+      "calls": 1227,
+      "primitive_calls": 1227,
+      "self_s": 0.000566832,
+      "cumulative_s": 0.025213740999999994
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/straight_evidence.py",
+      "line": 16,
+      "function": "probe_straight_history",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.006072831000000001,
+      "cumulative_s": 42.12075148200002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/straight_evidence.py",
+      "line": 20,
+      "function": "<dictcomp>",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 8.386200000000003e-05,
+      "cumulative_s": 8.386200000000003e-05
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/straight_history_support.py",
+      "line": 17,
+      "function": "prepare_straight_history",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.02392600000000001,
+      "cumulative_s": 38.40322678400001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/straight_history_support.py",
+      "line": 25,
+      "function": "<setcomp>",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.00010551999999999998,
+      "cumulative_s": 0.00010551999999999998
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/straight_history_support.py",
+      "line": 41,
+      "function": "<listcomp>",
+      "calls": 213,
+      "primitive_calls": 213,
+      "self_s": 0.0006902360000000001,
+      "cumulative_s": 0.0006902360000000001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/wide_reference_straight.py",
+      "line": 15,
+      "function": "experiment_contract",
+      "calls": 232,
+      "primitive_calls": 232,
+      "self_s": 0.00020047400000000002,
+      "cumulative_s": 0.00020047400000000002
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/wide_reference_straight.py",
+      "line": 23,
+      "function": "_probe_navigation_history",
+      "calls": 72,
+      "primitive_calls": 72,
+      "self_s": 0.0005309669999999999,
+      "cumulative_s": 42.12137474700001
+    },
+    {
+      "file": "/home/sunrise/toponav_project/roadvision/wide_reference_straight.py",
+      "line": 29,
+      "function": "_output",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.00013617700000000002,
+      "cumulative_s": 0.000847335
+    },
+    {
+      "file": "/home/sunrise/toponav_project/tools/straight_pipeline_profile.py",
+      "line": 254,
+      "function": "decision_call",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 0.000495908,
+      "cumulative_s": 48.618010308
+    },
+    {
+      "file": "/home/sunrise/toponav_project/tools/straight_workload_profile.py",
+      "line": 25,
+      "function": "encode",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 0.09509049200000001,
+      "cumulative_s": 1.353708558
+    },
+    {
+      "file": "/home/sunrise/toponav_project/tools/straight_workload_profile.py",
+      "line": 43,
+      "function": "observed",
+      "calls": 126564,
+      "primitive_calls": 11808,
+      "self_s": 0.6319207910000001,
+      "cumulative_s": 36.61632477299999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/tools/straight_workload_profile.py",
+      "line": 52,
+      "function": "<listcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0007184249999999999,
+      "cumulative_s": 0.0007184249999999999
+    },
+    {
+      "file": "/home/sunrise/toponav_project/tools/straight_workload_profile.py",
+      "line": 56,
+      "function": "<dictcomp>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.0006691840000000001,
+      "cumulative_s": 0.0007381720000000003
+    },
+    {
+      "file": "/usr/lib/python3.10/abc.py",
+      "line": 117,
+      "function": "__instancecheck__",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.000151586,
+      "cumulative_s": 0.000299504
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 63,
+      "function": "_recreate_cm",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 1.9332000000000004e-05,
+      "cumulative_s": 1.9332000000000004e-05
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 76,
+      "function": "inner",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.00036112700000000004,
+      "cumulative_s": 0.0020755000000000005
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 102,
+      "function": "__init__",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.04666904899999999,
+      "cumulative_s": 0.056179877
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 130,
+      "function": "__enter__",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.025998925,
+      "cumulative_s": 0.080425686
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 139,
+      "function": "__exit__",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.033548581,
+      "cumulative_s": 0.08831885699999997
+    },
+    {
+      "file": "/usr/lib/python3.10/contextlib.py",
+      "line": 279,
+      "function": "helper",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.027686458000000004,
+      "cumulative_s": 0.08386633500000003
+    },
+    {
+      "file": "/usr/lib/python3.10/copy.py",
+      "line": 128,
+      "function": "deepcopy",
+      "calls": 246,
+      "primitive_calls": 246,
+      "self_s": 0.00039429700000000005,
+      "cumulative_s": 0.0005618929999999998
+    },
+    {
+      "file": "/usr/lib/python3.10/copy.py",
+      "line": 182,
+      "function": "_deepcopy_atomic",
+      "calls": 246,
+      "primitive_calls": 246,
+      "self_s": 4.089899999999999e-05,
+      "cumulative_s": 4.089899999999999e-05
+    },
+    {
+      "file": "/usr/lib/python3.10/dataclasses.py",
+      "line": 1187,
+      "function": "fields",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.00040110499999999996,
+      "cumulative_s": 0.000581398
+    },
+    {
+      "file": "/usr/lib/python3.10/dataclasses.py",
+      "line": 1202,
+      "function": "<genexpr>",
+      "calls": 328,
+      "primitive_calls": 328,
+      "self_s": 0.000139232,
+      "cumulative_s": 0.000139232
+    },
+    {
+      "file": "/usr/lib/python3.10/dataclasses.py",
+      "line": 1205,
+      "function": "_is_dataclass_instance",
+      "calls": 410,
+      "primitive_calls": 410,
+      "self_s": 0.00015049400000000007,
+      "cumulative_s": 0.00028399800000000004
+    },
+    {
+      "file": "/usr/lib/python3.10/dataclasses.py",
+      "line": 1217,
+      "function": "asdict",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.00018090399999999996,
+      "cumulative_s": 0.0025070889999999997
+    },
+    {
+      "file": "/usr/lib/python3.10/dataclasses.py",
+      "line": 1241,
+      "function": "_asdict_inner",
+      "calls": 328,
+      "primitive_calls": 82,
+      "self_s": 0.000754002,
+      "cumulative_s": 0.002210444000000001
+    },
+    {
+      "file": "/usr/lib/python3.10/enum.py",
+      "line": 801,
+      "function": "value",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.0011036260000000001,
+      "cumulative_s": 0.0011036260000000001
+    },
+    {
+      "file": "/usr/lib/python3.10/json/__init__.py",
+      "line": 183,
+      "function": "dumps",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 0.199720074,
+      "cumulative_s": 1.2586180660000001
+    },
+    {
+      "file": "/usr/lib/python3.10/json/encoder.py",
+      "line": 104,
+      "function": "__init__",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 0.07540341400000002,
+      "cumulative_s": 0.07540341400000002
+    },
+    {
+      "file": "/usr/lib/python3.10/json/encoder.py",
+      "line": 182,
+      "function": "encode",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 0.18202013699999997,
+      "cumulative_s": 0.983494578
+    },
+    {
+      "file": "/usr/lib/python3.10/json/encoder.py",
+      "line": 204,
+      "function": "iterencode",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 0.75137657,
+      "cumulative_s": 0.75137657
+    },
+    {
+      "file": "/usr/lib/python3.10/types.py",
+      "line": 176,
+      "function": "__get__",
+      "calls": 4623,
+      "primitive_calls": 4623,
+      "self_s": 0.0037750130000000024,
+      "cumulative_s": 0.004878639000000001
+    },
+    {
+      "file": "<frozen importlib._bootstrap>",
+      "line": 1053,
+      "function": "_handle_fromlist",
+      "calls": 37512,
+      "primitive_calls": 37512,
+      "self_s": 0.022449748000000002,
+      "cumulative_s": 0.030250314
+    },
+    {
+      "file": "<string>",
+      "line": 1,
+      "function": "<lambda>",
+      "calls": 16843,
+      "primitive_calls": 16843,
+      "self_s": 0.005722119000000001,
+      "cumulative_s": 0.009608395000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<Sobel>",
+      "calls": 284,
+      "primitive_calls": 284,
+      "self_s": 0.003640955,
+      "cumulative_s": 0.003640955
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method __new__ of type object at 0x5c905153b9a0>",
+      "calls": 16904,
+      "primitive_calls": 16904,
+      "self_s": 0.00393473,
+      "cumulative_s": 0.00393473
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _abc._abc_instancecheck>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.000147918,
+      "cumulative_s": 0.000147918
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _hashlib.openssl_sha256>",
+      "calls": 1977,
+      "primitive_calls": 1977,
+      "self_s": 0.09355367300000002,
+      "cumulative_s": 0.09355367300000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _operator.index>",
+      "calls": 52006,
+      "primitive_calls": 52006,
+      "self_s": 0.004941338,
+      "cumulative_s": 0.004941338
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _thread.get_ident>",
+      "calls": 126564,
+      "primitive_calls": 126564,
+      "self_s": 0.020073049,
+      "cumulative_s": 0.020073049
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.abs>",
+      "calls": 25484,
+      "primitive_calls": 25484,
+      "self_s": 0.0028021250000000012,
+      "cumulative_s": 0.0028021250000000012
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.all>",
+      "calls": 7006,
+      "primitive_calls": 7006,
+      "self_s": 0.006103865,
+      "cumulative_s": 0.037970148999999995
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.any>",
+      "calls": 60362,
+      "primitive_calls": 60362,
+      "self_s": 0.054978483000000015,
+      "cumulative_s": 0.130973836
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.callable>",
+      "calls": 2130,
+      "primitive_calls": 2130,
+      "self_s": 0.000290639,
+      "cumulative_s": 0.000290639
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.getattr>",
+      "calls": 236335,
+      "primitive_calls": 236335,
+      "self_s": 0.043475552999999986,
+      "cumulative_s": 0.043475552999999986
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.hasattr>",
+      "calls": 401472,
+      "primitive_calls": 401472,
+      "self_s": 0.08000192899999999,
+      "cumulative_s": 0.08000192899999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.id>",
+      "calls": 246,
+      "primitive_calls": 246,
+      "self_s": 6.580099999999999e-05,
+      "cumulative_s": 6.580099999999999e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "calls": 933093,
+      "primitive_calls": 933093,
+      "self_s": 0.114412217,
+      "cumulative_s": 0.114412217
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.issubclass>",
+      "calls": 1275930,
+      "primitive_calls": 1275930,
+      "self_s": 0.12014588500000001,
+      "cumulative_s": 0.12014588500000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.len>",
+      "calls": 860866,
+      "primitive_calls": 860866,
+      "self_s": 0.084118756,
+      "cumulative_s": 0.084118756
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.max>",
+      "calls": 469370,
+      "primitive_calls": 469370,
+      "self_s": 0.07248401900000002,
+      "cumulative_s": 0.07496027400000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.min>",
+      "calls": 359226,
+      "primitive_calls": 359226,
+      "self_s": 0.044898846,
+      "cumulative_s": 0.559094039
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.next>",
+      "calls": 155106,
+      "primitive_calls": 155106,
+      "self_s": 0.03453854199999999,
+      "cumulative_s": 0.10919703700000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "calls": 31861,
+      "primitive_calls": 31861,
+      "self_s": 0.031868736,
+      "cumulative_s": 0.06250909100000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sum>",
+      "calls": 284,
+      "primitive_calls": 284,
+      "self_s": 0.00041981900000000004,
+      "cumulative_s": 0.0005916949999999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.acos>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 7.024000000000002e-05,
+      "cumulative_s": 7.024000000000002e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.atan2>",
+      "calls": 15777,
+      "primitive_calls": 15777,
+      "self_s": 0.004205504,
+      "cumulative_s": 0.004205504
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.cos>",
+      "calls": 182304,
+      "primitive_calls": 182304,
+      "self_s": 0.025845455,
+      "cumulative_s": 0.025845455
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.degrees>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 3.505899999999999e-05,
+      "cumulative_s": 3.505899999999999e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.floor>",
+      "calls": 168446,
+      "primitive_calls": 168446,
+      "self_s": 0.039434827000000006,
+      "cumulative_s": 0.039434827000000006
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.isfinite>",
+      "calls": 3029,
+      "primitive_calls": 3029,
+      "self_s": 0.00031889600000000015,
+      "cumulative_s": 0.00031889600000000015
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.radians>",
+      "calls": 1493,
+      "primitive_calls": 1493,
+      "self_s": 0.0006821550000000003,
+      "cumulative_s": 0.0006821550000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.sin>",
+      "calls": 181828,
+      "primitive_calls": 181828,
+      "self_s": 0.021080697000000006,
+      "cumulative_s": 0.021080697000000006
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method math.sqrt>",
+      "calls": 520,
+      "primitive_calls": 520,
+      "self_s": 0.00014998899999999998,
+      "cumulative_s": 0.00014998899999999998
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.arange>",
+      "calls": 18202,
+      "primitive_calls": 18202,
+      "self_s": 0.012770264,
+      "cumulative_s": 0.012770264
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.array>",
+      "calls": 566400,
+      "primitive_calls": 566400,
+      "self_s": 0.46532815,
+      "cumulative_s": 0.4702067889999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.asanyarray>",
+      "calls": 750114,
+      "primitive_calls": 750114,
+      "self_s": 0.073273125,
+      "cumulative_s": 0.073273125
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.asarray>",
+      "calls": 904516,
+      "primitive_calls": 904516,
+      "self_s": 0.12272566800000002,
+      "cumulative_s": 0.12272566800000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.ascontiguousarray>",
+      "calls": 10064,
+      "primitive_calls": 10064,
+      "self_s": 0.016201521000000007,
+      "cumulative_s": 0.016201521000000007
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.core._multiarray_umath.count_nonzero>",
+      "calls": 168446,
+      "primitive_calls": 168446,
+      "self_s": 0.117350719,
+      "cumulative_s": 0.117350719
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.core._multiarray_umath.normalize_axis_index>",
+      "calls": 270365,
+      "primitive_calls": 270365,
+      "self_s": 0.04199680300000001,
+      "cumulative_s": 0.04199680300000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.empty>",
+      "calls": 372828,
+      "primitive_calls": 372828,
+      "self_s": 0.15303103099999996,
+      "cumulative_s": 0.15303103099999996
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.geterrobj>",
+      "calls": 17748,
+      "primitive_calls": 17748,
+      "self_s": 0.0022897510000000013,
+      "cumulative_s": 0.0022897510000000013
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.promote_types>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.002008498,
+      "cumulative_s": 0.002008498
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.seterrobj>",
+      "calls": 8874,
+      "primitive_calls": 8874,
+      "self_s": 0.004071969000000001,
+      "cumulative_s": 0.004071969000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method numpy.zeros>",
+      "calls": 47776,
+      "primitive_calls": 47776,
+      "self_s": 0.022058237,
+      "cumulative_s": 0.022058237
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<calcOpticalFlowPyrLK>",
+      "calls": 2896,
+      "primitive_calls": 2896,
+      "self_s": 0.7123225490000001,
+      "cumulative_s": 0.7123225490000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<cvtColor>",
+      "calls": 3500,
+      "primitive_calls": 3500,
+      "self_s": 0.024359811,
+      "cumulative_s": 0.024359811
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<decomposeHomographyMat>",
+      "calls": 1135,
+      "primitive_calls": 1135,
+      "self_s": 0.01954844700000001,
+      "cumulative_s": 0.01954844700000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<erode>",
+      "calls": 6489,
+      "primitive_calls": 6489,
+      "self_s": 0.071520281,
+      "cumulative_s": 0.071520281
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<findHomography>",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.5198830000000002,
+      "cumulative_s": 0.5198830000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<function SeedSequence.generate_state at 0x76d59cf15090>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.000889924,
+      "cumulative_s": 0.000889924
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<getRectSubPix>",
+      "calls": 189849,
+      "primitive_calls": 189849,
+      "self_s": 0.33216283999999996,
+      "cumulative_s": 0.33216283999999996
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<goodFeaturesToTrack>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.07167532600000001,
+      "cumulative_s": 0.07167532600000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<integral2>",
+      "calls": 114842,
+      "primitive_calls": 114842,
+      "self_s": 0.23200519,
+      "cumulative_s": 0.23200519
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<matchTemplate>",
+      "calls": 126105,
+      "primitive_calls": 126105,
+      "self_s": 17.546281775,
+      "cumulative_s": 17.546281775
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method '__array_prepare__' of 'numpy.ndarray' objects>",
+      "calls": 66274,
+      "primitive_calls": 66274,
+      "self_s": 0.010931620000000001,
+      "cumulative_s": 0.010931620000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'add' of 'set' objects>",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 2.4423000000000003e-05,
+      "cumulative_s": 2.4423000000000003e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'all' of 'numpy.generic' objects>",
+      "calls": 3296,
+      "primitive_calls": 3296,
+      "self_s": 0.003411584,
+      "cumulative_s": 0.007522690000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'all' of 'numpy.ndarray' objects>",
+      "calls": 333131,
+      "primitive_calls": 333131,
+      "self_s": 0.120270907,
+      "cumulative_s": 0.584022421
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'any' of 'numpy.generic' objects>",
+      "calls": 29282,
+      "primitive_calls": 29282,
+      "self_s": 0.029527069000000003,
+      "cumulative_s": 0.070210881
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'any' of 'numpy.ndarray' objects>",
+      "calls": 14174,
+      "primitive_calls": 14174,
+      "self_s": 0.008886013000000002,
+      "cumulative_s": 0.050766923000000026
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'append' of 'collections.deque' objects>",
+      "calls": 99,
+      "primitive_calls": 99,
+      "self_s": 0.00012405300000000003,
+      "cumulative_s": 0.00012405300000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "calls": 667246,
+      "primitive_calls": 667246,
+      "self_s": 0.05588030499999999,
+      "cumulative_s": 0.05588030499999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'astype' of 'numpy.generic' objects>",
+      "calls": 16843,
+      "primitive_calls": 16843,
+      "self_s": 0.014346351,
+      "cumulative_s": 0.014346351
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "calls": 461635,
+      "primitive_calls": 461635,
+      "self_s": 0.37884888600000005,
+      "cumulative_s": 0.37884888600000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'choice' of 'numpy.random._generator.Generator' objects>",
+      "calls": 77,
+      "primitive_calls": 77,
+      "self_s": 0.0015123880000000008,
+      "cumulative_s": 0.0025313649999999994
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'clear' of 'collections.deque' objects>",
+      "calls": 4,
+      "primitive_calls": 4,
+      "self_s": 1.4805e-05,
+      "cumulative_s": 1.4805e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'clear' of 'dict' objects>",
+      "calls": 229856,
+      "primitive_calls": 229856,
+      "self_s": 0.077131907,
+      "cumulative_s": 0.077131907
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'clip' of 'numpy.generic' objects>",
+      "calls": 64437,
+      "primitive_calls": 64437,
+      "self_s": 0.09116280700000003,
+      "cumulative_s": 0.25235215800000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'clip' of 'numpy.ndarray' objects>",
+      "calls": 6674,
+      "primitive_calls": 6674,
+      "self_s": 0.003547236999999999,
+      "cumulative_s": 0.019616199
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'conj' of 'numpy.ndarray' objects>",
+      "calls": 25423,
+      "primitive_calls": 25423,
+      "self_s": 0.005240719000000002,
+      "cumulative_s": 0.005240719000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'copy' of 'dict' objects>",
+      "calls": 710,
+      "primitive_calls": 710,
+      "self_s": 0.00015684200000000003,
+      "cumulative_s": 0.00015684200000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'copy' of 'numpy.ndarray' objects>",
+      "calls": 26480,
+      "primitive_calls": 26480,
+      "self_s": 0.011964721000000003,
+      "cumulative_s": 0.011964721000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'diagonal' of 'numpy.ndarray' objects>",
+      "calls": 69,
+      "primitive_calls": 69,
+      "self_s": 0.000129794,
+      "cumulative_s": 0.000129794
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "calls": 80,
+      "primitive_calls": 80,
+      "self_s": 7.751999999999999e-05,
+      "cumulative_s": 7.751999999999999e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'dot' of 'numpy.ndarray' objects>",
+      "calls": 203600,
+      "primitive_calls": 203600,
+      "self_s": 0.13668636700000003,
+      "cumulative_s": 0.13668636700000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'extend' of 'list' objects>",
+      "calls": 21953,
+      "primitive_calls": 21953,
+      "self_s": 0.05610295600000001,
+      "cumulative_s": 1.5609570860000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'flatten' of 'numpy.ndarray' objects>",
+      "calls": 29615,
+      "primitive_calls": 29615,
+      "self_s": 0.025498794000000005,
+      "cumulative_s": 0.025498794000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'format' of 'str' objects>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.0063051620000000004,
+      "cumulative_s": 0.0063051620000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "calls": 656608,
+      "primitive_calls": 656608,
+      "self_s": 0.06498653600000003,
+      "cumulative_s": 0.06498653600000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'hexdigest' of '_hashlib.HASH' objects>",
+      "calls": 1977,
+      "primitive_calls": 1977,
+      "self_s": 0.0012379700000000003,
+      "cumulative_s": 0.0012379700000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'insert' of 'list' objects>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.0018970270000000008,
+      "cumulative_s": 0.0018970270000000008
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'items' of 'dict' objects>",
+      "calls": 488475,
+      "primitive_calls": 488475,
+      "self_s": 0.04429264100000003,
+      "cumulative_s": 0.04429264100000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'join' of 'str' objects>",
+      "calls": 131972,
+      "primitive_calls": 131972,
+      "self_s": 0.013877386999999995,
+      "cumulative_s": 0.013877386999999995
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'max' of 'numpy.ndarray' objects>",
+      "calls": 185460,
+      "primitive_calls": 185460,
+      "self_s": 0.079641367,
+      "cumulative_s": 0.6574429260000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'mean' of 'numpy.ndarray' objects>",
+      "calls": 201696,
+      "primitive_calls": 201696,
+      "self_s": 0.07885735999999996,
+      "cumulative_s": 1.4909802639999998
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'nonzero' of 'numpy.ndarray' objects>",
+      "calls": 71,
+      "primitive_calls": 71,
+      "self_s": 6.0208000000000024e-05,
+      "cumulative_s": 6.0208000000000024e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'partition' of 'numpy.ndarray' objects>",
+      "calls": 22113,
+      "primitive_calls": 22113,
+      "self_s": 0.05247767000000001,
+      "cumulative_s": 0.05247767000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'pop' of 'list' objects>",
+      "calls": 459,
+      "primitive_calls": 459,
+      "self_s": 0.00014847299999999996,
+      "cumulative_s": 0.00014847299999999996
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "calls": 405251,
+      "primitive_calls": 405251,
+      "self_s": 0.07736476599999999,
+      "cumulative_s": 0.07736476599999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "calls": 1342080,
+      "primitive_calls": 1342080,
+      "self_s": 1.8597713109999998,
+      "cumulative_s": 1.8597713109999998
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'reset' of '_contextvars.ContextVar' objects>",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.015603662,
+      "cumulative_s": 0.015603662
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "calls": 74767,
+      "primitive_calls": 74767,
+      "self_s": 0.046307229000000005,
+      "cumulative_s": 0.046307229000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'set' of '_contextvars.ContextVar' objects>",
+      "calls": 77553,
+      "primitive_calls": 77553,
+      "self_s": 0.014932748000000001,
+      "cumulative_s": 0.014932748000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'setdefault' of 'dict' objects>",
+      "calls": 126321,
+      "primitive_calls": 126321,
+      "self_s": 0.035151529,
+      "cumulative_s": 0.035151529
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'sort' of 'numpy.ndarray' objects>",
+      "calls": 7502,
+      "primitive_calls": 7502,
+      "self_s": 0.050052193,
+      "cumulative_s": 0.050052193
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'startswith' of 'str' objects>",
+      "calls": 297,
+      "primitive_calls": 297,
+      "self_s": 9.0619e-05,
+      "cumulative_s": 9.0619e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'std' of 'numpy.ndarray' objects>",
+      "calls": 9135,
+      "primitive_calls": 9135,
+      "self_s": 0.005973621999999997,
+      "cumulative_s": 0.31807960099999993
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'sum' of 'numpy.ndarray' objects>",
+      "calls": 30624,
+      "primitive_calls": 30624,
+      "self_s": 0.012392686999999994,
+      "cumulative_s": 0.12143466100000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'take' of 'numpy.ndarray' objects>",
+      "calls": 21175,
+      "primitive_calls": 21175,
+      "self_s": 0.016220609000000004,
+      "cumulative_s": 0.016220609000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'tobytes' of 'numpy.ndarray' objects>",
+      "calls": 344553,
+      "primitive_calls": 344553,
+      "self_s": 0.08046798200000002,
+      "cumulative_s": 0.08046798200000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'tolist' of 'numpy.ndarray' objects>",
+      "calls": 122528,
+      "primitive_calls": 122528,
+      "self_s": 0.04603128700000001,
+      "cumulative_s": 0.04603128700000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'transpose' of 'numpy.ndarray' objects>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.004919595000000002,
+      "cumulative_s": 0.004919595000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'update' of 'dict' objects>",
+      "calls": 125181,
+      "primitive_calls": 125181,
+      "self_s": 0.05060117499999999,
+      "cumulative_s": 0.05060117499999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'upper' of 'str' objects>",
+      "calls": 281,
+      "primitive_calls": 281,
+      "self_s": 0.00016732899999999997,
+      "cumulative_s": 0.00016732899999999997
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'values' of 'dict' objects>",
+      "calls": 454,
+      "primitive_calls": 454,
+      "self_s": 0.000100909,
+      "cumulative_s": 0.000100909
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'view' of 'numpy.ndarray' objects>",
+      "calls": 13128,
+      "primitive_calls": 13128,
+      "self_s": 0.015920116,
+      "cumulative_s": 0.024343851000000014
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<numpy.random._generator.default_rng>",
+      "calls": 82,
+      "primitive_calls": 82,
+      "self_s": 0.002668612000000002,
+      "cumulative_s": 0.005059448000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<setRNGSeed>",
+      "calls": 4355,
+      "primitive_calls": 4355,
+      "self_s": 0.004608914999999999,
+      "cumulative_s": 0.004608914999999999
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<warpPerspective>",
+      "calls": 1597,
+      "primitive_calls": 1597,
+      "self_s": 0.127585852,
+      "cumulative_s": 0.127585852
+    }
+  ],
+  "total_self_s": 48.58877157499999
+}

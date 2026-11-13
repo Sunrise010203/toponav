@@ -1,0 +1,17 @@
+{
+  "invalid_v1_snapshots_match_original_freeze": true,
+  "candidate_snapshots_match_corrected_measurement_freeze": true,
+  "candidate_source_mappings": {
+    "roadvision/paired_descriptor_checks.py": "candidate/roadvision/paired_descriptor_checks.py",
+    "roadvision/rgb_motion_checks.py": "candidate/roadvision/rgb_motion_checks.py",
+    "roadvision/rgb_resampling_checks.py": "candidate/roadvision/rgb_resampling_checks.py",
+    "roadvision/paired_patch_preparation.py": "candidate/roadvision/paired_patch_preparation.py",
+    "tools/straight_paired_patch_benchmark.py": "candidate/tools/straight_paired_patch_benchmark.py",
+    "tools/straight_paired_population_benchmark.py": "candidate/tools/straight_paired_population_benchmark.py",
+    "tests/test_paired_patch_preparation.py": "candidate/tests/test_paired_patch_preparation.py.snapshot",
+    "tests/test_straight_paired_patch_benchmark.py": "candidate/tests/test_straight_paired_patch_benchmark.py.snapshot"
+  },
+  "all_original_pins_restored": true,
+  "standalone_cache_exact_measured_source": true,
+  "final_integration_disabled": true
+}

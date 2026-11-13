@@ -1,0 +1,29 @@
+{
+  "candidate_promoted": true,
+  "scope": "Equivalent paired native patch contrast gate only; not new navigation acceptance",
+  "performance_gate_passed": true,
+  "measured_source_and_tests_unchanged": true,
+  "measurement_freeze_files": 313,
+  "replay_freeze_files": 785,
+  "preexisting_files": 770,
+  "preexisting_files_byte_identical": 768,
+  "expected_changed_files": [
+    "roadvision/paired_descriptor_checks.py",
+    "tools/straight_workload_profile.py"
+  ],
+  "production_changes": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "observer_changes": [
+    "tools/straight_workload_profile.py"
+  ],
+  "original_h_i_source_unchanged": true,
+  "compatibility_cases": 13,
+  "compatibility_decisions": 581,
+  "compatibility_terminal_frames": 39,
+  "all_compatibility_outputs_and_results_equal": true,
+  "old_physics_trace_errors": [],
+  "physical_execution": false,
+  "real_time_budget_proved": false,
+  "verification_complete": false
+}

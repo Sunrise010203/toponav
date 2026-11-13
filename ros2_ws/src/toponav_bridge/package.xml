@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>toponav_bridge</name><version>0.1.0</version>
+  <description>Restricted continuous RGB navigation integration, not hardware safety.</description>
+  <maintainer email="sunrise@example.invalid">sunrise</maintainer><license>Proprietary</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend><exec_depend>rosgraph_msgs</exec_depend>
+  <exec_depend>launch</exec_depend><exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

@@ -1,0 +1,8 @@
+{
+  "reason": "Performance rejected; preserve original 24 measured candidate assertions but bind test-only modules explicitly to measured snapshots so they do not require default promotion",
+  "measured_test_preserved": "candidate/tests/test_prepared_support_mask.py",
+  "default_modules_not_monkeypatched": true,
+  "original_candidate_assertions_unchanged": true,
+  "new_default_original_bytes_assertion": true,
+  "additional_performance_or_profile": false
+}

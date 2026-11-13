@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "tools.run_project_tests",
+    "--scope",
+    "current",
+    "--output",
+    "reports/straight-ncc-unit-clip-full-current-20261104"
+  ],
+  "configuration_and_discovery_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Source-directed generic backend audit only; no production configuration change",
+  "records": 10,
+  "eligible_maps": 10,
+  "different_maps": 6,
+  "different_elements": 34424,
+  "compared_elements": 139240,
+  "unconditional_dtype_substitution_rejected": true,
+  "ipp_enabled_during_check": false,
+  "ipp_restored": true,
+  "threads_restored": true,
+  "match_alias_unchanged": true,
+  "freeze_unchanged": true,
+  "backend_configuration_deployed": false,
+  "ordinary_timing_runs": 0,
+  "controller_sequences": 0,
+  "physical_execution": false
+}

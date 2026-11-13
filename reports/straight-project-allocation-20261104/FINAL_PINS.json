@@ -1,0 +1,10 @@
+{
+  "files": {
+    "roadvision/corridor_rgb_probe.py": "85121d95a354a89b4d5ff79a16770b904240aab4a06265d22fc743779a3c1942",
+    "roadvision/paired_descriptor_checks.py": "574204e3bb00af31b5b87c478c03f5cd4c43c5392b1c9fab12e73facb8161a5e",
+    "roadvision/native_patch_contrast.py": "c97b3147fcc44095552027a6fcdc4e0b4b3931c71f244d4b8efb287f523f5bb0",
+    "tests/test_homogeneous_projection.py": "1a4633b4cd07a9b52f94146779dcd730fd74da728a6bf8c7426eb7e5574da002",
+    "tests/test_projection_benchmark_binding.py": "63a3db13eac06a6744a1a7f723a6f5a102fa1ab0a1591198626673cbebcfdb73",
+    "docs/STRAIGHT_HOMOGENEOUS_PROJECTION.md": "6046e556418a32ba7c09e21893f8ac8cc81fac2ca7beb2997072a1ddb1e5c9f0"
+  }
+}

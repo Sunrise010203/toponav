@@ -1,0 +1,4155 @@
+{
+  "summary": {
+    "decision_count": 66,
+    "fresh_perception_count": 57,
+    "authorization_counts": {
+      "zero_command": 23,
+      "startup_probe": 6,
+      "supported_following": 37
+    },
+    "state_counts": {
+      "observing": 2,
+      "bootstrapping": 6,
+      "following": 37,
+      "waiting_evidence": 20,
+      "aborted": 1
+    },
+    "blocker_counts": {
+      "free_ground_unavailable": 6,
+      "ground_motion_unavailable": 1,
+      "corridor_geometry_unavailable": 11
+    },
+    "startup_assessment_count": 1,
+    "paired_reason_counts": {
+      "joint_ground_parallel_wall_model": 44,
+      "joint_parallel_vertical_model_with_per_view_heldout_support": 2,
+      "supported_direct_ground_required": 4,
+      "joint_interval_too_wide": 7
+    },
+    "ground_reason_counts": {
+      "joint_ground_paired_wall_training_with_per_view_heldout": 44,
+      "composed_local_ground_rgb_increments": 2,
+      "insufficient_cross_view_support": 1,
+      "shared_metric_ground_model_with_internal_heldout_support": 10
+    },
+    "free_reason_counts": {
+      "sampled_ground_transfer_supports_restricted_short_stopping_clearance": 51,
+      "one_or_more_lookahead_cells_unverified": 2,
+      "motion_or_reference_unavailable": 1,
+      "motion_baseline_outside_domain": 3
+    },
+    "first_motion": {
+      "tick": 2,
+      "sim_s": 0.7,
+      "frame_id": "physics-frame-84",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": true,
+      "startup_texture_accepted": true,
+      "startup_texture_frames": [
+        {
+          "frame_id": "physics-frame-60",
+          "captured_sim_s": 0.5,
+          "rgb_sha256": "d2968437dec42db605c2961e07a260a819bea0b76342fd52e684eac480e4fd0b",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        },
+        {
+          "frame_id": "physics-frame-72",
+          "captured_sim_s": 0.6,
+          "rgb_sha256": "338eaa038eb1132b64837b9a6b0540d8114b63bc0b36457edb28b4c422ce7d91",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        },
+        {
+          "frame_id": "physics-frame-84",
+          "captured_sim_s": 0.7,
+          "rgb_sha256": "d51092d73523826637b1089d1844aa9e26f0082ac8eeac312e6da5e4307619bc",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        }
+      ]
+    },
+    "first_evidence_failure": {
+      "tick": 33,
+      "sim_s": 3.8,
+      "frame_id": "physics-frame-456",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "composed_local_ground_rgb_increments",
+      "ground_translation_m": [
+        0.11827385171860885,
+        0.0008583493521368582
+      ],
+      "ground_yaw_delta_rad": 0.005175309363790844,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_parallel_vertical_model_with_per_view_heldout_support",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005006343917273488,
+      "offset_m": 0.010202858974410256,
+      "history_model": "short_increment_chain",
+      "view_reasons": {
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ],
+        "front": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "one_or_more_lookahead_cells_unverified",
+      "rejected_cells": [
+        {
+          "index": 0,
+          "reason": "competing_match",
+          "reference_accepted": true,
+          "residual_px": 0.3754238900738214
+        }
+      ]
+    },
+    "first_wait": {
+      "tick": 33,
+      "sim_s": 3.8,
+      "frame_id": "physics-frame-456",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "composed_local_ground_rgb_increments",
+      "ground_translation_m": [
+        0.11827385171860885,
+        0.0008583493521368582
+      ],
+      "ground_yaw_delta_rad": 0.005175309363790844,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_parallel_vertical_model_with_per_view_heldout_support",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005006343917273488,
+      "offset_m": 0.010202858974410256,
+      "history_model": "short_increment_chain",
+      "view_reasons": {
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ],
+        "front": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "one_or_more_lookahead_cells_unverified",
+      "rejected_cells": [
+        {
+          "index": 0,
+          "reason": "competing_match",
+          "reference_accepted": true,
+          "residual_px": 0.3754238900738214
+        }
+      ]
+    },
+    "terminal": {
+      "tick": 65,
+      "sim_s": 7.0,
+      "frame_id": "physics-frame-840",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    }
+  },
+  "records": [
+    {
+      "tick": 0,
+      "sim_s": 0.5,
+      "frame_id": "physics-frame-60",
+      "state": "observing",
+      "reason": "awaiting_rgb",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 1,
+      "sim_s": 0.6,
+      "frame_id": "physics-frame-72",
+      "state": "observing",
+      "reason": "awaiting_rgb",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 2,
+      "sim_s": 0.7,
+      "frame_id": "physics-frame-84",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": true,
+      "startup_texture_accepted": true,
+      "startup_texture_frames": [
+        {
+          "frame_id": "physics-frame-60",
+          "captured_sim_s": 0.5,
+          "rgb_sha256": "d2968437dec42db605c2961e07a260a819bea0b76342fd52e684eac480e4fd0b",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        },
+        {
+          "frame_id": "physics-frame-72",
+          "captured_sim_s": 0.6,
+          "rgb_sha256": "338eaa038eb1132b64837b9a6b0540d8114b63bc0b36457edb28b4c422ce7d91",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        },
+        {
+          "frame_id": "physics-frame-84",
+          "captured_sim_s": 0.7,
+          "rgb_sha256": "d51092d73523826637b1089d1844aa9e26f0082ac8eeac312e6da5e4307619bc",
+          "accepted": true,
+          "reason": "reference_texture_supported",
+          "checks": {
+            "native_reference_cells_unique": true,
+            "rectified_supported_cell_count": true,
+            "forward_bin_coverage": true,
+            "lateral_bin_coverage": true
+          },
+          "cells": [
+            {
+              "point_latest_camera_xy_m": [
+                0.86,
+                -0.21
+              ],
+              "pixel_latest": [
+                79.62790697674419,
+                97.48837209302326
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7507949471473694,
+              "rectified_self_alternative_ncc": 0.8852776885032654,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "pixel_latest": [
+                64.0,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5919036865234375,
+              "rectified_self_alternative_ncc": 0.907014012336731,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.85,
+                0.23
+              ],
+              "pixel_latest": [
+                46.68235294117647,
+                97.88235294117646
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.771644115447998,
+              "rectified_self_alternative_ncc": 0.8768767714500427,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                0.85,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                -0.23
+              ],
+              "pixel_latest": [
+                78.86868686868686,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6922847032546997,
+              "rectified_self_alternative_ncc": 0.9192461371421814,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.01
+              ],
+              "pixel_latest": [
+                63.35353535353536,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5959637761116028,
+              "rectified_self_alternative_ncc": 0.8884919881820679,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                0.99,
+                0.23
+              ],
+              "pixel_latest": [
+                49.13131313131313,
+                93.0909090909091
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6162747144699097,
+              "rectified_self_alternative_ncc": 0.890326738357544,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.0,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.21,
+                -0.23
+              ],
+              "pixel_latest": [
+                76.16528925619835,
+                87.80165289256199
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.7289004325866699,
+              "rectified_self_alternative_ncc": 0.9139629006385803,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                -0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.2,
+                0.01
+              ],
+              "pixel_latest": [
+                63.46666666666667,
+                88.0
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.5385720133781433,
+              "rectified_self_alternative_ncc": 0.899232029914856,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.0
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            },
+            {
+              "point_latest_camera_xy_m": [
+                1.19,
+                0.21
+              ],
+              "pixel_latest": [
+                52.705882352941174,
+                88.2016806722689
+              ],
+              "reference_accepted": true,
+              "reference_self_alternative_ncc": 0.6057819724082947,
+              "rectified_self_alternative_ncc": 0.9345541596412659,
+              "rectified_accepted": true,
+              "nominal_point_latest_camera_xy_m": [
+                1.2,
+                0.22
+              ],
+              "selection_scope": "same reference RGB, native and rectified; no target or motion fit",
+              "reference_candidate_count": 9
+            }
+          ],
+          "failed_checks": [],
+          "reference_supported_cells": 9,
+          "rectified_supported_cells": 9
+        }
+      ]
+    },
+    {
+      "tick": 3,
+      "sim_s": 0.8,
+      "frame_id": "physics-frame-96",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 4,
+      "sim_s": 0.9,
+      "frame_id": "physics-frame-108",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 5,
+      "sim_s": 1.0,
+      "frame_id": "physics-frame-120",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 6,
+      "sim_s": 1.1,
+      "frame_id": "physics-frame-132",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 7,
+      "sim_s": 1.2,
+      "frame_id": "physics-frame-144",
+      "state": "bootstrapping",
+      "reason": "bounded_probe_inside_explicit_task_clearance",
+      "moving": true,
+      "authorization": "startup_probe",
+      "v_m_s": 0.15,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    },
+    {
+      "tick": 8,
+      "sim_s": 1.3,
+      "frame_id": "physics-frame-156",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14808341000071262,
+      "omega_rad_s": -0.008633357701185144,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.08179526909822118,
+        -0.00028108286090248536
+      ],
+      "ground_yaw_delta_rad": 0.0008658710876016485,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0051109066647663055,
+      "offset_m": 0.008806127591047097,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 9,
+      "sim_s": 1.4,
+      "frame_id": "physics-frame-168",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.149091750493877,
+      "omega_rad_s": -0.0031421586020440226,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.09689752719651071,
+        -0.0004634596282424832
+      ],
+      "ground_yaw_delta_rad": -0.00021375511501441486,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.002421998682994696,
+      "offset_m": 0.013910393212596794,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 10,
+      "sim_s": 1.5,
+      "frame_id": "physics-frame-180",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1490387079177538,
+      "omega_rad_s": -0.005188879975611051,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11241154252466981,
+        -7.14780034574274e-05
+      ],
+      "ground_yaw_delta_rad": -0.0009470928851612461,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.002563445552656497,
+      "offset_m": 0.0065635860573863836,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 11,
+      "sim_s": 1.6,
+      "frame_id": "physics-frame-192",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14776672873157387,
+      "omega_rad_s": -0.008540555677757203,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.12045090153034203,
+        -0.0006512220039714078
+      ],
+      "ground_yaw_delta_rad": -0.0011876227086102774,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0059553900491363465,
+      "offset_m": 0.006462914071552139,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 12,
+      "sim_s": 1.7,
+      "frame_id": "physics-frame-204",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1445982381683039,
+      "omega_rad_s": 0.012456134321928287,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.12164250465991942,
+        -0.0007606901105316126
+      ],
+      "ground_yaw_delta_rad": -0.002151495154579191,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.014404698217856277,
+      "offset_m": 0.004871409739819976,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 13,
+      "sim_s": 1.8,
+      "frame_id": "physics-frame-216",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14490717889919902,
+      "omega_rad_s": 0.0113927328151466,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.12165026628331986,
+        -0.0007000929749273208
+      ],
+      "ground_yaw_delta_rad": -0.0005557266464644292,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.013580856268802621,
+      "offset_m": 0.005470308634140053,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 14,
+      "sim_s": 1.9,
+      "frame_id": "physics-frame-228",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14179954403204073,
+      "omega_rad_s": 0.022455957843540923,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11994007968059563,
+        -0.0007996001098261344
+      ],
+      "ground_yaw_delta_rad": -0.0003013411990284417,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.021867882581224712,
+      "offset_m": -0.0014701881557905305,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 15,
+      "sim_s": 2.0,
+      "frame_id": "physics-frame-240",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14673592663667345,
+      "omega_rad_s": 0.0015680767217573187,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11932922616274395,
+        5.277005699914696e-05
+      ],
+      "ground_yaw_delta_rad": 0.004027770146508914,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.008704195635537417,
+      "offset_m": 0.017840297284450246,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 16,
+      "sim_s": 2.1,
+      "frame_id": "physics-frame-252",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1488517895234802,
+      "omega_rad_s": -0.008269141582098611,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11936065676228019,
+        0.0006972582721388182
+      ],
+      "ground_yaw_delta_rad": 0.003238191519051656,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0030618946040528124,
+      "offset_m": 0.013018117445114497,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 17,
+      "sim_s": 2.2,
+      "frame_id": "physics-frame-264",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14822467024173852,
+      "omega_rad_s": -0.007225399769725433,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11982053764394507,
+        0.0002025001381519996
+      ],
+      "ground_yaw_delta_rad": 0.0031548460658151535,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.004734212688697299,
+      "offset_m": 0.006227967702570336,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 18,
+      "sim_s": 2.3,
+      "frame_id": "physics-frame-276",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14712977050311332,
+      "omega_rad_s": -0.011871720238453823,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11944216549509064,
+        0.000974552363975045
+      ],
+      "ground_yaw_delta_rad": 0.003244336405075698,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.007653945325031101,
+      "offset_m": 0.010544437283556807,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 19,
+      "sim_s": 2.4,
+      "frame_id": "physics-frame-288",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14350374478295191,
+      "omega_rad_s": 0.017528411043202064,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11857581744525769,
+        0.0007484282237130538
+      ],
+      "ground_yaw_delta_rad": 0.0017528619224844483,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.01732334724546154,
+      "offset_m": -0.0005126594943513085,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 20,
+      "sim_s": 2.5,
+      "frame_id": "physics-frame-300",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1455386844940792,
+      "omega_rad_s": 0.008977351712551448,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11987535548071915,
+        0.000697211602692854
+      ],
+      "ground_yaw_delta_rad": 0.0050794181365052555,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.01189684134912212,
+      "offset_m": 0.007298724091426678,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 21,
+      "sim_s": 2.6,
+      "frame_id": "physics-frame-312",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14664567639724935,
+      "omega_rad_s": -0.0101597810519117,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11994633449341241,
+        0.0009934252362381814
+      ],
+      "ground_yaw_delta_rad": 0.0027523788005247205,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.008944862940668399,
+      "offset_m": 0.003037295278108254,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 22,
+      "sim_s": 2.7,
+      "frame_id": "physics-frame-324",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14725467424155675,
+      "omega_rad_s": -0.006895711048938912,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11872507367611786,
+        0.0007997490128252542
+      ],
+      "ground_yaw_delta_rad": 0.0009510400988943102,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0073208686891819575,
+      "offset_m": -0.0010628941006076142,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 23,
+      "sim_s": 2.8,
+      "frame_id": "physics-frame-336",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14887885853636532,
+      "omega_rad_s": -0.0020723280269990593,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.1194326516259673,
+        -0.00030719469206404854
+      ],
+      "ground_yaw_delta_rad": -0.0016562202680610516,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0029897105696924603,
+      "offset_m": -0.002293456356733503,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 24,
+      "sim_s": 2.9,
+      "frame_id": "physics-frame-348",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14788989192297852,
+      "omega_rad_s": 0.008927784236431247,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.12072646840491198,
+        -0.0006113122217781117
+      ],
+      "ground_yaw_delta_rad": -0.0025563459268882222,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.0056269548720573,
+      "offset_m": -0.008252073410934868,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 25,
+      "sim_s": 3.0,
+      "frame_id": "physics-frame-360",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1438991942614524,
+      "omega_rad_s": 0.020168646043248847,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "composed_local_ground_rgb_increments",
+      "ground_translation_m": [
+        0.1180218078828615,
+        -0.0009265906745148501
+      ],
+      "ground_yaw_delta_rad": -0.0011156529234443774,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_parallel_vertical_model_with_per_view_heldout_support",
+      "paired_rejections": [],
+      "heading_error_rad": -0.01626881530279359,
+      "offset_m": -0.009749576851138142,
+      "history_model": "short_increment_chain",
+      "view_reasons": {
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ],
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 26,
+      "sim_s": 3.1,
+      "frame_id": "physics-frame-372",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1499822252822278,
+      "omega_rad_s": 0.0001407011875562401,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11954779055815498,
+        0.0001169926208521031
+      ],
+      "ground_yaw_delta_rad": 0.002102591287831436,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -4.7399247392514255e-05,
+      "offset_m": -0.0002332548504093146,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 27,
+      "sim_s": 3.2,
+      "frame_id": "physics-frame-384",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14947699439095732,
+      "omega_rad_s": -0.0042132860675629345,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11768110166848518,
+        0.00038225777793001055
+      ],
+      "ground_yaw_delta_rad": 0.0035992342689990468,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0013946816241138106,
+      "offset_m": 0.0070465111086228105,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 28,
+      "sim_s": 3.3,
+      "frame_id": "physics-frame-396",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14939088211984553,
+      "omega_rad_s": 0.015771568467594144,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.118529772092361,
+        -2.659640330646453e-05
+      ],
+      "ground_yaw_delta_rad": -0.002487337461335926,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.0016243143470785798,
+      "offset_m": -0.035368135301288905,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 29,
+      "sim_s": 3.4,
+      "frame_id": "physics-frame-408",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14830851738960207,
+      "omega_rad_s": 0.00565256194527257,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11849046389915249,
+        -0.00014560880070641383
+      ],
+      "ground_yaw_delta_rad": -0.0005761297662657388,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.004510620294394466,
+      "offset_m": -0.025407955599167587,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 30,
+      "sim_s": 3.5,
+      "frame_id": "physics-frame-420",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14767112179691522,
+      "omega_rad_s": 0.005466019412653575,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.12026020408788589,
+        0.0006975208251040852
+      ],
+      "ground_yaw_delta_rad": 0.003624371467749767,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.006210341874892764,
+      "offset_m": 0.0018608061555979716,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 31,
+      "sim_s": 3.6,
+      "frame_id": "physics-frame-432",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1485541250358944,
+      "omega_rad_s": -0.0018918560872726938,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11963802841614898,
+        0.0008754141884409978
+      ],
+      "ground_yaw_delta_rad": 0.0043662923910097904,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.003855666570948204,
+      "offset_m": -0.004909526209188775,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 32,
+      "sim_s": 3.6999999999999997,
+      "frame_id": "physics-frame-444",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14777353697280898,
+      "omega_rad_s": -0.00010773004653536616,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.1201015768764326,
+        0.000576548439563331
+      ],
+      "ground_yaw_delta_rad": 0.002732504360261392,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005937234739176019,
+      "offset_m": -0.014573761731601631,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 33,
+      "sim_s": 3.8,
+      "frame_id": "physics-frame-456",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "composed_local_ground_rgb_increments",
+      "ground_translation_m": [
+        0.11827385171860885,
+        0.0008583493521368582
+      ],
+      "ground_yaw_delta_rad": 0.005175309363790844,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_parallel_vertical_model_with_per_view_heldout_support",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005006343917273488,
+      "offset_m": 0.010202858974410256,
+      "history_model": "short_increment_chain",
+      "view_reasons": {
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ],
+        "front": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "one_or_more_lookahead_cells_unverified",
+      "rejected_cells": [
+        {
+          "index": 0,
+          "reason": "competing_match",
+          "reference_accepted": true,
+          "residual_px": 0.3754238900738214
+        }
+      ]
+    },
+    {
+      "tick": 34,
+      "sim_s": 3.9,
+      "frame_id": "physics-frame-468",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11578186363685394,
+        0.00018360163375406445
+      ],
+      "ground_yaw_delta_rad": 0.0013801930726321334,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005780378780598309,
+      "offset_m": -0.012469594885126889,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 35,
+      "sim_s": 4.0,
+      "frame_id": "physics-frame-480",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.10292858798567718,
+        -4.243740929455222e-05
+      ],
+      "ground_yaw_delta_rad": 0.0012382702201933055,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.01021467955058776,
+      "offset_m": -0.010615125107594103,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 36,
+      "sim_s": 4.1,
+      "frame_id": "physics-frame-492",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.08586482828444585,
+        0.0006348174563890499
+      ],
+      "ground_yaw_delta_rad": 0.0024275879635810853,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0017649838993545018,
+      "offset_m": 0.010259666894194275,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 37,
+      "sim_s": 4.2,
+      "frame_id": "physics-frame-504",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.07132239955552334,
+        -0.0004349311467325801
+      ],
+      "ground_yaw_delta_rad": 0.0012884960195143833,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.01291155816629532,
+      "offset_m": 0.008848648164406892,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 38,
+      "sim_s": 4.3,
+      "frame_id": "physics-frame-516",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14732221912197918,
+      "omega_rad_s": -0.006942614040235739,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.05638920020481556,
+        -8.941779693629715e-05
+      ],
+      "ground_yaw_delta_rad": 0.00022429775248678334,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.007140749008055491,
+      "offset_m": -0.0004953374195493798,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 39,
+      "sim_s": 4.4,
+      "frame_id": "physics-frame-528",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.13537830929245923,
+      "omega_rad_s": 0.02305738595976426,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.04783215428461008,
+        -0.00019114873562813854
+      ],
+      "ground_yaw_delta_rad": 0.0013149611872814257,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.03899117522010868,
+      "offset_m": 0.012441343265235827,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 40,
+      "sim_s": 4.5,
+      "frame_id": "physics-frame-540",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14873810025816084,
+      "omega_rad_s": 0.008459576392606288,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.04590026899158937,
+        8.591578821973996e-05
+      ],
+      "ground_yaw_delta_rad": 0.0021994283783732457,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.003365065978237763,
+      "offset_m": -0.012736276035921312,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 41,
+      "sim_s": 4.6,
+      "frame_id": "physics-frame-552",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14949076837801265,
+      "omega_rad_s": 0.004524274014424541,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.045773363065727525,
+        0.0003834056033287016
+      ],
+      "ground_yaw_delta_rad": 0.0031444548311562346,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.0013579509919662458,
+      "offset_m": -0.007915807556145738,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 42,
+      "sim_s": 4.7,
+      "frame_id": "physics-frame-564",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14751138784858595,
+      "omega_rad_s": 0.01600296568634569,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.05057191037897643,
+        0.00026373012271368285
+      ],
+      "ground_yaw_delta_rad": 0.002686493339777,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.0066362990704374744,
+      "offset_m": -0.023416666539770536,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 43,
+      "sim_s": 4.8,
+      "frame_id": "physics-frame-576",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14791189092330326,
+      "omega_rad_s": -0.0042117393682585946,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.06401588555881278,
+        0.0008817734655321035
+      ],
+      "ground_yaw_delta_rad": 0.004857622028297723,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005568290871191318,
+      "offset_m": -0.003391378757331809,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 44,
+      "sim_s": 4.9,
+      "frame_id": "physics-frame-588",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14921865359861777,
+      "omega_rad_s": 0.010368083382388402,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.08025055863891552,
+        0.0005457116583955181
+      ],
+      "ground_yaw_delta_rad": 0.003615956610167861,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.002083590403685918,
+      "offset_m": -0.02071123244675621,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 45,
+      "sim_s": 5.0,
+      "frame_id": "physics-frame-600",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1489853249665687,
+      "omega_rad_s": 0.0021614714339501517,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.09558052512828288,
+        0.0008026256942473768
+      ],
+      "ground_yaw_delta_rad": 0.004944750355207176,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.0027058000891501625,
+      "offset_m": -0.012168178807750785,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 46,
+      "sim_s": 5.1,
+      "frame_id": "physics-frame-612",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.1482362828687682,
+      "omega_rad_s": 0.009271700281767504,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11039773536794423,
+        0.0010896382974940938
+      ],
+      "ground_yaw_delta_rad": 0.005340217856056141,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.004703245683284808,
+      "offset_m": -0.01142113649620674,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 47,
+      "sim_s": 5.2,
+      "frame_id": "physics-frame-624",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "ground_motion_unavailable",
+        "corridor_geometry_unavailable",
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "unknown",
+      "ground_reason": "insufficient_cross_view_support",
+      "ground_translation_m": null,
+      "ground_yaw_delta_rad": null,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "supported_direct_ground_required",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "ground_motion_unavailable"
+        ],
+        "left": [
+          "ground_motion_unavailable"
+        ],
+        "right": [
+          "ground_motion_unavailable"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "motion_or_reference_unavailable",
+      "rejected_cells": []
+    },
+    {
+      "tick": 48,
+      "sim_s": 5.3,
+      "frame_id": "physics-frame-636",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.11551499523710972,
+        0.0012675435648867024
+      ],
+      "ground_yaw_delta_rad": 0.004749038457288225,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.005888541190525018,
+      "offset_m": -0.005914696958787491,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 49,
+      "sim_s": 5.4,
+      "frame_id": "physics-frame-648",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.10123074778595678,
+        0.00011937930040903052
+      ],
+      "ground_yaw_delta_rad": 0.005498070451452529,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.008580122437849984,
+      "offset_m": -0.003324238144851055,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "one_or_more_lookahead_cells_unverified",
+      "rejected_cells": [
+        {
+          "index": 0,
+          "reason": "ground_transfer_flow_not_supported",
+          "reference_accepted": true,
+          "residual_px": 0.5021207559356453
+        }
+      ]
+    },
+    {
+      "tick": 50,
+      "sim_s": 5.5,
+      "frame_id": "physics-frame-660",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.08884554729046891,
+        0.0005600959919151448
+      ],
+      "ground_yaw_delta_rad": 0.0055106251779259655,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.01960294355301378,
+      "offset_m": 0.008649549120533118,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 51,
+      "sim_s": 5.6,
+      "frame_id": "physics-frame-672",
+      "state": "waiting_evidence",
+      "reason": "awaiting_stationary_and_fresh_rearm",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.07229417877158344,
+        0.00016160986801313633
+      ],
+      "ground_yaw_delta_rad": 0.003618314017937168,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.009669203465464555,
+      "offset_m": 0.0011007277990198183,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 52,
+      "sim_s": 5.7,
+      "frame_id": "physics-frame-684",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.14213290553178193,
+      "omega_rad_s": 0.0127080501743416,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.057389273009131915,
+        0.00016535995729544638
+      ],
+      "ground_yaw_delta_rad": 0.004565972670736869,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.020978918581914807,
+      "offset_m": 0.020677171018933016,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 53,
+      "sim_s": 5.8,
+      "frame_id": "physics-frame-696",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.13564176094415115,
+      "omega_rad_s": 0.03690844154337822,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.047630404789967974,
+        0.0005156543146088389
+      ],
+      "ground_yaw_delta_rad": 0.0031304644785102183,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": -0.03828863748226356,
+      "offset_m": 0.003450489847213356,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 54,
+      "sim_s": 5.9,
+      "frame_id": "physics-frame-708",
+      "state": "following",
+      "reason": "fresh_two_side_geometry_and_ground_transfer",
+      "moving": true,
+      "authorization": "supported_following",
+      "v_m_s": 0.12904126105116379,
+      "omega_rad_s": 0.006908441543378219,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "joint_ground_paired_wall_training_with_per_view_heldout",
+      "ground_translation_m": [
+        0.04610056588506832,
+        0.001253292854506368
+      ],
+      "ground_yaw_delta_rad": 0.007085740416903056,
+      "corridor_status": "conditional_corridor_geometry",
+      "corridor_reason": "two_parallel_vertical_plane_candidates",
+      "paired_status": "conditional_paired_corridor",
+      "paired_reason": "joint_ground_parallel_wall_model",
+      "paired_rejections": [],
+      "heading_error_rad": 0.05588997053022984,
+      "offset_m": 0.01649399320849665,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 55,
+      "sim_s": 6.0,
+      "frame_id": "physics-frame-720",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.044267323881408784,
+        0.0018634558733234058
+      ],
+      "ground_yaw_delta_rad": 0.006396532044858699,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 56,
+      "sim_s": 6.1,
+      "frame_id": "physics-frame-732",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.04241243356554056,
+        0.0010233905621811704
+      ],
+      "ground_yaw_delta_rad": 0.006618662564360131,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 57,
+      "sim_s": 6.2,
+      "frame_id": "physics-frame-744",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.04121289595746595,
+        0.0004677450345593256
+      ],
+      "ground_yaw_delta_rad": 0.0060868105749057036,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 58,
+      "sim_s": 6.3,
+      "frame_id": "physics-frame-756",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.04133523866538067,
+        0.0007201727372729824
+      ],
+      "ground_yaw_delta_rad": 0.005904440841867966,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 59,
+      "sim_s": 6.4,
+      "frame_id": "physics-frame-768",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.041366706601408544,
+        0.0006787237258448495
+      ],
+      "ground_yaw_delta_rad": 0.005866082919952092,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 60,
+      "sim_s": 6.5,
+      "frame_id": "physics-frame-780",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.040835505677196626,
+        0.0008251381771413054
+      ],
+      "ground_yaw_delta_rad": 0.006212086268505021,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 61,
+      "sim_s": 6.6,
+      "frame_id": "physics-frame-792",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.03516941849181752,
+        0.00112732711895182
+      ],
+      "ground_yaw_delta_rad": 0.006399321582068393,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "joint_interval_too_wide",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "conditional_free_ground_path",
+      "free_reason": "sampled_ground_transfer_supports_restricted_short_stopping_clearance",
+      "rejected_cells": []
+    },
+    {
+      "tick": 62,
+      "sim_s": 6.7,
+      "frame_id": "physics-frame-804",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable",
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.021909034341803774,
+        0.0001295563930060808
+      ],
+      "ground_yaw_delta_rad": 0.002635176567920319,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "supported_direct_ground_required",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "planar_model_unsupported"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "motion_baseline_outside_domain",
+      "rejected_cells": []
+    },
+    {
+      "tick": 63,
+      "sim_s": 6.8,
+      "frame_id": "physics-frame-816",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable",
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.00893281366888937,
+        0.00033470261718472724
+      ],
+      "ground_yaw_delta_rad": 0.001967969046346367,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "supported_direct_ground_required",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "motion_baseline_outside_domain",
+      "rejected_cells": []
+    },
+    {
+      "tick": 64,
+      "sim_s": 6.8999999999999995,
+      "frame_id": "physics-frame-828",
+      "state": "waiting_evidence",
+      "reason": "geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": true,
+      "free_check_current": true,
+      "blockers": [
+        "corridor_geometry_unavailable",
+        "free_ground_unavailable"
+      ],
+      "startup_texture_current": false,
+      "ground_status": "conditional_ground_motion",
+      "ground_reason": "shared_metric_ground_model_with_internal_heldout_support",
+      "ground_translation_m": [
+        0.0007474781075653597,
+        -3.6272433744100764e-05
+      ],
+      "ground_yaw_delta_rad": 0.0001887433451533849,
+      "corridor_status": "unknown",
+      "corridor_reason": "two_sided_planes_unavailable",
+      "paired_status": "unknown",
+      "paired_reason": "supported_direct_ground_required",
+      "paired_rejections": [],
+      "heading_error_rad": null,
+      "offset_m": null,
+      "history_model": "direct_long_ground",
+      "view_reasons": {
+        "front": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "left": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ],
+        "right": [
+          "insufficient_image_displacement",
+          "rotation_or_low_parallax"
+        ]
+      },
+      "ground_diagnostics": {},
+      "free_status": "unknown",
+      "free_reason": "motion_baseline_outside_domain",
+      "rejected_cells": []
+    },
+    {
+      "tick": 65,
+      "sim_s": 7.0,
+      "frame_id": "physics-frame-840",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "moving": false,
+      "authorization": "zero_command",
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "perception_current": false,
+      "free_check_current": false,
+      "blockers": [],
+      "startup_texture_current": false
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "version": "ground_history_suite_v1",
+  "scope": "Predeclared untouched-seed conditional RGB validation; camera-only cases are NOT wheel execution",
+  "case_count": 18,
+  "cases": [
+    {
+      "id": "straight_center",
+      "seed": 1103,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "straight",
+      "v": 0.15
+    },
+    {
+      "id": "straight_offset",
+      "seed": 1109,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "straight",
+      "v": 0.15,
+      "scene": {
+        "length_m": 5.2,
+        "width_m": 2.0,
+        "initial_offset_m": -0.12
+      }
+    },
+    {
+      "id": "straight_yaw",
+      "seed": 1117,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "straight",
+      "v": 0.15,
+      "scene": {
+        "initial_yaw_deg": -6.0
+      }
+    },
+    {
+      "id": "straight_combined",
+      "seed": 1123,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "straight",
+      "v": 0.15,
+      "scene": {
+        "length_m": 5.5,
+        "width_m": 2.0,
+        "initial_offset_m": 0.12,
+        "initial_yaw_deg": 6.0
+      },
+      "appearance": {
+        "floor_rgb": [
+          0.4,
+          0.28,
+          0.2
+        ],
+        "wall_rgb": [
+          0.45,
+          0.52,
+          0.65
+        ]
+      }
+    },
+    {
+      "id": "near_end",
+      "seed": 1129,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "near_front",
+      "v": 0.15,
+      "scene": {
+        "length_m": 4.0
+      },
+      "preroll_ticks": 70
+    },
+    {
+      "id": "near_full_block",
+      "seed": 1151,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "near_front",
+      "v": 0.15,
+      "scene": {
+        "length_m": 4.0,
+        "obstacle": "full_width"
+      },
+      "preroll_ticks": 37,
+      "audit_front_x_m": 3.0
+    },
+    {
+      "id": "slow",
+      "seed": 1153,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "motion",
+      "camera_velocity_m_s": [
+        0.035,
+        0,
+        0
+      ],
+      "camera_yaw_rate_rad_s": 0.0
+    },
+    {
+      "id": "lateral",
+      "seed": 1163,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "motion",
+      "camera_velocity_m_s": [
+        0,
+        0.15,
+        0
+      ],
+      "camera_yaw_rate_rad_s": 0.0
+    },
+    {
+      "id": "pure_yaw",
+      "seed": 1171,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "motion",
+      "camera_velocity_m_s": [
+        0,
+        0,
+        0
+      ],
+      "camera_yaw_rate_rad_s": 0.1
+    },
+    {
+      "id": "static",
+      "seed": 1181,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "motion",
+      "camera_velocity_m_s": [
+        0,
+        0,
+        0
+      ],
+      "camera_yaw_rate_rad_s": 0.0
+    },
+    {
+      "id": "uniform",
+      "seed": 1187,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "texture_reject",
+      "pattern": "uniform"
+    },
+    {
+      "id": "repeated",
+      "seed": 1193,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "texture_reject",
+      "pattern": "repeated"
+    },
+    {
+      "id": "wrong_calibration_id",
+      "seed": 1201,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "envelope_reject",
+      "calibration_id": "not_the_declared_camera"
+    },
+    {
+      "id": "narrow_mixed_surface",
+      "seed": 1213,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "boundary",
+      "v": 0.15,
+      "scene": {
+        "length_m": 4.0,
+        "obstacle": "narrow"
+      },
+      "preroll_ticks": 37,
+      "audit_front_x_m": 3.0
+    },
+    {
+      "id": "paint_is_not_wall",
+      "seed": 1217,
+      "mode": "wheels",
+      "frame_count": 13,
+      "evaluation_group": "boundary",
+      "v": 0.15,
+      "appearance": {
+        "paint": {
+          "x_start": 1.2,
+          "x_end": 2.5,
+          "y_center": 0.0,
+          "width_m": 1.8,
+          "rgb": [
+            0.65,
+            0.62,
+            0.58
+          ]
+        }
+      }
+    },
+    {
+      "id": "hidden_fov_mismatch",
+      "seed": 1223,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "uncertified_prior_mismatch",
+      "fov_deg": 80.0
+    },
+    {
+      "id": "hidden_pitch_mismatch",
+      "seed": 1229,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "uncertified_prior_mismatch",
+      "pitch_rad": 0.08
+    },
+    {
+      "id": "hidden_height_mismatch",
+      "seed": 1231,
+      "mode": "camera_only",
+      "frame_count": 13,
+      "evaluation_group": "uncertified_prior_mismatch",
+      "camera_start_m": [
+        2.0,
+        0.0,
+        0.55
+      ]
+    }
+  ]
+}

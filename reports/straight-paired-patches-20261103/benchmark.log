@@ -1,0 +1,67 @@
+local random exact
+local flat exact
+local repeated exact
+local blur exact
+local shift_padding exact
+local rectified exact
+controller known_center before -1 exact 75
+controller known_center after -1 exact 75
+controller known_center before 0 exact 75
+controller known_center after 0 exact 75
+controller known_center after 1 exact 75
+controller known_center before 1 exact 75
+controller known_center before 2 exact 75
+controller known_center after 2 exact 75
+controller known_center after 3 exact 75
+controller known_center before 3 exact 75
+controller known_default before -1 exact 40
+controller known_default after -1 exact 40
+controller known_default before 0 exact 40
+controller known_default after 0 exact 40
+controller known_default after 1 exact 40
+controller known_default before 1 exact 40
+controller known_default before 2 exact 40
+controller known_default after 2 exact 40
+controller known_default after 3 exact 40
+controller known_default before 3 exact 40
+controller known_offset_plus before -1 exact 80
+controller known_offset_plus after -1 exact 80
+controller known_offset_plus before 0 exact 80
+controller known_offset_plus after 0 exact 80
+controller known_offset_plus after 1 exact 80
+controller known_offset_plus before 1 exact 80
+controller known_offset_plus before 2 exact 80
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/sunrise/toponav_project/tools/straight_paired_patch_benchmark.py", line 58, in <module>
+    print(json.dumps(run(args.plan,args.freeze,args.freeze_sha256,args.output)))
+  File "/home/sunrise/toponav_project/tools/straight_paired_patch_benchmark.py", line 47, in run
+    return harness.run(plan, freeze, freeze_sha256, output)
+  File "/home/sunrise/toponav_project/tools/straight_paired_population_benchmark.py", line 164, in run
+    samples.append(execute(label,repeat))
+  File "/home/sunrise/toponav_project/tools/straight_paired_population_benchmark.py", line 148, in execute
+    value=decision_call(controller,row,frame)
+  File "/home/sunrise/toponav_project/tools/straight_pipeline_profile.py", line 257, in decision_call
+    return controller.missing(row['sim_s']) if frame is None else controller.update(frame, row['sim_s'])
+  File "/home/sunrise/toponav_project/roadvision/continuous_straight.py", line 164, in update
+    try:return self._update(frame,now_s)
+  File "/home/sunrise/toponav_project/roadvision/continuous_straight.py", line 239, in _update
+    r=self._probe_navigation_history(frames,now_s)
+  File "/home/sunrise/toponav_project/roadvision/wide_reference_straight.py", line 24, in _probe_navigation_history
+    result=probe_straight_history(frames,now_s=now_s,
+  File "/home/sunrise/toponav_project/roadvision/straight_evidence.py", line 18, in probe_straight_history
+    original=prepare_straight_history(frames,now_s=now_s,calibration_id=calibration_id,calibration=calibration,side_roi=side_roi)
+  File "/home/sunrise/toponav_project/roadvision/straight_history_support.py", line 47, in prepare_straight_history
+    channels=filter_pair(images,raw,filters=(filter_h,filter_i))
+  File "/home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py", line 198, in filter_pair
+    else h.patch_evidence(*gray_h,p,mapped_h[0],_searches=searches_h,_appearance=appearance))
+  File "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py", line 62, in patch_evidence
+    observed=_ncc(a,b) if _appearance is None else _appearance.ncc(_ncc,a,b)
+  File "/home/sunrise/toponav_project/roadvision/paired_patch_preparation.py", line 49, in ncc
+    result = fn(first, second)
+  File "/home/sunrise/toponav_project/roadvision/rgb_motion_checks.py", line 38, in _ncc
+    return None if den<1e-9 else float(np.clip(a@b/den,-1,1))
+KeyboardInterrupt

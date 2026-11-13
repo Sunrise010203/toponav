@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "tools.straight_workload_profile",
+    "--plan",
+    "reports/straight-current-workload-20261104/PLAN.json",
+    "--freeze",
+    "reports/straight-current-workload-20261104/FREEZE-v2.json",
+    "--output",
+    "reports/straight-current-workload-20261104/profile"
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,13 @@
+{
+  "all_preexisting_pinned_sources_and_tests_byte_identical": true,
+  "preexisting_pin_count": 53,
+  "restored_files": [
+    "roadvision/paired_descriptor_checks.py",
+    "roadvision/rgb_motion_checks.py",
+    "roadvision/rgb_resampling_checks.py"
+  ],
+  "experimental_module": "roadvision/paired_patch_preparation.py",
+  "experimental_module_imported_by_default": false,
+  "performance_candidate_promoted": false,
+  "safety_strategy_changed": false
+}

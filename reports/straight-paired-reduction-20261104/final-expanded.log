@@ -1,0 +1,1173 @@
+........................................................................ [  5%]
+........................................................................ [ 10%]
+..............................................FF........................ [ 16%]
+......FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF................................... [ 21%]
+........................................................................ [ 27%]
+........................................................................ [ 32%]
+........................................................................ [ 38%]
+........................................................................ [ 43%]
+........................................................................ [ 49%]
+........................................................................ [ 54%]
+........................................................................ [ 60%]
+........................................................................ [ 65%]
+........................................................................ [ 71%]
+........................................................................ [ 76%]
+........................................................................ [ 82%]
+........................................................................ [ 87%]
+........................................................................ [ 93%]
+........................................................................ [ 98%]
+.................                                                        [100%]
+=================================== FAILURES ===================================
+_ test_route_world_references_are_public_photos_not_pose_and_robot_never_reset _
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_world_references_ar0')
+
+    def test_route_world_references_are_public_photos_not_pose_and_robot_never_reset(tmp_path):
+        import json,inspect,ast
+        import pybullet as p
+        from simulation.continuous_audit_world import RouteAuditWorld
+        from simulation.corridor_motion import CorridorWorld
+        root=Path(__file__).resolve().parents[1]
+        import runpy
+>       scene=runpy.run_path(str(root/'reports/multi-node-20261016/development/layouts.py'))['layout']()[1]
+
+tests/test_continuous_straight_run.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.10/runpy.py:288: in run_path
+    code, fname = _get_code_from_file(run_name, path_name)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+run_name = '<run_path>'
+fname = '/home/sunrise/toponav_project/reports/multi-node-20261016/development/layouts.py'
+
+    def _get_code_from_file(run_name, fname):
+        # Check for a compiled file first
+        from pkgutil import read_code
+        decoded_path = os.path.abspath(os.fsdecode(fname))
+>       with io.open_code(decoded_path) as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/development/layouts.py'
+
+/usr/lib/python3.10/runpy.py:252: FileNotFoundError
+__ test_route_runner_rejects_mixed_scene_and_invalid_transport_before_output ___
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_runner_rejects_mixe0')
+
+    def test_route_runner_rejects_mixed_scene_and_invalid_transport_before_output(tmp_path):
+        import json,pytest
+        root=Path(__file__).resolve().parents[1]
+>       c=json.loads((root/'reports/multi-node-20261016/suite.json').read_text())['cases'][0]
+
+tests/test_continuous_straight_run.py:163: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______________ test_route_suite_validation_is_dry_and_multinode _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_validation_is0')
+
+    def test_route_suite_validation_is_dry_and_multinode(tmp_path):
+        from simulation.continuous_straight_suite import load_route_suite
+>       p=tmp_path/'suite.json';p.write_text(json.dumps(route_suite()))
+
+tests/test_continuous_straight_suite.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+________ test_route_suite_cannot_weaken_contract_or_denominators[path] _________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken0')
+mutation = 'path'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+________ test_route_suite_cannot_weaken_contract_or_denominators[truth] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken1')
+mutation = 'truth'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+________ test_route_suite_cannot_weaken_contract_or_denominators[seed] _________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken2')
+mutation = 'seed'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ test_route_suite_cannot_weaken_contract_or_denominators[denominator] _____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken3')
+mutation = 'denominator'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+________ test_route_suite_cannot_weaken_contract_or_denominators[prior] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken4')
+mutation = 'prior'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ test_route_suite_cannot_weaken_contract_or_denominators[budget] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken5')
+mutation = 'budget'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+______ test_route_suite_cannot_weaken_contract_or_denominators[one_edge] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken6')
+mutation = 'one_edge'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ test_route_suite_cannot_weaken_contract_or_denominators[missing_layout] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken7')
+mutation = 'missing_layout'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+________ test_route_suite_cannot_weaken_contract_or_denominators[fault] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken8')
+mutation = 'fault'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+______ test_route_suite_cannot_weaken_contract_or_denominators[transport] ______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken9')
+mutation = 'transport'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ test_route_suite_cannot_weaken_contract_or_denominators[wrong_start] _____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken10')
+mutation = 'wrong_start'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____ test_route_suite_cannot_weaken_contract_or_denominators[wrong_heading] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken11')
+mutation = 'wrong_heading'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ test_route_suite_cannot_weaken_contract_or_denominators[graph_geometry] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_route_suite_cannot_weaken12')
+mutation = 'graph_geometry'
+
+    @pytest.mark.parametrize('mutation',['path','truth','seed','denominator','prior','budget','one_edge','missing_layout','fault','transport','wrong_start','wrong_heading','graph_geometry'])
+    def test_route_suite_cannot_weaken_contract_or_denominators(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_route_suite
+>       s=route_suite();c=s['cases'][0]
+
+tests/test_continuous_straight_suite.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:81: in route_suite
+    return json.loads((ROOT/'reports/multi-node-20261016/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ test_s6_suite_dry_validation_never_builds_world_or_generates_rgb _______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_dry_validation_n0')
+
+    def test_s6_suite_dry_validation_never_builds_world_or_generates_rgb(tmp_path):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       p=tmp_path/'suite.json';p.write_text(json.dumps(safety_suite()))
+
+tests/test_continuous_straight_suite.py:120: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[path] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened0')
+mutation = 'path'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_______ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[seed] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened1')
+mutation = 'seed'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[case_count] _____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened2')
+mutation = 'case_count'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[normal_as_refusal] _
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened3')
+mutation = 'normal_as_refusal'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[missing_mode] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened4')
+mutation = 'missing_mode'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[unknown_argument] __
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened5')
+mutation = 'unknown_argument'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[no_latch] ______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened6')
+mutation = 'no_latch'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[wrong_prior] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened7')
+mutation = 'wrong_prior'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_kind] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened8')
+mutation = 'camera_kind'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_tick] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened9')
+mutation = 'camera_tick'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+___ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[fake_blocker] ____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened10')
+mutation = 'fake_blocker'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[transport] _____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened11')
+mutation = 'transport'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+______ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[budget] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened12')
+mutation = 'budget'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+______ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[texture] ______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened13')
+mutation = 'texture'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+______ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[uniform] ______
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened14')
+mutation = 'uniform'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+_____ test_s6_suite_rejects_weakened_coverage_and_unbound_setup[truth_map] _____
+
+tmp_path = PosixPath('/tmp/pytest-of-sunrise/pytest-12/test_s6_suite_rejects_weakened15')
+mutation = 'truth_map'
+
+    @pytest.mark.parametrize('mutation',['path','seed','case_count','normal_as_refusal','missing_mode','unknown_argument','no_latch','wrong_prior','camera_kind','camera_tick','fake_blocker','transport','budget','texture','uniform','truth_map'])
+    def test_s6_suite_rejects_weakened_coverage_and_unbound_setup(tmp_path,mutation):
+        from simulation.continuous_straight_suite import load_safety_suite
+>       s=safety_suite();c=s['cases'][0];a=c['arguments']
+
+tests/test_continuous_straight_suite.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_continuous_straight_suite.py:115: in safety_suite
+    return json.loads((ROOT/'reports/control-safety-20261018/suite.json').read_text())
+/usr/lib/python3.10/pathlib.py:1134: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return self._accessor.open(self, mode, buffering, encoding, errors,
+                                   newline)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'
+
+/usr/lib/python3.10/pathlib.py:1119: FileNotFoundError
+=============================== warnings summary ===============================
+tests/test_paired_descriptor_checks.py::test_boundary_and_nonfinite_endpoints_exact[point5]
+  /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:32: RuntimeWarning: invalid value encountered in matmul
+    homogeneous = np.column_stack((points, np.ones(len(points)))) @ matrix.T
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/sunrise/toponav_project/reports/straight-paired-reduction-20261104/final-expanded.xml -
+=========================== short test summary info ============================
+FAILED tests/test_continuous_straight_run.py::test_route_world_references_are_public_photos_not_pose_and_robot_never_reset
+FAILED tests/test_continuous_straight_run.py::test_route_runner_rejects_mixed_scene_and_invalid_transport_before_output
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_validation_is_dry_and_multinode
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[path]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[truth]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[seed]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[denominator]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[prior]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[budget]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[one_edge]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[missing_layout]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[fault]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[transport]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[wrong_start]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[wrong_heading]
+FAILED tests/test_continuous_straight_suite.py::test_route_suite_cannot_weaken_contract_or_denominators[graph_geometry]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_dry_validation_never_builds_world_or_generates_rgb
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[path]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[seed]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[case_count]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[normal_as_refusal]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[missing_mode]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[unknown_argument]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[no_latch]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[wrong_prior]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_kind]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_tick]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[fake_blocker]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[transport]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[budget]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[texture]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[uniform]
+FAILED tests/test_continuous_straight_suite.py::test_s6_suite_rejects_weakened_coverage_and_unbound_setup[truth_map]
+33 failed, 1280 passed, 1 warning in 41.66s

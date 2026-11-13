@@ -1,0 +1,10 @@
+{
+  "restored_files": [
+    "roadvision/native_patch_contrast.py",
+    "tests/test_prepared_support_mask.py"
+  ],
+  "candidate_bytes_verified_before_restoration": true,
+  "preexisting_files_byte_identical": 1013,
+  "candidate_promoted": false,
+  "performance_gate": false
+}

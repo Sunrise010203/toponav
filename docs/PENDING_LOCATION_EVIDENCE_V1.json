@@ -1,0 +1,29 @@
+{
+  "profile": "toponav_pending_location_evidence_v1",
+  "version": 1,
+  "scope": "opt_in_readonly_byte_evidence_not_old_execution_trace",
+  "implementation": "python_only_no_cpp_diagnostic",
+  "envelope_limit": 36892,
+  "inspection_limit": 36893,
+  "prediction_scope": "envelope_structure_only",
+  "controls_and_inner_packets_inspected": false,
+  "observed_validation_site": null,
+  "unique_field_localization_observed": false,
+  "original_same_label_links": 16,
+  "archive_cases": 532,
+  "case_count": 567,
+  "families": {
+    "declared_snapshot": 6,
+    "invalid_snapshot": 19,
+    "scan_frontier": 10,
+    "sealed_2U": 532
+  },
+  "old_protocol_validator_calls": 0,
+  "formal_compilations": 0,
+  "portable_cpp_executions": 0,
+  "observation_input_binding_authenticated": false,
+  "old_validator_executed_by_diagnostic": false,
+  "production_guard_fixed": false,
+  "movement_authorized": false,
+  "observation_error_max_chars": 4096
+}

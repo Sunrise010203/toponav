@@ -1,0 +1,38 @@
+{
+  "profile": "toponav_pending_common_domain_v1",
+  "scope": "opt_in_offline_only",
+  "magic": "TPT1",
+  "version": 1,
+  "envelope": {
+    "total_max_bytes": 36892,
+    "controls_max_bytes": 4096,
+    "packet_max_bytes": 8193,
+    "inner_schema_max_bytes": 8192,
+    "null_marker": 4294967295
+  },
+  "controls": "canonical_sorted_compact_ascii_closed_six_fields",
+  "stages": [
+    "domain_refused",
+    "review_refused",
+    "review_returned"
+  ],
+  "original_python_api_universally_equivalent": false,
+  "old_tpq1_wrapper_fixed": false,
+  "whole_domain_exact_error_equivalence_claimed": false,
+  "domain_acceptance_is_schema_success": false,
+  "domain_acceptance_is_authority": false,
+  "raw_packets_preserved": true,
+  "four_sealed_differences": {
+    "stop_float_views": "domain_controls",
+    "refusal_float_views": "domain_controls",
+    "stop_surrogate_views": "domain_controls",
+    "stop_large_ignored_reserve": "domain_field_bound"
+  },
+  "trace_profile_added": false,
+  "runtime_owner_implemented": false,
+  "one_time_consumption_implemented": false,
+  "trusted_poll_implemented": false,
+  "production_guard_fixed": false,
+  "movement_authorized": false,
+  "actual_exposure_wall_s": null
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "All report files except this self-referential manifest; no production candidate",
+  "files": {
+    "AUDIT.json": "1f1f4d5d60f1ab179af5beff37bf811cad0ac50b1ef4099d1544734feba3990c",
+    "BEFORE_PINS.json": "34403c1fda3de7ae420d8042a6a362d6995ff0bc7092d31f585d374847abc259",
+    "FINAL_VERIFICATION.json": "1f1f4d5d60f1ab179af5beff37bf811cad0ac50b1ef4099d1544734feba3990c",
+    "PLAN.json": "028ab13e9e92d8ee116336d9e7f6a6f36a869300100e946406cf5c9341f14fbb",
+    "REPORT.md": "ea5928d97a25d89e3f939273d16f893517d92036da99f7d678f3cb4428939d3e",
+    "audit.py": "1edc51dbe8d8d35fc33d42fbc3b298d5a4d1e1e016068fe265203085c50d5f64"
+  }
+}

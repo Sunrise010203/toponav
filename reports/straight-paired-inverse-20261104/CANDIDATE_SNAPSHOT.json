@@ -1,0 +1,7 @@
+{
+  "snapshot_to_frozen_source": {
+    "reports/straight-paired-inverse-20261104/candidate/roadvision/paired_descriptor_checks.py": "roadvision/paired_descriptor_checks.py",
+    "reports/straight-paired-inverse-20261104/candidate/tests/test_paired_inverse.py.snapshot": "tests/test_paired_inverse.py"
+  },
+  "all_hashes_match": true
+}

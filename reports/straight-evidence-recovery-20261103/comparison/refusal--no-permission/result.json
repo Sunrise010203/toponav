@@ -1,0 +1,170 @@
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "no_motion",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 1,
+  "decision_count": 1,
+  "controller_result": {
+    "result_type": "rejected_no_motion",
+    "state": "aborted",
+    "reason": "motion_not_authorized",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 0,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "no_motion",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 1.9,
+      "position_m": [
+        0.5000432086285808,
+        1.030524311812177e-08,
+        0.15998998808794088
+      ],
+      "camera_position_m": [
+        0.7000433206558228,
+        -6.956422566872789e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.00020762951713383565,
+      "speed_m_s": 2.2760974933032694e-05,
+      "yaw_rate_rad_s": -1.9490710989584793e-06,
+      "wall_contacts": 0
+    },
+    "displacement_m": 3.1829924632246585e-05,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.2999566793441772,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 2.2760974933032694e-05,
+    "maximum_audited_yaw_rate_rad_s": 1.9490710989584793e-06,
+    "bootstrap_max_displacement_m": 0.0
+  },
+  "elapsed_wall_s": 0.1694961670000339,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 40,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "no_motion",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}

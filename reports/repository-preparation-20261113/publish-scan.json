@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-13",
+  "files_scanned": 4621,
+  "total_bytes": 358312838,
+  "scope": "Git-visible candidate files; high-confidence credential patterns, symlinks, ELF and >=50MiB files. This is not a comprehensive secret/security audit.",
+  "credential_pattern_findings": [],
+  "files_at_least_50MiB": [],
+  "symlinks": [],
+  "elf_files": []
+}

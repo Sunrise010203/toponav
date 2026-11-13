@@ -1,0 +1,6 @@
+{
+  "corrected_freeze_sha256": "b0aa171aabeaa0f9641268173c18fc86eb0ecb874f531f5ebcc12a29fdd5e3ea",
+  "all_frozen_inputs_unchanged": true,
+  "performance_gate_passed": false,
+  "decision": "restore all three modified existing production files; retain pure cache as unselected experiment"
+}

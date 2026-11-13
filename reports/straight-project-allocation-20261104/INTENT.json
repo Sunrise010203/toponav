@@ -1,0 +1,11 @@
+{
+  "candidate": "C-contiguous float64 Nx2 homogeneous coordinate direct allocation, same matmul and validity checks",
+  "production_edits": [
+    "roadvision/corridor_rgb_probe.py"
+  ],
+  "eligibility": "exact ndarray, float64, two dimensional Nx2, C-contiguous; all other operands use original column_stack",
+  "proof": "Same (N,3) C-contiguous float64 operands, source bits copied including signed zero and NaN payload, appended exact 1.; matrix transpose, matmul shape/order/dtype, denominator and finite checks unchanged. No batch merging, caching, inverse reuse, search or solver reduction.",
+  "baseline": "Original projection bound by identity to ALL preloaded pipeline aliases for entire baseline controller call, not only paired-descriptor call; same current paired filter and H/I identities",
+  "gate": "All three complete total-wall medians AND means strictly improve, all outputs exactly equal; one fixed serial AB/BA comparison; failure restores old production bytes and stops candidate timing/profile/replay",
+  "safety_changed": false
+}

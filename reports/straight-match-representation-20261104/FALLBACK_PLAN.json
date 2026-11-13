@@ -1,0 +1,15 @@
+{
+  "scope": "Source-directed adversarial numerical audit of generic OpenCV backend, not tuning or performance",
+  "reason": "4.10.0 tagged templmatch.cpp crossCorr chooses CV_64F for float32 inputs but CV_32F for uint8; IPP enabled numerical corpus alone cannot justify unconditional dtype substitution",
+  "corpus": "Exactly the original ten synthetic cases/seed from PLAN.json, no new seeds or sizes",
+  "passes": 1,
+  "opencv_threads": 1,
+  "temporary_ipp_enabled": false,
+  "restore": "Prior thread and IPP states restored in finally; no installed or production files changed",
+  "gate": "Any different bit disproves unconditional dtype substitution across supported backends; all-equal still not universal proof for IPP",
+  "timing_runs": 0,
+  "controller_sequences": 0,
+  "physical_execution": false,
+  "production_changes": false,
+  "backend_configuration_deployed": false
+}

@@ -1,0 +1,174 @@
+{
+  "reference": "reports/straight-paired-support-20261104/final-expanded.xml",
+  "current": "reports/straight-paired-range-20261104/final-expanded.xml",
+  "failed_nodes_and_messages_unchanged": true,
+  "failed": 33,
+  "passed": 1375,
+  "failures": [
+    {
+      "classname": "tests.test_continuous_straight_run",
+      "name": "test_route_world_references_are_public_photos_not_pose_and_robot_never_reset",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/development/layouts.py'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_run",
+      "name": "test_route_runner_rejects_mixed_scene_and_invalid_transport_before_output",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_validation_is_dry_and_multinode",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[path]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[truth]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[seed]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[denominator]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[prior]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[budget]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[one_edge]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[missing_layout]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[fault]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[transport]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[wrong_start]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[wrong_heading]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_route_suite_cannot_weaken_contract_or_denominators[graph_geometry]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/multi-node-20261016/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_dry_validation_never_builds_world_or_generates_rgb",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[path]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[seed]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[case_count]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[normal_as_refusal]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[missing_mode]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[unknown_argument]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[no_latch]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[wrong_prior]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_kind]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[camera_tick]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[fake_blocker]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[transport]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[budget]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[texture]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[uniform]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    },
+    {
+      "classname": "tests.test_continuous_straight_suite",
+      "name": "test_s6_suite_rejects_weakened_coverage_and_unbound_setup[truth_map]",
+      "message": "FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/control-safety-20261018/suite.json'"
+    }
+  ]
+}

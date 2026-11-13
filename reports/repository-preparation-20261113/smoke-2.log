@@ -1,0 +1,1 @@
+{"status": "reachable", "start": "N01", "goal": "N06", "nodes": ["N01", "N02", "N03", "N04", "N06"], "channels": ["C01", "C02", "C03", "C06"], "length_m": null, "cost": 4, "cost_unit": "hops", "hop_count": 4}

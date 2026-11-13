@@ -1,0 +1,551 @@
+{
+  "renderer": "PyBullet TinyRenderer 3.2.7",
+  "class_ids": [
+    "exits_0000",
+    "exits_0001",
+    "exits_0010",
+    "exits_0011",
+    "exits_0100",
+    "exits_0101",
+    "exits_0110",
+    "exits_0111",
+    "exits_1000",
+    "exits_1001",
+    "exits_1010",
+    "exits_1011",
+    "exits_1100",
+    "exits_1101",
+    "exits_1110",
+    "exits_1111",
+    "unobservable"
+  ],
+  "layout_fingerprints": {
+    "train_grid": "326768b171f7fdb7089b0dd4cd92bf73154ba09287abed983e593caeec079080",
+    "train_bypass": "144c8743f7825b7208b1f99a75e41c2968bf8342bf1fa677170541db1c914879",
+    "val_branch": "0d988a0129e5d5f23fd6596d29d3190978cf691a0a6d563be9b38e33e51233cd",
+    "test_locked": "bcb26be076befafb6132e719971b2ceb2b48d7e6af48e735a867b27b0e755928"
+  },
+  "counts_per_class_per_layout": {
+    "train": 40,
+    "val": 16,
+    "test": 24
+  },
+  "view_order": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "rows": [
+    {
+      "path": "train_grid_00_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 0,
+      "frame_id": "train_grid_00_0000",
+      "captured_at_ns": 1791985657547050946,
+      "seed": 4000,
+      "audit": {
+        "cell": [
+          2,
+          1
+        ],
+        "heading_deg": 270,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "camera_position": [
+          11.930669047883429,
+          6.049595590771083,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_01_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 1,
+      "frame_id": "train_grid_01_0000",
+      "captured_at_ns": 1791985657567272598,
+      "seed": 5000,
+      "audit": {
+        "cell": [
+          1,
+          1
+        ],
+        "heading_deg": 0,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "camera_position": [
+          5.933530670277102,
+          5.979376003622524,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_02_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 2,
+      "frame_id": "train_grid_02_0000",
+      "captured_at_ns": 1791985657582298073,
+      "seed": 6000,
+      "audit": {
+        "cell": [
+          2,
+          0
+        ],
+        "heading_deg": 270,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          false,
+          true,
+          false
+        ],
+        "camera_position": [
+          11.976759860296337,
+          0.029905304572455424,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_03_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 3,
+      "frame_id": "train_grid_03_0000",
+      "captured_at_ns": 1791985657597242371,
+      "seed": 7000,
+      "audit": {
+        "cell": [
+          2,
+          0
+        ],
+        "heading_deg": 270,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          false,
+          true,
+          true
+        ],
+        "camera_position": [
+          11.976554756837903,
+          -0.06961150811899208,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_04_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 4,
+      "frame_id": "train_grid_04_0000",
+      "captured_at_ns": 1791985657614673031,
+      "seed": 8000,
+      "audit": {
+        "cell": [
+          0,
+          1
+        ],
+        "heading_deg": 0,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          true,
+          false,
+          false
+        ],
+        "camera_position": [
+          0.05510793291264464,
+          6.026572807270888,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_05_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 5,
+      "frame_id": "train_grid_05_0000",
+      "captured_at_ns": 1791985657630516249,
+      "seed": 9000,
+      "audit": {
+        "cell": [
+          1,
+          2
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          true,
+          false,
+          true
+        ],
+        "camera_position": [
+          6.013305926844396,
+          11.944061715471458,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_06_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 6,
+      "frame_id": "train_grid_06_0000",
+      "captured_at_ns": 1791985657647883539,
+      "seed": 10000,
+      "audit": {
+        "cell": [
+          0,
+          1
+        ],
+        "heading_deg": 180,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          true,
+          true,
+          false
+        ],
+        "camera_position": [
+          -0.010955973456534374,
+          6.041608612818004,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_07_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 7,
+      "frame_id": "train_grid_07_0000",
+      "captured_at_ns": 1791985657663441708,
+      "seed": 11000,
+      "audit": {
+        "cell": [
+          1,
+          2
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "camera_position": [
+          5.9262026908516985,
+          12.07472713780989,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_08_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 8,
+      "frame_id": "train_grid_08_0000",
+      "captured_at_ns": 1791985657682614868,
+      "seed": 12000,
+      "audit": {
+        "cell": [
+          0,
+          1
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "camera_position": [
+          0.05550239158307156,
+          5.993337152008677,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_09_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 9,
+      "frame_id": "train_grid_09_0000",
+      "captured_at_ns": 1791985657697777636,
+      "seed": 13000,
+      "audit": {
+        "cell": [
+          2,
+          1
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          false,
+          false,
+          true
+        ],
+        "camera_position": [
+          11.994566025776072,
+          6.023393886599976,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_10_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 10,
+      "frame_id": "train_grid_10_0000",
+      "captured_at_ns": 1791985657715947821,
+      "seed": 14000,
+      "audit": {
+        "cell": [
+          1,
+          1
+        ],
+        "heading_deg": 180,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "camera_position": [
+          5.938650349765139,
+          5.963703195356334,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_11_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 11,
+      "frame_id": "train_grid_11_0000",
+      "captured_at_ns": 1791985657732718223,
+      "seed": 15000,
+      "audit": {
+        "cell": [
+          0,
+          1
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "camera_position": [
+          -0.03259042007635205,
+          5.969909450393907,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_12_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 12,
+      "frame_id": "train_grid_12_0000",
+      "captured_at_ns": 1791985657751795975,
+      "seed": 16000,
+      "audit": {
+        "cell": [
+          1,
+          1
+        ],
+        "heading_deg": 0,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "camera_position": [
+          5.959456306623621,
+          5.963263951494372,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_13_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 13,
+      "frame_id": "train_grid_13_0000",
+      "captured_at_ns": 1791985657766251265,
+      "seed": 17000,
+      "audit": {
+        "cell": [
+          1,
+          0
+        ],
+        "heading_deg": 0,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          true,
+          false,
+          true
+        ],
+        "camera_position": [
+          5.996490704925563,
+          0.06797443083555656,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_14_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 14,
+      "frame_id": "train_grid_14_0000",
+      "captured_at_ns": 1791985657783489305,
+      "seed": 18000,
+      "audit": {
+        "cell": [
+          0,
+          1
+        ],
+        "heading_deg": 0,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "camera_position": [
+          0.034994472049197256,
+          6.053097610330065,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_15_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 15,
+      "frame_id": "train_grid_15_0000",
+      "captured_at_ns": 1791985657799369672,
+      "seed": 19000,
+      "audit": {
+        "cell": [
+          1,
+          1
+        ],
+        "heading_deg": 90,
+        "phase": "stable",
+        "ray_open": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "camera_position": [
+          5.929782054227276,
+          5.982045434740261,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    },
+    {
+      "path": "train_grid_16_0000.png",
+      "layout_id": "train_grid",
+      "batch_id": "train_grid_b0",
+      "split": "train",
+      "class_index": 16,
+      "frame_id": "train_grid_16_0000",
+      "captured_at_ns": 1791985657819566947,
+      "seed": 20000,
+      "audit": {
+        "cell": [
+          1,
+          1
+        ],
+        "heading_deg": 180,
+        "phase": "approaching",
+        "ray_open": [
+          true,
+          false,
+          false,
+          true
+        ],
+        "camera_position": [
+          3.622081436248454,
+          6.010534698971564,
+          1.0
+        ],
+        "camera_fov_deg": 90
+      }
+    }
+  ]
+}

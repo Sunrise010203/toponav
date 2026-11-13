@@ -1,0 +1,13 @@
+{
+  "complete_decisions_checked": 160,
+  "workload_identical_every_tick": true,
+  "binary_profile_matches_every_function_aggregate": true,
+  "per_tick_exclusive_time_partition_verified": true,
+  "total_pair_calls": 459,
+  "total_pair_input_tracks": 28732,
+  "total_pair_matches": 114756,
+  "total_matches": 126105,
+  "original_gate_reopened": false,
+  "controller_or_physics_rerun": false,
+  "all_preexisting_and_frozen_files_unchanged": true
+}

@@ -1,0 +1,1215 @@
+{
+  "version": 1,
+  "project_root": "/home/sunrise/toponav_project",
+  "collected": [
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_every_uint8_value_roundtrips",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[0.25]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-0.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-1.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[256.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[nan]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[inf]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-inf]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[float64]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[int32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_noncontiguous_exact_conversion",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_identical_maps",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_one_ulp_is_rejected_without_tolerance",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_signed_zero_is_rejected",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_nan_payload_is_not_hidden",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other1]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_alternate_never_returned_and_one_witness_per_group",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_ineligible_calls_only_baseline",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_freeze_detects_changed_bytes",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[100]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[247]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_opencv_integer_moments_are_exact_for_every_constant_level",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[0-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[11-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[12-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[22-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[23-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[33-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[34-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[float]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[wrong_shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point1]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point2]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point3]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point4]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point5]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point6]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point7]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point9]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point10]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[policy]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[callback]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_evidence_source_is_original_except_patch_reader_and_namespace",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[patch]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[supported_patch]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[ncc]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[h_evidence]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[i_evidence]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_no_patch_or_input_references_retained_across_calls",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[boundary]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[flat]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_support_callback_receives_original_mask",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_no_searches_unwrap_before_original_alternative_path",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_region_and_masks_release_without_global_retention",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    }
+  ],
+  "selected": [
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_every_uint8_value_roundtrips",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[0.25]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-0.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-1.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[256.0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[nan]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[inf]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_unsafe_conversion_ineligible[-inf]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[float64]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_wrong_dtype_ineligible[int32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_noncontiguous_exact_conversion",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_identical_maps",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_one_ulp_is_rejected_without_tolerance",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_signed_zero_is_rejected",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_nan_payload_is_not_hidden",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_map_contract_fails_closed[other1]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_alternate_never_returned_and_one_witness_per_group",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_ineligible_calls_only_baseline",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_attach_restores_on_exit_and_exception[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_check.py::test_freeze_detects_changed_bytes",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_check.py",
+      "group": "historical",
+      "source_sha256": "65ab1d69674393fb7536c3e1263c05e0ab755f672f5ec8afc50a8f3074362e2c"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[False-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-match-representation-20261104/test_fallback_check.py::test_backend_restores_prior_state_on_success_or_exception[True-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-match-representation-20261104/test_fallback_check.py",
+      "group": "historical",
+      "source_sha256": "ca57f18b2258eaae916134b00645fb77c792de166d5f5d75d9bf802c54db133e"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[100]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_all_two_level_multiplicities_near_threshold[247]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_random_full_range_and_near_threshold_integer_patches[strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_opencv_integer_moments_are_exact_for_every_constant_level",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[0-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[11-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[12-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[22-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[23-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[33-True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_conservative_band_uses_original_std[34-False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[float]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[wrong_shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_ineligible_raw_patch_uses_original_std[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point0]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point1]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point2]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point3]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point4]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point5]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point6]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point7]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point9]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_original_point_validation_and_fractional_extraction[point10]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[policy]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_changed_callback_canvas_or_policy_falls_back[callback]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[False-float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-uint8]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_supported_patch_retains_original_mask_sampling[True-float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_evidence_source_is_original_except_patch_reader_and_namespace",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[patch]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[supported_patch]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[ncc]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[h_evidence]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_altered_original_callbacks_are_honored[i_evidence]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py::test_no_patch_or_input_references_retained_across_calls",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py",
+      "group": "historical",
+      "source_sha256": "bdb60d5f5c73533af3747ca54c5f38b058966c30f25fd4009bfcca926a55aab1"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[ones-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[padding-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-C]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-F]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-reverse]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_prepared_sampling_values_and_footprints_exact[random-strided]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[float32]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[shape]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_ineligible_masks_keep_original_object[subclass]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[boundary]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_conversion_remains_lazy_after_patch_rejection[flat]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_support_callback_receives_original_mask",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_changed_evidence_callback_receives_original_masks[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_no_searches_unwrap_before_original_alternative_path",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_region_and_masks_release_without_global_retention",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[False]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    },
+    {
+      "nodeid": "reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py::test_pair_owns_at_most_two_conversions_and_still_samples_each_patch[True]",
+      "source": "/home/sunrise/toponav_project/reports/straight-paired-support-20261104/candidate/tests/test_prepared_support_mask.py",
+      "group": "historical",
+      "source_sha256": "137114b1d9e889293e448a5f94dadd23218d1ddb543b523262e6e2677a214ef3"
+    }
+  ],
+  "deselected": [],
+  "collection_errors": [
+    {
+      "nodeid": "reports/straight-ncc-unit-clip-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:20: in <module>\n    old = load(HERE/'before/roadvision/rgb_motion_checks.py', '_old_ncc_clip')\nreports/straight-ncc-unit-clip-20261104/candidate/tests/test_ncc_unit_clip.py:16: in load\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-ncc-unit-clip-20261104/candidate/reports/straight-ncc-unit-clip-20261104/before/roadvision/rgb_motion_checks.py'"
+    },
+    {
+      "nodeid": "reports/straight-offset-workload-20261104/driver-v1",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-offset-workload-20261104/driver-v1/test_straight_workload_profile.py:16: in <module>\n    from test_paired_descriptor_checks import inputs\nE   ModuleNotFoundError: No module named 'test_paired_descriptor_checks'"
+    },
+    {
+      "nodeid": "reports/straight-paired-range-20261104/before/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:25: in <module>\n    fast = archived('_support_candidate_contrast', ARCHIVE/'candidate/roadvision/native_patch_contrast.py')\nreports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py:20: in archived\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/before/reports/straight-paired-support-20261104/candidate/roadvision/native_patch_contrast.py'"
+    },
+    {
+      "nodeid": "reports/straight-paired-range-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-paired-range-20261104/candidate/tests/test_native_patch_range.py:15: in <module>\n    spec.loader.exec_module(fast)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-paired-range-20261104/candidate/reports/straight-paired-range-20261104/candidate/roadvision/native_patch_contrast.py'"
+    },
+    {
+      "nodeid": "reports/straight-project-allocation-20261104/candidate/tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\nreports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:20: in <module>\n    old = load(HERE/'before/roadvision/corridor_rgb_probe.py', '_project_old')\nreports/straight-project-allocation-20261104/candidate/tests/test_homogeneous_projection.py:16: in load\n    spec.loader.exec_module(module)\n<frozen importlib._bootstrap_external>:879: in exec_module\n    ???\n<frozen importlib._bootstrap_external>:1016: in get_code\n    ???\n<frozen importlib._bootstrap_external>:1073: in get_data\n    ???\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-project-allocation-20261104/candidate/reports/straight-project-allocation-20261104/before/roadvision/corridor_rgb_probe.py'"
+    },
+    {
+      "nodeid": "tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:610: in import_path\n    raise ImportPathMismatchError(module_name, module_file, path)\nE   _pytest.pathlib.ImportPathMismatchError: ('test_native_patch_contrast', '/home/sunrise/toponav_project/reports/straight-paired-contrast-20261104/development-v1/tests/test_native_patch_contrast.py', PosixPath('/home/sunrise/toponav_project/tests/test_native_patch_contrast.py'))"
+    }
+  ],
+  "collection_skips": [],
+  "discovery": {
+    "python_files": [
+      "test_*.py",
+      "*_test.py"
+    ],
+    "python_classes": [
+      "Test"
+    ],
+    "python_functions": [
+      "test"
+    ],
+    "norecursedirs": [
+      "*.egg",
+      ".*",
+      "_darcs",
+      "build",
+      "CVS",
+      "dist",
+      "node_modules",
+      "venv",
+      "{arch}"
+    ],
+    "testpaths": [],
+    "config_file": null
+  },
+  "discovery_restrictions": [],
+  "ignored_test_paths": []
+}

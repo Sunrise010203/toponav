@@ -1,0 +1,1922 @@
+pybullet build time: Jan 29 2025 23:16:28
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1492 -0.0013
+20 following fresh_two_side_geometry_and_ground_transfer 0.1494 0.0019
+30 following fresh_two_side_geometry_and_ground_transfer 0.1495 -0.003
+40 following fresh_two_side_geometry_and_ground_transfer 0.1496 0.0037
+50 following fresh_two_side_geometry_and_ground_transfer 0.1474 0.016
+60 following fresh_two_side_geometry_and_ground_transfer 0.1448 -0.0036
+70 waiting_evidence awaiting_stationary_and_fresh_rearm 0.0 0.0
+74 aborted evidence_recovery_timeout_geometry_or_free_path_unverified 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 75,
+  "decision_count": 75,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 52,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_transfer",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 9.3,
+      "position_m": [
+        1.2707099555111827,
+        0.0007174622757173156,
+        0.15998998595939354
+      ],
+      "camera_position_m": [
+        1.4707083702087402,
+        -0.0001184008433483541,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.23946421757110073,
+      "speed_m_s": 2.3033906928254628e-05,
+      "yaw_rate_rad_s": -3.160020786315416e-06,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.7706989107471622,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 2.5292916297912598,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 42,
+        "requested_sim_s": 4.7,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011748341622376096,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011748341622376096
+      },
+      {
+        "tick": 54,
+        "requested_sim_s": 5.9,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011577349685413253,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011577349685413253
+      },
+      {
+        "tick": 64,
+        "requested_sim_s": 6.8999999999999995,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15000000000000036,
+        "distance_m": 0.009636217114858025,
+        "stop_request_duration_s": 2.408333333333334,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.009636217114858025
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.1502755842142573,
+    "maximum_audited_yaw_rate_rad_s": 0.04853741536219307,
+    "bootstrap_max_displacement_m": 0.08042624269226878
+  },
+  "elapsed_wall_s": 42.348245029999816,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_transfer"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_center--gradient_transfer displacement 0.7706989107471622 completed False following 46 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1412 0.0229
+20 waiting_evidence awaiting_stationary_and_fresh_rearm 0.0 0.0
+30 waiting_evidence awaiting_stationary_and_fresh_rearm 0.0 0.0
+38 aborted evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 39,
+  "decision_count": 39,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 14,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 5.7,
+      "position_m": [
+        0.7049717057730933,
+        0.0002883226656311398,
+        0.15998998596349742
+      ],
+      "camera_position_m": [
+        0.9049713611602783,
+        0.0007241662824526429,
+        0.449989914894104
+      ],
+      "yaw_deg": 0.12485622519362179,
+      "speed_m_s": 1.8343825950488715e-05,
+      "yaw_rate_rad_s": -2.9626886663427972e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.2049605298467279,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.0950286388397217,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 14,
+        "requested_sim_s": 1.9,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.012001022903216845,
+        "stop_request_duration_s": 0.7000000000000002,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.012001022903216845
+      },
+      {
+        "tick": 22,
+        "requested_sim_s": 2.7,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.11666666666666625,
+        "distance_m": 0.006424361383493835,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.006424361383493835
+      },
+      {
+        "tick": 28,
+        "requested_sim_s": 3.3,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.1166666666666667,
+        "distance_m": 0.006445556284732251,
+        "stop_request_duration_s": 2.408333333333334,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.006445556284732251
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002153049426312,
+    "maximum_audited_yaw_rate_rad_s": 0.022980070236126048,
+    "bootstrap_max_displacement_m": 0.08042624269226878
+  },
+  "elapsed_wall_s": 20.014520032999826,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_center--gradient_history displacement 0.2049605298467279 completed False following 8 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 waiting_evidence awaiting_stationary_and_fresh_rearm 0.0 0.0
+20 following fresh_two_side_geometry_and_ground_transfer 0.1475 -0.0048
+30 waiting_evidence geometry_or_free_path_unverified 0.0 0.0
+39 aborted evidence_recovery_timeout_geometry_or_free_path_unverified 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 6.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 313,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 40,
+  "decision_count": 40,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 15,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_transfer",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113847029944,
+        1.2447280764446924e-08,
+        0.1599899864203849
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4432737316383282e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.1378212229837655e-05,
+      "speed_m_s": 2.2721823284539935e-05,
+      "yaw_rate_rad_s": -1.902844750509564e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 5.8,
+      "position_m": [
+        0.7243567415329643,
+        -0.00024667916789772554,
+        0.15998998608057835
+      ],
+      "camera_position_m": [
+        0.9243553876876831,
+        -0.0010127386776730418,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.21946417006885718,
+      "speed_m_s": 1.8501332556800977e-05,
+      "yaw_rate_rad_s": -2.81476503214861e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.22434549246178198,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 5.075644612312317,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 8,
+        "requested_sim_s": 1.3,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.16666666666666652,
+        "distance_m": 0.012182722636944894,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.012182722636944894
+      },
+      {
+        "tick": 21,
+        "requested_sim_s": 2.6,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011816765140897174,
+        "stop_request_duration_s": 0.6999999999999997,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011816765140897174
+      },
+      {
+        "tick": 29,
+        "requested_sim_s": 3.4,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.1166666666666667,
+        "distance_m": 0.006609561510631307,
+        "stop_request_duration_s": 2.4083333333333337,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.006609561510631307
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002160174556653,
+    "maximum_audited_yaw_rate_rad_s": 0.018116712290285258,
+    "bootstrap_max_displacement_m": 0.08041942469100423
+  },
+  "elapsed_wall_s": 24.93324424599996,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 6.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 313,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_transfer"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_default--gradient_transfer displacement 0.22434549246178198 completed False following 9 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 waiting_evidence awaiting_stationary_and_fresh_rearm 0.0 0.0
+20 waiting_evidence geometry_or_free_path_unverified 0.0 0.0
+24 aborted evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 6.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 313,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 25,
+  "decision_count": 25,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 7,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113847029944,
+        1.2447280764446924e-08,
+        0.1599899864203849
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4432737316383282e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.1378212229837655e-05,
+      "speed_m_s": 2.2721823284539935e-05,
+      "yaw_rate_rad_s": -1.902844750509564e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 4.3,
+      "position_m": [
+        0.6051399401042019,
+        -9.169899804030524e-07,
+        0.15998998934557696
+      ],
+      "camera_position_m": [
+        0.80513995885849,
+        -1.933614839799702e-05,
+        0.4499899446964264
+      ],
+      "yaw_deg": -0.005281570891474201,
+      "speed_m_s": 1.80370076547871e-05,
+      "yaw_rate_rad_s": -3.059584311330557e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.10512855540531603,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 5.19486004114151,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 8,
+        "requested_sim_s": 1.3,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.16666666666666652,
+        "distance_m": 0.012182722636944894,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.012182722636944894
+      },
+      {
+        "tick": 14,
+        "requested_sim_s": 1.9,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.1166666666666667,
+        "distance_m": 0.006468499140854924,
+        "stop_request_duration_s": 2.4083333333333337,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.006468499140854924
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002160174556653,
+    "maximum_audited_yaw_rate_rad_s": 8.911266575680724e-05,
+    "bootstrap_max_displacement_m": 0.08041942469100423
+  },
+  "elapsed_wall_s": 20.18491798299965,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 6.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 313,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_default--gradient_history displacement 0.10512855540531603 completed False following 1 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1483 -0.0331
+20 following fresh_two_side_geometry_and_ground_transfer 0.1425 -0.0015
+30 following fresh_two_side_geometry_and_ground_transfer 0.1433 -0.003
+40 following fresh_two_side_geometry_and_ground_transfer 0.1467 -0.0043
+50 following fresh_two_side_geometry_and_ground_transfer 0.1473 -0.0128
+60 following fresh_two_side_geometry_and_ground_transfer 0.1427 -0.013
+70 following fresh_two_side_geometry_and_ground_transfer 0.1408 0.0088
+79 aborted recovery_count_exhausted 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.06,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 80,
+  "decision_count": 80,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "recovery_count_exhausted",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 61,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_transfer",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113398811883,
+        0.06000001246447878,
+        0.15998998639048287
+      ],
+      "camera_position_m": [
+        0.7000113725662231,
+        0.059999678283929825,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.00010252294104706858,
+      "speed_m_s": 2.2653996016081943e-05,
+      "yaw_rate_rad_s": -3.8412473952431195e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 9.8,
+      "position_m": [
+        1.3878639665149535,
+        0.044468794717449335,
+        0.1599899885338361
+      ],
+      "camera_position_m": [
+        1.5878092050552368,
+        0.039786919951438904,
+        0.4499899446964264
+      ],
+      "yaw_deg": -1.3413852391517018,
+      "speed_m_s": 1.7825700527250574e-05,
+      "yaw_rate_rad_s": -2.974026561255232e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.8879884601418994,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 2.412190794944763,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 12,
+        "requested_sim_s": 1.7,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333344,
+        "distance_m": 0.011413159970914943,
+        "stop_request_duration_s": 0.5000000000000002,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011413159970914943
+      },
+      {
+        "tick": 43,
+        "requested_sim_s": 4.8,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011068403115342499,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011068403115342499
+      },
+      {
+        "tick": 54,
+        "requested_sim_s": 5.9,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.012041271137286326,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.012041271137286326
+      },
+      {
+        "tick": 78,
+        "requested_sim_s": 8.3,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.010961321653813966,
+        "stop_request_duration_s": 1.5083333333333329,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.010961321653813966
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15016801132828675,
+    "maximum_audited_yaw_rate_rad_s": 0.03682227053337379,
+    "bootstrap_max_displacement_m": 0.08042750874692133
+  },
+  "elapsed_wall_s": 53.06377969799996,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.06,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_transfer"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_offset_plus--gradient_transfer displacement 0.8879884601418994 completed False following 55 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1474 -0.0295
+20 following fresh_two_side_geometry_and_ground_transfer 0.148 -0.0202
+30 following fresh_two_side_geometry_and_ground_transfer 0.1348 0.0183
+40 following fresh_two_side_geometry_and_ground_transfer 0.1417 0.0034
+50 following fresh_two_side_geometry_and_ground_transfer 0.1371 0.0178
+60 following fresh_two_side_geometry_and_ground_transfer 0.1442 0.0043
+70 following fresh_two_side_geometry_and_ground_transfer 0.1431 -0.0006
+80 waiting_evidence geometry_or_free_path_unverified 0.0 0.0
+82 aborted evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.06,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 83,
+  "decision_count": 83,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "evidence_recovery_timeout_awaiting_stationary_and_fresh_rearm",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 58,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113398811883,
+        0.06000001246447878,
+        0.15998998639048287
+      ],
+      "camera_position_m": [
+        0.7000113725662231,
+        0.059999678283929825,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.00010252294104706858,
+      "speed_m_s": 2.2653996016081943e-05,
+      "yaw_rate_rad_s": -3.8412473952431195e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 10.1,
+      "position_m": [
+        1.3441100058763025,
+        0.04453757338248645,
+        0.15998998601740538
+      ],
+      "camera_position_m": [
+        1.5440618991851807,
+        0.04014873877167702,
+        0.449989914894104
+      ],
+      "yaw_deg": -1.257412820053556,
+      "speed_m_s": 1.832511804748759e-05,
+      "yaw_rate_rad_s": -2.771270906339813e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.8442402767915634,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 2.4559381008148193,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 11,
+        "requested_sim_s": 1.6,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.16666666666666652,
+        "distance_m": 0.011666719872536434,
+        "stop_request_duration_s": 0.6999999999999997,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011666719872536434
+      },
+      {
+        "tick": 21,
+        "requested_sim_s": 2.6,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.012041619957513554,
+        "stop_request_duration_s": 0.5,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.012041619957513554
+      },
+      {
+        "tick": 72,
+        "requested_sim_s": 7.7,
+        "reason": "geometry_or_free_path_unverified",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011293258594437068,
+        "stop_request_duration_s": 2.4083333333333323,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011293258594437068
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002156957639742,
+    "maximum_audited_yaw_rate_rad_s": 0.03682227053337379,
+    "bootstrap_max_displacement_m": 0.08042750874692133
+  },
+  "elapsed_wall_s": 54.4142259399996,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.06,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 180,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED known_offset_plus--gradient_history displacement 0.8442402767915634 completed False following 52 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1412 0.0229
+12 aborted missing_frame 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": {
+    "kind": "missing",
+    "tick": 12
+  },
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 12,
+  "decision_count": 13,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "missing_frame",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 10,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 3.1,
+      "position_m": [
+        0.6498956884796522,
+        0.00012890099261198243,
+        0.15998998740356737
+      ],
+      "camera_position_m": [
+        0.8498951196670532,
+        0.0006353314383886755,
+        0.449989914894104
+      ],
+      "yaw_deg": 0.14507669147356594,
+      "speed_m_s": 1.8336038405004954e-05,
+      "yaw_rate_rad_s": -2.9462053772928052e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.1498843651925656,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.1501048803329468,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 12,
+        "requested_sim_s": 1.7,
+        "reason": "missing_frame",
+        "latency_s": 0.15833333333333344,
+        "distance_m": 0.011449942569389415,
+        "stop_request_duration_s": 1.4083333333333334,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011449942569389415
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002153049426312,
+    "maximum_audited_yaw_rate_rad_s": 0.022980070236126048,
+    "bootstrap_max_displacement_m": 0.08042624269226878
+  },
+  "elapsed_wall_s": 3.3993007200006105,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 40,
+      "operator_confirmed": true,
+      "fault": {
+        "kind": "missing",
+        "tick": 12
+      },
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED fault--missing displacement 0.1498843651925656 completed False following 4 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+10 following fresh_two_side_geometry_and_ground_transfer 0.1412 0.0229
+14 aborted commanded_motion_without_rgb_response 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": {
+    "kind": "freeze",
+    "tick": 12
+  },
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 15,
+  "decision_count": 15,
+  "controller_result": {
+    "result_type": "aborted_motion_uncertain",
+    "state": "aborted",
+    "reason": "commanded_motion_without_rgb_response",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 12,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 3.3,
+      "position_m": [
+        0.6799546169817671,
+        0.0002199818028200498,
+        0.15998998826908656
+      ],
+      "camera_position_m": [
+        0.87995445728302,
+        0.0004815454303752631,
+        0.4499899446964264
+      ],
+      "yaw_deg": 0.07492690055213935,
+      "speed_m_s": 1.802974704027856e-05,
+      "yaw_rate_rad_s": -3.059425036957455e-05,
+      "wall_contacts": 0
+    },
+    "displacement_m": 0.17994337272710406,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.12004554271698,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [
+      {
+        "tick": 14,
+        "requested_sim_s": 1.9,
+        "reason": "commanded_motion_without_rgb_response",
+        "latency_s": 0.15833333333333321,
+        "distance_m": 0.011816460095669877,
+        "stop_request_duration_s": 1.4083333333333332,
+        "resumed_before_stationary": false,
+        "distance_until_resume_or_end_m": 0.011816460095669877
+      }
+    ],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 0.15002153049426312,
+    "maximum_audited_yaw_rate_rad_s": 0.022980070236126048,
+    "bootstrap_max_displacement_m": 0.08042624269226878
+  },
+  "elapsed_wall_s": 4.670740300000034,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 40,
+      "operator_confirmed": true,
+      "fault": {
+        "kind": "freeze",
+        "tick": 12
+      },
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED fault--freeze displacement 0.17994337272710406 completed False following 6 physics_errors []
+0 aborted motion_not_authorized 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "unique",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "no_motion",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 1,
+  "decision_count": 1,
+  "controller_result": {
+    "result_type": "rejected_no_motion",
+    "state": "aborted",
+    "reason": "motion_not_authorized",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 0,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "no_motion",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 1.9,
+      "position_m": [
+        0.5000432086285808,
+        1.030524311812177e-08,
+        0.15998998808794088
+      ],
+      "camera_position_m": [
+        0.7000433206558228,
+        -6.956422566872789e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.00020762951713383565,
+      "speed_m_s": 2.2760974933032694e-05,
+      "yaw_rate_rad_s": -1.9490710989584793e-06,
+      "wall_contacts": 0
+    },
+    "displacement_m": 3.1829924632246585e-05,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.2999566793441772,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 2.2760974933032694e-05,
+    "maximum_audited_yaw_rate_rad_s": 1.9490710989584793e-06,
+    "bootstrap_max_displacement_m": 0.0
+  },
+  "elapsed_wall_s": 0.1694961670000339,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "unique",
+      "max_ticks": 40,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "no_motion",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED refusal--no-permission displacement 3.1829924632246585e-05 completed False following 0 physics_errors []
+0 observing awaiting_rgb 0.0 0.0
+2 aborted startup_texture_unverified 0.0 0.0
+{
+  "version": "continuous_straight_run_v1",
+  "scene": {
+    "length_m": 4.0,
+    "width_m": 1.8,
+    "initial_offset_m": 0.0,
+    "initial_yaw_deg": 0.0,
+    "obstacle": "none"
+  },
+  "appearance": null,
+  "seed": 31013,
+  "pattern": "repeated",
+  "corner_direction": null,
+  "corner_geometry": null,
+  "operator_confirmed_initial_clearance": true,
+  "motion_permission": "bounded_probe",
+  "fault": null,
+  "narrow_obstacle_width_m": 0.5,
+  "frame_count": 3,
+  "decision_count": 3,
+  "controller_result": {
+    "result_type": "rejected_no_motion",
+    "state": "aborted",
+    "reason": "startup_texture_unverified",
+    "arrival_status": "unverified",
+    "atomic_edge_compatible": false,
+    "motion_commands": 0,
+    "initial_clearance_assumption": {
+      "confirmed": true,
+      "swept_forward_clearance_m": 0.3,
+      "source": "task_operator_initial_swept_path_confirmation"
+    },
+    "motion_permission": "bounded_probe",
+    "permission_contract": "straight_motion_permission_v1",
+    "stopping_assumptions": {
+      "actuator_speed_bound_m_s": 0.18,
+      "command_horizon_s": 0.25,
+      "minimum_brake_deceleration_m_s2": 0.25,
+      "margin_m": 0.05,
+      "measured_feedback": false
+    },
+    "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+    "experiment": {
+      "variant": "gradient_history",
+      "promoted": false,
+      "startup_selection": "joint_reference_native_rectified_v1",
+      "side_sampling": "fixed_wide_upper_v1",
+      "side_roi_bounds": [
+        12,
+        116,
+        8,
+        64
+      ],
+      "alternative_fit_fallback": false,
+      "free_path_descriptor": "sobel_xy_uniqueness_v1",
+      "intensity_margin_replaced": true,
+      "native_intensity_and_flow_vetoes": true,
+      "history_selection_policy": {
+        "sizes": [
+          5,
+          9,
+          13,
+          17
+        ],
+        "horizon_s": 1.61,
+        "max_capture_gap_s": 0.250001,
+        "max_keyframe_gap_s": 0.81,
+        "min_training_tracks": 6,
+        "min_training_grid_cells": 3,
+        "min_views": 2,
+        "min_translation_m": 0.025,
+        "max_translation_m": 0.3,
+        "preferred_translation_m": 0.08,
+        "max_abs_yaw_rad": 0.12,
+        "max_training_median_px": 0.75
+      },
+      "history_selection_scope": "training_only_before_one_final_fit"
+    }
+  },
+  "audit": {
+    "initial": {
+      "sim_s": 0.5,
+      "position_m": [
+        0.5000113787040197,
+        1.2433765544000197e-08,
+        0.15998998643530213
+      ],
+      "camera_position_m": [
+        0.7000114917755127,
+        -1.4690205318856897e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -5.210492000733873e-05,
+      "speed_m_s": 2.2710377324765638e-05,
+      "yaw_rate_rad_s": -1.931852024928912e-06,
+      "wall_contacts": 0
+    },
+    "final": {
+      "sim_s": 2.1,
+      "position_m": [
+        0.5000477615553336,
+        9.632125353122776e-09,
+        0.15998998862356553
+      ],
+      "camera_position_m": [
+        0.7000478506088257,
+        -7.755567708045419e-07,
+        0.449989914894104
+      ],
+      "yaw_deg": -0.00022998995500362872,
+      "speed_m_s": 2.2767973345987046e-05,
+      "yaw_rate_rad_s": -1.953483549688527e-06,
+      "wall_contacts": 0
+    },
+    "displacement_m": 3.638285142177906e-05,
+    "wall_contact_physics_steps": 0,
+    "stationary": true,
+    "end_camera_gap_m": 3.2999521493911743,
+    "normal_geometric_stop_pass": false,
+    "node_arrival_status": "unverified",
+    "safe_final_stop": true,
+    "scope": "post-run only; physical stop/end location are not controller node identity",
+    "braking_episodes": [],
+    "physics_audit_dt_s": 0.008333333333333333,
+    "maximum_audited_speed_m_s": 2.2767973345987046e-05,
+    "maximum_audited_yaw_rate_rad_s": 1.953483549688527e-06,
+    "bootstrap_max_displacement_m": 0.0
+  },
+  "elapsed_wall_s": 0.48246753200055537,
+  "exception": null,
+  "clock_domain": "synchronous simulation seconds; not wall-clock hard realtime",
+  "safety_checks": {
+    "configuration": {
+      "scene": {
+        "length_m": 4.0,
+        "width_m": 1.8,
+        "initial_offset_m": 0.0,
+        "initial_yaw_deg": 0.0,
+        "obstacle": "none"
+      },
+      "appearance": null,
+      "seed": 31013,
+      "pattern": "repeated",
+      "max_ticks": 40,
+      "operator_confirmed": true,
+      "fault": null,
+      "narrow_obstacle_width_m": 0.5,
+      "corner_direction": null,
+      "corner_geometry": null,
+      "layout_direction": null,
+      "junction": "l",
+      "blocked_branch": null,
+      "clear_blocker_tick": null,
+      "route_graph": null,
+      "route_scene": null,
+      "start_node": null,
+      "goal_node": null,
+      "heading_deg": null,
+      "physical_start_node": null,
+      "physical_heading_deg": null,
+      "transport_fault": null,
+      "terminal_check_ticks": 3,
+      "motion_permission": "bounded_probe",
+      "straight_variant": "gradient_history"
+    },
+    "terminal_good_frame_checks": 3,
+    "terminal_latched": true,
+    "caught_input_errors": []
+  }
+}
+COMPARED refusal--repeated displacement 3.638285142177906e-05 completed False following 0 physics_errors []

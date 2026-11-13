@@ -1,0 +1,207 @@
+{
+  "version": "rgb_observability_suite_v1",
+  "frame_count": 5,
+  "capture_dt_s": 0.1,
+  "cases": [
+    {
+      "id": "wall_unique_forward_a",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_unique_forward_b",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 701,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_unique_static",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "static",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_unique_yaw",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "yaw",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_unique_tiny",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "tiny_forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_uniform_forward",
+      "scene": "wall",
+      "texture": "uniform",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_repeated_forward",
+      "scene": "wall",
+      "texture": "repeated",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_unique_lateral",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "lateral",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_unique_forward",
+      "scene": "ground",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_unique_forward",
+      "scene": "room",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_unique_slow",
+      "scene": "room",
+      "texture": "unique",
+      "motion": "slow_forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_uniform_forward",
+      "scene": "room",
+      "texture": "uniform",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_repeated_forward",
+      "scene": "room",
+      "texture": "repeated",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_unique_yaw",
+      "scene": "room",
+      "texture": "unique",
+      "motion": "yaw",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "paint_transition",
+      "scene": "paint",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "vertical_barrier",
+      "scene": "barrier",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "dynamic_wall_static_camera",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "moving_wall",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_hidden_fov70",
+      "scene": "room",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 70,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_hidden_pitch",
+      "scene": "room",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0.21,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "declared_calibration_mismatch",
+      "scene": "wall",
+      "texture": "unique",
+      "motion": "forward",
+      "seed": 104,
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "incorrect_calibration_id"
+    }
+  ]
+}

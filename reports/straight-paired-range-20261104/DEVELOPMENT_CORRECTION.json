@@ -1,0 +1,12 @@
+{
+  "before_performance": true,
+  "original_failure_log": "targeted.log",
+  "initial_passed": 310,
+  "initial_failed": 1,
+  "cause": "Previous rejected-support test froze entire contrast helper bytes and therefore rejected an unrelated contrast-gate-only optimization",
+  "change": "Keep exact paired-source bytes; compare every original contrast-helper function AST except the deliberately changed _contrast_gate; forbid importing rejected support module. Original support and callback behavior assertions remain unchanged.",
+  "declared_additional_test_edit": "tests/test_prepared_support_mask.py",
+  "backup": "reports/straight-paired-range-20261104/before/tests/test_prepared_support_mask.py",
+  "failure_restores_this_test": true,
+  "performance_gate_or_output_comparison_changed": false
+}

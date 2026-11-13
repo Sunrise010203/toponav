@@ -1,0 +1,344 @@
+[
+  {
+    "variant": "baseline",
+    "controller": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 43,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts"
+    },
+    "audit": {
+      "initial": {
+        "sim_s": 0.5,
+        "position_m": [
+          0.5000113787040197,
+          1.2433765544000197e-08,
+          0.15998998643530213
+        ],
+        "camera_position_m": [
+          0.7000114917755127,
+          -1.4690205318856897e-07,
+          0.449989914894104
+        ],
+        "yaw_deg": -5.210492000733873e-05,
+        "speed_m_s": 2.2710377324765638e-05,
+        "yaw_rate_rad_s": -1.931852024928912e-06,
+        "wall_contacts": 0
+      },
+      "final": {
+        "sim_s": 8.4,
+        "position_m": [
+          1.13659438740768,
+          0.0024962593941338573,
+          0.15998998916239682
+        ],
+        "camera_position_m": [
+          1.3365510702133179,
+          0.006660816725343466,
+          0.4499899446964264
+        ],
+        "yaw_deg": 1.1931386108073887,
+        "speed_m_s": 1.8214439476907372e-05,
+        "yaw_rate_rad_s": -3.158287860258978e-05,
+        "wall_contacts": 0
+      },
+      "displacement_m": 0.6365879029789143,
+      "wall_contact_physics_steps": 0,
+      "stationary": true,
+      "end_camera_gap_m": 2.663448929786682,
+      "normal_geometric_stop_pass": false,
+      "node_arrival_status": "unverified",
+      "safe_final_stop": true,
+      "scope": "post-run only; physical stop/end location are not controller node identity",
+      "braking_episodes": [
+        {
+          "tick": 33,
+          "requested_sim_s": 3.8,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333366,
+          "distance_m": 0.01183603554085457,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.01183603554085457
+        },
+        {
+          "tick": 47,
+          "requested_sim_s": 5.2,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011790047499156716,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.011790047499156716
+        },
+        {
+          "tick": 55,
+          "requested_sim_s": 6.0,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.1416666666666666,
+          "distance_m": 0.009010467273907658,
+          "stop_request_duration_s": 2.408333333333333,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.009010467273907658
+        }
+      ],
+      "physics_audit_dt_s": 0.008333333333333333,
+      "maximum_audited_speed_m_s": 0.15002153049426312,
+      "maximum_audited_yaw_rate_rad_s": 0.036877303136405776,
+      "bootstrap_max_displacement_m": 0.08042624269226878
+    },
+    "exception": null
+  },
+  {
+    "variant": "reference",
+    "controller": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 43,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "reference",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1"
+      }
+    },
+    "audit": {
+      "initial": {
+        "sim_s": 0.5,
+        "position_m": [
+          0.5000113787040197,
+          1.2433765544000197e-08,
+          0.15998998643530213
+        ],
+        "camera_position_m": [
+          0.7000114917755127,
+          -1.4690205318856897e-07,
+          0.449989914894104
+        ],
+        "yaw_deg": -5.210492000733873e-05,
+        "speed_m_s": 2.2710377324765638e-05,
+        "yaw_rate_rad_s": -1.931852024928912e-06,
+        "wall_contacts": 0
+      },
+      "final": {
+        "sim_s": 8.4,
+        "position_m": [
+          1.13659438740768,
+          0.0024962593941338573,
+          0.15998998916239682
+        ],
+        "camera_position_m": [
+          1.3365510702133179,
+          0.006660816725343466,
+          0.4499899446964264
+        ],
+        "yaw_deg": 1.1931386108073887,
+        "speed_m_s": 1.8214439476907372e-05,
+        "yaw_rate_rad_s": -3.158287860258978e-05,
+        "wall_contacts": 0
+      },
+      "displacement_m": 0.6365879029789143,
+      "wall_contact_physics_steps": 0,
+      "stationary": true,
+      "end_camera_gap_m": 2.663448929786682,
+      "normal_geometric_stop_pass": false,
+      "node_arrival_status": "unverified",
+      "safe_final_stop": true,
+      "scope": "post-run only; physical stop/end location are not controller node identity",
+      "braking_episodes": [
+        {
+          "tick": 33,
+          "requested_sim_s": 3.8,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333366,
+          "distance_m": 0.01183603554085457,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.01183603554085457
+        },
+        {
+          "tick": 47,
+          "requested_sim_s": 5.2,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011790047499156716,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.011790047499156716
+        },
+        {
+          "tick": 55,
+          "requested_sim_s": 6.0,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.1416666666666666,
+          "distance_m": 0.009010467273907658,
+          "stop_request_duration_s": 2.408333333333333,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.009010467273907658
+        }
+      ],
+      "physics_audit_dt_s": 0.008333333333333333,
+      "maximum_audited_speed_m_s": 0.15002153049426312,
+      "maximum_audited_yaw_rate_rad_s": 0.036877303136405776,
+      "bootstrap_max_displacement_m": 0.08042624269226878
+    },
+    "exception": null
+  },
+  {
+    "variant": "gradient_transfer",
+    "controller": {
+      "result_type": "aborted_motion_uncertain",
+      "state": "aborted",
+      "reason": "evidence_recovery_timeout_geometry_or_free_path_unverified",
+      "arrival_status": "unverified",
+      "atomic_edge_compatible": false,
+      "motion_commands": 52,
+      "initial_clearance_assumption": {
+        "confirmed": true,
+        "swept_forward_clearance_m": 0.3,
+        "source": "task_operator_initial_swept_path_confirmation"
+      },
+      "motion_permission": "bounded_probe",
+      "permission_contract": "straight_motion_permission_v1",
+      "stopping_assumptions": {
+        "actuator_speed_bound_m_s": 0.18,
+        "command_horizon_s": 0.25,
+        "minimum_brake_deceleration_m_s2": 0.25,
+        "margin_m": 0.05,
+        "measured_feedback": false
+      },
+      "declared_domain": "installed calibrated level camera, rigid static scene, textured ground, perpendicular corridor fronts",
+      "experiment": {
+        "variant": "gradient_transfer",
+        "promoted": false,
+        "startup_selection": "joint_reference_native_rectified_v1",
+        "side_sampling": "fixed_wide_upper_v1",
+        "side_roi_bounds": [
+          12,
+          116,
+          8,
+          64
+        ],
+        "alternative_fit_fallback": false,
+        "free_path_descriptor": "sobel_xy_uniqueness_v1",
+        "intensity_margin_replaced": true,
+        "native_intensity_and_flow_vetoes": true
+      }
+    },
+    "audit": {
+      "initial": {
+        "sim_s": 0.5,
+        "position_m": [
+          0.5000113787040197,
+          1.2433765544000197e-08,
+          0.15998998643530213
+        ],
+        "camera_position_m": [
+          0.7000114917755127,
+          -1.4690205318856897e-07,
+          0.449989914894104
+        ],
+        "yaw_deg": -5.210492000733873e-05,
+        "speed_m_s": 2.2710377324765638e-05,
+        "yaw_rate_rad_s": -1.931852024928912e-06,
+        "wall_contacts": 0
+      },
+      "final": {
+        "sim_s": 9.3,
+        "position_m": [
+          1.2707099555111827,
+          0.0007174622757173156,
+          0.15998998595939354
+        ],
+        "camera_position_m": [
+          1.4707083702087402,
+          -0.0001184008433483541,
+          0.449989914894104
+        ],
+        "yaw_deg": -0.23946421757110073,
+        "speed_m_s": 2.3033906928254628e-05,
+        "yaw_rate_rad_s": -3.160020786315416e-06,
+        "wall_contacts": 0
+      },
+      "displacement_m": 0.7706989107471622,
+      "wall_contact_physics_steps": 0,
+      "stationary": true,
+      "end_camera_gap_m": 2.5292916297912598,
+      "normal_geometric_stop_pass": false,
+      "node_arrival_status": "unverified",
+      "safe_final_stop": true,
+      "scope": "post-run only; physical stop/end location are not controller node identity",
+      "braking_episodes": [
+        {
+          "tick": 42,
+          "requested_sim_s": 4.7,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011748341622376096,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.011748341622376096
+        },
+        {
+          "tick": 54,
+          "requested_sim_s": 5.9,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15833333333333321,
+          "distance_m": 0.011577349685413253,
+          "stop_request_duration_s": 0.5,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.011577349685413253
+        },
+        {
+          "tick": 64,
+          "requested_sim_s": 6.8999999999999995,
+          "reason": "geometry_or_free_path_unverified",
+          "latency_s": 0.15000000000000036,
+          "distance_m": 0.009636217114858025,
+          "stop_request_duration_s": 2.408333333333334,
+          "resumed_before_stationary": false,
+          "distance_until_resume_or_end_m": 0.009636217114858025
+        }
+      ],
+      "physics_audit_dt_s": 0.008333333333333333,
+      "maximum_audited_speed_m_s": 0.1502755842142573,
+      "maximum_audited_yaw_rate_rad_s": 0.04853741536219307,
+      "bootstrap_max_displacement_m": 0.08042624269226878
+    },
+    "exception": null
+  }
+]

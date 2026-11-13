@@ -1,0 +1,17 @@
+graph six_node_indoor {
+ graph [layout=neato, overlap=false, splines=line, bgcolor="#f5f7fb", pad=0.6, label="Six-node Indoor Topological Scene\nAll channels: bidirectional, 2 m long, 0.8 m wide", labelloc=t, fontsize=18, fontname="DejaVu Sans"];
+ node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=13, width=1.25, height=0.7, color="#23415c", fillcolor="#e2eaf3", penwidth=1.5];
+ edge [fontname="DejaVu Sans", fontsize=11, color="#56718c", penwidth=3, len=2];
+ N01 [pos="0,0!", label="N01\nSTART / Entrance", fillcolor="#d3eedf"];
+ N02 [pos="200,0!", label="N02\nIntersection A"];
+ N03 [pos="400,0!", label="N03\nEast Corner"];
+ N04 [pos="400,200!", label="N04\nIntersection B"];
+ N05 [pos="200,200!", label="N05\nWest Corner"];
+ N06 [pos="600,200!", label="N06\nGOAL / Dock", fillcolor="#ffe2b5"];
+ N01 -- N02 [label="C01"];
+ N02 -- N03 [label="C02"];
+ N03 -- N04 [label="C03"];
+ N04 -- N05 [label="C04"];
+ N05 -- N02 [label="C05"];
+ N04 -- N06 [label="C06"];
+}

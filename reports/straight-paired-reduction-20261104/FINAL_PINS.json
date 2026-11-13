@@ -1,0 +1,10 @@
+{
+  "files": {
+    "roadvision/paired_descriptor_checks.py": "158afddb6ee2b9b058f2c77f2ac9438c3bfbd9ddce9ed6b9535fa45d30e204a5",
+    "roadvision/local_exclusion_population.py": "83ec1577ed2fad816ed27514620dae7ebd5b44bf57c52d020e3ce0004e913ce9",
+    "roadvision/finite_population_max.py": "2423fc85c9f9ec8a1ac0dbdb69075e74ea7af9d39b1a78ff13442d0dbc115d67",
+    "tests/test_finite_population_max.py": "a57f15c182756d2bda7f315f2f8fd42963a367d9eb6e0bcd24a24e860aa183f4",
+    "docs/STRAIGHT_PAIRED_REDUCTION.md": "7d3e1e32acef1f038949113ac74908c9d92bb07059358819a0b4fef6dcb1bc43"
+  },
+  "notice": "Restored accepted default plus explicitly standalone rejected experiment"
+}

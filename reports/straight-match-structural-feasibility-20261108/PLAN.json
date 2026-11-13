@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "scope": "Round 1 of at most 2: source/API/build feasibility review only; initial historical report/source reading preceded this plan.",
+  "production_edits": 0,
+  "numerical_experiments": 0,
+  "performance_comparisons": 0,
+  "controller_runs": 0,
+  "replays": 0,
+  "new_physical_audits": 0,
+  "next_round_condition": "Only if a concrete structural candidate has an exactness argument covering deployed paths and credible material benefit; otherwise stop this route.",
+  "prohibited": "No rejected candidate resurrection, thresholds/search/work-budget changes, new backend selection, tolerance comparisons or performance reruns to seek a pass.",
+  "deliverables": [
+    "REPORT.md",
+    "AUDIT.json",
+    "BEFORE_PINS.json",
+    "FINAL_VERIFICATION.json",
+    "DELIVERY_MANIFEST.json"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "change": "Track-local exact canvas/function/endpoint raw patch reuse, plus same-function identical ordered raw patch pair NCC reuse. I keeps original independent supported-patch mask sampling and acceptance.",
+  "constraints": "No patch size, NCC operation, search counts/range, threshold, model or safety-policy changes. Hooks default to original independent path. Clear caches on every track and exception.",
+  "gate": "Full output equality; serial local AB/BA8 rounds, 3 same complete controller cases AB/BA4 rounds after one warmup each; require median and mean wall total improve in every complete case or reject.",
+  "cases": [
+    "known_center--gradient_transfer",
+    "known_default--gradient_transfer",
+    "known_offset_plus--gradient_transfer"
+  ],
+  "navigation_acceptance": false
+}

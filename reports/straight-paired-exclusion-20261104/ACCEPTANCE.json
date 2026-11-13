@@ -1,0 +1,21 @@
+{
+  "candidate_promoted": true,
+  "scope": "Exact exclusion geometry only; not navigation acceptance",
+  "performance_gate_passed": true,
+  "measured_source_unchanged": true,
+  "measurement_freeze_files": 306,
+  "replay_freeze_files": 782,
+  "preexisting_files": 263,
+  "preexisting_files_byte_identical": 262,
+  "expected_changed_files": [
+    "roadvision/paired_descriptor_checks.py"
+  ],
+  "compatibility_cases": 13,
+  "compatibility_decisions": 581,
+  "compatibility_terminal_frames": 39,
+  "all_compatibility_outputs_and_results_equal": true,
+  "old_physics_trace_errors": [],
+  "physical_execution": false,
+  "real_time_budget_proved": false,
+  "verification_complete": false
+}

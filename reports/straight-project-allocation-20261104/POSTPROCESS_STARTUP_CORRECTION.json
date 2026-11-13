@@ -1,0 +1,12 @@
+{
+  "analysis_v2_error": "AssertionError (38.6522766825, 33.449138104): corrected summary compared against initial raw rows due a missed rows path update",
+  "analysis_output_created": false,
+  "analysis_fix": "New analyze_corrected.py reads only benchmark-corrected rows and summary; old script preserved; no original/corrected pooling",
+  "replay_startup_exit": 1,
+  "replay_startup_error": "ModuleNotFoundError: No module named 'tools'",
+  "replay_started": false,
+  "replay_controller_calls_before_startup_fix": 0,
+  "replay_fix": "Original replay source remains unchanged; add repository root to subprocess PYTHONPATH before exactly one actual fixed replay",
+  "production_candidate_or_benchmark_data_changed": false,
+  "additional_performance_comparison": false
+}

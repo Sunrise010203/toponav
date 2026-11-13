@@ -1,0 +1,14 @@
+{
+  "aliases": [
+    "roadvision.rgb_motion_checks._ncc",
+    "roadvision.rgb_resampling_checks._ncc",
+    "roadvision.reference_patch_evidence._ncc"
+  ],
+  "baseline_pair_wrapper_symmetric": true,
+  "before_and_after_wrapper_class": "FunctionVariant",
+  "per_controller_alias_switch_outside_timer": true,
+  "nested_per_pair_alias_switch_during_controller": false,
+  "local_alias_switch_symmetric": true,
+  "actual_pair_implementation_unchanged": true,
+  "original_benchmark_source_unmodified": true
+}

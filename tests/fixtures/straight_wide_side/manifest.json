@@ -1,0 +1,62 @@
+{
+  "scope": "exposed development regression, not independent acceptance",
+  "source": "/home/sunrise/toponav_project/reports/straight-followup-20261101-01/round2/after-known-center/public",
+  "tick": 55,
+  "calibration_id": "corridor_panel_128_f64_c64_level_v1",
+  "frames": [
+    {
+      "frame_id": "physics-frame-624",
+      "captured_sim_s": 5.2,
+      "rgb_path": "0047.png",
+      "rgb_sha256": "ba296f09408c98b1730ae9b319390b1a1eaf837fe962ba508a3dc7c65ad3ab6d"
+    },
+    {
+      "frame_id": "physics-frame-636",
+      "captured_sim_s": 5.3,
+      "rgb_path": "0048.png",
+      "rgb_sha256": "51f24143eadfc753d5e437fb1071baf8eabeebe70a04379da3e3706466ae5c93"
+    },
+    {
+      "frame_id": "physics-frame-648",
+      "captured_sim_s": 5.4,
+      "rgb_path": "0049.png",
+      "rgb_sha256": "f4b8361d43da6bce449992674fc304e1080264c694fbc85fd69f82fd9c3a7c4a"
+    },
+    {
+      "frame_id": "physics-frame-660",
+      "captured_sim_s": 5.5,
+      "rgb_path": "0050.png",
+      "rgb_sha256": "fbb5d91e0834498b9639a27ad3704f363f7bcaef9acbb0904319f7b644067928"
+    },
+    {
+      "frame_id": "physics-frame-672",
+      "captured_sim_s": 5.6,
+      "rgb_path": "0051.png",
+      "rgb_sha256": "6e0dacf06c1f9de77c365cd0688248f77796281785619480253336b4665c6c7d"
+    },
+    {
+      "frame_id": "physics-frame-684",
+      "captured_sim_s": 5.7,
+      "rgb_path": "0052.png",
+      "rgb_sha256": "b4f641a74f1498a43ebb68c6f4fec9fc86d7e598273227d348069fa58442793c"
+    },
+    {
+      "frame_id": "physics-frame-696",
+      "captured_sim_s": 5.8,
+      "rgb_path": "0053.png",
+      "rgb_sha256": "5c74a2fc230fd72bdc07fe1d57f2a4c61573cb87dac968511bcabab3a79387f2"
+    },
+    {
+      "frame_id": "physics-frame-708",
+      "captured_sim_s": 5.9,
+      "rgb_path": "0054.png",
+      "rgb_sha256": "8d9a6a9478fb80da69acaf66ab6546f47ab7e5cc601d315619ea7d1080005f72"
+    },
+    {
+      "frame_id": "physics-frame-720",
+      "captured_sim_s": 6.0,
+      "rgb_path": "0055.png",
+      "rgb_sha256": "4d561848e87bb29534ce0df1aeb828932631e9983fa35eb78cc30d8526e9a53f"
+    }
+  ]
+}

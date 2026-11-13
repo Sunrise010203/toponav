@@ -1,0 +1,26 @@
+{
+  "original_projection_source": "/home/sunrise/toponav_project/reports/straight-project-allocation-20261104/before/roadvision/corridor_rgb_probe.py",
+  "aliases": [
+    "roadvision.corridor_rgb_probe._project",
+    "roadvision.rgb_ground_rig._project",
+    "roadvision.rgb_motion_checks._project",
+    "roadvision.rgb_resampling_checks._project",
+    "roadvision.calibrated_ground_motion._project",
+    "roadvision.vertical_support._project",
+    "roadvision.front_support._project",
+    "roadvision.ground_history._project",
+    "roadvision.paired_corridor._project",
+    "roadvision.joint_straight_model._project",
+    "roadvision.straight_ablation._project"
+  ],
+  "complete_controller_projection_binding": true,
+  "local_projection_binding": true,
+  "same_paired_filter_implementation": true,
+  "same_original_h_i_filters": true,
+  "original_benchmark_source_unmodified": true,
+  "baseline_pair_wrapper_symmetric": true,
+  "per_controller_alias_switch_outside_timer": true,
+  "nested_per_pair_alias_switch_during_controller": false,
+  "local_alias_switch_symmetric": true,
+  "before_and_after_wrapper_class": "Variant"
+}

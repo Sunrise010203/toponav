@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "tools.run_project_tests",
+    "--scope",
+    "current",
+    "--output",
+    "reports/straight-paired-support-full-current-20261104"
+  ],
+  "exit_code": 2
+}

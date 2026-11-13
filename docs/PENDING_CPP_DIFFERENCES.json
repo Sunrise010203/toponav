@@ -1,0 +1,180 @@
+{
+  "format": "pending_cpp_registered_differences_v1",
+  "scope": "offline_fixed_cases_only",
+  "seed": 2026110328,
+  "variants_per_family": 3,
+  "policy": "No blanket error stripping; compare all indices, stages, ledger and authority types. Envelope refusals are known non-equivalence, NOT fixed.",
+  "packet_families": {
+    "unchanged": {
+      "python_error": null,
+      "cpp_error": null
+    },
+    "whitespace": {
+      "python_error": null,
+      "cpp_error": null
+    },
+    "escaped_ascii": {
+      "python_error": null,
+      "cpp_error": null
+    },
+    "negative_zero_available": {
+      "python_error": null,
+      "cpp_error": null
+    },
+    "maximum_deadline": {
+      "python_error": null,
+      "cpp_error": null
+    },
+    "identity_surrogate": {
+      "python_error": "message_identity",
+      "cpp_error": "unicode_surrogate"
+    },
+    "record_overflow": {
+      "python_error": "record_ns",
+      "cpp_error": "integer_bound"
+    },
+    "signed_minimum": {
+      "python_error": "record_ns",
+      "cpp_error": "integer_bound"
+    },
+    "huge_integer": {
+      "python_error": "message_json",
+      "cpp_error": "integer_bound"
+    },
+    "infinity": {
+      "python_error": "integer_json_only",
+      "cpp_error": "message_json"
+    },
+    "nan": {
+      "python_error": "integer_json_only",
+      "cpp_error": "message_json"
+    },
+    "view_element_type": {
+      "python_error": "view_schema",
+      "cpp_error": "view_order_or_duplicate"
+    },
+    "refusal_phase": {
+      "python_error": "refusal_phase",
+      "cpp_error": "ack_phase"
+    },
+    "unicode_unknown_key": {
+      "python_error": "message_fields",
+      "cpp_error": "object_key_bound"
+    },
+    "surrogate_unknown_key": {
+      "python_error": "message_fields",
+      "cpp_error": "unicode_surrogate"
+    },
+    "duplicate_then_capacity": {
+      "python_error": "object_field_bound",
+      "cpp_error": "duplicate_field"
+    },
+    "malformed_json": {
+      "python_error": "message_json",
+      "cpp_error": "message_json"
+    },
+    "duplicate_escaped_key": {
+      "python_error": "duplicate_field",
+      "cpp_error": "duplicate_field"
+    },
+    "exponent": {
+      "python_error": "integer_json_only",
+      "cpp_error": "integer_json_only"
+    },
+    "unknown_kind": {
+      "python_error": "message_kind",
+      "cpp_error": "message_kind"
+    },
+    "missing_kind": {
+      "python_error": "message_object_kind",
+      "cpp_error": "message_object_kind"
+    },
+    "caps_downgrade": {
+      "python_error": "no_capability_downgrade",
+      "cpp_error": "no_capability_downgrade"
+    },
+    "zero_request": {
+      "python_error": "message_identity",
+      "cpp_error": "message_identity"
+    },
+    "extra_motion": {
+      "python_error": "message_fields",
+      "cpp_error": "message_fields"
+    },
+    "raw_invalid_utf8": {
+      "python_error": "message_utf8",
+      "cpp_error": "message_utf8"
+    }
+  },
+  "outer_trace_families": {
+    "empty": {
+      "python_error": "trace_byte_bound",
+      "cpp_error": "message_byte_bound"
+    },
+    "utf8": {
+      "python_error": "trace_utf8",
+      "cpp_error": "message_utf8"
+    },
+    "bad_json": {
+      "python_error": "trace_json",
+      "cpp_error": "message_json"
+    },
+    "depth": {
+      "python_error": "trace_depth_bound",
+      "cpp_error": "json_depth_bound"
+    },
+    "huge_at": {
+      "python_error": "event_identity_time",
+      "cpp_error": "integer_bound"
+    },
+    "unicode_key": {
+      "python_error": "trace_fields",
+      "cpp_error": "object_key_bound"
+    },
+    "duplicate_capacity": {
+      "python_error": "object_field_bound",
+      "cpp_error": "duplicate_field"
+    },
+    "bool_time": {
+      "python_error": "event_identity_time",
+      "cpp_error": "event_identity_time"
+    },
+    "unknown_action": {
+      "python_error": "event_action",
+      "cpp_error": "event_action"
+    },
+    "float_time": {
+      "python_error": "integer_json_only",
+      "cpp_error": "integer_json_only"
+    },
+    "huge_old_hold": {
+      "python_error": "trace_old_hold",
+      "cpp_error": "integer_bound"
+    }
+  },
+  "envelope_cases": {
+    "stop_float_views": {
+      "cpp_error": "integer_json_only",
+      "python_classification": "frame_free_stop_schema_only",
+      "message_kind": "stop"
+    },
+    "refusal_float_views": {
+      "cpp_error": "integer_json_only",
+      "python_classification": "declared_refusal_not_execution",
+      "message_kind": "result_ref"
+    },
+    "stop_surrogate_views": {
+      "cpp_error": "unicode_surrogate",
+      "python_classification": "frame_free_stop_schema_only",
+      "message_kind": "stop"
+    },
+    "stop_large_ignored_reserve": {
+      "cpp_error": "envelope_field_bound",
+      "python_classification": "frame_free_stop_schema_only",
+      "message_kind": "stop"
+    }
+  },
+  "runtime_owner_implemented": false,
+  "production_guard_fixed": false,
+  "movement_authorized": false
+}

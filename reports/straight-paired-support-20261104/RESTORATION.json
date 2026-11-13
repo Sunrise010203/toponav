@@ -1,0 +1,11 @@
+{
+  "reason": "Original three-case median and mean wall gate failed",
+  "restored_production_files": [
+    "roadvision/paired_descriptor_checks.py",
+    "roadvision/native_patch_contrast.py"
+  ],
+  "all_preexisting_files_byte_identical": 942,
+  "candidate_snapshots_verified": true,
+  "conditional_replay_executed": false,
+  "additional_candidate_timing_or_profile_executed": false
+}

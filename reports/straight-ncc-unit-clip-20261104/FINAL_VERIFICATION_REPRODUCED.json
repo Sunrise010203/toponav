@@ -1,0 +1,111 @@
+{
+  "candidate_promoted": false,
+  "performance_gate": false,
+  "independent_integer_nanosecond_gate": [
+    {
+      "case": "known_center",
+      "totals_ns": {
+        "before": [
+          37005976666,
+          36473567810,
+          36834621593,
+          36687722345
+        ],
+        "after": [
+          36600290413,
+          36856841653,
+          36698749484,
+          35775318559
+        ]
+      },
+      "median_improved": true,
+      "mean_improved": true
+    },
+    {
+      "case": "known_default",
+      "totals_ns": {
+        "before": [
+          19025611882,
+          18709095569,
+          18769578348,
+          19572285276
+        ],
+        "after": [
+          18428758920,
+          18672980859,
+          19434927202,
+          19576730246
+        ]
+      },
+      "median_improved": false,
+      "mean_improved": false
+    },
+    {
+      "case": "known_offset_plus",
+      "totals_ns": {
+        "before": [
+          42177795717,
+          38073084775,
+          42808630352,
+          38477394718
+        ],
+        "after": [
+          41294284248,
+          39869117007,
+          41020493759,
+          37283677900
+        ]
+      },
+      "median_improved": false,
+      "mean_improved": true
+    }
+  ],
+  "preexisting_files_byte_identical": 1211,
+  "restored_files": [
+    "roadvision/rgb_motion_checks.py"
+  ],
+  "old_test_files_unchanged": true,
+  "measured_freeze_verified_via_snapshots": 647,
+  "replay_freeze_verified_via_snapshots": 1973,
+  "default_source_does_not_import_new_tool": true,
+  "experimental_candidate_retained_only_in_archive": true,
+  "new_numeric_tests_explicitly_load_archived_candidate": true,
+  "normalization_and_dot_division_asts_unchanged": true,
+  "other_function_asts_unchanged": true,
+  "full_controller_alias_binding_symmetric": true,
+  "ncc_aliases": 3,
+  "initial_targeted": {
+    "total": 459,
+    "passed": 459,
+    "failed": 0,
+    "skipped": 0
+  },
+  "final_targeted": {
+    "total": 459,
+    "passed": 459,
+    "failed": 0,
+    "skipped": 0
+  },
+  "expanded": {
+    "total": 1663,
+    "passed": 1630,
+    "failed": 33,
+    "skipped": 0
+  },
+  "old_failures_unchanged": true,
+  "full_current_exit": 2,
+  "full_current_selected": 0,
+  "verification_complete": false,
+  "analysis_reproduced_byte_identical": true,
+  "measured_decisions": 1560,
+  "warmup_decisions": 390,
+  "all_samples_retained": true,
+  "all_serialized_outputs_exact": true,
+  "additional_candidate_timing_or_profile": false,
+  "conditional_replay_executed": false,
+  "new_physics_or_actuator_execution": false,
+  "navigation_acceptance": false,
+  "real_time_budget_proved": false,
+  "S2_passed": false,
+  "S6_completed": false
+}

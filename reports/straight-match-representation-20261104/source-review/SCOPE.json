@@ -1,0 +1,5 @@
+{
+  "scope": "Read-only upstream implementation review after finite numerical corpus; no further execution or promotion",
+  "source_url": "https://raw.githubusercontent.com/opencv/opencv/4.10.0/modules/imgproc/src/templmatch.cpp",
+  "warning": "Version-tag source is not proof of installed binary provenance; no installed files modified"
+}

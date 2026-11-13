@@ -1,0 +1,29 @@
+{
+  "candidate": "Region-local lazy float32 preparation of I support masks; no patch/NCC cache",
+  "production_edits": [
+    "roadvision/paired_descriptor_checks.py",
+    "roadvision/native_patch_contrast.py"
+  ],
+  "new_helper": "roadvision/prepared_support_mask.py",
+  "proof": "Owned region masks are unchanged during native paired execution. Original uint8->float32 astype with identical shape/strides/data is executed once lazily per mask; original getRectSubPix and >=1-1e-6 support test still execute for every valid patch. Raw masks remain used for erosion and original/custom callbacks. No score/dtype/backend/search/reduction/model changes.",
+  "local_rounds": 8,
+  "controller_rounds": 4,
+  "warmups": 1,
+  "cases": [
+    {
+      "name": "known_center",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_center--gradient_transfer"
+    },
+    {
+      "name": "known_default",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_default--gradient_transfer"
+    },
+    {
+      "name": "known_offset_plus",
+      "path": "reports/straight-evidence-recovery-20261103/comparison/known_offset_plus--gradient_transfer"
+    }
+  ],
+  "gate": "All 3 complete-controller total-wall medians AND means strictly improve, every serialized output exact. One frozen serial AB/BA comparison, retain all samples. Failure restores both old production files byte for byte; no extra candidate performance/profile or conditional replay.",
+  "after_gate": "Only on gate pass, one fixed 13-case old-recording replay plus regression before promotion",
+  "safety_changed": false
+}

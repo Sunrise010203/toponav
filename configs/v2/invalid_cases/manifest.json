@@ -1,0 +1,108 @@
+[
+  {
+    "name": "asymmetric_connection",
+    "expected_failed_checks": [
+      "reciprocal_neighbors"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "disconnected_goal",
+    "expected_failed_checks": [
+      "all_nodes_reachable_from_start",
+      "goal_reachable_from_start"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "duplicate_neighbor",
+    "expected_failed_checks": [
+      "unique_neighbors"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "duplicate_node_id",
+    "expected_failed_checks": [
+      "unique_node_ids"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "duplicate_undirected_edge",
+    "expected_failed_checks": [
+      "unique_undirected_edges"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "invalid_start",
+    "expected_failed_checks": [
+      "task_endpoints_exist"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "task_configuration"
+  },
+  {
+    "name": "missing_map_edge",
+    "expected_failed_checks": [
+      "neighbors_have_map_edge"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "negative_edge_length",
+    "expected_failed_checks": [
+      "geometry_dimensions_positive"
+    ],
+    "scene_file": "negative_edge_length.scene.json",
+    "error_category": "geometry_configuration"
+  },
+  {
+    "name": "nonphysical_connection",
+    "expected_failed_checks": [
+      "neighbors_have_physical_channel",
+      "edges_match_physical_channels"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "self_connection",
+    "expected_failed_checks": [
+      "no_self_connections"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "unknown_edge_endpoint",
+    "expected_failed_checks": [
+      "edge_endpoints_exist"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "unknown_neighbor",
+    "expected_failed_checks": [
+      "neighbors_exist"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  },
+  {
+    "name": "wrong_exit_direction",
+    "expected_failed_checks": [
+      "exit_directions_match_physical_channels"
+    ],
+    "scene_file": "../scene.json",
+    "error_category": "topology_configuration"
+  }
+]

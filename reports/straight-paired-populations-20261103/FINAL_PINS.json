@@ -1,0 +1,9 @@
+{
+  "README.md": "17505be4018b5fab2ef29e86414fe2276df41fad752b92cb7e89aee4523790d5",
+  "roadvision/paired_descriptor_checks.py": "bdbc3f683c950366013ade4aa33c763db29f252ae491befab18280514605ecf4",
+  "tools/straight_paired_population_benchmark.py": "c31d9800d89e5bad98d75288e1b93edae3d32a05008cfd2f41a6dc56429eb8ce",
+  "tests/test_paired_populations.py": "315c9c373721312b1d47d1fd5b2dbfaab07197b21ed970aadc311d3226626fee",
+  "tests/test_straight_paired_population_benchmark.py": "fbd96e3ef33013c75234f6e7f5935a19c701d7fabfe9a6ade7cff173b324d252",
+  "docs/STRAIGHT_PAIRED_POPULATIONS.md": "b761c59f27234ed0c498bea5469fb3755e37825715daaf0ad8d9626a81813b3d",
+  "docs/STRAIGHT_PAIRED_DESCRIPTORS.md": "44fc956e2e91dbdd25eb9c50865c32d25893e5cb18049f91266d45621609da0a"
+}

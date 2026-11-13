@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "scope": "current",
+  "project_root": "/home/sunrise/toponav_project",
+  "status": "not_passed",
+  "verification_complete": false,
+  "pytest_exit_code": 2,
+  "exit_code": 2,
+  "groups": {
+    "current": {
+      "selected": 0,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 0
+    },
+    "historical": {
+      "selected": 0,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 0
+    },
+    "other": {
+      "selected": 0,
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "xpassed": 0,
+      "not_run": 0
+    }
+  },
+  "selected": 0,
+  "deselected": 0,
+  "failures": [],
+  "collection_errors": [
+    {
+      "nodeid": "tests",
+      "message": ".venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n.venv/lib/python3.10/site-packages/_pytest/python.py:193: in pytest_collect_file\n    module: Module = ihook.pytest_pycollect_makemodule(\n.venv/lib/python3.10/site-packages/_pytest/config/compat.py:79: in fixed_hook\n    return hook(**kw)\n.venv/lib/python3.10/site-packages/pluggy/_hooks.py:512: in __call__\n    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)\n.venv/lib/python3.10/site-packages/pluggy/_manager.py:120: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n    entrypoint = find_launch_test_entrypoint(path)\n/opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:180: in find_launch_test_entrypoint\n    module = import_path(path, root=None, consider_namespace_packages=False)\n.venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path\n    importlib.import_module(module_name)\n/usr/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n.venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntests/test_pending_archive_binding.py:11: in <module>\n    CASES = d.corpus(ROOT)\ntools/pending_archive_binding_cases.py:43: in corpus\n    manifest = (root / MANIFEST).read_bytes()\n/usr/lib/python3.10/pathlib.py:1126: in read_bytes\n    with self.open(mode='rb') as f:\n/usr/lib/python3.10/pathlib.py:1119: in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nE   FileNotFoundError: [Errno 2] No such file or directory: '/home/sunrise/toponav_project/reports/straight-followup-20261103-31/DELIVERY_MANIFEST.json'"
+    }
+  ],
+  "internal_errors": [],
+  "collection_skips": [],
+  "collection_accounting_complete": true,
+  "interrupted": true,
+  "discovery": {
+    "python_files": [
+      "test_*.py",
+      "*_test.py"
+    ],
+    "python_classes": [
+      "Test"
+    ],
+    "python_functions": [
+      "test"
+    ],
+    "norecursedirs": [
+      "*.egg",
+      ".*",
+      "_darcs",
+      "build",
+      "CVS",
+      "dist",
+      "node_modules",
+      "venv",
+      "{arch}"
+    ],
+    "testpaths": [],
+    "config_file": null
+  },
+  "discovery_restrictions": [],
+  "ignored_test_paths": [],
+  "all_scopes_passed": false,
+  "unselected_groups": [
+    "historical",
+    "other"
+  ],
+  "formal_navigation_acceptance": false,
+  "scope_notice": "Only this explicit scope is evaluated; no historical failure is whitelisted or reclassified.",
+  "output_directory": "/home/sunrise/toponav_project/reports/straight-paired-patches-full-current-20261104",
+  "artifacts_sha256": {
+    "collection.json": "cc5a1c3159ce52ae87d6bc63e7fd3da9c233baaca811b0c3602dd26f20907a3e",
+    "command.json": "ccaf7f16228592f0c7e8718e919cc0c23981a524aba695fb8e63d33549543577",
+    "junit.xml": "aa92d0f9689b5cad9fc1f6020f71de43d3341c1f665f36d2cb459ed3ac032964",
+    "pytest-audit.json": "d633b061fe6c0acb9473e1ab057857591b882c8fbc7bc23f2e8dc24d5645ccaa",
+    "pytest.log": "ad329092c6abb019ce191c2edcec3fd24ba57a938b4291060a1395712061e77f"
+  }
+}

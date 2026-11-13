@@ -1,0 +1,636 @@
+{
+  "format": "precompute_integration_review_v1",
+  "status": "review_only_not_implemented",
+  "authority": {
+    "implementation_ready": false,
+    "production_guard_fixed": false,
+    "physical_stop_proved": false,
+    "exposure_age_bounded": false,
+    "provenance_authenticated": false,
+    "shadow_admission_authorized": false,
+    "native_live_observation_authorized": false,
+    "motion_authority": false,
+    "independent_enforcement_observed": false,
+    "production_changes": false,
+    "native_transport": false,
+    "movement": false
+  },
+  "limits": {
+    "lease_ns": 800000000,
+    "audit_ack_ns": 400000000,
+    "sim_age_ns": 250001000,
+    "work_anchor": "original_complete_frame_availability",
+    "exposure_wall_s": null
+  },
+  "ownership": {
+    "origin": "trusted_capture_boundary_not_implemented",
+    "registry": "independent_owner_not_implemented",
+    "result_writer": "controller_binding_only",
+    "deadline_writer": "origin_owner_only",
+    "backend_lookup": "registered_original_budget",
+    "authenticity": "not_established_by_this_review"
+  },
+  "record": {
+    "immutable": [
+      "session",
+      "host_clock_boot",
+      "frame",
+      "sim_identity",
+      "required_view_set",
+      "origin_available",
+      "original_deadline"
+    ],
+    "pending_stages": [
+      "reserved_no_command",
+      "sealed_once_no_deadline_rewrite",
+      "consumed_once"
+    ],
+    "required_views": "frozen_config_all_views_not_controller_subset",
+    "source_truth": "not_proved_by_uuid_hash_or_dataclass"
+  },
+  "steps": [
+    "freeze_origin",
+    "reserve_both",
+    "reserve_ack",
+    "hash_all_views",
+    "seal_binding_both",
+    "seal_ack",
+    "save_png",
+    "controller_update",
+    "poll_and_validate_result",
+    "issue_original_deadline",
+    "consume_both",
+    "observe_ack"
+  ],
+  "handshake": {
+    "kind": "pending_install_and_seal_status_not_audit_flush_ack",
+    "python_and_native_required": true,
+    "deadline_rebased": false,
+    "compatibility_fallback": false,
+    "late_or_unknown_outcome": "stop_and_preserve_unconfirmed_submission",
+    "wait_bound": "min_original_pending_and_old_hold"
+  },
+  "requirements": [
+    {
+      "id": "origin",
+      "anchors": [
+        "ready_return"
+      ],
+      "tests": [
+        "late_registration",
+        "unknown_exposure"
+      ],
+      "status": "not_implemented",
+      "change": "在完整帧可用边界记录不可重签的原始同域availability和D=availability+.8；真实可信提供者/隔离尚缺，不能把调用者自报、接收或hash完成时刻冒充原点。"
+    },
+    {
+      "id": "reservation",
+      "anchors": [
+        "main_arm",
+        "native_seq_poll",
+        "gate_relative_pending"
+      ],
+      "tests": [
+        "first_timely",
+        "first_slow",
+        "hash_slow"
+      ],
+      "status": "not_implemented",
+      "change": "为Python执行端与native端分别增加最多一个reserved pending；先poll旧hold，再安装原绝对D；seq0也检查pending。只前移本地MotorGate.arm不足，且不可影响ROS默认语义。"
+    },
+    {
+      "id": "barrier",
+      "anchors": [
+        "client_ack_expiry",
+        "main_png",
+        "main_update"
+      ],
+      "tests": [
+        "reserve_ack_missing",
+        "reserve_ack_wrong",
+        "exact_boundary"
+      ],
+      "status": "not_implemented",
+      "change": "两端安装pending的身份/代次/原deadline状态被确认后才hash、PNG、计算；seal后再确认完整像素绑定。ACK不续租，不是audit flush ACK；先poll两种deadline，失败或未知结果STOP，不降级。"
+    },
+    {
+      "id": "binding",
+      "anchors": [
+        "prior_exposure_shadow",
+        "ready_return"
+      ],
+      "tests": [
+        "view_subset",
+        "seal_rewrite",
+        "result_swap"
+      ],
+      "status": "not_implemented",
+      "change": "完整必需视图来自冻结配置。先reserve覆盖hash/复制开销，再由受信owner seal一次全部view摘要；frame、原点、原D不可变。缺视图/可变像素/错误代次拒绝。2B是假设曝光影子，不是现成可信来源。"
+    },
+    {
+      "id": "result",
+      "anchors": [
+        "guard_short_expires",
+        "native_short_expires",
+        "main_context"
+      ],
+      "tests": [
+        "joint_resign",
+        "duplicate_result",
+        "exact_boundary"
+      ],
+      "status": "not_implemented",
+      "change": "计算端只回交结果及绑定，不可指定issued/expires。owner和两端查已注册原预算，now严格早于min(pending,old hold)才消费一次；issued为owner签发时刻，expires=min(original D,issued+.8)，下游拒绝联合重签替换原D。"
+    },
+    {
+      "id": "replacement",
+      "anchors": [
+        "gate_relative_pending",
+        "native_short_expires"
+      ],
+      "tests": [
+        "old_hold_first",
+        "timely_replace"
+      ],
+      "status": "not_implemented",
+      "change": "新pending不得清除或延长旧hold，先到期先锁存；及时新绑定结果可原子地在每个端本地消费pending、替换旧hold为该帧剩余预算，不永久裁剪至第一条hold。不声称跨进程原子提交。"
+    },
+    {
+      "id": "expiry",
+      "anchors": [
+        "native_seq_poll",
+        "native_status_dedupe"
+      ],
+      "tests": [
+        "owner_stall",
+        "clock_regression",
+        "restart"
+      ],
+      "status": "not_implemented",
+      "change": "独立执行/接收端每次入口先poll，pending/hold取min且>=即到期；保留sticky trip。OS/原生循环停止仍不能执行，首次注册前无pending缺口须保留，注册恢复必须沿原D。"
+    },
+    {
+      "id": "stop",
+      "anchors": [
+        "failure_zero",
+        "interrupt_cancel"
+      ],
+      "tests": [
+        "terminal_without_frame",
+        "zero_hold",
+        "capacity"
+      ],
+      "status": "not_implemented",
+      "change": "STOP/abort/terminal零先于取消/保存/等待，不需要新帧、seal或容量；normal observing零命令仍消费一次帧预算，禁止将正常零当解锁/心跳。到期后的STOP不改最后accepted元数据。"
+    },
+    {
+      "id": "failure",
+      "anchors": [
+        "failure_cancel",
+        "main_png",
+        "main_update"
+      ],
+      "tests": [
+        "png_failure",
+        "cancel_before_compute",
+        "ack_after_send"
+      ],
+      "status": "not_implemented",
+      "change": "PNG/hash/controller异常及KeyboardInterrupt/耗尽tick统一先零后controller.cancel，保存最小failed attempt和原异常；不得回写成功prefix或重算/重签失败帧。_failure_stop已有先零顺序，其它路径尚须接入。"
+    },
+    {
+      "id": "wire",
+      "anchors": [
+        "wire_exact_eight",
+        "observer_strict_fields"
+      ],
+      "tests": [
+        "joint_resign",
+        "reserve_ack_wrong"
+      ],
+      "status": "not_implemented",
+      "change": "现有wire v1恰八字段且Python严格keys，不能直接塞pending字段。未来须显式新版本、reserve/seal/command协议及双方拒绝旧能力降级；所有消息先做有界解析，STOP保留，未经协议评审不落生产。"
+    },
+    {
+      "id": "status",
+      "anchors": [
+        "native_status",
+        "native_status_dedupe"
+      ],
+      "tests": [
+        "status_pending_change",
+        "reserve_ack_wrong"
+      ],
+      "status": "not_implemented",
+      "change": "状态v2只有accepted回显，不是pending安装ACK。未来回显pending id/代次/阶段/原D和消费状态，native发布去重键加入pending变化；不能靠seq/sim/reason不变的旧状态推断安装成功。"
+    },
+    {
+      "id": "ledger",
+      "anchors": [
+        "client_post_send_ledger",
+        "client_ack_expiry",
+        "observer_strict_fields"
+      ],
+      "tests": [
+        "ack_after_send",
+        "reserve_ack_missing"
+      ],
+      "status": "not_implemented",
+      "change": "扩展严格已发送/已安装/已seal/已消费观察账本，发送不等于接受。保持AFTER send记录，未知ACK不重试重签；保留未确认提交和原失败，隔离报告截断，不把本地摘要/会话一致当认证。"
+    },
+    {
+      "id": "capacity",
+      "anchors": [
+        "observer_strict_fields",
+        "native_seq_poll"
+      ],
+      "tests": [
+        "capacity",
+        "terminal_without_frame"
+      ],
+      "status": "not_implemented",
+      "change": "保留原native4096/Python16384及既有审计队列上限，不提额不淘汰历史；未来新增pending最多一个且计入有界预算，STOP不分配新帧。容量/并发/锁顺序须专门零速测试，不能宣称有硬实时上界。"
+    },
+    {
+      "id": "exposure",
+      "anchors": [
+        "ros_existing_pending",
+        "prior_exposure_shadow"
+      ],
+      "tests": [
+        "unknown_exposure",
+        "owner_stall"
+      ],
+      "status": "not_implemented",
+      "change": "availability工作预算不覆盖捕获/拼接/缓存等待，不给真实曝光下界。ROS已有capture后pending不重写。未知真实曝光保持unknown/null/no motion；S2/S6、制动/窄障碍及旧IPC问题仍需独立解决。"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "first_reserve",
+      "disposition": "已验证来源原始D尚有效时先在两端安装seq0可见pending；未注册command拒绝。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "first_timely",
+        "first_slow"
+      ]
+    },
+    {
+      "id": "subsequent_reserve",
+      "disposition": "先poll旧hold，再装新pending，原hold不改变，禁止覆盖未消费pending。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "old_hold_first",
+        "timely_replace"
+      ]
+    },
+    {
+      "id": "seal_once",
+      "disposition": "reserved到sealed只添加完整内容绑定一次，原D和身份不可变，仍不产生速度许可。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "hash_slow",
+        "seal_rewrite",
+        "view_subset"
+      ]
+    },
+    {
+      "id": "timely_result",
+      "disposition": "严格早于两种deadline才由owner形成剩余预算并请求两端一次消费，跨端非原子，未知结果按失败。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "joint_resign",
+        "duplicate_result",
+        "timely_replace"
+      ]
+    },
+    {
+      "id": "old_hold_due",
+      "disposition": "旧hold在pending或结果之前到期时sticky trip，零且不修改最后accepted元数据。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "old_hold_first",
+        "exact_boundary"
+      ]
+    },
+    {
+      "id": "new_pending_due",
+      "disposition": "seq0或有旧hold时新pending到期都sticky trip，完成/接收时刻不可重开预算。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "first_slow",
+        "hash_slow",
+        "exact_boundary"
+      ]
+    },
+    {
+      "id": "stop_without_frame",
+      "disposition": "不要求新帧/预算/容量即STOP，保留锁存和最后accepted元数据，不等于成功或物理停车。",
+      "old_hold_checked": true,
+      "frame_required": false,
+      "creates_authority": false,
+      "tests": [
+        "terminal_without_frame",
+        "capacity"
+      ]
+    },
+    {
+      "id": "normal_zero",
+      "disposition": "正常零观测仍按帧单次预算受限，不能当心跳续租、清除pending或解锁。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "zero_hold"
+      ]
+    },
+    {
+      "id": "lost_ack",
+      "disposition": "发送后ACK丢失/迟到先零并保留未确认提交，禁止重发旧帧或重签，不能假设native已经接受。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "ack_after_send",
+        "reserve_ack_missing"
+      ]
+    },
+    {
+      "id": "cancel",
+      "disposition": "所有取消点先零后controller取消及诊断，不重写成功prefix，不借新帧解锁。",
+      "old_hold_checked": true,
+      "frame_required": false,
+      "creates_authority": false,
+      "tests": [
+        "cancel_before_compute",
+        "png_failure"
+      ]
+    },
+    {
+      "id": "unknown_origin",
+      "disposition": "未知来源/曝光不造时间、不安装运动许可，不把本地record字段一致当来源证明。",
+      "old_hold_checked": true,
+      "frame_required": true,
+      "creates_authority": false,
+      "tests": [
+        "unknown_exposure",
+        "late_registration"
+      ]
+    },
+    {
+      "id": "restart",
+      "disposition": "重启不自动获运动权限，需新启动评审；旧token、会话名或UUID均不能提供跨运行认证。",
+      "old_hold_checked": true,
+      "frame_required": false,
+      "creates_authority": false,
+      "tests": [
+        "restart"
+      ]
+    }
+  ],
+  "test_plan": [
+    {
+      "id": "first_timely",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2K",
+        "2L"
+      ],
+      "expected": "首次帧seq0安装两端pending、确认seal后及时结果可在未来零速隔离实现中消费；仍无运动/来源认证证明。"
+    },
+    {
+      "id": "first_slow",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K",
+        "2L"
+      ],
+      "expected": "首次计算返回晚于原D时两端拒绝并锁存；不能在完成时新开.8s。"
+    },
+    {
+      "id": "exact_boundary",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2K",
+        "2L"
+      ],
+      "expected": "now==min(pending,old hold)立即过期；ACK在边界到达亦不得确认新工作或命令。"
+    },
+    {
+      "id": "late_registration",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2L"
+      ],
+      "expected": "availability至注册间停顿后保留原D，迟到注册拒绝；未注册不能提交command，不能把接收now当availability。"
+    },
+    {
+      "id": "reserve_ack_missing",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2L"
+      ],
+      "expected": "仅Python确认/native未知或ACK丢失不得开始hash/PNG/计算；STOP并保留未知提交，不重签。"
+    },
+    {
+      "id": "reserve_ack_wrong",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "错帧/代次/阶段/原D、旧v1能力或错误native确认一律拒绝；audit flush ACK不能代替安装ACK。"
+    },
+    {
+      "id": "hash_slow",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2K"
+      ],
+      "expected": "reserve先于全部摘要/复制工作，慢hash超D必须拒绝seal和结果，hash完成不更新原点。"
+    },
+    {
+      "id": "seal_rewrite",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "seal只补充全部视图绑定一次，不得改frame/配置/原D；重复seal或已消费后seal拒绝。"
+    },
+    {
+      "id": "view_subset",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K"
+      ],
+      "expected": "缺少任何配置必需视图、顺序/摘要错、buffer被替换都拒绝，不能由计算端删去陈旧视图。"
+    },
+    {
+      "id": "result_swap",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K"
+      ],
+      "expected": "错session/帧/模拟身份/视图内容/代次不消费已注册pending，锁存并保留证据。"
+    },
+    {
+      "id": "old_hold_first",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K",
+        "2L"
+      ],
+      "expected": "新pending安装或接收结果前先检查旧hold，旧hold先到不许续租，保留最后accepted元数据。"
+    },
+    {
+      "id": "timely_replace",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K",
+        "2L"
+      ],
+      "expected": "及时新帧可替换旧hold至新帧固定D，不永久受第一个hold限制；两端状态不一致按失败处理。"
+    },
+    {
+      "id": "joint_resign",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2L"
+      ],
+      "expected": "原端联合重签可接受反例继续保留；未来端必须对已登记D精确绑定而拒绝联合重签，不能靠输入自报相等。"
+    },
+    {
+      "id": "duplicate_result",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2L"
+      ],
+      "expected": "同token/帧/结果消费后重放不能续租，容量不淘汰历史；不扩张为跨运行认证结论。"
+    },
+    {
+      "id": "zero_hold",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2L"
+      ],
+      "expected": "普通observing零也需要reserved/sealed新帧并保留D，不成为heartbeat/重臂；纯STOP独立允许。"
+    },
+    {
+      "id": "terminal_without_frame",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "abort/visual_stop/capacity满或曝光未知时无需新帧/新预算即允许安全STOP，拒绝把STOP当任务成功。"
+    },
+    {
+      "id": "png_failure",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "保存失败保留failed attempt最小身份与原错误，先提交零再取消/写诊断，不重算或修写成功prefix。"
+    },
+    {
+      "id": "cancel_before_compute",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "KeyboardInterrupt/tick耗尽发生在各阶段时先零后取消；清除工作引用不释放/重置sticky保护。"
+    },
+    {
+      "id": "ack_after_send",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "sent未确认不等accepted；迟到/损坏ACK保持通道失败、记录未确认命令，不用当前时间重发旧结果。"
+    },
+    {
+      "id": "status_pending_change",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "sim/seq不变但pending阶段或代次改变必须有可核对状态，旧accepted-only状态不能满足reserve/seal barrier。"
+    },
+    {
+      "id": "capacity",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2L"
+      ],
+      "expected": "满容量/额外pending/并发覆盖拒绝，不丢旧证据、不提额，STOP仍可用。"
+    },
+    {
+      "id": "owner_stall",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2L"
+      ],
+      "expected": "注册前无pending与注册后/无poll区分；声明review时刻不等实际执行，暂停owner/native仍不能证明及时物理停车。"
+    },
+    {
+      "id": "clock_regression",
+      "status": "planned_not_executed",
+      "reuse": [
+        "source_only"
+      ],
+      "expected": "同域单调钟未来/回退/无效/boot错拒绝，不用模拟时间相减或容差延租。"
+    },
+    {
+      "id": "restart",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B"
+      ],
+      "expected": "新会话不自动释放运动权，旧记录不自动跨运行可信；会话/UUID不替代认证或授权启动。"
+    },
+    {
+      "id": "unknown_exposure",
+      "status": "planned_not_executed",
+      "reuse": [
+        "2B",
+        "2K",
+        "2L"
+      ],
+      "expected": "availability及时也不能补造曝光年龄；真实曝光始终未知，原暴露/运动验收不因此通过。"
+    }
+  ],
+  "blockers": [
+    "trusted_origin_missing",
+    "downstream_pending_missing",
+    "authenticated_binding_missing",
+    "versioned_wire_and_status_missing",
+    "runtime_poll_liveness_unproved",
+    "exposure_provider_missing"
+  ],
+  "preserved": [
+    "controllers_models_calibration_sensors",
+    "production_protocol_permissions",
+    "speed_braking_recovery",
+    "lease_0.8_audit_ack_0.4",
+    "ros_existing_pending",
+    "all_failures_and_refusals"
+  ]
+}

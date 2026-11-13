@@ -1,0 +1,635 @@
+{
+  "scope": "controller computation only; current optimized implementation, exposed saved inputs",
+  "environment": {
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "measured_opencv_threads": 1,
+    "restored_opencv_threads": 12,
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null
+    },
+    "cpu_clock": "process_time: all threads in this process, may exceed wall time"
+  },
+  "ordinary_repeats": 1,
+  "warmups": 0,
+  "instrumented_passes_per_case": 2,
+  "all_outputs_exact": true,
+  "measured_rows": 342,
+  "warmup_exact_decisions": 0,
+  "stage_bindings": 44,
+  "instrumented_times_not_ordinary_latency": true,
+  "host_exclusive": false,
+  "hardware_end_to_end_latency_measured": false,
+  "acquisition_decode_serialization_transport_physics_excluded": true,
+  "cases": {
+    "gradient_transfer": {
+      "inputs": 75,
+      "variant": "gradient_transfer",
+      "distributions": {
+        "all_updates": {
+          "wall_s": {
+            "count": 75,
+            "p50_s": 0.5645119189994148,
+            "p90_s": 0.7548218815996733,
+            "p95_s": 0.774270461300057,
+            "p99_s": 1.105186356299837,
+            "mean_s": 0.5452236659466871,
+            "max_s": 1.1217891480000617,
+            "over_0_1s_count": 68,
+            "over_0_1s_fraction": 0.9066666666666666
+          },
+          "cpu_s": {
+            "count": 75,
+            "p50_s": 1.9338678999999956,
+            "p90_s": 2.499260493600005,
+            "p95_s": 2.5959908346999936,
+            "p99_s": 3.3526702810400013,
+            "mean_s": 1.8300800044266676,
+            "max_s": 3.447936663,
+            "over_0_1s_count": 68,
+            "over_0_1s_fraction": 0.9066666666666666
+          }
+        },
+        "nonzero_command_updates": {
+          "wall_s": {
+            "count": 52,
+            "p50_s": 0.5569027985002322,
+            "p90_s": 0.7583145185001741,
+            "p95_s": 0.9159268866500483,
+            "p99_s": 1.1103466834499067,
+            "mean_s": 0.5539226744807331,
+            "max_s": 1.1217891480000617,
+            "over_0_1s_count": 47,
+            "over_0_1s_fraction": 0.9038461538461539
+          },
+          "cpu_s": {
+            "count": 52,
+            "p50_s": 1.9102655555000005,
+            "p90_s": 2.508938334900006,
+            "p95_s": 2.9318837255999965,
+            "p99_s": 3.3822801024600007,
+            "mean_s": 1.8761340139038465,
+            "max_s": 3.447936663,
+            "over_0_1s_count": 47,
+            "over_0_1s_fraction": 0.9038461538461539
+          }
+        },
+        "state_before_bootstrapping": {
+          "wall_s": {
+            "count": 6,
+            "p50_s": 0.00041170199983753264,
+            "p90_s": 0.28513037100037764,
+            "p95_s": 0.4274387950003984,
+            "p99_s": 0.541285534200415,
+            "mean_s": 0.0952994116667772,
+            "max_s": 0.5697472190004191,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.16666666666666666
+          },
+          "cpu_s": {
+            "count": 6,
+            "p50_s": 0.0012435695000001523,
+            "p90_s": 0.9452581329999998,
+            "p95_s": 1.4171094564999998,
+            "p99_s": 1.7945905153,
+            "mean_s": 0.3158589405,
+            "max_s": 1.8889607799999997,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.16666666666666666
+          }
+        },
+        "state_before_following": {
+          "wall_s": {
+            "count": 46,
+            "p50_s": 0.5569027985002322,
+            "p90_s": 0.7368641749994822,
+            "p95_s": 1.0112078877500608,
+            "p99_s": 1.111692855749925,
+            "mean_s": 0.5926539093260663,
+            "max_s": 1.1217891480000617,
+            "over_0_1s_count": 46,
+            "over_0_1s_fraction": 1.0
+          },
+          "cpu_s": {
+            "count": 46,
+            "p50_s": 1.9171472860000005,
+            "p90_s": 2.4848198420000074,
+            "p95_s": 3.141489858,
+            "p99_s": 3.3900044037,
+            "mean_s": 2.012917337347827,
+            "max_s": 3.447936663,
+            "over_0_1s_count": 46,
+            "over_0_1s_fraction": 1.0
+          }
+        },
+        "state_before_observing": {
+          "wall_s": {
+            "count": 3,
+            "p50_s": 0.0006844449999334756,
+            "p90_s": 0.2261829017996206,
+            "p95_s": 0.25437020889958145,
+            "p99_s": 0.2769200545795502,
+            "mean_s": 0.0946170419996027,
+            "max_s": 0.2825575159995424,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.3333333333333333
+          },
+          "cpu_s": {
+            "count": 3,
+            "p50_s": 0.000693776999999951,
+            "p90_s": 0.6707712730000001,
+            "p95_s": 0.7545309599999999,
+            "p99_s": 0.8215387096,
+            "mean_s": 0.2798672746666666,
+            "max_s": 0.838290647,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.3333333333333333
+          }
+        },
+        "state_before_waiting_evidence": {
+          "wall_s": {
+            "count": 20,
+            "p50_s": 0.7046842250001646,
+            "p90_s": 0.7561962264996509,
+            "p95_s": 0.7595114550502331,
+            "p99_s": 0.7736801358101365,
+            "mean_s": 0.6387023760501507,
+            "max_s": 0.7772223060001124,
+            "over_0_1s_count": 20,
+            "over_0_1s_fraction": 1.0
+          },
+          "cpu_s": {
+            "count": 20,
+            "p50_s": 2.1622009439999914,
+            "p90_s": 2.5045280215000103,
+            "p95_s": 2.5145762543500063,
+            "p99_s": 2.5723420812699946,
+            "mean_s": 2.0963523673500015,
+            "max_s": 2.5867835379999917,
+            "over_0_1s_count": 20,
+            "over_0_1s_fraction": 1.0
+          }
+        }
+      },
+      "slowest_ordinary_rows": [
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 32,
+          "state_before": "following",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-444",
+          "exact": true,
+          "wall_s": 1.1217891480000617,
+          "cpu_s": 3.447936663
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 28,
+          "state_before": "following",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-396",
+          "exact": true,
+          "wall_s": 1.099352942999758,
+          "cpu_s": 3.3161616350000003
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 14,
+          "state_before": "following",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-228",
+          "exact": true,
+          "wall_s": 1.09060872200007,
+          "cpu_s": 3.319198309000001
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 70,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-900",
+          "exact": true,
+          "wall_s": 0.7772223060001124,
+          "cpu_s": 2.5867835379999917
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 52,
+          "state_before": "following",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-684",
+          "exact": true,
+          "wall_s": 0.7730053850000331,
+          "cpu_s": 2.574828472000007
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 51,
+          "state_before": "following",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-672",
+          "exact": true,
+          "wall_s": 0.7627288619996762,
+          "cpu_s": 2.617474526999999
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 47,
+          "state_before": "waiting_evidence",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-624",
+          "exact": true,
+          "wall_s": 0.7585793050002394,
+          "cpu_s": 2.510775871000007
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 59,
+          "state_before": "waiting_evidence",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-768",
+          "exact": true,
+          "wall_s": 0.7559314399995856,
+          "cpu_s": 2.492400509999996
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 72,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "geometry_or_free_path_unverified",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-924",
+          "exact": true,
+          "wall_s": 0.7531575439998051,
+          "cpu_s": 2.2594453930000213
+        },
+        {
+          "case": "gradient_transfer",
+          "variant": "gradient_transfer",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 58,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-756",
+          "exact": true,
+          "wall_s": 0.7471023199996125,
+          "cpu_s": 2.4907882849999936
+        }
+      ]
+    },
+    "gradient_history": {
+      "inputs": 39,
+      "variant": "gradient_history",
+      "distributions": {
+        "all_updates": {
+          "wall_s": {
+            "count": 39,
+            "p50_s": 0.597050037000372,
+            "p90_s": 0.7822355884001809,
+            "p95_s": 0.7900595682998756,
+            "p99_s": 0.8109805709396095,
+            "mean_s": 0.44894921866664217,
+            "max_s": 0.8181772909993015,
+            "over_0_1s_count": 32,
+            "over_0_1s_fraction": 0.8205128205128205
+          },
+          "cpu_s": {
+            "count": 39,
+            "p50_s": 2.033848857999999,
+            "p90_s": 2.582360843999993,
+            "p95_s": 2.645547378399999,
+            "p99_s": 2.7058326707600013,
+            "mean_s": 1.4938722156666642,
+            "max_s": 2.7415169310000067,
+            "over_0_1s_count": 32,
+            "over_0_1s_fraction": 0.8205128205128205
+          }
+        },
+        "nonzero_command_updates": {
+          "wall_s": {
+            "count": 14,
+            "p50_s": 0.5899571114996434,
+            "p90_s": 0.7404180726999586,
+            "p95_s": 0.7969744021496353,
+            "p99_s": 0.8139367132293682,
+            "mean_s": 0.395330360357093,
+            "max_s": 0.8181772909993015,
+            "over_0_1s_count": 9,
+            "over_0_1s_fraction": 0.6428571428571429
+          },
+          "cpu_s": {
+            "count": 14,
+            "p50_s": 1.9823671190000027,
+            "p90_s": 2.5067076244999957,
+            "p95_s": 2.6670742880500042,
+            "p99_s": 2.726628402410006,
+            "mean_s": 1.3350776349285687,
+            "max_s": 2.7415169310000067,
+            "over_0_1s_count": 9,
+            "over_0_1s_fraction": 0.6428571428571429
+          }
+        },
+        "state_before_bootstrapping": {
+          "wall_s": {
+            "count": 6,
+            "p50_s": 0.0004952364997734549,
+            "p90_s": 0.29424182100001417,
+            "p95_s": 0.4410720084999866,
+            "p99_s": 0.5585361584999647,
+            "mean_s": 0.09837896516652715,
+            "max_s": 0.5879021959999591,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.16666666666666666
+          },
+          "cpu_s": {
+            "count": 6,
+            "p50_s": 0.001492330499999639,
+            "p90_s": 0.9641104359999986,
+            "p95_s": 1.445302578500005,
+            "p99_s": 1.8302562925000108,
+            "mean_s": 0.32226968099999925,
+            "max_s": 1.9264947210000116,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.16666666666666666
+          }
+        },
+        "state_before_following": {
+          "wall_s": {
+            "count": 8,
+            "p50_s": 0.6028442915003325,
+            "p90_s": 0.6291987442004938,
+            "p95_s": 0.6321457876003933,
+            "p99_s": 0.6345034223203129,
+            "mean_s": 0.5012142386251526,
+            "max_s": 0.6350928310002928,
+            "over_0_1s_count": 8,
+            "over_0_1s_fraction": 1.0
+          },
+          "cpu_s": {
+            "count": 8,
+            "p50_s": 2.0460185924999905,
+            "p90_s": 2.1630037611999966,
+            "p95_s": 2.1945265020999867,
+            "p99_s": 2.2197446948199793,
+            "mean_s": 1.6908183422499938,
+            "max_s": 2.226049242999977,
+            "over_0_1s_count": 8,
+            "over_0_1s_fraction": 1.0
+          }
+        },
+        "state_before_observing": {
+          "wall_s": {
+            "count": 3,
+            "p50_s": 0.0005296640001688502,
+            "p90_s": 0.22502621520015964,
+            "p95_s": 0.2530882841001585,
+            "p99_s": 0.27553793922015757,
+            "mean_s": 0.09404789200016239,
+            "max_s": 0.28115035300015734,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.3333333333333333
+          },
+          "cpu_s": {
+            "count": 3,
+            "p50_s": 0.001597269999990658,
+            "p90_s": 0.675043884399986,
+            "p95_s": 0.7592247111999852,
+            "p99_s": 0.8265693726399849,
+            "mean_s": 0.28213609966666314,
+            "max_s": 0.8434055379999847,
+            "over_0_1s_count": 1,
+            "over_0_1s_fraction": 0.3333333333333333
+          }
+        },
+        "state_before_waiting_evidence": {
+          "wall_s": {
+            "count": 22,
+            "p50_s": 0.6558989215004658,
+            "p90_s": 0.7886914590998458,
+            "p95_s": 0.7987286103500992,
+            "p99_s": 0.8142001562294717,
+            "mean_s": 0.5739494614544625,
+            "max_s": 0.8181772909993015,
+            "over_0_1s_count": 22,
+            "over_0_1s_fraction": 1.0
+          },
+          "cpu_s": {
+            "count": 22,
+            "p50_s": 2.2546700924999925,
+            "p90_s": 2.6434852589,
+            "p95_s": 2.647496338299993,
+            "p99_s": 2.721796681920004,
+            "mean_s": 1.9070201494545438,
+            "max_s": 2.7415169310000067,
+            "over_0_1s_count": 22,
+            "over_0_1s_fraction": 1.0
+          }
+        }
+      },
+      "slowest_ordinary_rows": [
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 21,
+          "state_before": "waiting_evidence",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-312",
+          "exact": true,
+          "wall_s": 0.8181772909993015,
+          "cpu_s": 2.7415169310000067
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 36,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-492",
+          "exact": true,
+          "wall_s": 0.7992385540001123,
+          "cpu_s": 2.6476109829999928
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 31,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-432",
+          "exact": true,
+          "wall_s": 0.7890396809998492,
+          "cpu_s": 2.5712036079999905
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 27,
+          "state_before": "waiting_evidence",
+          "state_after": "following",
+          "reason": "fresh_two_side_geometry_and_ground_transfer",
+          "command_nonzero": true,
+          "frame_id": "physics-frame-384",
+          "exact": true,
+          "wall_s": 0.7855574619998151,
+          "cpu_s": 2.626989788000003
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 25,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-360",
+          "exact": true,
+          "wall_s": 0.7814051200002723,
+          "cpu_s": 2.645318089
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 19,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-288",
+          "exact": true,
+          "wall_s": 0.7772360179997122,
+          "cpu_s": 2.516057386
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 37,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-504",
+          "exact": true,
+          "wall_s": 0.7718195549996381,
+          "cpu_s": 2.5662115169999993
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 26,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-372",
+          "exact": true,
+          "wall_s": 0.7480238789994473,
+          "cpu_s": 2.429152111999997
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 20,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-300",
+          "exact": true,
+          "wall_s": 0.7425773519998984,
+          "cpu_s": 2.510953287999996
+        },
+        {
+          "case": "gradient_history",
+          "variant": "gradient_history",
+          "mode": "ordinary",
+          "repeat": 0,
+          "tick": 17,
+          "state_before": "waiting_evidence",
+          "state_after": "waiting_evidence",
+          "reason": "awaiting_stationary_and_fresh_rearm",
+          "command_nonzero": false,
+          "frame_id": "physics-frame-264",
+          "exact": true,
+          "wall_s": 0.7312737869997363,
+          "cpu_s": 2.462210875000011
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "version": "corridor_validation_v1",
+  "scope": "Frozen, predeclared deterministic stress cases, not blind or population-generalization evidence",
+  "case_count": 26,
+  "novel_case_count": 25,
+  "cases": [
+    {
+      "id": "anchor_original",
+      "group": "anchor",
+      "scene": {},
+      "appearance": {}
+    },
+    {
+      "id": "short_narrow",
+      "group": "geometry",
+      "scene": {
+        "length_m": 4.8,
+        "width_m": 1.5,
+        "initial_offset_m": 0.12,
+        "initial_yaw_deg": 6
+      },
+      "appearance": {}
+    },
+    {
+      "id": "long_narrow",
+      "group": "geometry",
+      "scene": {
+        "length_m": 7.2,
+        "width_m": 1.6,
+        "initial_offset_m": -0.12,
+        "initial_yaw_deg": -7
+      },
+      "appearance": {}
+    },
+    {
+      "id": "long_wide",
+      "group": "geometry",
+      "scene": {
+        "length_m": 8.4,
+        "width_m": 2.2,
+        "initial_offset_m": 0.15,
+        "initial_yaw_deg": 8
+      },
+      "appearance": {}
+    },
+    {
+      "id": "extra_wide",
+      "group": "geometry",
+      "scene": {
+        "length_m": 6.6,
+        "width_m": 2.6,
+        "initial_offset_m": -0.15,
+        "initial_yaw_deg": -8
+      },
+      "appearance": {}
+    },
+    {
+      "id": "blue_darker",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.1,
+          0.22,
+          0.36
+        ]
+      }
+    },
+    {
+      "id": "blue_paler",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.35,
+          0.47,
+          0.59
+        ]
+      }
+    },
+    {
+      "id": "gray_floor",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.35,
+          0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "id": "brown_floor",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.4,
+          0.28,
+          0.18
+        ]
+      }
+    },
+    {
+      "id": "green_floor",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.18,
+          0.36,
+          0.22
+        ]
+      }
+    },
+    {
+      "id": "blue_walls",
+      "group": "material",
+      "scene": {},
+      "appearance": {
+        "wall_rgb": [
+          0.2,
+          0.29,
+          0.4
+        ]
+      }
+    },
+    {
+      "id": "dim",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "lightAmbientCoeff": 0.05,
+          "lightDiffuseCoeff": 0.1,
+          "lightSpecularCoeff": 0
+        }
+      }
+    },
+    {
+      "id": "ambient_bright",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "lightAmbientCoeff": 1.0,
+          "lightDiffuseCoeff": 0,
+          "lightSpecularCoeff": 0
+        }
+      }
+    },
+    {
+      "id": "side_light",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "lightDirection": [
+            -2,
+            1,
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "id": "warm_light",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "lightColor": [
+            1,
+            0.6,
+            0.25
+          ]
+        }
+      }
+    },
+    {
+      "id": "cool_light",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "lightColor": [
+            0.4,
+            0.6,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "shadows",
+      "group": "lighting",
+      "scene": {},
+      "appearance": {
+        "lighting": {
+          "shadow": 1,
+          "lightDirection": [
+            0.3,
+            1,
+            0.6
+          ]
+        }
+      }
+    },
+    {
+      "id": "combined_short_dim",
+      "group": "combined",
+      "scene": {
+        "length_m": 4.8,
+        "width_m": 1.5,
+        "initial_offset_m": 0.12,
+        "initial_yaw_deg": 6
+      },
+      "appearance": {
+        "floor_rgb": [
+          0.1,
+          0.22,
+          0.36
+        ],
+        "lighting": {
+          "lightAmbientCoeff": 0.3,
+          "lightDiffuseCoeff": 0.4
+        }
+      }
+    },
+    {
+      "id": "combined_long_side",
+      "group": "combined",
+      "scene": {
+        "length_m": 8.4,
+        "width_m": 2.2,
+        "initial_offset_m": 0.15,
+        "initial_yaw_deg": 8
+      },
+      "appearance": {
+        "floor_rgb": [
+          0.35,
+          0.47,
+          0.59
+        ],
+        "lighting": {
+          "lightDirection": [
+            -2,
+            1,
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "id": "combined_wide_brown",
+      "group": "combined",
+      "scene": {
+        "length_m": 6.6,
+        "width_m": 2.6,
+        "initial_offset_m": -0.15,
+        "initial_yaw_deg": -8
+      },
+      "appearance": {
+        "floor_rgb": [
+          0.4,
+          0.28,
+          0.18
+        ],
+        "lighting": {
+          "lightAmbientCoeff": 1.0,
+          "lightDiffuseCoeff": 0,
+          "lightSpecularCoeff": 0
+        }
+      }
+    },
+    {
+      "id": "combined_narrow_cool",
+      "group": "combined",
+      "scene": {
+        "length_m": 7.2,
+        "width_m": 1.6,
+        "initial_offset_m": -0.12,
+        "initial_yaw_deg": -7
+      },
+      "appearance": {
+        "wall_rgb": [
+          0.2,
+          0.29,
+          0.4
+        ],
+        "lighting": {
+          "lightColor": [
+            0.4,
+            0.6,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "id": "gray_paint_suffix",
+      "group": "paint_alias",
+      "scene": {},
+      "appearance": {
+        "paint": {
+          "x_start": 3.8,
+          "x_end": 6.0,
+          "y_center": 0.0,
+          "width_m": 1.8,
+          "rgb": [
+            0.35,
+            0.35,
+            0.35
+          ]
+        }
+      }
+    },
+    {
+      "id": "offset_blue_paint",
+      "group": "paint_alias",
+      "scene": {},
+      "appearance": {
+        "floor_rgb": [
+          0.35,
+          0.35,
+          0.35
+        ],
+        "paint": {
+          "x_start": 0.0,
+          "x_end": 6.0,
+          "y_center": 0.28,
+          "width_m": 1.0,
+          "rgb": [
+            0.2,
+            0.29,
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "id": "new_narrow_barrier",
+      "group": "obstacle",
+      "scene": {
+        "length_m": 7.2,
+        "width_m": 1.6,
+        "obstacle": "narrow"
+      },
+      "appearance": {
+        "barrier_front_m": 4.25
+      }
+    },
+    {
+      "id": "new_full_barrier",
+      "group": "obstacle",
+      "scene": {
+        "length_m": 7.2,
+        "width_m": 1.6,
+        "obstacle": "full_width"
+      },
+      "appearance": {
+        "barrier_front_m": 4.1
+      }
+    },
+    {
+      "id": "blue_full_barrier",
+      "group": "obstacle",
+      "scene": {
+        "length_m": 7.2,
+        "width_m": 1.6,
+        "obstacle": "full_width"
+      },
+      "appearance": {
+        "barrier_front_m": 4.1,
+        "barrier_rgb": [
+          0.2,
+          0.29,
+          0.4
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+         11597889 function calls (11588101 primitive calls) in 22.677 seconds
+
+   Ordered by: internal time
+   List reduced from 523 to 100 due to restriction <100>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    46545    7.019    0.000    7.019    0.000 {matchTemplate}
+    42380    1.572    0.000    1.572    0.000 /home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py:40(at)
+   787224    1.349    0.000    1.349    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    84760    0.940    0.000    8.149    0.000 /home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py:47(search)
+    45852    0.635    0.000    1.186    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:135(_var)
+    43286    0.584    0.000    1.302    0.000 /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:31(_project)
+     3178    0.545    0.000    0.545    0.000 {calcOpticalFlowPyrLK}
+    45753    0.415    0.000    2.187    0.000 /home/sunrise/toponav_project/roadvision/rgb_motion_checks.py:27(_patch)
+    29422    0.386    0.000    0.717    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:53(ground_pixels)
+     2766    0.343    0.000    0.343    0.000 {findHomography}
+   100552    0.302    0.000    0.762    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:101(_mean)
+    78643    0.295    0.000    0.368    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/shape_base.py:612(column_stack)
+   146404    0.240    0.000    0.274    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:67(_count_reduce_items)
+   220480    0.236    0.000    0.648    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)
+    23503    0.227    0.000    0.846    0.000 /home/sunrise/toponav_project/roadvision/rgb_motion_checks.py:35(_ncc)
+     8979    0.219    0.000    0.799    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:132(predict)
+   234000    0.215    0.000    0.217    0.000 {built-in method numpy.array}
+    91148    0.213    0.000    0.373    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:2383(norm)
+    12533    0.210    0.000    0.289    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:492(inv)
+      198    0.179    0.001   15.339    0.077 /home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py:121(filter_pair)
+   188106    0.177    0.000    0.177    0.000 {method 'astype' of 'numpy.ndarray' objects}
+    84760    0.174    0.000    6.388    0.000 /home/sunrise/toponav_project/roadvision/paired_descriptor_checks.py:22(match)
+     8595    0.170    0.000    0.947    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:66(fit_se2)
+    14708    0.165    0.000    0.242    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:1499(svd)
+    70191    0.160    0.000    0.160    0.000 {getRectSubPix}
+    52604    0.144    0.000    0.180    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py:136(ones)
+    24465    0.122    0.000    1.539    0.000 /home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py:43(_supported_patch)
+     1899    0.115    0.000    0.698    0.000 /home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py:50(_masked_alternative)
+    11993    0.111    0.000    0.156    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/index_tricks.py:326(__getitem__)
+    14812    0.099    0.000    0.209    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/type_check.py:403(nan_to_num)
+    45852    0.099    0.000    1.295    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:204(_std)
+    10851    0.095    0.000    3.812    0.000 /home/sunrise/toponav_project/roadvision/rgb_resampling_checks.py:60(appearance_evidence)
+   141180    0.094    0.000    0.429    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py:2322(any)
+    10644    0.084    0.000    9.436    0.001 /home/sunrise/toponav_project/roadvision/rgb_motion_checks.py:50(patch_evidence)
+      522    0.083    0.000    0.083    0.000 {goodFeaturesToTrack}
+   220480    0.076    0.000    0.076    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)
+     2106    0.076    0.000    0.076    0.000 /home/sunrise/toponav_project/roadvision/prepared_descriptor_search.py:26(at)
+    83164    0.076    0.000    0.089    0.000 /usr/lib/python3.10/contextlib.py:102(__init__)
+    27806    0.075    0.000    0.075    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:90(_clip)
+    58910    0.074    0.000    0.109    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py:274(full)
+     4361    0.069    0.000    0.145    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:43(ground_points)
+    12002    0.068    0.000    0.337    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/function_base.py:3931(_median)
+   645193    0.067    0.000    0.067    0.000 {built-in method builtins.issubclass}
+    79131    0.062    0.000    0.062    0.000 {method 'dot' of 'numpy.ndarray' objects}
+   166328    0.060    0.000    0.113    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_ufunc_config.py:452(_no_nep50_warning)
+      679    0.059    0.000    0.059    0.000 {warpPerspective}
+    39645    0.059    0.000    0.110    0.000 /home/sunrise/toponav_project/roadvision/rgb_ground_rig.py:36(rig_basis)
+   145215    0.058    0.000    0.282    0.000 {method 'all' of 'numpy.ndarray' objects}
+     6035    0.055    0.000    0.440    0.000 /home/sunrise/toponav_project/roadvision/joint_straight_model.py:44(prediction)
+   309321    0.054    0.000    0.054    0.000 {built-in method numpy.asarray}
+     8414    0.053    0.000    1.004    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:138(errors)
+   433229    0.053    0.000    0.053    0.000 {built-in method builtins.isinstance}
+   129437    0.051    0.000    0.051    0.000 {built-in method numpy.empty}
+    83164    0.050    0.000    0.129    0.000 /usr/lib/python3.10/contextlib.py:139(__exit__)
+      972    0.049    0.000    0.049    0.000 {built-in method _hashlib.openssl_sha256}
+   250051    0.048    0.000    0.048    0.000 {built-in method builtins.hasattr}
+   166328    0.047    0.000    0.159    0.000 {built-in method builtins.next}
+      854    0.046    0.000    1.129    0.001 /home/sunrise/toponav_project/roadvision/rgb_ground_rig.py:68(_region_models)
+     3178    0.046    0.000    0.623    0.000 /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:95(_lk)
+   417557    0.045    0.000    0.045    0.000 {built-in method numpy.asanyarray}
+       43    0.044    0.001    2.454    0.057 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:106(estimate_ground_motion)
+     8299    0.044    0.000    0.938    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:147(<genexpr>)
+     4417    0.044    0.000    0.106    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py:323(_unique1d)
+      188    0.044    0.000    1.020    0.005 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_lsq/trf.py:205(trf_bounds)
+   146395    0.043    0.000    0.226    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:61(_all)
+    91920    0.042    0.000    0.248    0.000 {method 'any' of 'numpy.ndarray' objects}
+    42540    0.042    0.000    0.238    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/fromnumeric.py:2692(max)
+    36705    0.039    0.000    0.072    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:159(_commonType)
+    83164    0.039    0.000    0.119    0.000 /usr/lib/python3.10/contextlib.py:130(__enter__)
+    83164    0.039    0.000    0.127    0.000 /usr/lib/python3.10/contextlib.py:279(helper)
+    88042    0.038    0.000    0.705    0.000 {method 'mean' of 'numpy.ndarray' objects}
+    23732    0.038    0.000    0.102    0.000 {method 'clip' of 'numpy.generic' objects}
+   108124    0.036    0.000    0.233    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:55(_any)
+     1350    0.034    0.000    0.560    0.000 /home/sunrise/toponav_project/roadvision/joint_straight_model.py:51(residual)
+    12361    0.034    0.000    0.034    0.000 {method 'partition' of 'numpy.ndarray' objects}
+     2220    0.033    0.000    0.114    0.000 /home/sunrise/toponav_project/roadvision/front_support.py:31(predict)
+   154608    0.033    0.000    0.033    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     2717    0.032    0.000    0.040    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/numeric.py:1673(indices)
+      522    0.032    0.000    1.522    0.003 /home/sunrise/toponav_project/roadvision/ground_band.py:20(track_fixed_roi)
+     9359    0.032    0.000    0.063    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:2126(det)
+     2106    0.031    0.000    0.395    0.000 /home/sunrise/toponav_project/roadvision/prepared_descriptor_search.py:38(search)
+   147290    0.030    0.000    0.040    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/linalg/linalg.py:140(isComplexType)
+    12002    0.030    0.000    0.079    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/utils.py:1081(_median_nancheck)
+    85732    0.030    0.000    0.030    0.000 {method 'tobytes' of 'numpy.ndarray' objects}
+   149590    0.030    0.000    0.030    0.000 {built-in method builtins.getattr}
+   209249    0.030    0.000    0.030    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+     4417    0.030    0.000    0.280    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/arraysetops.py:138(unique)
+    10461    0.029    0.000    0.044    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/twodim_base.py:234(diag)
+    14812    0.029    0.000    0.029    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/ufunclike.py:71(isposinf)
+   262316    0.028    0.000    0.028    0.000 {built-in method builtins.len}
+      764    0.028    0.000    0.150    0.000 /home/sunrise/toponav_project/roadvision/corridor_rgb_probe.py:132(_rotation_residual)
+     2980    0.028    0.000    0.096    0.000 /home/sunrise/toponav_project/roadvision/calibrated_ground_motion.py:204(_camera_motion)
+    78643    0.028    0.000    0.075    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/lib/shape_base.py:608(_column_stack_dispatcher)
+    78689    0.027    0.000    0.047    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/numpy/core/shape_base.py:207(_arrays_for_stack_dispatcher)
+     1391    0.027    0.000    0.039    0.000 /home/sunrise/toponav_project/.venv/lib/python3.10/site-packages/scipy/optimize/_numdiff.py:13(_adjust_scheme_to_bounds)
+    83164    0.027    0.000    0.027    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+     2367    0.027    0.000    0.027    0.000 {erode}
+     4417    0.027    0.000    0.027    0.000 {method 'sort' of 'numpy.ndarray' objects}
+   284910    0.026    0.000    0.026    0.000 {method 'append' of 'list' objects}
+    83164    0.026    0.000    0.026    0.000 {method 'reset' of '_contextvars.ContextVar' objects}
+
+

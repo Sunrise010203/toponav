@@ -1,0 +1,39 @@
+{
+  "scope": "Current restored implementation, two instrumented diagnostic passes only",
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "opencv": "4.10.0",
+    "measured_opencv_threads": 1,
+    "host_exclusive": false,
+    "thread_environment": {
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null
+    }
+  },
+  "passes": [
+    {
+      "mode": "stage",
+      "exact_decisions": 80
+    },
+    {
+      "mode": "cprofile",
+      "exact_decisions": 80
+    }
+  ],
+  "all_serialized_outputs_exact": true,
+  "workload_cross_pass_identical": true,
+  "arrays_unchanged": true,
+  "aliases_restored": true,
+  "opencv_threads_restored": true,
+  "measured_rows": 160,
+  "frozen_files_unchanged": true,
+  "instrumented_times_not_ordinary_latency": true,
+  "candidate_executed": false,
+  "performance_improvement_claim": false,
+  "navigation_acceptance": false,
+  "physical_execution": false,
+  "hardware_end_to_end_latency_measured": false
+}

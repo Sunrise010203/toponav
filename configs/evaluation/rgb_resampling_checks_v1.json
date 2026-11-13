@@ -1,0 +1,327 @@
+{
+  "version": "rgb_observability_suite_v1",
+  "frame_count": 5,
+  "capture_dt_s": 0.1,
+  "cases": [
+    {
+      "id": "ground_forward_6049",
+      "scene": "ground",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_forward_6049",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_slow_6049",
+      "scene": "room",
+      "motion": "slow_forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_forward_17041",
+      "scene": "ground",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_forward_17041",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_slow_17041",
+      "scene": "room",
+      "motion": "slow_forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_lateral_6049",
+      "scene": "ground",
+      "motion": "lateral",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_slow_17041",
+      "scene": "ground",
+      "motion": "slow_forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_lateral_17041",
+      "scene": "room",
+      "motion": "lateral",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_yaw_6049",
+      "scene": "room",
+      "motion": "yaw",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_forward_6049",
+      "scene": "wall",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_dynamic_6049",
+      "scene": "wall",
+      "motion": "moving_wall",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_uniform_6049",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "uniform",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_repeated_6049",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_hidden_fov_17041",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 70,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_hidden_pitch_17041",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0.21,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "declared_wrong_id",
+      "scene": "room",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "wrong"
+    },
+    {
+      "id": "ground_static_6049",
+      "scene": "ground",
+      "motion": "static",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_tiny_17041",
+      "scene": "ground",
+      "motion": "tiny_forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_yaw_17041",
+      "scene": "wall",
+      "motion": "yaw",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_repeated_6049",
+      "scene": "wall",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_repeated_6049",
+      "scene": "ground",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_repeated_slow_17041",
+      "scene": "room",
+      "motion": "slow_forward",
+      "seed": 17041,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_static_17041",
+      "scene": "room",
+      "motion": "static",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "paint_forward_6049",
+      "scene": "paint",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "barrier_forward_6049",
+      "scene": "barrier",
+      "motion": "forward",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_lateral_17041",
+      "scene": "ground",
+      "motion": "lateral",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "room_lateral_6049",
+      "scene": "room",
+      "motion": "lateral",
+      "seed": 6049,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_forward_17041",
+      "scene": "wall",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_dynamic_17041",
+      "scene": "wall",
+      "motion": "moving_wall",
+      "seed": 17041,
+      "texture": "unique",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "ground_repeated_17041",
+      "scene": "ground",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    },
+    {
+      "id": "wall_repeated_17041",
+      "scene": "wall",
+      "motion": "forward",
+      "seed": 17041,
+      "texture": "repeated",
+      "rendered_fov_deg": 90,
+      "pitch_rad": 0,
+      "declared_calibration_id": "corridor_panel_128_f64_c64_level_v1"
+    }
+  ]
+}

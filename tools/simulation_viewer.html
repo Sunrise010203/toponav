@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TopoNav · 物理导航模拟</title>
+<style>
+[hidden]{display:none!important}
+:root{color-scheme:dark;--bg:#10151e;--panel:#192230;--text:#eaf0f7;--muted:#a7b6c9;--line:#304156;--accent:#64dcb5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}h1{font-size:24px;margin:0;font-weight:600}h2{font-size:16px;font-weight:500;margin:0 0 14px}p{margin:6px 0;color:var(--muted)}.tag{color:var(--accent);letter-spacing:.08em;font-size:12px}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0}button,select{font:inherit;color:var(--text);border:1px solid var(--line);background:var(--panel);padding:8px 14px;border-radius:7px}button{cursor:pointer}button.primary{background:var(--accent);color:#102820;border-color:var(--accent);font-weight:600}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:18px}.panel{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:12px;min-width:0}#map{width:100%;height:440px;display:block}#rgb{display:block;width:min(100%,352px);aspect-ratio:1;margin:auto;image-rendering:pixelated;background:#10151e}.views{display:grid;grid-template-columns:1fr 1fr;text-align:center;max-width:352px;margin:0 auto 8px;color:var(--muted);font-size:13px}.playback{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:16px}#timeline{flex:1;min-width:120px;accent-color:var(--accent)}.status{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);display:flex;gap:16px;flex-wrap:wrap;font-variant-numeric:tabular-nums}.status span{color:var(--muted)}#reason{overflow-wrap:anywhere;min-height:24px;font-size:13px}#message{min-height:26px;color:var(--accent)}#path{overflow-wrap:anywhere;font-size:12px}label{display:flex;align-items:center;gap:6px}footer{margin-top:18px;font-size:13px;color:var(--muted)}.legend{display:flex;gap:18px;color:var(--muted);font-size:13px}.legend b{color:var(--accent)}#audit{font-size:14px;min-height:24px}@media(max-width:780px){main{padding:16px}.layout{grid-template-columns:1fr}#map{height:340px}.controls{gap:8px}}
+</style>
+</head>
+<body><main>
+<header><div><div class="tag">TOPONAV / PYBULLET</div><h1>看小车完成一次导航</h1><p>真实轮驱物理 · 四向 RGB · 原控制器决策</p></div><span id="job" role="status">等待连接</span></header>
+<div class="controls">
+<label for="preset">场景 <select id="preset"><option value="left">L 形左转</option><option value="right">L 形右转</option><option value="t-left">T 路口向左</option><option value="t-right">T 路口向右</option><option value="straight">直走与停车</option><option value="blocked">直走 · 全宽阻挡</option></select></label>
+<label><input id="confirmed" type="checkbox">确认仿真初始净空前提</label>
+<label id="probe-option" hidden><input id="probe" type="checkbox">单独授权直走受限探测（否则保持零速）</label>
+<button id="start" class="primary" disabled>运行新模拟</button>
+</div>
+<div id="message" role="alert"></div>
+<div class="layout">
+<section class="panel"><h2>道路与车辆 · 俯视重建</h2><canvas id="map" role="img" aria-label="根据实际物理审计轨迹重建的小车位置和道路"></canvas><div class="legend"><span><b>━</b> 已行驶轨迹</span><span>箭头：小车朝向</span><span>米制场景</span></div></section>
+<section class="panel"><h2>实际车载相机</h2><div class="views"><span>前方</span><span>左方</span></div><img id="rgb" alt="四向相机：左上前、右上左、左下右、右下后" hidden><div id="no-rgb">等待第一帧 RGB…</div><div class="views"><span>右方</span><span>后方</span></div><p id="reason">等待控制器决策</p></section>
+</div>
+<div class="playback"><button id="play">暂停回放</button><input id="timeline" type="range" min="0" max="1" step="0.01" value="0" aria-label="回放时间"><label>速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><button id="latest">最新位置</button></div>
+<div class="status"><div>时间 <span id="time">—</span></div><div>状态 <span id="state">—</span></div><div>实际速度 <span id="velocity">—</span></div><div>当前接触数 <span id="contacts">—</span></div></div>
+<p id="audit" aria-live="polite"></p><p id="path"></p>
+<footer>俯视位置来自只读物理审计，不输入导航控制器。画面是实际模拟结果的实时读取与回放，不是预设路径动画。仅限既有灰墙/蓝灰地面工作域；S2 尚未通过正式验收，S6 最终评估未完成。</footer>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),canvas=$('map'),ctx=canvas.getContext('2d');
+let data={poses:[],decisions:[]},cursor=0,playing=true,lastClock=performance.now(),imageKey='',polling=false;
+const labels={observing:'停车观察',moving:'运动执行',braking:'制动确认',bootstrapping:'初始确认',approaching:'接近',turning:'转向',visual_stop:'视觉停车',aborted:'终止停车',aligning:'对齐',driving:'行驶'};
+function extent(p){if(p==='straight'||p==='blocked')return[-.5,4.5,-1.4,1.4];if(p?.startsWith('t-'))return[-.5,3.8,-4,4];return p==='right'?[-.5,3.8,-4,1.4]:[-.5,3.8,-1.4,4];}
+function draw(pose){
+ const box=canvas.getBoundingClientRect(),dpr=window.devicePixelRatio||1,w=box.width,h=box.height;
+ if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
+ ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ const [xmin,xmax,ymin,ymax]=extent(data.preset),s=Math.min((w-44)/(xmax-xmin),(h-38)/(ymax-ymin)),ox=(w-(xmax-xmin)*s)/2,oy=(h-(ymax-ymin)*s)/2;
+ const X=x=>ox+(x-xmin)*s,Y=y=>h-oy-(y-ymin)*s;
+ ctx.strokeStyle='#29384a';ctx.lineWidth=1;for(let x=Math.ceil(xmin);x<=xmax;x++){ctx.beginPath();ctx.moveTo(X(x),Y(ymin));ctx.lineTo(X(x),Y(ymax));ctx.stroke();}for(let y=Math.ceil(ymin);y<=ymax;y++){ctx.beginPath();ctx.moveTo(X(xmin),Y(y));ctx.lineTo(X(xmax),Y(y));ctx.stroke();}
+ const straight=data.preset==='straight'||data.preset==='blocked',t=data.preset?.startsWith('t-'),sign=data.preset==='right'?-1:1;
+ const points=straight?[[-.2,-.9],[4,-.9],[4,.9],[-.2,.9]]:t?[[-.2,-.9],[1.6,-.9],[1.6,-3.5],[3.4,-3.5],[3.4,3.5],[1.6,3.5],[1.6,.9],[-.2,.9]]:[[-.2,-.9],[3.4,-.9],[3.4,3.5],[1.6,3.5],[1.6,.9],[-.2,.9]].map(([x,y])=>[x,y*sign]);
+ ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(X(x),Y(y)):ctx.moveTo(X(x),Y(y)));ctx.closePath();ctx.fillStyle='#31435a';ctx.fill();ctx.strokeStyle='#a49c90';ctx.lineWidth=Math.max(3,.1*s);ctx.lineJoin='miter';ctx.stroke();
+ if(data.preset==='blocked'){ctx.fillStyle='#c7a388';ctx.fillRect(X(3),Y(.9),.1*s,1.8*s);}
+ ctx.strokeStyle='#64dcb5';ctx.lineWidth=2;ctx.beginPath();let started=false;for(const p of data.poses){if(p.sim_s>cursor)break;const [x,y]=p.position_m;started?ctx.lineTo(X(x),Y(y)):ctx.moveTo(X(x),Y(y));started=true;}if(pose&&started)ctx.lineTo(X(pose.position_m[0]),Y(pose.position_m[1]));ctx.stroke();
+ if(pose){ctx.save();ctx.translate(X(pose.position_m[0]),Y(pose.position_m[1]));ctx.rotate(-pose.yaw_deg*Math.PI/180);ctx.fillStyle='#0b111a';ctx.fillRect(-.14*s,-.19*s,.28*s,.07*s);ctx.fillRect(-.14*s,.12*s,.28*s,.07*s);ctx.fillStyle='#64dcb5';ctx.fillRect(-.16*s,-.11*s,.32*s,.22*s);ctx.beginPath();ctx.moveTo(.27*s,0);ctx.lineTo(.04*s,-.07*s);ctx.lineTo(.04*s,.07*s);ctx.closePath();ctx.fillStyle='#f1fbf7';ctx.fill();ctx.restore();}
+ ctx.strokeStyle='#b9c8d9';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(18,h-15);ctx.lineTo(18+s,h-15);ctx.stroke();ctx.fillStyle='#b9c8d9';ctx.font='12px system-ui';ctx.fillText('1 m',18,h-23);
+}
+function currentPose(){if(!data.poses.length)return null;let a=data.poses[0],b=a;for(const p of data.poses){if(p.sim_s<=cursor)a=p;else{b=p;break;}b=p;}const q=b.sim_s>a.sim_s?Math.max(0,Math.min(1,(cursor-a.sim_s)/(b.sim_s-a.sim_s))):0;return{...a,position_m:a.position_m.map((v,i)=>v+(b.position_m[i]-v)*q),yaw_deg:a.yaw_deg+(((b.yaw_deg-a.yaw_deg+540)%360)-180)*q};}
+function update(){const p=currentPose();draw(p);$('time').textContent=p?cursor.toFixed(1)+' 仿真秒':'—';$('velocity').textContent=p?p.speed_m_s.toFixed(3)+' m/s':'—';$('contacts').textContent=p?String(p.wall_contacts):'—';let d=null;for(const row of data.decisions){if(row.sim_s>cursor)break;d=row;}$('state').textContent=d?(labels[d.state]||d.state):'等待';$('reason').textContent=d?d.reason:'等待控制器决策';const key=d?.rgb?data.run_id+'/'+d.rgb.split('/').pop():'';if(key!==imageKey){imageKey=key;$('rgb').hidden=!key;$('no-rgb').hidden=!!key;if(key)$('rgb').src='/frames/'+key;}$('timeline').value=cursor;}
+function syncPermission(){const straight=['straight','blocked'].includes($('preset').value);$('probe-option').hidden=!straight;$('probe').disabled=!!data.running;if(!straight)$('probe').checked=false;}
+async function poll(){if(polling)return;polling=true;try{const response=await fetch('/api/state');if(!response.ok)throw Error('状态读取失败');const fresh=await response.json();if(fresh.run_id!==data.run_id){cursor=fresh.poses[0]?.sim_s||0;imageKey='';playing=true;$('play').textContent='暂停回放';if(fresh.preset)$('preset').value=fresh.preset;}data=fresh;syncPermission();const lo=data.poses[0]?.sim_s||0,hi=data.poses.at(-1)?.sim_s||lo;$('timeline').min=lo;$('timeline').max=Math.max(lo+.01,hi);cursor=Math.max(lo,Math.min(cursor,hi));$('job').textContent=data.running?'物理模拟运行中':data.run_id?(data.result?'物理模拟已结束 · 可回放':'运行中断 / 缺少最终结果'):'尚未启动';$('start').disabled=data.running||!$('confirmed').checked;$('path').textContent=data.directory?'原始记录：'+data.directory:'';if(data.result){const a=data.result.audit;const pass=a.normal_geometric_stop_pass;$('audit').textContent=(pass?'最终审计：任务位置通过':'最终审计：任务位置未通过')+' · '+(a.stationary?'最终已停稳':'最终未停稳')+' · 接触步数 '+a.wall_contact_physics_steps+(data.result.exception?' · 发生运行异常':'');}else $('audit').textContent=data.running?'正在采集，尚无最终审计结论':'';update();}catch(error){$('message').textContent='连接中断：'+error.message;}finally{polling=false;}}
+$('preset').onchange=()=>{$('probe').checked=false;syncPermission();};
+$('confirmed').onchange=()=>{$('start').disabled=data.running||!$('confirmed').checked;};
+$('start').onclick=async()=>{$('start').disabled=true;$('message').textContent='正在创建新的物理世界…';try{const response=await fetch('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({preset:$('preset').value,confirmed:$('confirmed').checked,motion_permission:['straight','blocked'].includes($('preset').value)&&$('probe').checked?'bounded_probe':'no_motion'})});const body=await response.json();if(!response.ok)throw Error(body.error);$('message').textContent='';await poll();}catch(error){$('message').textContent=error.message;$('start').disabled=data.running||!$('confirmed').checked;}};
+$('play').onclick=()=>{playing=!playing;if(playing&&cursor>=Number($('timeline').max)-.01)cursor=Number($('timeline').min);$('play').textContent=playing?'暂停回放':'播放回放';};
+$('timeline').oninput=()=>{cursor=Number($('timeline').value);playing=false;$('play').textContent='播放回放';update();};
+$('latest').onclick=()=>{cursor=data.poses.at(-1)?.sim_s||0;playing=true;$('play').textContent='暂停回放';update();};
+function animate(now){const dt=Math.min((now-lastClock)/1000,.15);lastClock=now;if(playing&&data.poses.length){cursor=Math.min(cursor+dt*Number($('speed').value),data.poses.at(-1).sim_s);update();}requestAnimationFrame(animate);}
+new ResizeObserver(()=>update()).observe(canvas);poll();setInterval(poll,600);requestAnimationFrame(animate);
+</script></body></html>

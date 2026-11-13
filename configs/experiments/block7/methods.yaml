@@ -1,0 +1,121 @@
+schema_version: block7-design-v1
+status: design_only_not_execution_authorization
+timezone: Asia/Shanghai
+track: N_atomic_no_reference_photos
+shared:
+  model_path: /home/sunrise/toponav_project/models/road_structure_frozen_v1_20261014
+  model_sha256: 1188f35dd20d0773b780b73f2000daa25fede9b2db098b02dc0746ad0de6b03b
+  probability_threshold: 0.6
+  view_order:
+  - front
+  - left
+  - right
+  - back
+  reference_photos: false
+  prior:
+  - public_topology_without_coordinates
+  - start_node
+  - goal_node
+  - initial_cardinal_heading
+  planner: simulation.path_planning
+  localizer: simulation.structural_localization
+  executor: atomic_topological_not_continuous
+  shared_driver_status: requires_7B_adapter_and_equivalence_tests
+  random_streams:
+  - appearance
+  - sensor_faults
+  - execution_faults
+  safety_invariants:
+  - strict_input_types
+  - frame_age_at_most_1s
+  - no_future_or_replayed_or_out_of_order_frames
+  - single_inflight_command
+  - feedback_consumed_at_most_once
+  - fresh_post_completion_epoch
+  - no_truth_to_controller
+  - terminal_stop_latch
+  - same_time_and_command_budget
+existing_config_limits:
+  minimum_confirmation_frames: 2
+  recovery_disable_flag_exists: false
+  one_frame_currently_raises: ValueError
+  do_not_substitute_max_conflicts_zero_for_no_recovery: true
+no_recovery_semantics:
+  terminate_on:
+  - fresh_uncertain_or_invalid_observation
+  - stale_future_out_of_order_or_duplicate_frame
+  - dropped_scheduled_capture_when_no_command_pending
+  - structure_changed_inside_confirmation_window
+  - confirmed_ambiguous_or_mismatched_localization
+  - trusted_atomic_failed_completion
+  do_not_terminate_on:
+  - ordinary_incomplete_confirmation_window
+  - idempotent_duplicate_feedback
+  - ordinary_poll_tick_without_scheduled_capture
+  - pending_sent_or_unknown_before_common_timeout
+  pending_execution: retain_uncertainty_until_trusted_completion_or_common_timeout_never_infer_from_frames
+methods:
+- id: M0
+  name: 固定拓扑约束基线
+  confirmation_frames: 1
+  passive_recovery: false
+  implementation_status: planned_7B_one_frame_and_recovery_switches
+  entrypoint: null
+- id: M1
+  name: 时序完整版本
+  confirmation_frames: 3
+  passive_recovery: true
+  implementation_status: existing_core_requires_common_driver_qualification
+  entrypoint: roadvision.temporal_navigation
+- id: M2
+  name: 去持续确认
+  confirmation_frames: 1
+  passive_recovery: true
+  implementation_status: planned_7B_one_frame_switch
+  entrypoint: null
+- id: M3
+  name: 去被动恢复
+  confirmation_frames: 3
+  passive_recovery: false
+  implementation_status: planned_7B_recovery_switch
+  entrypoint: null
+comparisons:
+- id: primary
+  pair:
+  - M1
+  - M0
+  type: whole_mechanism_bundle
+  primary_metric: navigation_success_rate
+  cohort: normal
+- id: confirmation
+  pair:
+  - M1
+  - M2
+  type: single_mechanism
+  changed: confirmation_frames
+  inference: exploratory
+- id: recovery
+  pair:
+  - M1
+  - M3
+  type: single_mechanism
+  changed: passive_recovery
+  inference: exploratory
+legacy_diagnostic:
+  id: L0
+  entrypoint: roadvision.navigation
+  primary_comparison: false
+  reason: different_driver_sampling_feedback_and_termination_semantics
+qualification_before_final_test:
+- M1_event_replay_exact_equivalence
+- all_four_variants_share_same_sensor_executor_and_timing
+- all_safety_invariants_tested
+- mechanism_isolation_tested
+- new_layout_registry_or_adapter_validated
+- map_error_and_closure_use_separate_public_map_and_physical_truth
+- no_reference_images_in_N
+- explicit_future_implementation_authorization
+continuous_comparison: separate_restricted_track_not_same_17class_model_or_photo_prior
+no_topology_baseline:
+  included: false
+  reason: no_implemented_equivalent_goal_information_strategy
